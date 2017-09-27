@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{float}
 \graphicspath{ {img/} }
 \begin{document}
 
@@ -80,12 +81,33 @@ Reduce net rough maintenance cost
 \subsection{Sensor Suite}
 
 \section{Functional Architecture}
+\begin{figure}[H]
 \includegraphics[scale=0.3]{functional}
+\caption{Functional Architecture}
+\label{fig:functional}
+\end{figure}
+
 
 \section{System Level Trade Studies}
 
 \section{Cyberphysical Architecture}
+\begin{figure}[H]
 \includegraphics[scale=0.2]{cyberphysical}
+\caption{Cyberphysical Architecture}
+\label{fig:cyberphysical}
+\end{figure}
+
+  The user interface and IO subsystems are the contact points for the operator.  The wifi access point allows the user to load mowing boundaries from their laptop or mobile device.  This also enables the user to download coverage reports and diagnostics.  Status LEDs allow the operator to understand the system status at a glance, while safety beacons alert humans to GroundsBot's presence at a distance. \\
+
+  GroundsBot uses its sensor suite to ensure a clean cut. GPS, IMU, and Motor Encoders are used for coarse localization while the cameras are used to ensure optimal grass overlap while cutting.  Cameras and lidar also enable GroundsBot to detect static and dynamic obstacles.\\
+
+  GroundsBot's battery subsystem reports charge status to the CPU to prevent GroundsBot from becoming stranded. The battery subsystem also contains standard protection protocols including charge control, under-voltage lockout, and over-current protection. \\
+
+  The CPU utilizes sensor information for localization, obstacle detection, and planning.  After a local path is devised drive signals are sent to the motors. The CPU also logs coverage data and generates reports.\\
+
+  The Drive Train contains motors and motor drivers to propel GroundsBot across a golf course.  This also encompasses the mowing apparatus and mowing deck height control. \\
+
+
 
 \section{Subsystem Descriptions}
 	\subsection{UI}

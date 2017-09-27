@@ -35,27 +35,28 @@ Groundsbot shall:
 \end{center}
 
 \subsection{Non-Functional Requirements}
-M.N.1 Bot has emergency stop
-M.N.2 Bot is clearly visible/noticeable
-M.N.3 Bot does not destroy grass
-D.N.1 Operates in variable lighting conditions
-D.N.2 Deck adjustable 0.5” to 2”
-D.N.3 Survives deluge of golf balls
+M.N.1 Bot has emergency stop \\
+M.N.2 Bot is clearly visible/noticeable \\
+M.N.3 Bot does not destroy grass \\
+D.N.1 Operates in variable lighting conditions \\
+D.N.2 Deck adjustable 0.5” to 2” \\
+D.N.3 Survives deluge of golf balls \\
 
 
 \subsection{Performance Requirements}
-M.P.1 First time user inputs map within 15 minutes
-M.P.2 System returns proposed route/coverage map within 5 minutes
-M.P.3 Cut 0-25% overlap for 95% of grass
-M.P.4 Mow 50 ft^2 of 30 degree sloped grass
-M.P.5 Detect 80% of objects greater than 27 cubic inches
-M.P.6 Mow to within 1 foot of detected obstacles
-M.P.7 Mow 90% of a ¼ acre area
+M.P.1 First time user inputs map within 15 minutes \\
+M.P.2 System returns proposed route/coverage map within 5 minutes \\
+M.P.3 Cut 0-25\% overlap for 95\% of grass \\
+M.P.4 Mow 50 $ft^2$ of 30 degree sloped grass \\
+M.P.5 Detect 80\% of objects greater than 27 cubic inches \\
+M.P.6 Mow to within 1 foot of detected obstacles \\
+M.P.7 Mow 90\% of a $\frac{1}{4}$ acre area \\
 
-D.P.1 Mow to within 3 inches of a detected obstacles
-D.P.2 Return home to within 5 feet of start
-D.P.2+ Return home to and mates with a charging dock
-D.P.3 Visually report mowing mowing coverage and known obstacles
+\noindent
+D.P.1 Mow to within 3 inches of a detected obstacles \\
+D.P.2 Return home to within 5 feet of start \\
+D.P.2+ Return home to and mates with a charging dock \\
+D.P.3 Visually report mowing mowing coverage and known obstacles \\
 
 \section{Use Case}
 
@@ -87,6 +88,30 @@ Reduce net rough maintenance cost
 \includegraphics[scale=0.2]{cyberphysical}
 
 \section{Subsystem Descriptions}
+	\subsection{UI}
+	An important aspect of the project is a way for the user to communicate his desired mowing path to the robot. This input method must be separate from the robot itself, allowing the user to be somewhere else as the robot mows autonomously. 
+	
+	This will be achieved through a mobile device, either a dedicated tablet or the user's own smartphone. An app or website will be loaded onto this device, and allow for the user to input a map outline that will be communicated to the robot. 
+	
+	\subsection{Hardware}
+		\subsubsection{Platform}
+		TODO: FINISH THIS PART - dependent on trade study \\ 
+			The powertrain will consist of electric drive motors and batteries obtained from the sponsor. 
+			
+		\subsubsection{Mower}
+			In addition to navigating a plot of grass, the system also needs to mow it. This may be done by attaching an existing electric push mower to the robot platform. Alternatively, it is also possible to attach the blades from a manual reel mower to the platform. 
+	
+	\subsection{Software}
+		\subsubsection{Planner}
+			The planner will take the user input from the UI, and translate that into a path that the robot will follow. This involves refining the outline that was provided by the user, and then finding a path that will allow for maximal coverage of the selected area. 
+			
+		\subsubsection{Localization and Perception}
+			An accurate description of the robot's global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but vision based methods will also be investigated. 
+			
+			The vision system will also be used for obstacle and anomaly detection. 
+		
+		\subsubsection{Mobility}
+			The mobility subsystem will be responsible for the robot going from point A to point B at any given time. Using current position information from localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then emit the necessary motor control signals to move towards this waypoint. 
 
 \section{Project Management}
 

@@ -11,8 +11,9 @@
 \graphicspath{ {img/} }
 \begin{document}
 
-\definecolor{lemonchiffon}{HTML}{fffacd}
+\definecolor{highlight}{HTML}{9de6aa} %grudsbo green, light edition
 \definecolor{maroon}{cmyk}{0,0.87,0.68,0.32}
+\definecolor{badhighlight}{HTML}{ff0000}
 
 
 \title{GroundsBot:Autonomous Golf Course Maintenance}
@@ -100,6 +101,8 @@ Reduce net rough maintenance cost
 
 \section{System Level Trade Studies}
 	\subsection{Platform Trade Study}
+	
+%%%%%%%%%%%%%%platform config table%%%%%%%%%%%%%%%%%%%%%%%%	
 		\begin{table}[H]
 		\begin{adjustwidth}{-1.5in}{-1.5in}
 		\centering
@@ -112,7 +115,7 @@ Reduce net rough maintenance cost
 		4 Wheel Skid                       & 5     & 4                & 4         & 4                   & 1                 & 1                                          & 5                             & 73    \\ \hdashline 
 		
 		%jesus christ this row is a goddamn mess BUT YOU GOTTA DO WHAT YOU GOTTA DO
-		\multicolumn{1}{|l|}{\cellcolor{lemonchiffon}\makecell[l]{2 wheel differential \\ with casters}}  & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}4}     & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}3}                & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}4}         & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}5}                   & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}5}                 & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}5}                               & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}5}                             & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}107}   \\ \hdashline
+		\multicolumn{1}{|l|}{\cellcolor{highlight}\makecell[l]{2 wheel differential \\ with casters}}  & \multicolumn{1}{c|}{\cellcolor{highlight}4}     & \multicolumn{1}{c|}{\cellcolor{highlight}3}                & \multicolumn{1}{c|}{\cellcolor{highlight}4}         & \multicolumn{1}{c|}{\cellcolor{highlight}5}                   & \multicolumn{1}{c|}{\cellcolor{highlight}5}                 & \multicolumn{1}{c|}{\cellcolor{highlight}5}                               & \multicolumn{1}{c|}{\cellcolor{highlight}5}                             & \multicolumn{1}{c|}{\cellcolor{highlight}107}   \\ \hdashline
 		
 		\makecell[l]{4 Wheel Drive \\ Standard Steering}    & 5     & 4                & 4         & 2                   & 4                 & 2                                          & 5                             & 84    \\ \hdashline
 		\makecell[l]{Rear Wheel Drive \\ Standard Steering} & 5     & 4                & 4         & 3                   & 5                 & 2                                          & 5                             & 91    \\ \hdashline
@@ -126,7 +129,7 @@ Reduce net rough maintenance cost
 		\end{adjustwidth}
 		\end{table}
 		
-		
+%%%%%%%%%%platform base table%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
 		\begin{table}[H]
 		\begin{adjustwidth}{-1.5in}{-1.5in}
 		\centering
@@ -136,7 +139,7 @@ Reduce net rough maintenance cost
 		\hline
 		            & \makecell{Ease of \\ Integration} & \makecell{Ease of \\ Repair} & \makecell{Ease of \\ Construction} & \makecell{Flexiblility for \\ Modifications} & Cost & Leadtime & Traction & Score \\ \hline
 		Weights (1-5)                      & 3                   & 2              & 3                    & 5                              & 3    & 2        & 4        &       \\ \hline
-		\multicolumn{1}{|l|}{\cellcolor{lemonchiffon}Complete DIY} & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}4}                   & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}5}              & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}2}                    & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}5}                              & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}4}    & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}4}        & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}5}        & \multicolumn{1}{c|}{\cellcolor{lemonchiffon}93}    \\ \hdashline
+		\multicolumn{1}{|l|}{\cellcolor{highlight}Complete DIY} & \multicolumn{1}{c|}{\cellcolor{highlight}4}                   & \multicolumn{1}{c|}{\cellcolor{highlight}5}              & \multicolumn{1}{c|}{\cellcolor{highlight}2}                    & \multicolumn{1}{c|}{\cellcolor{highlight}5}                              & \multicolumn{1}{c|}{\cellcolor{highlight}4}    & \multicolumn{1}{c|}{\cellcolor{highlight}4}        & \multicolumn{1}{c|}{\cellcolor{highlight}5}        & \multicolumn{1}{c|}{\cellcolor{highlight}93}    \\ \hdashline
 		RC Lawnmower                       & 5                   & 3              & 5                    & 4                              & 1    & 2        & 5        & 83    \\ \hdashline
 		\makecell[l]{Modify Robot \\ Lawnmower}           & 3                   & 3              & 4                    & 1                              & 1    & 4        & 2        & 51    \\ \hdashline
 		\makecell[l]{Modify Electric \\ Pushmower}         & 2                   & 2              & 3                    & 1                              & 2    & 5        & 1        & 44    \\ \hdashline
@@ -147,6 +150,51 @@ Reduce net rough maintenance cost
 		\label{my-label}
 		\end{adjustwidth}
 		\end{table}
+		
+		
+%%%%%%%%%%sensor capability table%%%%%%%%%%%%%%%%%%%%		
+		\begin{table}[H]
+		\begin{adjustwidth}{-1.5in}{-1.5in}
+		\setlength{\dashlinedash}{.4pt}
+		\centering
+		\begin{tabular}{|l|c|c|c|c|c|c|}
+		\hline
+		                                 & \makecell{Identify \\ Static  \\ Obstacles} & \makecell{Identify \\ Dynamic \\ Obstacles} & \makecell{Detect \\ Grass / No Grass} & \makecell{Functions \\ Outdoors \\ In Daylight} &\makecell{Detect \\ Grass \\ Transitions} & \makecell{Sense \\ Driveable \\ Land} \\ \hline
+		LiDAR                            & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
+		Camera                           & 3                         & 3                          & 5                       & 5                              & 5                        & 1                    \\ \hdashline
+		
+		\multicolumn{1}{|l|}{\cellcolor{badhighlight!70}RGBD Camera }                     & \multicolumn{1}{c|}{\cellcolor{badhighlight!70} 5}                           & \multicolumn{1}{c|}{\cellcolor{badhighlight!70} 5 }                            & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 }                         & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 }   & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 }                           & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 }                       \\ \hdashline
+		\makecell[l]{Omnidirectional \\ Camera (upwards)} & 3                         & 3                          & 0                       & 5                              & 0                        & 0                    \\ \hdashline
+		Stereo Camera                    & 4                         & 3                          & 5                       & 5                              & 5                        & 3                    \\ \hdashline
+		Thermal Camera                   & 1                         & 5                          & 0                       & 5                              & 0                        & 1                    \\ \hdashline
+		Sonar                            & 3                         & 3                          & 0                       & 5                              & 0                        & 2                   \\ \hline		
+		\end{tabular}
+		\caption{Sensor Capabilities}
+		\label{my-label}
+		\end{adjustwidth}
+		\end{table}
+		
+%%%%%%sensor trade study table%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{table}[H]
+		\begin{adjustwidth}{-1.5in}{-1.5in}
+		\setlength{\dashlinedash}{.4pt}
+		\centering
+		\begin{tabular}{|l|c|c|c|c|c|c|}
+		\hline
+		                                     & Ability & Cost & \makecell{Hardware \\ Integration \\ Complexity} & \makecell{Software \\ Integration \\ Complexity} & \makecell{Computational \\ Intensity} & Score \\ \hline
+		Weights                              & 5       & 3    & 4                               & 5                               & 3                       &       \\ \hline
+		LiDAR + 1x Camera                    & 4       & 2    & 3                               & 4                               & 3                       & 67    \\ \hdashline
+		LiDAR + Stereo Camera                & 5       & 1    & 3                               & 3                               & 2                       & 61    \\ \hdashline
+		Omnidirectional Camera + Down Camera & 2       & 5    & 4                               & 2                               & 3                       & 60    \\ \hdashline
+		\multicolumn{1}{|l|}{\cellcolor{highlight}Stereo Camera Only} & \multicolumn{1}{c|}{\cellcolor{highlight}3}       & \multicolumn{1}{c|}{\cellcolor{highlight}4}    & \multicolumn{1}{c|}{\cellcolor{highlight}5}                               & \multicolumn{1}{c|}{\cellcolor{highlight}4}                               & \multicolumn{1}{c|}{\cellcolor{highlight}4}                       & \multicolumn{1}{c|}{\cellcolor{highlight}79}    \\ \hdashline
+		Thermal Camera + LiDAR + Camera      & 4.5     & 1    & 3                               & 2                               & 2                       & 53.5  \\ \hdashline
+		Many Cameras                         & 3       & 4    & 2                               & 2                               & 2                       & 51    \\ \hline
+		\end{tabular}
+		\caption{Perception Sensor Trade Study}
+		\label{my-label}
+		\end{adjustwidth}
+		\end{table}
+
 
 \section{Cyberphysical Architecture}
 \begin{figure}[H]

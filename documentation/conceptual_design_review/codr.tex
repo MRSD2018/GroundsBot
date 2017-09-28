@@ -1,7 +1,9 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{makecell}
 \usepackage{float}
+\usepackage{outlines}
 \graphicspath{ {img/} }
 \begin{document}
 
@@ -138,20 +140,113 @@ Reduce net rough maintenance cost
 \section{Project Management}
 \subsection{Work Plan}
 \subsubsection{Tasks}
+The GroundsBot work plan is shown in the list below.  The plan is separated into high level categories and underlying subtasks. \\
+\begin{outline}[enumerate]
+  \1 Chassis
+    \2 Complete BOM
+    \2 Design Power Distribution and Sensor Integration PCBAs
+    \2 Design Chassis
+    \2 Design GPS RTK Base Station
+    \2 Acquire Parts
+    \2 Integrate Subsystems
+  \1 Simulation
+    \2 Design Simulation Environment
+    \2 Complete Cursory Simulations
+  \1 Localization
+    \2 Integrate GPS + RTK Localization
+  \1 Perception
+    \2 Develop Static Obstacle Detection
+    \2 Develop Dynamic Obstacle Detection
+  \1 Planning
+    \2 Develop Global Route Planner
+    \2 Develop Obstacle Rerouting
+  \1 Control
+    \2 Develop Motor Control
+  \1 UI
+    \2 Create Web Application for Mapping
+\end{outline}
+
+   
 \subsubsection{Schedule}
-\begin{center}
-\begin{tabular}{ |c|c|c| }
+\textbf{Progress Review 1}: The goal for Progress Review 1 is to have all hardware design complete with parts on order. \\
+\textbf{Progress Review 2}: The goal for Progress Review 2 is to have an assembled frame/chassis, a full ROS simulation environment, and a completed GPS + RTK base station\\
+
+The full list of milestones is laid out below in Table \ref{Tab:table_milestones}\\ 
+
+\begin{table}[H]
+\begin{tabular}{|l|l|}
+\hline
+Deadline & Milestone                            \\
+\hline
+Progress Review 1 [OCT 17 2017] &
+  \makecell[l]{
+    Mechanical CAD Complete                     \\
+    Electrical CAD Complete                     \\
+    BOM Complete                                \\
+    Parts Ordered                               \\
+    ROS Environment Initialized                 \\
+  }                                             \\
   \hline
-    Task 1.1 & Jan 1 2017 \\
-    Task 1.2 & Jan 2 2017 \\
+Progress Review 2 [OCT 26 2017] &
+  \makecell[l]{
+    Chassis Assembled with Mowing Apparatus     \\
+    ROS Simulation Environment Complete         \\
+    GPS RTK Base Station Complete               \\
+  }                                             \\ 
+  \hline
+Progress Review 3 [NOV 7 2017] &
+  \makecell[l]{
+    GroundsBot System Integration Complete      \\
+    GPS RTK Integration Complete                \\
+    Control Systems Demo Complete               \\
+  }                                             \\
+  \hline
+Progress Review 4 [NOV 21 2017] &
+  \makecell[l]{
+    GroundsBot Accepts GPS Waypoints            \\
+    GroundsBot Follows GPS waypoints            \\
+    Teleoperation Test Complete                 \\
+  }                                             \\
+  \hline
+Fall Validation Experiment [NOV 28 2017] &
+  \makecell[l]{
+    GroundsBot Follows Route From Web App       \\
+    GroundsBot Differentiates Grass From Other Objects
+  }                                             \\
+  \hline
+January 2018 Milestone &
+  \makecell[l]{
+    Global Planning Algorithm Complete          \\
+    Static and Dynamic Obstacle Detection Complete\\
+  }                                             \\
+  \hline
+February 2018 Milestone &
+  \makecell[l]{
+    Read User Map Input                        \\
+    GroundsBot Reroutes Around Obstacles       \\
+  }                                            \\
+  \hline
+March 2018 &
+  \makecell[l]{
+    Full Mapping UI Complete                   \\
+    GroundsBot Autonomously Cuts Lot           \\
+  }                                            \\
+  \hline
+April 2018 &
+  \makecell[l]{
+    Final System Tests Complete                \\
+  }                                            \\
   \hline
 \end{tabular}
-\end{center}
+\caption{Project Milestones}\label{Tab:table_milestones}
+\end{table}
 
 \subsubsection{Progress Reviews}
 
 \subsection{System Validation Experiments}
 \subsubsection{Fall Validation Experiment}
+Fall Validation
+Location: Field by Doherty Apartments
 \subsubsection{Spring Validation Experiment}
 
 \subsection{Team Member Responsibilities}

@@ -2,6 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{makecell} %line breaks inside table cells
+\usepackage{changepage} %temp adjust margins
+\usepackage{arydshln} %dashed lines
 \graphicspath{ {img/} }
 \begin{document}
 
@@ -89,6 +92,48 @@ Reduce net rough maintenance cost
 
 
 \section{System Level Trade Studies}
+	\subsection{Platform Trade Study}
+		\begin{table}[H]
+		\begin{adjustwidth}{-1.5in}{-1.5in}
+		\setlength{\dashlinedash}{.4pt}
+
+		\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+		\hline
+		                                   & Speed & \makecell{Wheel \\ Compaction} & Stability & \makecell{Platform \\ Complexity} & \makecell{Odometry \\ Accuracy} & \makecell{Turning \\ Radius \\(Without tearing \\ the grass)} & \makecell{Performance \\ on Uneven \\ Terrain} & Score \\ \hline
+		Weights (1-5)                      & 3     & 2                & 1         & 3                   & 4                 & 5                                          & 5                             &       \\ \hline
+		4 wheel skid                       & 5     & 4                & 4         & 4                   & 1                 & 1                                          & 5                             & 73    \\ \hdashline
+		\makecell[l]{2 wheel differential \\ with casters}  & 4     & 3                & 4         & 5                   & 5                 & 5                                          & 5                             & 107   \\ \hdashline
+		\makecell[l]{4 wheel drive \\ standard steering}    & 5     & 4                & 4         & 2                   & 4                 & 2                                          & 5                             & 84    \\ \hdashline
+		\makecell[l]{Rear wheel drive \\ standard steering} & 5     & 4                & 4         & 3                   & 5                 & 2                                          & 5                             & 91    \\ \hdashline
+		articulated                        & 3     & 4                & 2         & 1                   & 3                 & 2                                          & 5                             & 69    \\ \hdashline
+		tracked                            & 2     & 5                & 5         & 3                   & 1                 & 5                                          & 5                             & 84    \\ \hdashline
+		3 wheel delta                      & 1     & 3                & 1         & 1                   & 1                 & 5                                          & 1                             & 47    \\ \hdashline
+		4 wheel omniwheel                  & 2     & 4                & 2         & 1                   & 5                 & 5                                          & 1                             & 69    \\ \hline
+		\end{tabular}
+		\caption{Platform Configuration Trade Study}
+		\label{my-label}
+		\end{adjustwidth}
+		\end{table}
+		
+		
+		\begin{table}[H]
+		\begin{adjustwidth}{-1.5in}{-1.5in}
+
+		\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+		\hline
+		            & \makecell{Ease of \\ Integration} & \makecell{Ease of \\ Repair} & \makecell{Ease of \\ Construction} & \makecell{Flexiblility for \\ Modifications} & Cost & Leadtime & Traction & Score \\ \hline
+		Weights (1-5)                      & 3                   & 2              & 3                    & 5                              & 3    & 2        & 4        &       \\ \hline
+		Complete DIY                       & 4                   & 5              & 2                    & 5                              & 4    & 4        & 5        & 93    \\ \hline
+		RC Lawnmower                       & 5                   & 3              & 5                    & 4                              & 1    & 2        & 5        & 83    \\ \hline
+		Modify Robot Lawnmower             & 3                   & 3              & 4                    & 1                              & 1    & 4        & 2        & 51    \\ \hline
+		Modify Electric Pushmower          & 2                   & 2              & 3                    & 1                              & 2    & 5        & 1        & 44    \\ \hline
+		Modify Electric Ride on mower      & 2                   & 1              & 3                    & 1                              & 3    & 5        & 5        & 61    \\ \hline
+		Stock platform with mower attached & 5                   & 3              & 5                    & 4                              & 1    & 3        & 3        & 77    \\ \hline
+		\end{tabular}
+		\caption{My caption}
+		\label{my-label}
+		\end{adjustwidth}
+		\end{table}
 
 \section{Cyberphysical Architecture}
 \begin{figure}[H]
@@ -117,23 +162,27 @@ Reduce net rough maintenance cost
 	
 	\subsection{Hardware}
 		\subsubsection{Platform}
-		TODO: FINISH THIS PART - dependent on trade study \\ 
-			The powertrain will consist of electric drive motors and batteries obtained from the sponsor. 
+			Based on the trade study, a differential drive system with two drive wheels and one or more caster wheels will be used. Another trade study was used to narrow down the platform to DIY platform instead of a preexisting platform. This custom platform will utilize aluminum extrusions, allowing for easy resizing of the platform as well as easy adjustment of the sensor mounts. Currently, motors and batteries from Discovery Robotics will be integrated, but alternate products may be also be considered. 
 			
 		\subsubsection{Mower}
-			In addition to navigating a plot of grass, the system also needs to mow it. This may be done by attaching an existing electric push mower to the robot platform. Alternatively, it is also possible to attach the blades from a manual reel mower to the platform. 
+			In addition to navigating a plot of grass, the system also needs to mow it. Given that a custom platform will be made, this will be done by attaching an existing electric push mower to the robot platform. Alternatively, it is also possible to attach the blades from a manual reel mower to the platform. 
 	
 	\subsection{Software}
 		\subsubsection{Planner}
-			The planner will take the user input from the UI, and translate that into a path that the robot will follow. This involves refining the outline that was provided by the user, and then finding a path that will allow for maximal coverage of the selected area. 
+			The planner subsystem consists of two parts, a global planner, and  a local planner. The global planner will take the user input from the UI, and translate that into a path that the robot will follow. This involves refining the outline that was provided by the user, and then finding a path that will allow for maximal coverage of the selected area. 
+			
+			The local planner will be responsible for adapting the route on-the-fly to avoid any obstacles that the robot may encounter. This system will also take care of the driving to and from the dock to the actual cutting area. 
 			
 		\subsubsection{Localization and Perception}
-			An accurate description of the robot's global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but vision based methods will also be investigated. 
+			An accurate description of the robot's global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but visual SLAM based methods will also be investigated. 
 			
-			The vision system will also be used for obstacle and anomaly detection. 
+			The vision system will also be used to detect boundaries of the grass as the robot gets closer to the boundary. For obstacle detection, a trade study determined that a stereo camera system would best fit the detection requirements. However, if needed, a LIDAR may be added to improve the detection accuracy. 
 		
 		\subsubsection{Mobility}
-			The mobility subsystem will be responsible for the robot going from point A to point B at any given time. Using current position information from localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then emit the necessary motor control signals to move towards this waypoint. 
+			The mobility subsystem will be responsible for the control of the robot's motors. Part of this involves the robot going from point A to point B at any given time. Using current position information from localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then emit the necessary motor control signals to move towards this waypoint. 
+			
+			The cutter motor speeds will also be controlled by this subsystem. This subsystem must both detect the speed of the motor, as well as apply the correct motor signals to maintain a constant speed when the cutter encounters an obstacle. 
+
 
 \section{Project Management}
 \subsection{Work Plan}
@@ -160,6 +209,7 @@ Reduce net rough maintenance cost
 \begin{tabular}{ |c|c|c|c|c| }
   \hline
     Manufacturer & Part No. & QTY & Description & Notes \\
+    \hline 
     Murata & C1 & 10 & my capacitor &  \\
   \hline
 \end{tabular}

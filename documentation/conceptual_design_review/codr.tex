@@ -4,6 +4,7 @@
 \usepackage{makecell}
 \usepackage{float}
 \usepackage{outlines}
+\usepackage[margin=1in]{geometry}
 \graphicspath{ {img/} }
 \begin{document}
 
@@ -84,7 +85,9 @@ Reduce net rough maintenance cost
 
 \section{Functional Architecture}
 \begin{figure}[H]
-\includegraphics[scale=0.3]{functional}
+\centering
+\def\svgwidth{\columnwidth}
+\input{img/functional.pdf_tex}
 \caption{Functional Architecture}
 \label{fig:functional}
 \end{figure}
@@ -94,12 +97,12 @@ Reduce net rough maintenance cost
 
 \section{Cyberphysical Architecture}
 \begin{figure}[H]
-\includegraphics[scale=0.2]{cyberphysical}
+\includegraphics[scale=0.2]{cyberphysical.png}
 \caption{Cyberphysical Architecture}
 \label{fig:cyberphysical}
 \end{figure}
 
-  The user interface and IO subsystems are the contact points for the operator.  The wifi access point allows the user to load mowing boundaries from their laptop or mobile device.  This also enables the user to download coverage reports and diagnostics.  Status LEDs allow the operator to understand the system status at a glance, while safety beacons alert humans to GroundsBot's presence at a distance. \\
+  The user interface and IO subsystems are the contact points for the operator.  The wifi access point allows the user to load mowing boundaries from their laptop or mobile device.  This also enables the user to download coverage reports and diagnostics.  Status LEDs allow the operator to understand the system status at a glance, while safety beacons alert humans to GroundsBot's presence at a distance.\\
 
   GroundsBot uses its sensor suite to ensure a clean cut. GPS, IMU, and Motor Encoders are used for coarse localization while the cameras are used to ensure optimal grass overlap while cutting.  Cameras and lidar also enable GroundsBot to detect static and dynamic obstacles.\\
 

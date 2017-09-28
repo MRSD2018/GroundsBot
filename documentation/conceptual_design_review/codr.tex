@@ -151,19 +151,19 @@ Reduce net rough maintenance cost
 		\setlength\tabcolsep{4pt}
 		\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
 		\hline
-		                                   & Speed & \makecell{Wheel \\ Compaction} & Stability & \makecell{Platform \\ Complexity} & \makecell{Odometry \\ Accuracy} & \makecell{Turning \\ Radius \\(Without \\ tearing \\ the grass)} & \makecell{Performance \\ on Uneven \\ Terrain} & Score \\ \hline
-		\makecell[l]{Weights \\ (1-5)}                      & 3     & 2                & 1         & 3                   & 4                 & 5                                          & 5                             &       \\ \hline
-		\makecell[l]{4 Wheel \\ Skid}                      & 5     & 4                & 4         & 4                   & 1                 & 1                                          & 5                             & 73    \\ \hdashline 
+                                                                                  & Speed & \makecell{Wheel \\ Compaction} & Stability & \makecell{Platform \\ Complexity} & \makecell{Odometry \\ Accuracy} & \makecell{Turning \\ Radius \\(Without \\ tearing \\ the grass)} & \makecell{Performance \\ on Uneven \\ Terrain} & Score \\ \hline
+		\makecell[l]{Weights \\ (1-5)}                                            & 3     & 2                & 1         & 3                   & 4                 & 5                                          & 5                             &       \\ \hline
+		\makecell[l]{4 Wheel \\ Skid}                                             & 5     & 4                & 4         & 4                   & 1                 & 1                                          & 5                             & 73    \\ \hdashline 
 		
 		%jesus christ this row is a goddamn mess BUT YOU GOTTA DO WHAT YOU GOTTA DO
-		\cellcolor{highlight}\makecell[l]{2 wheel \\ differential \\ with casters}  & \multicolumn{1}{c|}{\cellcolor{highlight}4}     & \multicolumn{1}{c|}{\cellcolor{highlight}3}                & \multicolumn{1}{c|}{\cellcolor{highlight}4}         & \multicolumn{1}{c|}{\cellcolor{highlight}5}                   & \multicolumn{1}{c|}{\cellcolor{highlight}5}                 & \multicolumn{1}{c|}{\cellcolor{highlight}5}                               & \multicolumn{1}{c|}{\cellcolor{highlight}5}                             & \multicolumn{1}{c|}{\cellcolor{highlight}107}   \\ \hdashline
+		\cellcolor{highlight}\makecell[l]{2 wheel \\ differential \\ with casters}& \multicolumn{1}{c|}{\cellcolor{highlight}4} & \multicolumn{1}{c|}{\cellcolor{highlight}3} & \multicolumn{1}{c|}{\cellcolor{highlight}4} & \multicolumn{1}{c|}{\cellcolor{highlight}5} & \multicolumn{1}{c|}{\cellcolor{highlight}5} & \multicolumn{1}{c|}{\cellcolor{highlight}5} & \multicolumn{1}{c|}{\cellcolor{highlight}5} & \multicolumn{1}{c|}{\cellcolor{highlight}107}   \\ \hdashline
 		
-		\makecell[l]{AWD \\ Standard \\ Steering}    & 5     & 4                & 4         & 2                   & 4                 & 2                                          & 5                             & 84    \\ \hdashline
-		\makecell[l]{RWD \\ Standard \\ Steering} & 5     & 4                & 4         & 3                   & 5                 & 2                                          & 5                             & 91    \\ \hdashline
-		\makecell[l]{ \\ Articulated \\ \quad }                       & 3     & 4                & 2         & 1                   & 3                 & 2                                          & 5                             & 69    \\ \hdashline
-		\makecell[l]{\\ Tracked  \\ \quad}                          & 2     & 5                & 5         & 3                   & 1                 & 5                                          & 5                             & 84    \\ \hdashline
-		\makecell[l]{3 Wheel \\ Delta}                      & 1     & 3                & 1         & 1                   & 1                 & 5                                          & 1                             & 47    \\ \hdashline
-		\makecell[l]{4 Wheel \\ Omniwheel}                 & 2     & 4                & 2         & 1                   & 5                 & 5                                          & 1                             & 69    \\ \hline
+		\makecell[l]{AWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 2                   & 4                 & 2                                          & 5                             & 84    \\ \hdashline
+		\makecell[l]{RWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 3                   & 5                 & 2                                          & 5                             & 91    \\ \hdashline
+		\makecell[l]{ \\ Articulated \\ \quad }                                   & 3     & 4                & 2         & 1                   & 3                 & 2                                          & 5                             & 69    \\ \hdashline
+		\makecell[l]{\\ Tracked  \\ \quad}                                        & 2     & 5                & 5         & 3                   & 1                 & 5                                          & 5                             & 84    \\ \hdashline
+		\makecell[l]{3 Wheel \\ Delta}                                            & 1     & 3                & 1         & 1                   & 1                 & 5                                          & 1                             & 47    \\ \hdashline
+		\makecell[l]{4 Wheel \\ Omniwheel}                                        & 2     & 4                & 2         & 1                   & 5                 & 5                                          & 1                             & 69    \\ \hline
 		\end{tabular}
 		\caption{Platform Configuration Trade Study}
 		\label{my-label}
@@ -180,14 +180,14 @@ Reduce net rough maintenance cost
 
 		\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
 		\hline
-		            & \makecell{Ease \\ of \\ Integration} & \makecell{Ease \\ of \\ Repair} & \makecell{Ease \\ of \\ Construction} & \makecell{Flexiblility \\ for \\ Modifications} & Cost & \makecell{Lead- \\ time} & Traction & Score \\ \hline
-		Weights (1-5)                      & 3                   & 2              & 3                    & 5                              & 3    & 2        & 4        &       \\ \hline
-		\multicolumn{1}{|l|}{\cellcolor{highlight}Complete DIY} & \multicolumn{1}{c|}{\cellcolor{highlight}4}                   & \multicolumn{1}{c|}{\cellcolor{highlight}5}              & \multicolumn{1}{c|}{\cellcolor{highlight}2}                    & \multicolumn{1}{c|}{\cellcolor{highlight}5}                              & \multicolumn{1}{c|}{\cellcolor{highlight}4}    & \multicolumn{1}{c|}{\cellcolor{highlight}4}        & \multicolumn{1}{c|}{\cellcolor{highlight}5}        & \multicolumn{1}{c|}{\cellcolor{highlight}93}    \\ \hdashline
-		RC Lawnmower                       & 5                   & 3              & 5                    & 4                              & 1    & 2        & 5        & 83    \\ \hdashline
-		\makecell[l]{Modify Robot \\ Lawnmower}           & 3                   & 3              & 4                    & 1                              & 1    & 4        & 2        & 51    \\ \hdashline
-		\makecell[l]{Modify Electric \\ Pushmower}         & 2                   & 2              & 3                    & 1                              & 2    & 5        & 1        & 44    \\ \hdashline
-		\makecell[l]{Modify Electric \\ Ride on Mower}      & 2                   & 1              & 3                    & 1                              & 3    & 5        & 5        & 61    \\ \hdashline
-		\makecell[l]{Stock Platform with \\ Mower Attached} & 5                   & 3              & 5                    & 4                              & 1    & 3        & 3        & 77    \\ \hline
+                                                               & \makecell{Ease \\ of \\ Integration} & \makecell{Ease \\ of \\ Repair} & \makecell{Ease \\ of \\ Construction} & \makecell{Flexiblility \\ for \\ Modifications} & Cost & \makecell{Lead- \\ time} & Traction & Score \\ \hline
+		Weights (1-5)                                          & 3                   & 2              & 3                    & 5                              & 3    & 2        & 4        &       \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor{highlight}Complete DIY}& \multicolumn{1}{c|}{\cellcolor{highlight}4} & \multicolumn{1}{c|}{\cellcolor{highlight}5} & \multicolumn{1}{c|}{\cellcolor{highlight}2} & \multicolumn{1}{c|}{\cellcolor{highlight}5} & \multicolumn{1}{c|}{\cellcolor{highlight}4} & \multicolumn{1}{c|}{\cellcolor{highlight}4} & \multicolumn{1}{c|}{\cellcolor{highlight}5} & \multicolumn{1}{c|}{\cellcolor{highlight}93}    \\ \hdashline
+		RC Lawnmower                                           & 5                   & 3              & 5                    & 4                              & 1    & 2        & 5        & 83    \\ \hdashline
+		\makecell[l]{Modify Robot \\ Lawnmower}                & 3                   & 3              & 4                    & 1                              & 1    & 4        & 2        & 51    \\ \hdashline
+		\makecell[l]{Modify Electric \\ Pushmower}             & 2                   & 2              & 3                    & 1                              & 2    & 5        & 1        & 44    \\ \hdashline
+		\makecell[l]{Modify Electric \\ Ride on Mower}         & 2                   & 1              & 3                    & 1                              & 3    & 5        & 5        & 61    \\ \hdashline
+		\makecell[l]{Stock Platform with \\ Mower Attached}    & 5                   & 3              & 5                    & 4                              & 1    & 3        & 3        & 77    \\ \hline
 		\end{tabular}
 		\caption{Platform Base Trade Study}
 		\label{my-label}
@@ -204,15 +204,15 @@ Reduce net rough maintenance cost
 		\centering
 		\begin{tabular}{|l|c|c|c|c|c|c|}
 		\hline
-		                                 & \makecell{Identify \\ Static  \\ Obstacles} & \makecell{Identify \\ Dynamic \\ Obstacles} & \makecell{Detect \\ Grass / No Grass} & \makecell{Functions \\ Outdoors \\ In Daylight} &\makecell{Detect \\ Grass \\ Transitions} & \makecell{Sense \\ Driveable \\ Land} \\ \hline
-		LiDAR                            & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
-		Camera                           & 3                         & 3                          & 5                       & 5                              & 5                        & 1                    \\ \hdashline
+                                                                     & \makecell{Identify \\ Static  \\ Obstacles} & \makecell{Identify \\ Dynamic \\ Obstacles} & \makecell{Detect \\ Grass / No Grass} & \makecell{Functions \\ Outdoors \\ In Daylight} &\makecell{Detect \\ Grass \\ Transitions} & \makecell{Sense \\ Driveable \\ Land} \\ \hline
+		LiDAR                                                        & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
+		Camera                                                       & 3                         & 3                          & 5                       & 5                              & 5                        & 1                    \\ \hdashline
 		
-		\multicolumn{1}{|l|}{\cellcolor{badhighlight!70}RGBD Camera }                     & \multicolumn{1}{c|}{\cellcolor{badhighlight!70} 5}                           & \multicolumn{1}{c|}{\cellcolor{badhighlight!70} 5 }                            & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 }                         & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 }   & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 }                           & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 }                       \\ \hdashline
-		\makecell[l]{Omnidirectional \\ Camera (upwards)} & 3                         & 3                          & 0                       & 5                              & 0                        & 0                    \\ \hdashline
-		Stereo Camera                    & 4                         & 3                          & 5                       & 5                              & 5                        & 3                    \\ \hdashline
-		Thermal Camera                   & 1                         & 5                          & 0                       & 5                              & 0                        & 1                    \\ \hdashline
-		Sonar                            & 3                         & 3                          & 0                       & 5                              & 0                        & 2                   \\ \hline		
+		\multicolumn{1}{|l|}{\cellcolor{badhighlight!70}RGBD Camera }& \multicolumn{1}{c|}{\cellcolor{badhighlight!70} 5} & \multicolumn{1}{c|}{\cellcolor{badhighlight!70} 5 } & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 }   & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c|}{\cellcolor{badhighlight!70}5 } \\ \hdashline
+		\makecell[l]{Omnidirectional \\ Camera (upwards)}            & 3                         & 3                          & 0                       & 5                              & 0                        & 0                    \\ \hdashline
+		Stereo Camera                                                & 4                         & 3                          & 5                       & 5                              & 5                        & 3                    \\ \hdashline
+		Thermal Camera                                               & 1                         & 5                          & 0                       & 5                              & 0                        & 1                    \\ \hdashline
+		Sonar                                                        & 3                         & 3                          & 0                       & 5                              & 0                        & 2                   \\ \hline		
 		\end{tabular}
 		\caption{Sensor Capabilities}
 		\label{my-label}
@@ -228,14 +228,14 @@ Reduce net rough maintenance cost
 		\centering
 		\begin{tabular}{|l|c|c|c|c|c|c|}
 		\hline
-		                                     & Ability & Cost & \makecell{Hardware \\ Integration \\ Complexity} & \makecell{Software \\ Integration \\ Complexity} & \makecell{Computational \\ Intensity} & Score \\ \hline
-		Weights                              & 5       & 3    & 4                               & 5                               & 3                       &       \\ \hline
-		LiDAR + 1x Camera                    & 4       & 2    & 3                               & 4                               & 3                       & 67    \\ \hdashline
-		LiDAR + Stereo Camera                & 5       & 1    & 3                               & 3                               & 2                       & 61    \\ \hdashline
-		\makecell[l]{Omnidirectional Camera + \\ Down Camera} & 2       & 5    & 4                               & 2                               & 3                       & 60    \\ \hdashline
-		\multicolumn{1}{|l|}{\cellcolor{highlight}Stereo Camera Only} & \multicolumn{1}{c|}{\cellcolor{highlight}3}       & \multicolumn{1}{c|}{\cellcolor{highlight}4}    & \multicolumn{1}{c|}{\cellcolor{highlight}5}                               & \multicolumn{1}{c|}{\cellcolor{highlight}4}                               & \multicolumn{1}{c|}{\cellcolor{highlight}4}                       & \multicolumn{1}{c|}{\cellcolor{highlight}79}    \\ \hdashline
-		\makecell[l]{Thermal Camera + \\ LiDAR + Camera}      & 4.5     & 1    & 3                               & 2                               & 2                       & 53.5  \\ \hdashline
-		Many Cameras                         & 3       & 4    & 2                               & 2                               & 2                       & 51    \\ \hline
+                                                                     & Ability & Cost & \makecell{Hardware \\ Integration \\ Complexity} & \makecell{Software \\ Integration \\ Complexity} & \makecell{Computational \\ Intensity} & Score \\ \hline
+		Weights                                                      & 5       & 3    & 4                               & 5                               & 3                       &       \\ \hline
+		LiDAR + 1x Camera                                            & 4       & 2    & 3                               & 4                               & 3                       & 67    \\ \hdashline
+		LiDAR + Stereo Camera                                        & 5       & 1    & 3                               & 3                               & 2                       & 61    \\ \hdashline
+		\makecell[l]{Omnidirectional Camera + \\ Down Camera}        & 2       & 5    & 4                               & 2                               & 3                       & 60    \\ \hdashline
+		\multicolumn{1}{|l|}{\cellcolor{highlight}Stereo Camera Only}& \multicolumn{1}{c|}{\cellcolor{highlight}3} & \multicolumn{1}{c|}{\cellcolor{highlight}4} & \multicolumn{1}{c|}{\cellcolor{highlight}5} & \multicolumn{1}{c|}{\cellcolor{highlight}4} & \multicolumn{1}{c|}{\cellcolor{highlight}4} & \multicolumn{1}{c|}{\cellcolor{highlight}79}    \\ \hdashline
+		\makecell[l]{Thermal Camera + \\ LiDAR + Camera}             & 4.5     & 1    & 3                               & 2                               & 2                       & 53.5  \\ \hdashline
+		Many Cameras                                                 & 3       & 4    & 2                               & 2                               & 2                       & 51    \\ \hline
 		\end{tabular}
 		\caption{Perception Sensor Trade Study}
 		\label{my-label}

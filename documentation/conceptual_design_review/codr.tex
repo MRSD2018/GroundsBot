@@ -126,6 +126,8 @@ Reduce net rough maintenance cost
 \subsection{Sensor Suite}
 
 \section{Functional Architecture}
+  There are three sub-systems that combine to accomplish the functionality needed for GroundsBot (Figure~\ref{fig:functional}). The User Interface accepts inputs from the groundskeeper, generating detailed mowing regions. The Charging Dock acts as a home point for charging the robot, while also providing a reference signal for correcting localization issues. The Mowing Robot includes internal sub-systems which enable the robot to navigate the golf course, cut the rough, and return to the charging dock when needed.\\
+  
 \begin{figure}[H]
 \centering
 \def\svgwidth{\columnwidth}
@@ -134,6 +136,9 @@ Reduce net rough maintenance cost
 \label{fig:functional}
 \end{figure}
 
+  The Mowing Robot sub-system is responsible for many critical tasks in the overall mowing system. The Mowing Platform is one internal sub-system that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Platform Electronics sub-system provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this sub-system is crucial for the remaining systems, enabling full mowing autonomy.\\
+  
+  The remaining sub-systems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide Groundsbot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
 
 \section{System Level Trade Studies}
 	\subsection{Platform Trade Study}
@@ -402,11 +407,24 @@ Location: Field by Doherty Apartments
 \subsection{Team Member Responsibilities}
 \subsection{Provisional BOM}
 \begin{center}
-\begin{tabular}{ |c|c|c|c|c| }
+\begin{tabular}{ |c|c|c|c|c|c| }
   \hline
-    Manufacturer & Part No. & QTY & Description & Notes \\
+    Manufacturer & Part No. & QTY & Cost & Description\\
     \hline 
-    Murata & C1 & 10 & my capacitor &  \\
+    SuperDroid Robots & TD-111-135 & 1 & \$900 & Wheelchair Motors \& Encoders \\
+	SuperDroid Robots & TE-240-030 & 1 & \$330 & Motor Controller \\
+	SuperDroid Robots & TD-178-000 & 1 & \$150 & 13" Tiller Tires and Mounting \\
+	Caster Connection & S-5210-PRB & 1 & \$70 & 10" Pneumatic Swivel Caster \\
+	Smart Battery & SB2425 & 1 & \$700 & 24V 25aH Battery \\
+    Smart Battery & DP-RS2 & 1 & \$165 & Battery Charger \\
+    NVIDIA & Jetson TX2 Dev Kit & 1 & \$560 &  Embedded GPU \\
+	ITEM & Extrusion & 1 & \$400 & Extrusions and Joints \\
+	McMaster-Carr & Mechanical Components & 1 & \$500 & Misc Fasteners, Bearings \\
+	DigiKey & Electrical Components & 1 & \$600 & Misc Connectors, Components \\
+	\hline 
+	Total: &&& \$4,375 &\\
+	
+    
   \hline
 \end{tabular}
 \end{center}

@@ -8,6 +8,7 @@
 \usepackage[table]{xcolor} %color tables
 \usepackage{outlines}
 \usepackage{multirow}
+\usepackage[export]{adjustbox}% http://ctan.org/pkg/adjustbox
 \usepackage{caption}
 \usepackage{etoolbox}
 \usepackage[margin=1in]{geometry}
@@ -71,40 +72,69 @@ Autonomous mowers are commercially available today, however most of these units 
 \newpage
 \section{Use Case}
 \begin{table}[H]
-  \def\arraystretch{5}
+  \def\arraystretch{4}
+   \setlength\tabcolsep{8pt}
 
 
-\begin{tabular}{cl}
-\includegraphics[width=6cm]{usecase1_1.png} \\
-\includegraphics[width=6cm]{usecase1_2.png} \\
-\includegraphics[width=6cm]{usecase1_3.png} \\
-\includegraphics[width=6cm]{usecase1_4.png} \\
-\end{tabular}
+\begin{tabularx}{\textwidth}{cX}
+\includegraphics[width=6cm, valign=t]{usecase1_1.png} & 
+Meet Steve Christensen.  He's a golf course superintendent responsible for keeping the golf course looking professional.  Right now, Steve and his groundskeeping team spend 65\% of their time just mowing grass.  To save him and his team time, Steve just bought a GroundsBot unit to autonomously mow the rough around his golf course. \\
+\includegraphics[width=6cm, valign=t]{usecase1_2.png} &
+To start the mowing process, Steve first has to draw an outline of the area he wants mowed.  He highlights his golf course boundaries, parking lots, fairways, greens, and sandtraps GroundsBot should avoid.
+\\
+\includegraphics[width=6cm, valign=t]{usecase1_3.png} &
+With area to mow outlined, the GroundsBot planning software creates a global route to cover all of the requested area.  It avoids large obstacles like fairways, forests, and parking lots.
+\\
+\includegraphics[width=6cm, valign=t]{usecase1_4.png} &
+GroundsBot loads the global plan onto the robotic unit, and localizes itself with GPS to determine exactly where it is on the golf course.
+\\
+\end{tabularx}
 \end{table}
 
 \begin{table}[H]
-  \def\arraystretch{5}
+   \def\arraystretch{4}
+   \setlength\tabcolsep{8pt}
 
-\begin{tabular}{cl}
-\includegraphics[width=6cm]{usecase1_5.png} \\
-\includegraphics[width=6cm]{usecase1_6.png} \\
-\includegraphics[width=6cm]{usecase1_7.png} \\
-\includegraphics[width=6cm]{usecase2_1.png} \\
 
-\end{tabular}
+\begin{tabularx}{\textwidth}{cX}
+\includegraphics[width=6cm, valign=t]{usecase1_5.png} &
+With the unit located, and a global plan uploaded, GroundsBot can start mowing the area specified by Steve.  It moves back a forth cutting the grass precisely just like Steve and his groundskeeping team would do.
+\\
+\includegraphics[width=6cm, valign=t]{usecase1_6.png} &
+If GroundsBot runs into unplanned obstacles like sandtraps or individual trees, GroundsBot avoids the obstacle and cuts a distance of 1ft away from the obstacle.  Once GroundsBot has avoided the obstacle in its path, it continues onto its original plan.
+\\
+\includegraphics[width=6cm, valign=t]{usecase1_7.png} &
+GroundsBot has to cut the hard to reach places on a golf course too, like steep hills.  GroundsBot can cut on hills with up to 30 degree slope.
+\\
+\includegraphics[width=6cm, valign=t]{usecase2_1.png} &
+Once GroundsBot is finished or low on power, it notifies Steve and returns back to where it first initialized.
+\\
+
+\end{tabularx}
 \end{table}
 
 \begin{table}[H]
-  \def\arraystretch{5}
+   \def\arraystretch{4}
+   \setlength\tabcolsep{8pt}
 
-\begin{tabular}{cl}
-\includegraphics[width=6cm]{usecase2_2.png} \\
-\includegraphics[width=6cm]{usecase2_3.png} \\
-\includegraphics[width=6cm]{usecase2_4.png} \\
-\includegraphics[width=6cm]{usecase2_5.png} \\
 
-\end{tabular}
+\begin{tabularx}{\textwidth}{cX}
+\includegraphics[width=6cm, valign=t]{usecase2_2.png} &
+GroundsBot collected a lot of data while it was out cutting.  It transfers diagnostics, coverage reports, and cutting data to Steve’s mobile device.
+\\
+\includegraphics[width=6cm, valign=t]{usecase2_3.png} &
+From here, Steve can analyze what areas of the course GroundsBot missed, and what areas he has to send his team out to trim or tidy up.
+\\
+\includegraphics[width=6cm, valign=t]{usecase2_4.png} &
+Steve sends out his groundskeeping team to quickly address missed spots or edging.  This is a much faster experience for the team because they only have to touch up a few areas on the course.
+\\
+\includegraphics[width=6cm, valign=t]{usecase2_5.png} &
+With the course looking professional, and Steve and his groundskeeping team happy they don’t have to worry about mowing, GroundsBot gets recharged, ready for another day of mowing.
+\\
+
+\end{tabularx}
 \end{table}
+
 
 \newpage
 \section{System Level Requirements}

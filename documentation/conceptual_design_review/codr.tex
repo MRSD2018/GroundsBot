@@ -12,6 +12,7 @@
 \usepackage{tabularx}
 \usepackage{arydshln} %dashed lines (must load in last)
 
+
 \graphicspath{ {img/} }
 
 %\renewcommand{\arraystretch}{.15}
@@ -25,12 +26,15 @@
 \definecolor{badhighlight}{HTML}{FF0000}
 
 
-\title{GroundsBot:Autonomous Golf Course Maintenance}
+\title{GroundsBot: Autonomous Golf Course Maintenance}
 \date{September 2017}
 \author{Team A        \\ David Evans \\
         Adam Driscoll \\ Henry Chen  \\
         Josh Bennett  \\ Joe Phaneuf \\ }
+
 \maketitle
+\def\svgwidth{\columnwidth}
+\input{img/groundsbot_logo.pdf_tex}
 \newpage
 
 \tableofcontents
@@ -70,6 +74,7 @@ Groundsbot shall:
   \label{table:mandatory performance}
   \def\arraystretch{1.5}
   	\begin{tabularx}{\textwidth}{ lXX }
+  	  	\hline
 		\textbf{ID} & \textbf{Requirement} & \textbf{Description} \\
     	M.P.1 &
     	First time user inputs map within 15 minutes &
@@ -103,6 +108,7 @@ Groundsbot shall:
   \label{table: desirable performance}
   \def\arraystretch{1.5}
   \begin{tabularx}{\textwidth}{ cXX }
+      \hline
 	  \textbf{ID} & \textbf{Requirement} & \textbf{Description} \\
 	  D.P.1 &
 	  Mow to within 3 inches of a detected obstacles &
@@ -127,6 +133,7 @@ Groundsbot shall:
     \label{table: mandatory non-functional}
     \def\arraystretch{1.5}
     \begin{tabularx}{\textwidth}{ lXX }
+     \hline
   	 \textbf{ID} & \textbf{Requirement} & \textbf{Description} \\
   	  M.N.1 &
   	  Bot has emergency stop &
@@ -148,6 +155,7 @@ Groundsbot shall:
   	\label{table: desirable non-functional}
   	\def\arraystretch{1.5}
 	\begin{tabularx}{\textwidth}{ cXX }
+  	\hline
   	  \textbf{ID} & \textbf{Requirement} &
   	  \textbf{Description} \\
   	  D.N.1 &
@@ -181,28 +189,30 @@ Groundsbot shall:
 
 \section{System Level Trade Studies}
 	\subsection{Platform Trade Study}
-	
+
 %%%%%%%%%%%%%%platform config table%%%%%%%%%%%%%%%%%%%%%%%%	
 		\begin{table}[H]
+		
+		
+		\caption{Platform Configuration Trade Study}
+		\label{PlatformConfigTable}
 		\begin{adjustwidth}{-1in}{-1in}
 		\centering
 		\setlength{\dashlinedash}{.5pt}
 		\setlength\tabcolsep{4pt}
 		\def\arraystretch{1.9}
 		
-		\caption{Platform Configuration Trade Study}
-		\label{PlatformConfigTable}
-		\vspace{1em}
 
 		\begin{tabular}{lcccccccc}
-                                                                                  & \makecell{\\ \\ Speed} & \makecell{\\ Wheel \\ Compaction} & \makecell{\\ \\ Stability} & \makecell{\\ Platform \\ Complexity} & \makecell{\\ Odometry \\ Accuracy} & \makecell{\\ Turning \\ Radius } & \makecell{Performance \\ on Uneven \\ Terrain} & \makecell{\\ \\ Score} \\ \hdashline
+		\hline
+                                                                                  & \makecell{\\ \\ \textbf{Speed}} & \makecell{\\ \textbf{Wheel} \\ \textbf{Compaction}} & \makecell{\\ \\ \textbf{Stability}} & \makecell{\\ \textbf{Platform} \\ \textbf{Complexity}} & \makecell{\\ \textbf{Odometry} \\ \textbf{Accuracy}} & \makecell{\\ \textbf{Turning} \\ \textbf{Radius} } & \makecell{\textbf{Performance} \\ \textbf{on Uneven} \\ \textbf{Terrain}} & \makecell{\\ \\ \textbf{Score}} \\ 
 		\makecell[l]{Weights \\ (1-5)}                                            & 3     & 2                & 1         & 3                   & 4                 & 5                                          & 5                             &       \\ \hline
 		
 		\\[-3ex]
 		\makecell[l]{4 Wheel \\ Skid}                                             & 5     & 4                & 4         & 4                   & 1                 & 1                                          & 5                             & 73    \\ \hdashline 
 		
 		%jesus christ this row is a goddamn mess BUT YOU GOTTA DO WHAT YOU GOTTA DO
-		\cellcolor{highlight}\makecell[l]{2 wheel \\ differential \\ with casters}& \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}3} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}107}   \\ \hdashline
+		\cellcolor{highlight}\makecell[l]{2 Wheel \\ Differential \\ with Casters}& \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}3} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}107}   \\ \hdashline
 		
 		\makecell[l]{AWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 2                   & 4                 & 2                                          & 5                             & 84    \\ \hdashline
 		\makecell[l]{RWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 3                   & 5                 & 2                                          & 5                             & 91    \\ \hdashline
@@ -225,11 +235,11 @@ Groundsbot shall:
 		\caption{Platform Base Trade Study}
 		\label{PlatformBaseTable} 
 
-		\vspace{1em}
 
 		\begin{tabular}{lcccccccc}
-
-                                                               & \makecell{Ease \\ of \\ Integration} & \makecell{Ease \\ of \\ Repair} & \makecell{Ease \\ of \\ Construction} & \makecell{Flexiblility \\ for \\ Modifications} & \makecell{\\ \\ Cost} & \makecell{ \\ Lead- \\ time} & \makecell{\\ \\ Traction} & \makecell{\\ \\ Score} \\ \hdashline
+		\hline
+        
+                                                               & \makecell{\textbf{Ease} \\\textbf{ of }\\ \textbf{Integration}} & \makecell{\textbf{Ease} \\ \textbf{of} \\ \textbf{Repair}} & \makecell{\textbf{Ease} \\ \textbf{of} \\ \textbf{Construction}} & \makecell{\textbf{Flexiblility} \\ \textbf{for} \\ \textbf{Modifications}} & \makecell{\\ \\ \textbf{Cost}} & \makecell{ \\ \textbf{Lead-} \\ \textbf{time}} & \makecell{\\ \\ \textbf{Traction}} & \makecell{\\ \\ \textbf{Score}} \\
 		Weights (1-5)                                          & 3                   & 2              & 3                    & 5                              & 3    & 2        & 4        &       \\ \hline
 		
 		\\[-2ex]
@@ -256,10 +266,9 @@ Groundsbot shall:
 
 		\caption{Sensor Capabilities}
 		\label{SensorCapabilitiesTable}
-		\vspace{1em}
 		\begin{tabular}{lcccccc}
-		
-                                                                     & \makecell{Identify \\ Static  \\ Obstacles} & \makecell{Identify \\ Dynamic \\ Obstacles} & \makecell{Detect \\ Grass / \\ No Grass} & \makecell{Functions \\ Outdoors \\ In Daylight} &\makecell{Detect \\ Grass \\ Transitions} & \makecell{Sense \\ Driveable \\ Land} \\ \hline
+		\hline
+                                                                     & \makecell{\textbf{Identify} \\ \textbf{Static}  \\ \textbf{Obstacles}} & \makecell{\textbf{Identify} \\ \textbf{Dynamic} \\ \textbf{Obstacles}} & \makecell{\textbf{Detect} \\ \textbf{Grass /} \\ \textbf{No Grass}} & \makecell{\textbf{Functions} \\ \textbf{Outdoors} \\ \textbf{In Daylight}} &\makecell{\textbf{Detect} \\ \textbf{Grass} \\ \textbf{Transitions}} & \makecell{\textbf{Sense} \\ Driveable \\ \textbf{Land}} \\ 
 		\\[-2ex]
 		LiDAR                                                        & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
 		Camera                                                       & 3                         & 3                          & 5                       & 5                              & 5                        & 1                    \\ \hdashline
@@ -285,10 +294,10 @@ Groundsbot shall:
 		\caption{Perception Sensor Trade Study}
 		\label{PerceptionSensorTable}
 		
-		\vspace{1em}
 
 		\begin{tabular}{lcccccc}
-                                                                     & \makecell{\\ \\ Ability} & \makecell{\\ \\ Cost} & \makecell{Hardware \\ Integration \\ Complexity} & \makecell{Software \\ Integration \\ Complexity} & \makecell{ \\ Computational \\ Intensity} & \makecell{\\ \\ Score} \\ \hdashline
+		\hline
+                                                                     & \makecell{\\ \\ \textbf{Ability}} & \makecell{\\ \\ \textbf{Cost}} & \makecell{\textbf{Hardware} \\ \textbf{Integration} \\ \textbf{Complexity}} & \makecell{\textbf{Software} \\ \textbf{Integration} \\ \textbf{Complexity}} & \makecell{ \\ \textbf{Computational} \\ \textbf{Intensity}} & \makecell{\\ \\ \textbf{Score}} \\ 
 		Weights                                                      & 5       & 3    & 4                               & 5                               & 3                       &       \\ \hline
 		\\[-2ex]
 		LiDAR + 1x Camera                                            & 4       & 2    & 3                               & 4                               & 3                       & 67    \\ \hdashline
@@ -393,10 +402,10 @@ The full list of milestones is laid out below in Table \ref{Tab:table_milestones
 \def\arraystretch{1.2}
 
 \caption{Project Milestones}\label{Tab:table_milestones}
-\vspace{1em}
+
 
 \begin{tabular}{ll}
-
+\hline
 \textbf{Deadline} & \textbf{Milestone}                            \\
 \\
 Progress Review 1 [OCT 17 2017] & Mechanical CAD Complete \\
@@ -512,10 +521,10 @@ Test Procedure:
 \begin{table}[H]
 \centering
 \def\arraystretch{1.1}
+\caption{Provisional BOM}\label{Tab:provisional_bom}
 \begin{tabular}{ llccl }
- 
-    Manufacturer & Part No. & QTY & Cost & Description\\
-    \hline 
+\hline
+    \textbf{Manufacturer} & \textbf{Part No.} & \textbf{QTY} & \textbf{Cost} & \textbf{Description}\\
     \\[-.8ex]
     SuperDroid Robots & TD-111-135 & 1 & \$900 & Wheelchair Motors \& Encoders \\
 	SuperDroid Robots & TE-240-030 & 1 & \$330 & Motor Controller \\

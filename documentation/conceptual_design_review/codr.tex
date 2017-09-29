@@ -415,17 +415,17 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 	
 	\subsection{Software}
 		\subsubsection{Planner}
-			The planner subsystem consists of two parts, a global planner, and  a local planner. The global planner will take the user input from the UI, and translate that into a path that the robot will follow. This involves refining the outline that was provided by the user, and then finding a path that will allow for maximal coverage of the selected area. 
+			The planner subsystem consists of two parts, a global planner, and  a local planner. The global planner will take the user input from the UI, and translate that into a path that the robot will follow. This involves refining the outline that was provided by the user, and then finding a path that will allow for maximal coverage of the selected area. \\ 
 			
 			The local planner will be responsible for adapting the route on-the-fly to avoid any obstacles that the robot may encounter. This system will also take care of the driving to and from the dock to the actual cutting area. 
 			
 		\subsubsection{Localization and Perception}
-			An accurate description of the robot's global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but visual SLAM based methods will also be investigated. 
+			An accurate description of the robot's global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but visual SLAM based methods will also be investigated. \\
 			
 			The vision system will also be used to detect boundaries of the grass as the robot gets closer to the boundary. For obstacle detection, a trade study determined that a stereo camera system would best fit the detection requirements. However, if needed, a LIDAR may be added to improve the detection accuracy. 
 		
 		\subsubsection{Mobility}
-			The mobility subsystem will be responsible for the control of the robot's motors. Part of this involves the robot going from point A to point B at any given time. Using current position information from localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then emit the necessary motor control signals to move towards this waypoint. 
+			The mobility subsystem will be responsible for the control of the robot's motors. Part of this involves the robot going from point A to point B at any given time. Using current position information from localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then emit the necessary motor control signals to move towards this waypoint. \\
 			
 			The cutter motor speeds will also be controlled by this subsystem. This subsystem must both detect the speed of the motor, as well as apply the correct motor signals to maintain a constant speed when the cutter encounters an obstacle. 
 
@@ -462,6 +462,7 @@ The GroundsBot work plan is shown in the list below.  The plan is separated into
 
    
 \subsubsection{Schedule}
+\noindent
 \textbf{Progress Review 1}: The goal for Progress Review 1 is to have all hardware design complete with parts on order. \\
 \textbf{Progress Review 2}: The goal for Progress Review 2 is to have an assembled frame/chassis, a full ROS simulation environment, and a completed GPS + RTK base station\\
 

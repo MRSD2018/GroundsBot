@@ -40,6 +40,7 @@
 \tableofcontents
 \newpage
 
+\newpage
 \section{Project Description}
 
 \begin{center}
@@ -51,8 +52,10 @@ Humans spend a lot of time mowing grass. This is particularly true for golf cour
 \\
 Autonomous mowers are commercially available today, however most of these units require buried wires, beacons, or extensive mapping to provide boundaries. For a golf course, the mowing area is so large that those setup methods are a barrier to deployment. The GroundsBot team aims to deliver a prototype autonomous mower that can be deployed with a simple rough user sketch on a map.
 
+\newpage
 \section{Use Case}
 
+\newpage
 \section{System Level Requirements}
 
 The system requirements were decided upon to demonstrate a proof of concept autonomous lawn mower that can be set up with minimal added infrastructure. The only added infrastructure will be a docking station for GroundsBot. To accomplish this, GroundsBot must be able to localize with extreme accuracy in an unknown environment. GroundsBot must also be able to navigate consistently along a mowing path plan. GroundsBot must be able to detect and avoid any obstacles along the way.
@@ -162,6 +165,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \end{center}
 
 
+\newpage
 \section{Functional Architecture}
   There are three sub-systems that combine to accomplish the functionality needed for GroundsBot (Figure~\ref{fig:functional}). The User Interface accepts inputs from the groundskeeper, generating detailed mowing regions. The Charging Dock acts as a home point for charging the robot, while also providing a reference signal for correcting localization issues. The Mowing Robot includes internal sub-systems which enable the robot to navigate the golf course, cut the rough, and return to the charging dock when needed.\\
   
@@ -177,6 +181,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
   
   The remaining sub-systems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide Groundsbot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
 
+\newpage
 \section{System Level Trade Studies}
 	\subsection{Platform Trade Study}
 
@@ -337,6 +342,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		\end{table}
 
 
+\newpage
 \section{Cyberphysical Architecture}
 \begin{figure}[H]
 \includegraphics[scale=0.2]{cyberphysical.png}
@@ -356,6 +362,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 
 
 
+\newpage
 \section{Subsystem Descriptions}
 	\subsection{UI}
 	An important aspect of the project is a way for the user to communicate his desired mowing path to the robot. This input method must be separate from the robot itself, allowing the user to be somewhere else as the robot mows autonomously. 
@@ -386,6 +393,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 			The cutter motor speeds will also be controlled by this subsystem. This subsystem must both detect the speed of the motor, as well as apply the correct motor signals to maintain a constant speed when the cutter encounters an obstacle. 
 
 
+\newpage
 \section{Project Management}
 \subsection{Work Plan}
 \subsubsection{Tasks}
@@ -569,6 +577,7 @@ Test Procedure:
 \end{table}
 
 \subsection{Risk Management}
+\newpage
 \section{References}
 
 \end{document}

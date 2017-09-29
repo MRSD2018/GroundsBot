@@ -595,11 +595,14 @@ Test Procedure:
 \end{table}
 
 \subsection{Risk Management}
+
+\begingroup
 \newpage
 \section{References}
-\begin{thebibliography}{1}
+\renewcommand{\section}[2]{}% %Suppress bibliography header, doesn't work with toc
+\begin{thebibliography}{}
 \bibitem{clubbenchmarking} 
-\textit{http://www.clubbenchmarking.com/blog/golf-course-maintenance-how-much-should-you-spend}. 
+http://www.clubbenchmarking.com/blog/golf-course-maintenance-how-much-should-you-spend
 \bibitem{husky} 
 https://www.clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/
 \bibitem{husqvarna} 
@@ -615,6 +618,6 @@ Guenther, Steve [Carnegie Mellon University Director of Facilities Operations]. 
 \bibitem{interview-zang} 
 Zang, Jason [Allegheny County Maintenance Manager]. (2017, September 25). Phone interview.
 \end{thebibliography}
-
+\endgroup
 
 \end{document}

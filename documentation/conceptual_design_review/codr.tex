@@ -69,7 +69,7 @@ GroundsBot \\
 Humans spend a lot of time mowing grass. This is particularly true for golf courses. Golf courses have hundreds of acres of land requiring careful maintenance.  The median club in the United States spends \$1.2 million per year on maintenance \cite{clubbenchmarking}. A Pittsburgh area golf course manager revealed that his staff spends 65\% of their time mowing, and 60\% of that time is spent just on the rough. This is an industry ripe for automation.
 \\
 
-Autonomous mowers are commercially available today, however most of these units require buried wires, beacons, or extensive mapping to provide boundaries. For a golf course, the mowing area is so large that those setup methods are a barrier to deployment. The GroundsBot team aims to deliver a prototype autonomous mower that can be deployed with a simple rough user sketch on a map.
+Autonomous mowers are commercially available today, however most of these units require buried wires, beacons, or extensive mapping to provide boundaries. For a golf course, the mowing area is so large that those setup methods are a barrier to deployment. The GroundsBot team aims to deliver a prototype autonomous mower that can be deployed through rough user input by sketching on a map.
 
 \newpage
 \section{Use Case}
@@ -100,13 +100,13 @@ The system requirements were decided upon to demonstrate a proof of concept auto
    		Related to M.P.1, GroundsBot should start up quickly to ease the mind of the user \\
    		M.P.3 &
    		Cut 0-25\% overlap for 95\% of grass &
-   		GroundsBot should be able to efficiently and effectively mow the grass \\
+   		When mowing, GroundsBot should cut in a way that accomplishes full grass coverage while maintaining efficiency by reducing overlap\\
 		M.P.4 &
 		Mow 50$ft^2$ of 30 degree sloped grass &
 		GroundsBot should be able to handle steep slopes to eliminate safety hazards \\
 		M.P.5 &
 		Detect 80\% of objects greater than 27 cubic inches &
-		GroundsBot should not crash into anything \\
+		GroundsBot should be able to recognize obstacles in order to prevent collisions and mowing accidents \\
 		M.P.6 &
 		Mow to within 1 foot of detected obstacles &
 		Groundsbot should be able to detect an obstacle (M.P.5) and navigate around it to continue its mowing path \\
@@ -211,7 +211,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \label{fig:functional}
 \end{figure}
 
-  The Mowing Robot sub-system is responsible for many critical tasks in the overall mowing system. The Mowing Platform is one internal sub-system that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Platform Electronics sub-system provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this sub-system is crucial for the remaining systems, enabling full mowing autonomy.\\
+  The Mowing Robot sub-system is responsible for many critical tasks in the Autonomous Golf Rough Mowing system The Mowing Platform is one internal sub-system that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Platform Electronics sub-system provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this sub-system is crucial for the remaining systems, enabling full mowing autonomy.\\
   
   The remaining sub-systems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide Groundsbot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
 
@@ -238,8 +238,8 @@ The system requirements were decided upon to demonstrate a proof of concept auto
         \makecell{\textbf{Configuration}\\ \textbf{Name}} & \makecell{\\ \textbf{Description}} & \makecell{\\ \textbf{Diagram}}  \\ 
 		\makecell[l]{4 Wheel \\ Skid} &  \makecell[l]{Four driven wheels \\ with skid steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{4_wheel_skid}} \\  
 		\makecell[l]{2 Wheel \\ Differential \\ with Casters} &  \makecell[l]{Two driven wheels \\ with casters for free \\ rotation.} &  \makecell[l]{\\ \includegraphics[width=4cm]{2_wheel_diff}} \\
-		\makecell[l]{AWD \\ Standard \\ Steering} &  \makecell[l]{Four driven wheels \\ with standard differential \\ steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{awd_standard_steer}} \\
-		\makecell[l]{RWD \\ Standard \\ Steering} &  \makecell[l]{Two driven wheels \\ with standard differential \\ steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{rwd_standard_steer}} \\
+		\makecell[l]{AWD \\ Standard \\ Steering} &  \makecell[l]{Four driven wheels \\ with standard \\differential steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{awd_standard_steer}} \\
+		\makecell[l]{RWD \\ Standard \\ Steering} &  \makecell[l]{Two driven wheels \\ with standard\\ differential steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{rwd_standard_steer}} \\
 		\makecell[l]{Articulated} &  \makecell[l]{Four driven wheels \\ with center pivot \\ articulated steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{articulated}} \\
 		\makecell[l]{Tracked} &  \makecell[l]{Two driven wheels \\ with tracks and \\ skid steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{tracked}} \\
 		\makecell[l]{3 Wheel \\ Delta} &  \makecell[l]{Three driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{ \includegraphics[width=4.1cm]{3_wheel_delta}} \\
@@ -447,7 +447,7 @@ The GroundsBot work plan is shown in the list below.  The plan is separated into
 \begin{outline}[enumerate]
   \1 Chassis
     \2 Complete BOM
-    \2 Design Power Distribution and Sensor Integration PCBAs
+    \2 Design Power Distribution and Sensor Integration PCBs % Changed to PCBs from PCBAs because we are "designing PCBs
     \2 Design Chassis
     \2 Design GPS RTK Base Station
     \2 Acquire Parts
@@ -587,6 +587,7 @@ Test Procedure:
 
 
 6. Groundsbot will navigate to the area to be mowed
+
 7. Once it has reached the edge of the mowing area it will begin mowing
 
 8. GroundsBot will detect and avoid any obstacles it comes across while mowing and will also only mow where there is grass

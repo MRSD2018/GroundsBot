@@ -42,53 +42,6 @@ Humans spend a lot of time mowing grass. This is particularly true for golf cour
 \\
 \\
 Autonomous mowers are commercially available today, however most of these units require buried wires, beacons, or extensive mapping to provide boundaries. For a golf course, the mowing area is so large that those setup methods are a barrier to deployment. The GroundsBot team aims to deliver a prototype autonomous mower that can be deployed with a simple rough user sketch on a map.
-
-\subsection{Functional Requirements}
-Groundsbot shall:
-  Receive mowing regions
-  Cut grass at the correct height
-  Create a mowing plan
-  Cut the rough 
-  Avoid obstacles
-  Provide feedback to the groundskeeper
-\begin{center}
-\begin{tabularx}{\textwidth}{ |c|X|X| }
-  \hline
-    ID & Requirement & Description \\
-  \hline
-    M.P.1 &
-    First time user inputs map within 15 minutes &
-    One of the major selling points of GroundsBot is its ease of use and implementation \\
-  \hline
-    M.P.2 &
-    System returns proposed route/coverage map within 5 minutes &
-    Related to M.P.1, the system should start up quickly to ease the mind of the user \\
-  \hline
-    M.P.3 &
-    Cut 0-25\% overlap for 95\% of grass &
-    GroundsBot is a lawn mower so it should be able to efficiently and effectively mow the grass \\
-  \hline
-  	M.P.4 &
-  	Mow 50 $ft^2$ of 30 degree sloped grass &
-  	GroundsBot should be able to handle these slopes to eliminate the safety hazard \\
-  \hline
-  	M.P.5 &
-  	Detect 80\% of objects greater than 27 cubic inches &
-  	GroundsBot should not crash into anything \\
-  \hline
-  	M.P.6 &
-  	Mow to within 1 foot of detected obstacles &
-  	Groundsbot should be able to detect an obstacle (M.P.5) and navigate around it to continue its mowing path \\
-  \hline
-  	M.P.7 &
-  	Mow 90\% of a $\frac{1}{4}$ acre area &
-  	This error should account for obstacle avoidance, and any unforeseen circumstances such as localization issues \\
-  \hline
-\end{tabularx}
-\end{center}
->>>>>>> 3dae4819bf36d2c34bd34165945f4a8eeadf2a7f
-
-
 \section{Use Case}
 
 \section{System Level Requirements}

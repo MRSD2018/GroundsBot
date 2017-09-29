@@ -617,7 +617,10 @@ Test Procedure:
 \end{table}
 
 \subsection{Risk Management}
-\begin{tabular}{p{7cm}|p{6cm}|c}
+\begin{table}[H]
+\def\arraystretch{1.7}
+
+\begin{tabular}{p{7cm}p{6cm}c}
 \textbf{Risk} & \textbf{Management Strategy} & \textbf{Risk Category}\\
 \hline
 \textbf{Too Few Features for Perception:} 
@@ -626,56 +629,56 @@ If we cannot consistently detect grass from non-grass features, perception subsy
 Install infrastructure such as fiducials to assist system in recognizing objects.
 &
 Technical\\
-\hline
+
 \textbf{Team Falling Behind Due to Work:} 
 Team may overestimate capability and overwhelm itself with assignments.
 &
 Prepare for risk by managing tasks and using buffer weeks.  Mitigate effect by delaying milestones or cutting compromising targets.
 &
 Schedule\\
-\hline
+
 \textbf{Localization Poor for Following Edges:} 
 If our localization algorithms cannot accurately follow edge of lawn, system will not mow lawn effectively.
 &
 Prepare by understanding criticality of localization.  Mitigate effect by changing scope of mowing problem or adding infrastructure to assist.
 &
 Technical\\
-\hline
+
 \textbf{Injury from Spinning Blade:} 
 Our system has a dangerous cutting instrument.  It can injure a team member or a bystander.
 &
 Prepare by making sure team understands the risk of spinning blade.  Put warning lights and sounds to alert bystanders when testing.
 &
 Technical\\
-\hline
+
 \textbf{Poor Weather for Validation Experiments:} 
 Poor weather on demonstration days would prevent us from system from performing.
 &1
 Team monitors upcoming weather before validation experiments.  Communicates with instructing team to reschedule if concerned by inclement weather.
 &
 Schedule\\
-\hline
+
 \textbf{Team Member Has Family Constraints:} 
 Any team member could experience a family emergency or reponsibility that occupies their time and focus.  One specific concern is Josh's wife is pregnant and expecting in December.
 &
 Mitigate the effect on entire team by spreading work across several team members and communicating consistently with absent team member to keep them in the loop.
 &
 Personal\\
-\hline
+
 \textbf{Platform Devastating Event:} 
 Platform could have electrical, thermal, or kinetic event that leads to its destruction.
 &
 Team designs platform with risk in mind, and manages parts reserve to quickly rebuild platform if necessary.
 &
 Technical\\
-\hline
+
 \textbf{Subsystem Harder Than Expected:} 
 Any subsystem could require more work than expected, taking away focus from other subsystems.
 &
 Team can prepare by focusing on critical subsystems first, and may revise scope related to subsystem if necessary.
 &
 Technical\\
-\hline
+
 \textbf{Not Enough Capital for Development:} 
 There is a risk our system requires more money than initially allocated.
 &
@@ -683,6 +686,7 @@ To mitigate the effect of this event, team will maintain strong relationship wit
 &
 Schedule\\
 \end{tabular}
+\end{table}
 
 \begingroup
 \newpage

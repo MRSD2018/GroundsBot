@@ -544,7 +544,7 @@ April 2018
 	The aim of the fall validation experiment is to test individual subsystems. As such many of the systems requirements set for GroundsBot will not be fully met. All tests to be performed have been designed to indicate significant progress towards reaching the system requirements. More specifically the team plans to test the base functionality of the mobility, localization, planning, and perception subsystems of GroundsBot. The details of the test are laid out below.
 \\
 \begin{center}
-\textbf{Test 1 Procedure:}
+\textbf{Test 1:}
 \end{center}
 \textbf{Location:} Field by Doherty Apartments
 \\
@@ -558,39 +558,34 @@ April 2018
   \item Once the last waypoint is reached, GroundsBot will navigate back to the docking station (Note: the docking station will not be one of the entered waypoints)
 \end{enumerate}
 
+\begin{center}
+\textbf{Test 2:}
+\end{center}
 Test 2 has been designed to demonstrate base functionality of the perception subsystem. The team will present perception algorithm capable of differentiating between grass(i.e. a mowable surface) and non-grass (i.e. a non-mowable surface.) This test will be performed outside of the fall validation experiment and a replay of the test will be displayed during the fall validation experiment.
 
 \subsubsection{Spring Validation Experiment}
 
 	The spring validation experiment will be when the team will test the full GroundsBot system to demonstrate that all system requirements have been met. The details of the test are laid out below.
-	
-Location: Field by Doherty Apartments
-
-Equipment: GroundsBot, GroundsBot dock/RTK base station, mobile device
-
-Test Procedure:
-
-1. Power on GroundsBot next to its docking station
-
-2. Open UI on mobile interface and establish a connection with GroundsBot
-
-3. Have a new user (someone not on Team A) use the UI to draw an outline of the area to be mowed on a map
-
-	Area should include both static obstacles and a non-mowable surface (i.e. concrete)
-	
-4. Use the UI to submit the mowing area to GroundsBot
-
-5. Groundsbot will develop a coverage plan of the area input by the user
-
-
-6. Groundsbot will navigate to the area to be mowed
-7. Once it has reached the edge of the mowing area it will begin mowing
-
-8. GroundsBot will detect and avoid any obstacles it comes across while mowing and will also only mow where there is grass
-
-9. Once GroundsBot has mowed the whole area it will return to the docking station
-
-10. GroundsBot will generate and transmit a coverage report to the UI indicating areas it could not mow
+\begin{center}
+\textbf{Test 1: }
+\end{center}
+\textbf{Location:} Field by Doherty Apartments
+\textbf{Equipment:} GroundsBot, GroundsBot dock/RTK base station, mobile device
+\begin{enumerate}
+  \item Power on GroundsBot next to its docking station
+  \item Open UI on mobile interface and establish a connection with GroundsBot
+  \item Have a new user (someone not on Team A) use the UI to draw an outline of the area to be mowed on a map
+  \begin{enumerate}
+    \item Area should include both static obstacles and a non-mowable surface (i.e. concrete)
+  \end{enumerate}
+  \item Use the UI to submit the mowing area to GroundsBot
+  \item Groundsbot will develop a coverage plan of the area input by the user
+  \item Groundsbot will navigate to the area to be mowed
+  \item Once it has reached the edge of the mowing area it will begin mowing
+  \item GroundsBot will detect and avoid any obstacles it comes across while mowing and will also only mow where there is grass
+  \item Once GroundsBot has mowed the whole area it will return to the docking station
+  \item GroundsBot will generate and transmit a coverage report to the UI indicating areas it could not mow
+\end{enumerate}
 
 \subsection{Team Member Responsibilities}
 \subsection{Provisional BOM}

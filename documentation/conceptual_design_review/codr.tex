@@ -173,7 +173,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		GroundsBot should be able to recognize obstacles in order to prevent collisions and mowing accidents \\
 		M.P.6 &
 		Mow to within 1 foot of detected obstacles &
-		Groundsbot should be able to detect an obstacle (M.P.5) and navigate around it to continue its mowing path \\
+		GroundsBot should be able to detect an obstacle (M.P.5) and navigate around it to continue its mowing path \\
 		M.P.7 &
 		Mow 90\% of a $\frac{1}{4}$ acre area &
 		GroundsBot will encounter obstacles along the way preventing it from 100\% coverage \\
@@ -217,7 +217,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
   	 \textbf{ID} & \textbf{Requirement} & \textbf{Description} \\
 	  M.N.1 &
   	  Return home to within 5 feet of dock &
-  	  Groundsbot should return to its starting position to remove as much hassle from the user as possible \\  	  
+  	  GroundsBot should return to its starting position to remove as much hassle from the user as possible \\  	  
   	  M.N.2 &
   	  Have a functional and easily accessible emergency stop &
   	  GroundsBot should be safe to use and easy to shut down in case of emergency\\
@@ -245,13 +245,13 @@ The system requirements were decided upon to demonstrate a proof of concept auto
   	  \textbf{Description} \\
   	  D.N.1 &
   	  Operates in variable lighting conditions &
-  	  Groundsbot should operate at night to avoid interrupting golfers\\
+  	  GroundsBot should operate at night to avoid interrupting golfers\\
   	  D.N.2 &
   	  Deck adjustable 0.5” to 2” &
   	  GroundsBot should be able to meet the grass height standards of different golf courses\\
   	  D.N.3 &
   	  Bot is resistant to impacts &
-  	  Groundsbot should be unaffected if hit by a golf ball while mowing\\
+  	  GroundsBot should be unaffected if hit by a golf ball while mowing\\
   	  D.N.4 &
   	  Return home to and mate with charging dock &
   	  A stretch goal if M.N.1 (return to within 5 ft. of dock) is achieved \\
@@ -272,9 +272,9 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \label{fig:functional}
 \end{figure}
 
-  The Mowing Robot sub-system is responsible for many critical tasks in the Autonomous Golf Rough Mowing system The Mowing Platform is one internal sub-system that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Platform Electronics sub-system provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this sub-system is crucial for the remaining systems, enabling full mowing autonomy.\\
+  The Mowing Robot sub-system is responsible for many critical tasks in the Autonomous Golf Rough Mowing system. The Mowing Platform is one internal sub-system that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Platform Electronics sub-system provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this sub-system is crucial for the remaining systems, enabling full mowing autonomy.\\
   
-  The remaining sub-systems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide Groundsbot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
+  The remaining sub-systems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide GroundsBot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
 
 \newpage
 \section{System Level Trade Studies}
@@ -404,7 +404,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		LiDAR                                                        & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
 		Camera                                                       & 3                         & 3                          & 5                       & 5                              & 5                        & 1                    \\ \hdashline
 		
-		\multicolumn{1}{l}{\cellcolor{badhighlight!70}RGBD Camera }& \multicolumn{1}{c}{\cellcolor{badhighlight!70}5} & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 }   & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } \\ \hdashline
+		\multicolumn{1}{l}{\cellcolor{badhighlight!70}RGBD Camera }& \multicolumn{1}{c}{\cellcolor{badhighlight!70}5} & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 }   & \multicolumn{1}{c}{\cellcolor{badhighlight!70}0 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } \\ \hdashline
 		\makecell[l]{Omnidirectional \\ Camera (upwards)}            & 3                         & 3                          & 0                       & 5                              & 0                        & 0                    \\ \hdashline
 		Stereo Camera                                                & 4                         & 3                          & 5                       & 5                              & 5                        & 3                    \\ \hdashline
 		Thermal Camera                                               & 1                         & 5                          & 0                       & 5                              & 0                        & 1                    \\ \hdashline
@@ -637,8 +637,8 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
     \item Area should include both static obstacles and a non-mowable surface (i.e. concrete)
   \end{enumerate}
   \item Use the UI to submit the mowing area to GroundsBot
-  \item Groundsbot will develop a coverage plan of the area input by the user
-  \item Groundsbot will navigate to the area to be mowed
+  \item GroundsBot will develop a coverage plan of the area input by the user
+  \item GroundsBot will navigate to the area to be mowed
   \item Once it has reached the edge of the mowing area it will begin mowing
   \item GroundsBot will detect and avoid any obstacles it comes across while mowing and will also only mow where there is grass
   \item Once GroundsBot has mowed the whole area it will return to the docking station

@@ -278,14 +278,15 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 
 \newpage
 \section{System Level Trade Studies}
-	\subsection{Platform Trade Study}
+	\subsection{Platform Configuration Trade Study}
+The first step was to decide a platform configuration that will meet the system requirements. A handful of common wheeled platform variants were considered (Table \ref{Tab:PlatformConfigDiagramsTable}). Each was evaluated on speed, wheel compaction, stability, complexity, ease of odometry, turning radius, and performance on uneven terrain. A two wheeled chassis with casters was selected (Table \ref{Tab:PlatformConfigTable}).
 
 
      \begin{table}[H]
 		
 		
 		\caption{Platform Configuration Diagrams}
-		\label{PlatformConfigDiagramsTable}
+		\label{Tab:PlatformConfigDiagramsTable}
 		\begin{adjustwidth}{-1in}{-1in}
 		\centering
 		\setlength{\dashlinedash}{.5pt}
@@ -319,7 +320,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		
 		
 		\caption{Platform Configuration Trade Study}
-		\label{PlatformConfigTable}
+		\label{Tab:PlatformConfigTable}
 		\begin{adjustwidth}{-1in}{-1in}
 		\centering
 		\setlength{\dashlinedash}{.5pt}
@@ -351,6 +352,8 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		\end{table}
 		
 %%%%%%%%%%platform base table%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
+Once a base configuration was determined, a specific implementation of the platform needed to be chosen. Several off-the-shelf as well as DIY platforms were considered.  A DIY platform was chosen (Table \ref{Tab:PlatformBaseTable}).
+
 		\begin{table}[H]
 		\begin{adjustwidth}{-1.5in}{-1.5in}
 		\centering
@@ -358,7 +361,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		\setlength\tabcolsep{4pt}
 		\def\arraystretch{1.8}
 		\caption{Platform Base Trade Study}
-		\label{PlatformBaseTable} 
+		\label{Tab:PlatformBaseTable} 
 		
 		\vspace{1em}
 
@@ -383,6 +386,9 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		
 		
 %%%%%%%%%%sensor capability table%%%%%%%%%%%%%%%%%%%%		
+Once the platform was decided upon, analysis on different sensors and sensor combinations began. Sensors were evaluated individually first to establish baseline capability and relevance to the project. Then sensors were evaluated in different combinations, taking into account the results of the individual sensor study. The results showed that a stereo vision camera was the sensor that best fit the needs of GroundsBot (Table \ref{Tab:SensorCapabilitiesTable}).
+
+
 		\begin{table}[H]
 		\begin{adjustwidth}{-1.5in}{-1.5in}
 		\setlength{\dashlinedash}{.4pt}
@@ -392,7 +398,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 
 
 		\caption{Sensor Capabilities}
-		\label{SensorCapabilitiesTable}
+		\label{Tab:SensorCapabilitiesTable}
 		
 		\vspace{1em}
 
@@ -423,7 +429,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		\centering
 		
 		\caption{Perception Sensor Trade Study}
-		\label{PerceptionSensorTable}
+		\label{Tab:PerceptionSensorTable}
 		
 		\vspace{1em}
 

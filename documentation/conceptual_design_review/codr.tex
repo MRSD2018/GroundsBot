@@ -7,6 +7,7 @@
 \usepackage{changepage} %temp adjust margins
 \usepackage[table]{xcolor} %color tables
 \usepackage{outlines}
+\usepackage{multirow}
 \usepackage[margin=1in]{geometry}
 \usepackage{tabularx}
 \usepackage{arydshln} %dashed lines (must load in last)
@@ -37,7 +38,9 @@
 
 \section{Project Description}
 
+\begin{center}
 GroundsBot \\
+\end{center}
 
 Humans spend a lot of time mowing grass. This is particularly true for golf courses. Golf courses have hundreds of acres of land requiring careful maintenance.  The median club in the United States spends \$1.2 million per year on maintenance [reference]. A Pittsburgh area golf course manager revealed that his staff spends 65\% of their time mowing, and 60\% of that time is spent just on the rough. This is an industry ripe for automation.
 \\
@@ -47,47 +50,13 @@ Autonomous mowers are commercially available today, however most of these units 
 
 \subsection{Functional Requirements}
 Groundsbot shall:
-  Receive mowing regions
-  Cut grass at the correct height
-  Create a mowing plan
-  Cut the rough 
-  Avoid obstacles
-  Provide feedback to the groundskeeper
-\begin{center}
-\begin{tabularx}{\textwidth}{ |c|X|X| }
-  \hline
-    ID & Requirement & Description \\
-  \hline
-    M.P.1 &
-    First time user inputs map within 15 minutes &
-    One of the major selling points of GroundsBot is its ease of use and implementation \\
-  \hline
-    M.P.2 &
-    System returns proposed route/coverage map within 5 minutes &
-    Related to M.P.1, the system should start up quickly to ease the mind of the user \\
-  \hline
-    M.P.3 &
-    Cut 0-25\% overlap for 95\% of grass &
-    GroundsBot is a lawn mower so it should be able to efficiently and effectively mow the grass \\
-  \hline
-  	M.P.4 &
-  	Mow 50 $ft^2$ of 30 degree sloped grass &
-  	GroundsBot should be able to handle these slopes to eliminate the safety hazard \\
-  \hline
-  	M.P.5 &
-  	Detect 80\% of objects greater than 27 cubic inches &
-  	GroundsBot should not crash into anything \\
-  \hline
-  	M.P.6 &
-  	Mow to within 1 foot of detected obstacles &
-  	Groundsbot should be able to detect an obstacle (M.P.5) and navigate around it to continue its mowing path \\
-  \hline
-  	M.P.7 &
-  	Mow 90\% of a $\frac{1}{4}$ acre area &
-  	This error should account for obstacle avoidance, and any unforeseen circumstances such as localization issues \\
-  \hline
-\end{tabularx}
-\end{center}
+  Receive mowing regions \\
+  Cut grass at the correct height \\
+  Create a mowing plan \\
+  Cut the rough  \\
+  Avoid obstacles \\
+  Provide feedback to the groundskeeper \\
+
 
 
 
@@ -421,71 +390,62 @@ The GroundsBot work plan is shown in the list below.  The plan is separated into
 The full list of milestones is laid out below in Table \ref{Tab:table_milestones}\\ 
 
 \begin{table}[H]
-\begin{tabular}{|l|l|}
-\hline
-Deadline & Milestone                            \\
-\hline
-Progress Review 1 [OCT 17 2017] &
-  \makecell[l]{
-    Mechanical CAD Complete                     \\
-    Electrical CAD Complete                     \\
-    BOM Complete                                \\
-    Parts Ordered                               \\
-    ROS Environment Initialized                 \\
-  }                                             \\
-  \hline
-Progress Review 2 [OCT 26 2017] &
-  \makecell[l]{
-    Chassis Assembled with Mowing Apparatus     \\
-    ROS Simulation Environment Complete         \\
-    GPS RTK Base Station Complete               \\
-  }                                             \\ 
-  \hline
-Progress Review 3 [NOV 7 2017] &
-  \makecell[l]{
-    GroundsBot System Integration Complete      \\
-    GPS RTK Integration Complete                \\
-    Control Systems Demo Complete               \\
-  }                                             \\
-  \hline
-Progress Review 4 [NOV 21 2017] &
-  \makecell[l]{
-    GroundsBot Accepts GPS Waypoints            \\
-    GroundsBot Follows GPS waypoints            \\
-    Teleoperation Test Complete                 \\
-  }                                             \\
-  \hline
-Fall Validation Experiment [NOV 28 2017] &
-  \makecell[l]{
-    GroundsBot Follows Route From Web App       \\
-    GroundsBot Differentiates Grass From Other Objects
-  }                                             \\
-  \hline
-January 2018 Milestone &
-  \makecell[l]{
-    Global Planning Algorithm Complete          \\
-    Static and Dynamic Obstacle Detection Complete\\
-  }                                             \\
-  \hline
-February 2018 Milestone &
-  \makecell[l]{
-    Read User Map Input                        \\
-    GroundsBot Reroutes Around Obstacles       \\
-  }                                            \\
-  \hline
-March 2018 &
-  \makecell[l]{
-    Full Mapping UI Complete                   \\
-    GroundsBot Autonomously Cuts Lot           \\
-  }                                            \\
-  \hline
-April 2018 &
-  \makecell[l]{
-    Final System Tests Complete                \\
-  }                                            \\
-  \hline
-\end{tabular}
+\def\arraystretch{1.2}
+
 \caption{Project Milestones}\label{Tab:table_milestones}
+\vspace{1em}
+
+\begin{tabular}{ll}
+
+\textbf{Deadline} & \textbf{Milestone}                            \\
+\\
+Progress Review 1 [OCT 17 2017] & Mechanical CAD Complete \\
+    &Electrical CAD Complete                     \\
+    &BOM Complete                                \\
+    &Parts Ordered                               \\
+    &ROS Environment Initialized                 \\
+                                               \\
+Progress Review 2 [OCT 26 2017] & Chassis Assembled with Mowing Apparatus     \\
+    &ROS Simulation Environment Complete         \\
+    &GPS RTK Base Station Complete               \\
+                                              \\ 
+Progress Review 3 [NOV 7 2017] 
+    &GroundsBot System Integration Complete      \\
+    &GPS RTK Integration Complete                \\
+    &Control Systems Demo Complete               \\
+                                              \\
+Progress Review 4 [NOV 21 2017] 
+  
+    &GroundsBot Accepts GPS Waypoints            \\
+    &GroundsBot Follows GPS waypoints            \\
+    &Teleoperation Test Complete                 \\
+                                               \\
+Fall Validation Experiment [NOV 28 2017] 
+ 
+    &GroundsBot Follows Route From Web App       \\
+    &GroundsBot Differentiates Grass From Other Objects \\
+                                            \\
+                                            
+January 2018 Milestone 
+
+    &Global Planning Algorithm Complete          \\
+    &Static and Dynamic Obstacle Detection Complete\\
+                                               \\
+February 2018 Milestone 
+  
+    &Read User Map Input                        \\
+    &GroundsBot Reroutes Around Obstacles       \\
+                                              \\
+March 2018 
+  
+    &Full Mapping UI Complete                   \\
+    &GroundsBot Autonomously Cuts Lot           \\
+                                              \\
+April 2018 
+
+    &Final System Tests Complete                \\                                            \\
+\end{tabular}
+
 \end{table}
 
 \subsubsection{Progress Reviews}

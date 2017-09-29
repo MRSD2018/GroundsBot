@@ -30,7 +30,7 @@
 \titleformat*{\subsection}{\bfseries\sffamily\fontsize{12}{14}\selectfont}
 \titleformat*{\subsubsection}{\bfseries\sffamily\fontsize{12}{14}\selectfont}
 
-
+\captionsetup[table]{font={sf, normalsize}}
 
 \renewcommand{\baselinestretch}{1.1} 
 
@@ -69,7 +69,7 @@ GroundsBot \\
 Humans spend a lot of time mowing grass. This is particularly true for golf courses. Golf courses have hundreds of acres of land requiring careful maintenance.  The median club in the United States spends \$1.2 million per year on maintenance \cite{clubbenchmarking}. A Pittsburgh area golf course manager revealed that his staff spends 65\% of their time mowing, and 60\% of that time is spent just on the rough. This is an industry ripe for automation.
 \\
 
-Autonomous mowers are commercially available today, however most of these units require buried wires, beacons, or extensive mapping to provide boundaries. For a golf course, the mowing area is so large that those setup methods are a barrier to deployment. The GroundsBot team aims to deliver a prototype autonomous mower that can be deployed with a simple rough user sketch on a map.
+Autonomous mowers are commercially available today, however most of these units require buried wires, beacons, or extensive mapping to provide boundaries. For a golf course, the mowing area is so large that those setup methods are a barrier to deployment. The GroundsBot team aims to deliver a prototype autonomous mower that can be deployed through rough user input by sketching on a map.
 
 \newpage
 \section{Use Case}
@@ -93,8 +93,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \subsection{Mandatory Requirements}
 \begin{center}
   \begin{table}[H]
-  \caption*{\sffamily\fontsize{12}{14}\selectfont 
-  Mandatory Performance Requirements}
+  \caption{Mandatory Performance Requirements}
   \label{table:mandatory performance}
   
   \vspace{1em}
@@ -111,13 +110,13 @@ The system requirements were decided upon to demonstrate a proof of concept auto
    		Related to M.P.1, GroundsBot should start up quickly to ease the mind of the user \\
    		M.P.3 &
    		Cut 0-25\% overlap for 95\% of grass &
-   		GroundsBot should be able to efficiently and effectively mow the grass \\
+   		When mowing, GroundsBot should cut in a way that accomplishes full grass coverage while maintaining efficiency by reducing overlap\\
 		M.P.4 &
 		Mow 50$ft^2$ of 30 degree sloped grass &
 		GroundsBot should be able to handle steep slopes to eliminate safety hazards \\
 		M.P.5 &
 		Detect 80\% of objects greater than 27 cubic inches &
-		GroundsBot should not crash into anything \\
+		GroundsBot should be able to recognize obstacles in order to prevent collisions and mowing accidents \\
 		M.P.6 &
 		Mow to within 1 foot of detected obstacles &
 		Groundsbot should be able to detect an obstacle (M.P.5) and navigate around it to continue its mowing path \\
@@ -131,8 +130,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \subsection{Desirable Performance Requirements}
 \begin{center}
   \begin{table}[H]
-  \caption*{\sffamily\fontsize{12}{14}\selectfont 
-  Desirable Performance Requirements}
+  \caption{Desirable Performance Requirements}
   \label{table: desirable performance}
   
   \vspace{1em}
@@ -154,8 +152,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \subsection{Mandatory Non-Functional Requirements}
 \begin{center}
   \begin{table}[H]
-   \caption*{\sffamily\fontsize{12}{14}\selectfont 
-   Mandatory Non-Functional Requirements}
+   \caption{Mandatory Non-Functional Requirements}
     \label{table: mandatory non-functional}
     
     \vspace{1em}
@@ -183,8 +180,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \subsection{Desirable Non-Functional Requirements}
 \begin{center}
   \begin{table}[H]
-  	\caption*{\sffamily\fontsize{12}{14}\selectfont 
-  	Desirable Non-Functional Requirements}
+  	\caption{Desirable Non-Functional Requirements}
   	\label{table: desirable non-functional}
   	\vspace{1em}
 
@@ -222,7 +218,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \label{fig:functional}
 \end{figure}
 
-  The Mowing Robot sub-system is responsible for many critical tasks in the overall mowing system. The Mowing Platform is one internal sub-system that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Platform Electronics sub-system provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this sub-system is crucial for the remaining systems, enabling full mowing autonomy.\\
+  The Mowing Robot sub-system is responsible for many critical tasks in the Autonomous Golf Rough Mowing system The Mowing Platform is one internal sub-system that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Platform Electronics sub-system provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this sub-system is crucial for the remaining systems, enabling full mowing autonomy.\\
   
   The remaining sub-systems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide Groundsbot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
 
@@ -234,8 +230,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
      \begin{table}[H]
 		
 		
-		\caption*{\sffamily\fontsize{12}{14}\selectfont 
-		Platform Configuration Diagrams}
+		\caption{Platform Configuration Diagrams}
 		\label{PlatformConfigDiagramsTable}
 		\begin{adjustwidth}{-1in}{-1in}
 		\centering
@@ -249,8 +244,8 @@ The system requirements were decided upon to demonstrate a proof of concept auto
         \makecell{\textbf{Configuration}\\ \textbf{Name}} & \makecell{\\ \textbf{Description}} & \makecell{\\ \textbf{Diagram}}  \\ 
 		\makecell[l]{4 Wheel \\ Skid} &  \makecell[l]{Four driven wheels \\ with skid steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{4_wheel_skid}} \\  
 		\makecell[l]{2 Wheel \\ Differential \\ with Casters} &  \makecell[l]{Two driven wheels \\ with casters for free \\ rotation.} &  \makecell[l]{\\ \includegraphics[width=4cm]{2_wheel_diff}} \\
-		\makecell[l]{AWD \\ Standard \\ Steering} &  \makecell[l]{Four driven wheels \\ with standard differential \\ steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{awd_standard_steer}} \\
-		\makecell[l]{RWD \\ Standard \\ Steering} &  \makecell[l]{Two driven wheels \\ with standard differential \\ steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{rwd_standard_steer}} \\
+		\makecell[l]{AWD \\ Standard \\ Steering} &  \makecell[l]{Four driven wheels \\ with standard \\differential steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{awd_standard_steer}} \\
+		\makecell[l]{RWD \\ Standard \\ Steering} &  \makecell[l]{Two driven wheels \\ with standard\\ differential steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{rwd_standard_steer}} \\
 		\makecell[l]{Articulated} &  \makecell[l]{Four driven wheels \\ with center pivot \\ articulated steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{articulated}} \\
 		\makecell[l]{Tracked} &  \makecell[l]{Two driven wheels \\ with tracks and \\ skid steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{tracked}} \\
 		\makecell[l]{3 Wheel \\ Delta} &  \makecell[l]{Three driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{ \includegraphics[width=4.1cm]{3_wheel_delta}} \\
@@ -269,8 +264,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		\begin{table}[H]
 		
 		
-		\caption*{\sffamily\fontsize{12}{14}\selectfont 
-		Platform Configuration Trade Study}
+		\caption{Platform Configuration Trade Study}
 		\label{PlatformConfigTable}
 		\begin{adjustwidth}{-1in}{-1in}
 		\centering
@@ -309,8 +303,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		\setlength{\dashlinedash}{.4pt}
 		\setlength\tabcolsep{4pt}
 		\def\arraystretch{1.8}
-		\caption*{\sffamily\fontsize{12}{14}\selectfont 
-		Platform Base Trade Study}
+		\caption{Platform Base Trade Study}
 		\label{PlatformBaseTable} 
 		
 		\vspace{1em}
@@ -344,8 +337,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		\centering
 
 
-		\caption*{\sffamily\fontsize{12}{14}\selectfont 
-		Sensor Capabilities}
+		\caption{Sensor Capabilities}
 		\label{SensorCapabilitiesTable}
 		
 		\vspace{1em}
@@ -375,8 +367,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		\def\arraystretch{1.3}
 		\centering
 		
-		\caption*{\sffamily\fontsize{12}{14}\selectfont 
-		Perception Sensor Trade Study}
+		\caption{Perception Sensor Trade Study}
 		\label{PerceptionSensorTable}
 		
 		\vspace{1em}
@@ -435,17 +426,17 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 	
 	\subsection{Software}
 		\subsubsection{Planner}
-			The planner subsystem consists of two parts, a global planner, and  a local planner. The global planner will take the user input from the UI, and translate that into a path that the robot will follow. This involves refining the outline that was provided by the user, and then finding a path that will allow for maximal coverage of the selected area. 
+			The planner subsystem consists of two parts, a global planner, and  a local planner. The global planner will take the user input from the UI, and translate that into a path that the robot will follow. This involves refining the outline that was provided by the user, and then finding a path that will allow for maximal coverage of the selected area. \\ 
 			
 			The local planner will be responsible for adapting the route on-the-fly to avoid any obstacles that the robot may encounter. This system will also take care of the driving to and from the dock to the actual cutting area. 
 			
 		\subsubsection{Localization and Perception}
-			An accurate description of the robot's global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but visual SLAM based methods will also be investigated. 
+			An accurate description of the robot's global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but visual SLAM based methods will also be investigated. \\
 			
 			The vision system will also be used to detect boundaries of the grass as the robot gets closer to the boundary. For obstacle detection, a trade study determined that a stereo camera system would best fit the detection requirements. However, if needed, a LIDAR may be added to improve the detection accuracy. 
 		
 		\subsubsection{Mobility}
-			The mobility subsystem will be responsible for the control of the robot's motors. Part of this involves the robot going from point A to point B at any given time. Using current position information from localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then emit the necessary motor control signals to move towards this waypoint. 
+			The mobility subsystem will be responsible for the control of the robot's motors. Part of this involves the robot going from point A to point B at any given time. Using current position information from localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then emit the necessary motor control signals to move towards this waypoint. \\
 			
 			The cutter motor speeds will also be controlled by this subsystem. This subsystem must both detect the speed of the motor, as well as apply the correct motor signals to maintain a constant speed when the cutter encounters an obstacle. 
 
@@ -458,7 +449,7 @@ The GroundsBot work plan is shown in the list below.  The plan is separated into
 \begin{outline}[enumerate]
   \1 Chassis
     \2 Complete BOM
-    \2 Design Power Distribution and Sensor Integration PCBAs
+    \2 Design Power Distribution and Sensor Integration PCBs % Changed to PCBs from PCBAs because we are "designing PCBs
     \2 Design Chassis
     \2 Design GPS RTK Base Station
     \2 Acquire Parts
@@ -482,6 +473,7 @@ The GroundsBot work plan is shown in the list below.  The plan is separated into
 
    
 \subsubsection{Schedule}
+\noindent
 \textbf{Progress Review 1}: The goal for Progress Review 1 is to have all hardware design complete with parts on order. \\
 \textbf{Progress Review 2}: The goal for Progress Review 2 is to have an assembled frame/chassis, a full ROS simulation environment, and a completed GPS + RTK base station\\
 
@@ -490,8 +482,8 @@ The full list of milestones is laid out below in Table \ref{Tab:table_milestones
 \begin{table}[H]
 \def\arraystretch{1.2}
 
-\caption*{\sffamily\fontsize{12}{14}\selectfont 
-Project Milestones}\label{Tab:table_milestones}
+\caption{Project Milestones}
+\label{Tab:table_milestones}
 
 
 \begin{tabular}{ll}
@@ -598,6 +590,7 @@ Test Procedure:
 
 
 6. Groundsbot will navigate to the area to be mowed
+
 7. Once it has reached the edge of the mowing area it will begin mowing
 
 8. GroundsBot will detect and avoid any obstacles it comes across while mowing and will also only mow where there is grass
@@ -611,8 +604,8 @@ Test Procedure:
 \begin{table}[H]
 \centering
 \def\arraystretch{1.1}
-\caption*{\sffamily\fontsize{12}{14}\selectfont 
-Provisional BOM}\label{Tab:provisional_bom}
+\caption{Provisional BOM}
+\label{Tab:provisional_bom}
 \begin{tabular}{ llccl }
 \hline
     \textbf{Manufacturer} & \textbf{Part No.} & \textbf{QTY} & \textbf{Cost} & \textbf{Description}\\
@@ -636,33 +629,30 @@ Provisional BOM}\label{Tab:provisional_bom}
 \end{table}
 
 \subsection{Risk Management}
-\begin{tabular}{p{7cm}|p{6cm}|c}
-\textbf{Risk} & \textbf{Management Strategy} & \textbf{Risk Category}\\
-\hline
-\textbf{Too Few Features for Perception:} 
+\begin{table}[H]
+\def\arraystretch{1.7}
 
+\begin{tabular}{p{7cm}p{6cm}c}
+\textbf{Risk} & \textbf{Management Strategy} & \textbf{Risk Category}\\
+\textbf{Too Few Features for Perception:} 
 If we cannot consistently detect grass from non-grass features, perception subsystem will not be able to direct platform accurately
 &
 Install infrastructure such as fiducials to assist system in recognizing objects.
 &
 Technical\\
-\hline
-\textbf{Team Falling Behind Due to Work:} 
 
+\textbf{Team Falling Behind Due to Work:} 
 Team may overestimate capability and overwhelm itself with assignments.
 &
 Prepare for risk by managing tasks and using buffer weeks.  Mitigate effect by delaying milestones or cutting compromising targets.
 &
 Schedule\\
-\hline
 \textbf{Localization Poor for Following Edges:} 
-
 If our localization algorithms cannot accurately follow edge of lawn, system will not mow lawn effectively.
 &
 Prepare by understanding criticality of localization.  Mitigate effect by changing scope of mowing problem or adding infrastructure to assist.
 &
 Technical\\
-\hline
 \textbf{Injury from Spinning Blade:} 
 
 Our system has a dangerous cutting instrument.  It can injure a team member or a bystander.
@@ -670,48 +660,44 @@ Our system has a dangerous cutting instrument.  It can injure a team member or a
 Prepare by making sure team understands the risk of spinning blade.  Put warning lights and sounds to alert bystanders when testing.
 &
 Technical\\
-\hline
-\textbf{Poor Weather for Validation Experiments:} 
 
+\textbf{Poor Weather for Validation Experiments:} 
 Poor weather on demonstration days would prevent us from system from performing.
 &1
 Team monitors upcoming weather before validation experiments.  Communicates with instructing team to reschedule if concerned by inclement weather.
 &
 Schedule\\
-\hline
-\textbf{Team Member Has Family Constraints:} 
 
+\textbf{Team Member Has Family Constraints:} 
 Any team member could experience a family emergency or reponsibility that occupies their time and focus.  One specific concern is Josh's wife is pregnant and expecting in December.
 &
 Mitigate the effect on entire team by spreading work across several team members and communicating consistently with absent team member to keep them in the loop.
 &
 Personal\\
-\hline
-\textbf{Platform Devastating Event:} 
 
+\textbf{Platform Devastating Event:} 
 Platform could have electrical, thermal, or kinetic event that leads to its destruction.
 &
 Team designs platform with risk in mind, and manages parts reserve to quickly rebuild platform if necessary.
 &
 Technical\\
-\hline
-\textbf{Subsystem Harder Than Expected:} 
 
+\textbf{Subsystem Harder Than Expected:} 
 Any subsystem could require more work than expected, taking away focus from other subsystems.
 &
 Team can prepare by focusing on critical subsystems first, and may revise scope related to subsystem if necessary.
 &
 Technical\\
-\hline
-\textbf{Not Enough Capital for Development:} 
 
+\textbf{Not Enough Capital for Development:} 
 There is a risk our system requires more money than initially allocated.
 &
 To mitigate the effect of this event, team will maintain strong relationship with sponsor by providing consistent communication of development progress. Team may also reach out to other sponsors or donors.
 &
 Schedule\\
-
 \end{tabular}
+\end{table}
+
 \begingroup
 \newpage
 \section{References}

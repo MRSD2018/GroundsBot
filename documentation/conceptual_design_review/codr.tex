@@ -295,7 +295,7 @@ The first step was to decide a platform configuration that will meet the system 
     \makecell[l]{AWD \\ Standard \\ Steering} &  \makecell[l]{Four driven wheels \\ with standard \\differential steering.} &  \makecell[l]{\\ \includegraphics[width=3cm]{awd_standard_steer}} \\
     \makecell[l]{RWD \\ Standard \\ Steering} &  \makecell[l]{Two driven wheels \\ with standard\\ differential steering.} &  \makecell[l]{\\ \includegraphics[width=3cm]{rwd_standard_steer}} \\
     \makecell[l]{Articulated} &  \makecell[l]{Four driven wheels \\ with center pivot \\ articulated steering.} &  \makecell[l]{\\ \includegraphics[width=3cm]{articulated}} \\
-    \makecell[l]{Tracked} &  \makecell[l]{Two driven wheels \\ with tracks and \\ skid steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{tracked}} \\
+    \makecell[l]{Tracked} &  \makecell[l]{Two driven wheels \\ with tracks and \\ skid steering.} &  \makecell[l]{\\ \includegraphics[width=3cm]{tracked}} \\
     \makecell[l]{3 Wheel \\ Delta} &  \makecell[l]{Three driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{ \includegraphics[width=3cm]{3_wheel_delta}} \\
     \makecell[l]{4 Wheel \\ Omniwheel} &  \makecell[l]{Four driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{\\ \includegraphics[width=3cm]{4_wheel_omniwheel}} \\
     
@@ -633,10 +633,7 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
 \begin{enumerate}
   \item Power on GroundsBot next to its docking station
   \item Open UI on mobile interface and establish a connection with GroundsBot
-  \item Have a new user (someone not on Team A) use the UI to draw an outline of the area to be mowed on a map
-  \begin{enumerate}
-    \item Area should include both static obstacles and a non-mowable surface (i.e. concrete)
-  \end{enumerate}
+  \item Have a new user (someone not on Team A) use the UI to draw an outline of the area to be mowed on a map including both static obstacles and a non-mowable surface (i.e. concrete)
   \item Use the UI to submit the mowing area to GroundsBot
   \item Groundsbot will develop a coverage plan of the area input by the user
   \item Groundsbot will navigate to the area to be mowed
@@ -653,6 +650,8 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
 
 
 \subsection{Provisional BOM}
+A bill of materials is included in Table \ref{Tab:provisional_bom} with potential components and rough pricing information. Batteries and motors will be loaned to us from Discovery Robotics, reducing overall project cost. The batteries and motors shown in the BOM are backup components to be used if the loaned components do not fulfill project requirements.
+
 \begin{table}[H]
 \centering
 \def\arraystretch{1.1}

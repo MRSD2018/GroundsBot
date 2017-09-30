@@ -278,7 +278,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \newpage
 \section{System Level Trade Studies}
   \subsection{Platform Configuration Trade Study}
-The first step was to decide a platform configuration that will meet the system requirements. A handful of common wheeled platform variants were considered (Table \ref{Tab:PlatformConfigDiagramsTable}). Each was evaluated on speed, wheel compaction, stability, complexity, ease of odometry, turning radius, and performance on uneven terrain. A two wheeled chassis with casters was selected (Table \ref{Tab:PlatformConfigTable}).
+The first step was to decide a platform configuration that will meet the system requirements. A handful of common wheeled platforms \cite{husky} variants were considered (Table \ref{Tab:PlatformConfigDiagramsTable}). Each was evaluated on speed, wheel compaction, stability, complexity, ease of odometry, turning radius, and performance on uneven terrain. A two wheeled chassis with casters was selected (Table \ref{Tab:PlatformConfigTable}).
 
 
      \begin{table}[H]
@@ -350,7 +350,7 @@ The first step was to decide a platform configuration that will meet the system 
     \end{table}
     
 %%%%%%%%%%platform base table%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
-Once a base configuration was determined, a specific implementation of the platform needed to be chosen. Several off-the-shelf as well as DIY platforms were considered. A DIY platform was chosen (Table \ref{Tab:PlatformBaseTable}).
+Once a base configuration was determined, a specific implementation of the platform needed to be chosen. Several off-the-shelf as well as DIY platforms were considered \cite{husqvarna} \cite{superdroid}. A DIY platform was chosen (Table \ref{Tab:PlatformBaseTable}).
 
     \begin{table}[H]
     \begin{adjustwidth}{-1.5in}{-1.5in}
@@ -463,7 +463,7 @@ Once the platform was decided upon, analysis on different sensors and sensor com
 
   The user interface and IO subsystems are the contact points for the operator. The WiFi access point allows the user to load mowing boundaries from their laptop or mobile device. This also enables the user to download coverage reports and diagnostics. Status LEDs allow the operator to understand the system status at a glance, while safety beacons alert humans to GroundsBot's presence at a distance.\\
 
-  GroundsBot uses its sensor suite to ensure a clean cut. GPS, IMU, and Motor Encoders are used for coarse localization while the cameras are used to ensure optimal grass overlap while cutting. Cameras and also enable GroundsBot to detect static and dynamic obstacles. A GPS RTK base station allows for tighter localization.\\
+  GroundsBot uses its sensor suite to ensure a clean cut. GPS \cite{swiftnav}, IMU, and Motor Encoders are used for coarse localization while the cameras are used to ensure optimal grass overlap while cutting. Cameras and also enable GroundsBot to detect static and dynamic obstacles. A GPS RTK base station allows for tighter localization.\\
 
   GroundsBot's battery subsystem reports charge status to the CPU to prevent GroundsBot from becoming stranded. The battery subsystem also contains standard protection protocols including charge control, under-voltage lockout, and over-current protection. \\
 
@@ -609,7 +609,7 @@ April 2018
 \begin{center}
 \textbf{Test 1:}
 \end{center}
- \textbf{Location:} Field by Doherty Apartments
+ \textbf{Location:} Field by Doherty Apartments \cite{interview-guenther}
 \\
 \textbf{Equipment:} GroundsBot, GroundsBot dock/RTK base station, laptop
 \begin{enumerate}
@@ -792,8 +792,6 @@ https://www.superdroidrobots.com/shop/item.aspx/prebuilt-2wd-66in-lawn-mower-wc-
 Duxbury, Jeff [Bob O’Connor Golf Course Superintendent]. (2017, September 16). Personal interview.
 \bibitem{interview-guenther} 
 Guenther, Steve [Carnegie Mellon University Director of Facilities Operations]. (2017, September 22). Personal interview.
-\bibitem{interview-zang} 
-Zang, Jason [Allegheny County Maintenance Manager]. (2017, September 25). Phone interview.
 \end{thebibliography}
 \endgroup
 

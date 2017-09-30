@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{1215bp}%
+    \setlength{\unitlength}{1218.75bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,7 +48,7 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.43209877)%
+  \begin{picture}(1,0.43076923)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{cyberphysical.pdf}}%
   \end{picture}%
 \endgroup%

@@ -152,7 +152,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
   \def\arraystretch{1.5}
   	\begin{tabularx}{\textwidth}{ lXX }
   	  	\hline
-		\textbf{ID} & \textbf{Requirement} & \textbf{Description} \\
+		\sffamily\textbf{ID} & \sffamily\textbf{Requirement} & \sffamily\textbf{Description} \\
     	M.P.1 &
     	First time user inputs map within 15 minutes &
     	GroundsBot should be easy to use \\
@@ -189,7 +189,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
   \def\arraystretch{1.5}
   \begin{tabularx}{\textwidth}{ lXX }
       \hline
-	  \textbf{ID} & \textbf{Requirement} & \textbf{Description} \\
+	  \sffamily\textbf{ID} & \sffamily\textbf{Requirement} & \sffamily\textbf{Description} \\
 	  D.P.1 &
 	  Mow to within 3 inches of a detected obstacles &
 	  A stretch goal for when M.P.6 (mow within 1 ft. of obstacles) is achieved \\
@@ -211,7 +211,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
     \def\arraystretch{1.5}
     \begin{tabularx}{\textwidth}{ lXX }
      \hline
-  	 \textbf{ID} & \textbf{Requirement} & \textbf{Description} \\
+  	 \sffamily\textbf{ID} & \sffamily\textbf{Requirement} & \sffamily\textbf{Description} \\
 	  M.N.1 &
   	  Return home to within 5 feet of dock &
   	  Groundsbot should return to its starting position to remove as much hassle from the user as possible \\  	  
@@ -238,8 +238,8 @@ The system requirements were decided upon to demonstrate a proof of concept auto
   	\def\arraystretch{1.5}
 	\begin{tabularx}{\textwidth}{ lXX }
   	\hline
-  	  \textbf{ID} & \textbf{Requirement} &
-  	  \textbf{Description} \\
+  	  \sffamily\textbf{ID} & \sffamily\textbf{Requirement} &
+  	  \sffamily\textbf{Description} \\
   	  D.N.1 &
   	  Operates in variable lighting conditions &
   	  Groundsbot should operate at night to avoid interrupting golfers\\
@@ -288,20 +288,22 @@ The first step was to decide a platform configuration that will meet the system 
     \centering
     \setlength{\dashlinedash}{.5pt}
     \setlength\tabcolsep{4pt}
-    \def\arraystretch{1.9}
+    \def\arraystretch{1}
     
 
     \begin{tabular}{lcccccccc}
     \hline
-        \makecell{\textbf{Configuration}\\ \textbf{Name}} & \makecell{\\ \textbf{Description}} & \makecell{\\ \textbf{Diagram}}  \\ 
-    \makecell[l]{4 Wheel \\ Skid} &  \makecell[l]{Four driven wheels \\ with skid steering.} &  \makecell[l]{\\ \includegraphics[width=2.8cm]{4_wheel_skid}} \\  
-    \makecell[l]{2 Wheel \\ Differential \\ with Casters} &  \makecell[l]{Two driven wheels \\ with casters for free \\ rotation.} &  \makecell[l]{\\ \includegraphics[width=2.8cm]{2_wheel_diff}} \\
-    \makecell[l]{AWD \\ Standard \\ Steering} &  \makecell[l]{Four driven wheels \\ with standard \\differential steering.} &  \makecell[l]{\\ \includegraphics[width=2.8cm]{awd_standard_steer}} \\
-    \makecell[l]{RWD \\ Standard \\ Steering} &  \makecell[l]{Two driven wheels \\ with standard\\ differential steering.} &  \makecell[l]{\\ \includegraphics[width=2.8cm]{rwd_standard_steer}} \\
-    \makecell[l]{Articulated} &  \makecell[l]{Four driven wheels \\ with center pivot \\ articulated steering.} &  \makecell[l]{\\ \includegraphics[width=2.8cm]{articulated}} \\
-    \makecell[l]{Tracked} &  \makecell[l]{Two driven wheels \\ with tracks and \\ skid steering.} &  \makecell[l]{\\ \includegraphics[width=2.8cm]{tracked}} \\
-    \makecell[l]{3 Wheel \\ Delta} &  \makecell[l]{Three driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{ \includegraphics[width=2.9cm]{3_wheel_delta}} \\
-    \makecell[l]{4 Wheel \\ Omniwheel} &  \makecell[l]{Four driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{\\ \includegraphics[width=3.0cm]{4_wheel_omniwheel}} \\
+
+\makecell{\sffamily\textbf{Configuration}} & \makecell{\sffamily\textbf{Description}} & \makecell{\sffamily\textbf{Diagram}}  \\ 
+    \makecell[l]{4 Wheel \\ Skid} &  \makecell[l]{Four driven wheels \\ with skid steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{4_wheel_skid}} \\  
+    \makecell[l]{2 Wheel \\ Differential \\ with Casters} &  \makecell[l]{Two driven wheels \\ with casters for free \\ rotation.} &  \makecell[l]{\\ \includegraphics[width=4cm]{2_wheel_diff}} \\
+    \makecell[l]{AWD \\ Standard \\ Steering} &  \makecell[l]{Four driven wheels \\ with standard \\differential steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{awd_standard_steer}} \\
+    \makecell[l]{RWD \\ Standard \\ Steering} &  \makecell[l]{Two driven wheels \\ with standard\\ differential steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{rwd_standard_steer}} \\
+    \makecell[l]{Articulated} &  \makecell[l]{Four driven wheels \\ with center pivot \\ articulated steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{articulated}} \\
+    \makecell[l]{Tracked} &  \makecell[l]{Two driven wheels \\ with tracks and \\ skid steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{tracked}} \\
+    \makecell[l]{3 Wheel \\ Delta} &  \makecell[l]{Three driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{ \includegraphics[width=4.1cm]{3_wheel_delta}} \\
+    \makecell[l]{4 Wheel \\ Omniwheel} &  \makecell[l]{Four driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{\\ \includegraphics[width=4.3cm]{4_wheel_omniwheel}} \\
+
     
         \end{tabular}
     
@@ -328,21 +330,21 @@ The first step was to decide a platform configuration that will meet the system 
 
     \begin{tabular}{lcccccccc}
     \hline
-                                                                                      & \makecell{\\ \\ \textbf{Speed}} & \makecell{\\ \textbf{Wheel} \\ \textbf{Compaction}} & \makecell{\\ \\ \textbf{Stability}} & \makecell{\\ \textbf{Platform} \\ \textbf{Complexity}} & \makecell{\\ \textbf{Odometry} \\ \textbf{Accuracy}} & \makecell{\\ \textbf{Turning} \\ \textbf{Radius} } & \makecell{\textbf{Performance} \\ \textbf{on Uneven} \\ \textbf{Terrain}} & \makecell{\\ \\ \textbf{Score}} \\ 
-    \makecell[l]{Weights \\ (1-5)}                                            & 3     & 2                & 1         & 3                   & 4                 & 5                                          & 5                             &       \\ \hline
+                                                                                      & \makecell{\\ \\ \sffamily\textbf{Speed}} & \makecell{\\ \sffamily\textbf{Wheel} \\ \sffamily\textbf{Compaction}} & \makecell{\\ \\ \sffamily\textbf{Stability}} & \makecell{\\ \sffamily\textbf{Platform} \\ \sffamily\textbf{Complexity}} & \makecell{\\ \sffamily\textbf{Odometry} \\ \sffamily\textbf{Accuracy}} & \makecell{\\ \sffamily\textbf{Turning} \\ \sffamily\textbf{Radius} } & \makecell{\sffamily\textbf{Performance} \\ \sffamily\textbf{on Uneven} \\ \sffamily\textbf{Terrain}} & \makecell{\\ \\ \sffamily\textbf{Score}} \\ 
+    \makecell[l]{\sffamily Weights \\ (1-5)}                                            & 3     & 2                & 1         & 3                   & 4                 & 5                                          & 5                             &       \\ \hline
     
     \\[-3ex]
-    \makecell[l]{4 Wheel \\ Skid}                                             & 5     & 4                & 4         & 4                   & 1                 & 1                                          & 5                             & 73    \\ \hdashline 
+    \sffamily\makecell[l]{4 Wheel \\ Skid}                                             & 5     & 4                & 4         & 4                   & 1                 & 1                                          & 5                             & 73    \\ \hdashline 
     
     %jesus christ this row is a goddamn mess BUT YOU GOTTA DO WHAT YOU GOTTA DO
-    \cellcolor{highlight}\makecell[l]{2 Wheel \\ Differential \\ with Casters}& \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}3} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}107}   \\ \hdashline
+    \cellcolor{highlight}\sffamily\makecell[l]{2 Wheel \\ Differential \\ with Casters}& \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}3} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}107}   \\ \hdashline
     
-    \makecell[l]{AWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 2                   & 4                 & 2                                          & 5                             & 84    \\ \hdashline
-    \makecell[l]{RWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 3                   & 5                 & 2                                          & 5                             & 91    \\ \hdashline
-    \makecell[l]{ \\ Articulated \\ \quad }                                   & 3     & 4                & 2         & 1                   & 3                 & 2                                          & 5                             & 69    \\ \hdashline
-    \makecell[l]{\\ Tracked  \\ \quad}                                        & 2     & 5                & 5         & 3                   & 1                 & 5                                          & 5                             & 84    \\ \hdashline
-    \makecell[l]{3 Wheel \\ Delta}                                            & 1     & 3                & 1         & 1                   & 1                 & 5                                          & 1                             & 47    \\ \hdashline
-    \makecell[l]{4 Wheel \\ Omniwheel}                                        & 2     & 4                & 2         & 1                   & 5                 & 5                                          & 1                             & 69    \\ 
+    \sffamily\makecell[l]{AWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 2                   & 4                 & 2                                          & 5                             & 84    \\ \hdashline
+    \sffamily\makecell[l]{RWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 3                   & 5                 & 2                                          & 5                             & 91    \\ \hdashline
+    \sffamily\makecell[l]{ \\ Articulated \\ \quad }                                   & 3     & 4                & 2         & 1                   & 3                 & 2                                          & 5                             & 69    \\ \hdashline
+    \sffamily\makecell[l]{\\ Tracked  \\ \quad}                                        & 2     & 5                & 5         & 3                   & 1                 & 5                                          & 5                             & 84    \\ \hdashline
+   \sffamily\makecell[l]{3 Wheel \\ Delta}                                            & 1     & 3                & 1         & 1                   & 1                 & 5                                          & 1                             & 47    \\ \hdashline
+    \sffamily\makecell[l]{4 Wheel \\ Omniwheel}                                        & 2     & 4                & 2         & 1                   & 5                 & 5                                          & 1                             & 69    \\ 
     \end{tabular}
   
     \end{adjustwidth}
@@ -367,16 +369,16 @@ Once a base configuration was determined, a specific implementation of the platf
     \begin{tabular}{lcccccccc}
     \hline
         
-                                                               & \makecell{\textbf{Ease} \\\textbf{ of }\\ \textbf{Integration}} & \makecell{\textbf{Ease} \\ \textbf{of} \\ \textbf{Repair}} & \makecell{\textbf{Ease} \\ \textbf{of} \\ \textbf{Construction}} & \makecell{\textbf{Flexiblility} \\ \textbf{for} \\ \textbf{Modifications}} & \makecell{\\ \\ \textbf{Cost}} & \makecell{ \\ \textbf{Lead-} \\ \textbf{time}} & \makecell{\\ \\ \textbf{Traction}} & \makecell{\\ \\ \textbf{Score}} \\
-    Weights (1-5)                                          & 3                   & 2              & 3                    & 5                              & 3    & 2        & 4        &       \\ \hline
+                                                               & \sffamily\makecell{\textbf{Ease} \\\textbf{ of }\\ \textbf{Integration}} & \sffamily\makecell{\textbf{Ease} \\ \textbf{of} \\ \textbf{Repair}} & \sffamily\makecell{\textbf{Ease} \\ \textbf{of} \\ \textbf{Construction}} & \sffamily\makecell{\textbf{Flexiblility} \\ \textbf{for} \\ \textbf{Modifications}} & \sffamily\makecell{\\ \\ \textbf{Cost}} & \sffamily\makecell{ \\ \textbf{Lead-} \\ \textbf{time}} & \sffamily\makecell{\\ \\ \textbf{Traction}} & \sffamily\makecell{\\ \\ \textbf{Score}} \\
+    \sffamily Weights (1-5)                                          & 3                   & 2              & 3                    & 5                              & 3    & 2        & 4        &       \\ \hline
     
     \\[-2ex]
-    \multicolumn{1}{l}{\cellcolor{highlight}Complete DIY}& \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}2} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}93}    \\ \hdashline
-    RC Lawnmower                                           & 5                   & 3              & 5                    & 4                              & 1    & 2        & 5        & 83    \\ \hdashline
-    \makecell[l]{Modify Robot \\ Lawnmower}                & 3                   & 3              & 4                    & 1                              & 1    & 4        & 2        & 51    \\ \hdashline
-    \makecell[l]{Modify Electric \\ Pushmower}             & 2                   & 2              & 3                    & 1                              & 2    & 5        & 1        & 44    \\ \hdashline
-    \makecell[l]{Modify Electric \\ Ride on Mower}         & 2                   & 1              & 3                    & 1                              & 3    & 5        & 5        & 61    \\ \hdashline
-    \makecell[l]{Stock Platform with \\ Mower Attached}    & 5                   & 3              & 5                    & 4                              & 1    & 3        & 3        & 77    \\ 
+    \multicolumn{1}{l}{\sffamily\cellcolor{highlight}Complete DIY}& \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}2} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}93}    \\ \hdashline
+   \sffamily RC Lawnmower                                           & 5                   & 3              & 5                    & 4                              & 1    & 2        & 5        & 83    \\ \hdashline
+    \sffamily\makecell[l]{Modify Robot \\ Lawnmower}                & 3                   & 3              & 4                    & 1                              & 1    & 4        & 2        & 51    \\ \hdashline
+    \sffamily\makecell[l]{Modify Electric \\ Pushmower}             & 2                   & 2              & 3                    & 1                              & 2    & 5        & 1        & 44    \\ \hdashline
+    \sffamily\makecell[l]{Modify Electric \\ Ride on Mower}         & 2                   & 1              & 3                    & 1                              & 3    & 5        & 5        & 61    \\ \hdashline
+    \sffamily\makecell[l]{Stock Platform with \\ Mower Attached}    & 5                   & 3              & 5                    & 4                              & 1    & 3        & 3        & 77    \\ 
     \end{tabular}
     
     \end{adjustwidth}
@@ -385,7 +387,7 @@ Once a base configuration was determined, a specific implementation of the platf
     
 %%%%%%%%%%sensor capability table%%%%%%%%%%%%%%%%%%%%   
 \newpage
-Once the platform was decided upon, analysis on different sensors and sensor combinations began. Sensors were evaluated individually first to establish baseline capability and relevance to the project. Then sensors were evaluated in different combinations, taking into account the results of the individual sensor study. The results showed that a stereo vision camera was the sensor that best fit the needs of GroundsBot (Table \ref{Tab:SensorCapabilitiesTable}).
+Once the platform was decided upon, analysis on different sensors and sensor combinations began. Sensors were evaluated individually first to establish baseline capability and relevance to the project. RGBD was eliminated completely due to its inability to perform in daylight. Then sensors were evaluated in different combinations, taking into account the results of the individual sensor study. The results showed that a stereo vision camera was the sensor that best fit the needs of GroundsBot (Table \ref{Tab:SensorCapabilitiesTable}).
 
 
     \begin{table}[H]
@@ -403,17 +405,17 @@ Once the platform was decided upon, analysis on different sensors and sensor com
 
     \begin{tabular}{lcccccc}
     \hline
-                                                                     & \makecell{\textbf{Identify} \\ \textbf{Static}  \\ \textbf{Obstacles}} & \makecell{\textbf{Identify} \\ \textbf{Dynamic} \\ \textbf{Obstacles}} & \makecell{\textbf{Detect} \\ \textbf{Grass /} \\ \textbf{No Grass}} & \makecell{\textbf{Functions} \\ \textbf{Outdoors} \\ \textbf{In Daylight}} &\makecell{\textbf{Detect} \\ \textbf{Grass} \\ \textbf{Transitions}} & \makecell{\textbf{Sense} \\ Driveable \\ \textbf{Land}} \\ 
+                                                                     & \sffamily\makecell{\textbf{Identify} \\ \textbf{Static}  \\ \textbf{Obstacles}} & \sffamily\makecell{\textbf{Identify} \\ \textbf{Dynamic} \\ \textbf{Obstacles}} & \sffamily\makecell{\textbf{Detect} \\ \textbf{Grass /} \\ \textbf{No Grass}} & \sffamily\makecell{\textbf{Functions} \\ \textbf{Outdoors} \\ \textbf{In Daylight}} &\sffamily\makecell{\textbf{Detect} \\ \textbf{Grass} \\ \textbf{Transitions}} & \sffamily\makecell{\textbf{Sense} \\ Driveable \\ \textbf{Land}} \\ 
         \hline
     \\[-2ex]
-    LiDAR                                                        & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
-    Camera                                                       & 3                         & 3                          & 5                       & 5                              & 5                        & 1                    \\ \hdashline
+    \sffamily LiDAR                                                        & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
+    \sffamily Camera                                                       & 3                         & 3                          & 5                       & 5                              & 5                        & 1                    \\ \hdashline
     
-    \multicolumn{1}{l}{\cellcolor{badhighlight!70}RGBD Camera }& \multicolumn{1}{c}{\cellcolor{badhighlight!70}5} & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 }   & \multicolumn{1}{c}{\cellcolor{badhighlight!70}0 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } \\ \hdashline
-    \makecell[l]{Omnidirectional \\ Camera (upwards)}            & 3                         & 3                          & 0                       & 5                              & 0                        & 0                    \\ \hdashline
-    Stereo Camera                                                & 4                         & 3                          & 5                       & 5                              & 5                        & 3                    \\ \hdashline
-    Thermal Camera                                               & 1                         & 5                          & 0                       & 5                              & 0                        & 1                    \\ \hdashline
-    Sonar                                                        & 3                         & 3                          & 0                       & 5                              & 0                        & 2                   \\    
+    \multicolumn{1}{l}{\sffamily\cellcolor{badhighlight!70}RGBD Camera }& \multicolumn{1}{c}{\cellcolor{badhighlight!70}5} & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}0 }   & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } \\ \hdashline
+    \sffamily\makecell[l]{Omnidirectional \\ Camera (upwards)}            & 3                         & 3                          & 0                       & 5                              & 0                        & 0                    \\ \hdashline
+    \sffamily Stereo Camera                                                & 4                         & 3                          & 5                       & 5                              & 5                        & 3                    \\ \hdashline
+    \sffamily Thermal Camera                                               & 1                         & 5                          & 0                       & 5                              & 0                        & 1                    \\ \hdashline
+    \sffamily Sonar                                                        & 3                         & 3                          & 0                       & 5                              & 0                        & 2                   \\    
     \end{tabular}
 
     \end{adjustwidth}
@@ -434,15 +436,15 @@ Once the platform was decided upon, analysis on different sensors and sensor com
 
     \begin{tabular}{lcccccc}
     \hline
-                                                                     & \makecell{\\ \\ \textbf{Ability}} & \makecell{\\ \\ \textbf{Cost}} & \makecell{\textbf{Hardware} \\ \textbf{Integration} \\ \textbf{Complexity}} & \makecell{\textbf{Software} \\ \textbf{Integration} \\ \textbf{Complexity}} & \makecell{ \\ \textbf{Computational} \\ \textbf{Intensity}} & \makecell{\\ \\ \textbf{Score}} \\ 
-    Weights                                                      & 5       & 3    & 4                               & 5                               & 3                       &       \\ \hline
+                                                                     & \sffamily\makecell{\\ \\ \textbf{Ability}} & \sffamily\makecell{\\ \\ \textbf{Cost}} & \sffamily\makecell{\textbf{Hardware} \\ \textbf{Integration} \\ \textbf{Complexity}} & \sffamily\makecell{\textbf{Software} \\ \textbf{Integration} \\ \textbf{Complexity}} & \sffamily\makecell{ \\ \textbf{Computational} \\ \textbf{Intensity}} & \sffamily\makecell{\\ \\ \textbf{Score}} \\ 
+    \sffamily Weights                                                      & 5       & 3    & 4                               & 5                               & 3                       &       \\ \hline
     \\[-2ex]
-    LiDAR + 1x Camera                                            & 4       & 2    & 3                               & 4                               & 3                       & 67    \\ \hdashline
-    LiDAR + Stereo Camera                                        & 5       & 1    & 3                               & 3                               & 2                       & 61    \\ \hdashline
-    \makecell[l]{Omnidirectional Camera + \\ Down Camera}        & 2       & 5    & 4                               & 2                               & 3                       & 60    \\ \hdashline
-    \multicolumn{1}{l}{\cellcolor{highlight}Stereo Camera Only}& \multicolumn{1}{c}{\cellcolor{highlight}3} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}79}    \\ \hdashline
-    \makecell[l]{Thermal Camera + \\ LiDAR + Camera}             & 4.5     & 1    & 3                               & 2                               & 2                       & 53.5  \\ \hdashline
-    Many Cameras                                                 & 3       & 4    & 2                               & 2                               & 2                       & 51    \\ 
+    \sffamily LiDAR + 1x Camera                                            & 4       & 2    & 3                               & 4                               & 3                       & 67    \\ \hdashline
+    \sffamily LiDAR + Stereo Camera                                        & 5       & 1    & 3                               & 3                               & 2                       & 61    \\ \hdashline
+    \sffamily\makecell[l]{Omnidirectional Camera + \\ Down Camera}        & 2       & 5    & 4                               & 2                               & 3                       & 60    \\ \hdashline
+    \multicolumn{1}{l}{\sffamily\cellcolor{highlight}Stereo Camera Only}& \multicolumn{1}{c}{\cellcolor{highlight}3} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}79}    \\ \hdashline
+    \sffamily\makecell[l]{Thermal Camera + \\ LiDAR + Camera}             & 4.5     & 1    & 3                               & 2                               & 2                       & 53.5  \\ \hdashline
+    \sffamily Many Cameras                                                 & 3       & 4    & 2                               & 2                               & 2                       & 51    \\ 
     
     \end{tabular}
 
@@ -661,7 +663,9 @@ A bill of materials is included in Table \ref{Tab:provisional_bom} with potentia
 \label{Tab:provisional_bom}
 \begin{tabular}{ llccl }
 \hline
-    \textbf{Manufacturer} & \textbf{Part No.} & \textbf{QTY} & \textbf{ROM Cost} & \textbf{Description}\\
+
+    \sffamily\textbf{Manufacturer} & \sffamily\textbf{Part No.} & \sffamily\textbf{QTY} & \sffamily\textbf{Cost} & \sffamily\textbf{Description}\\
+
     \\[-.8ex]
     SuperDroid Robots & TD-111-135 & 1 & \$900 & Wheelchair Motors \& Encoders \\
 	SuperDroid Robots & TE-240-030 & 1 & \$330 & Motor Controller \\

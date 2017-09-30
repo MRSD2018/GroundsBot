@@ -293,17 +293,15 @@ The first step was to decide a platform configuration that will meet the system 
 
     \begin{tabular}{lcccccccc}
     \hline
-
 \makecell{\sffamily\textbf{Configuration}} & \makecell{\sffamily\textbf{Description}} & \makecell{\sffamily\textbf{Diagram}}  \\ 
-    \makecell[l]{4 Wheel \\ Skid} &  \makecell[l]{Four driven wheels \\ with skid steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{4_wheel_skid}} \\  
-    \makecell[l]{2 Wheel \\ Differential \\ with Casters} &  \makecell[l]{Two driven wheels \\ with casters for free \\ rotation.} &  \makecell[l]{\\ \includegraphics[width=4cm]{2_wheel_diff}} \\
-    \makecell[l]{AWD \\ Standard \\ Steering} &  \makecell[l]{Four driven wheels \\ with standard \\differential steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{awd_standard_steer}} \\
-    \makecell[l]{RWD \\ Standard \\ Steering} &  \makecell[l]{Two driven wheels \\ with standard\\ differential steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{rwd_standard_steer}} \\
-    \makecell[l]{Articulated} &  \makecell[l]{Four driven wheels \\ with center pivot \\ articulated steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{articulated}} \\
+    \makecell[l]{4 Wheel \\ Skid} &  \makecell[l]{Four driven wheels \\ with skid steering.} &  \makecell[l]{\\ \includegraphics[width=3cm]{4_wheel_skid}} \\  
+    \makecell[l]{2 Wheel \\ Differential \\ with Casters} &  \makecell[l]{Two driven wheels \\ with casters for free \\ rotation.} &  \makecell[l]{\\ \includegraphics[width=3cm]{2_wheel_diff}} \\
+    \makecell[l]{AWD \\ Standard \\ Steering} &  \makecell[l]{Four driven wheels \\ with standard \\differential steering.} &  \makecell[l]{\\ \includegraphics[width=3cm]{awd_standard_steer}} \\
+    \makecell[l]{RWD \\ Standard \\ Steering} &  \makecell[l]{Two driven wheels \\ with standard\\ differential steering.} &  \makecell[l]{\\ \includegraphics[width=3cm]{rwd_standard_steer}} \\
+    \makecell[l]{Articulated} &  \makecell[l]{Four driven wheels \\ with center pivot \\ articulated steering.} &  \makecell[l]{\\ \includegraphics[width=3cm]{articulated}} \\
     \makecell[l]{Tracked} &  \makecell[l]{Two driven wheels \\ with tracks and \\ skid steering.} &  \makecell[l]{\\ \includegraphics[width=4cm]{tracked}} \\
-    \makecell[l]{3 Wheel \\ Delta} &  \makecell[l]{Three driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{ \includegraphics[width=4.1cm]{3_wheel_delta}} \\
-    \makecell[l]{4 Wheel \\ Omniwheel} &  \makecell[l]{Four driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{\\ \includegraphics[width=4.3cm]{4_wheel_omniwheel}} \\
-
+    \makecell[l]{3 Wheel \\ Delta} &  \makecell[l]{Three driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{ \includegraphics[width=3cm]{3_wheel_delta}} \\
+    \makecell[l]{4 Wheel \\ Omniwheel} &  \makecell[l]{Four driven wheels \\ with immediate x, y, \\ and rotation control.} &  \makecell[l]{\\ \includegraphics[width=3cm]{4_wheel_omniwheel}} \\
     
         \end{tabular}
     
@@ -351,7 +349,6 @@ The first step was to decide a platform configuration that will meet the system 
     \end{table}
     
 %%%%%%%%%%platform base table%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
-\newpage %put same page as table
 Once a base configuration was determined, a specific implementation of the platform needed to be chosen. Several off-the-shelf as well as DIY platforms were considered.  A DIY platform was chosen (Table \ref{Tab:PlatformBaseTable}).
 
     \begin{table}[H]
@@ -386,8 +383,7 @@ Once a base configuration was determined, a specific implementation of the platf
     
     
 %%%%%%%%%%sensor capability table%%%%%%%%%%%%%%%%%%%%   
-\newpage
-Once the platform was decided upon, analysis on different sensors and sensor combinations began. Sensors were evaluated individually first to establish baseline capability and relevance to the project. RGBD was eliminated completely due to its inability to perform in daylight. Then sensors were evaluated in different combinations, taking into account the results of the individual sensor study. The results showed that a stereo vision camera was the sensor that best fit the needs of GroundsBot (Table \ref{Tab:SensorCapabilitiesTable}).
+Once the platform was decided upon, analysis on different sensors and sensor combinations began. Sensors were evaluated individually first to establish baseline capability and relevance to the project. Then sensors were evaluated in different combinations, taking into account the results of the individual sensor study. The results showed that a stereo vision camera was the sensor that best fit the needs of GroundsBot (Table \ref{Tab:SensorCapabilitiesTable}).
 
 
     \begin{table}[H]
@@ -411,7 +407,7 @@ Once the platform was decided upon, analysis on different sensors and sensor com
     \sffamily LiDAR                                                        & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
     \sffamily Camera                                                       & 3                         & 3                          & 5                       & 5                              & 5                        & 1                    \\ \hdashline
     
-    \multicolumn{1}{l}{\sffamily\cellcolor{badhighlight!70}RGBD Camera }& \multicolumn{1}{c}{\cellcolor{badhighlight!70}5} & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}0 }   & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } \\ \hdashline
+    \multicolumn{1}{l}{\sffamily\cellcolor{badhighlight!70}RGBD Camera }& \multicolumn{1}{c}{\cellcolor{badhighlight!70}5} & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 }   & \multicolumn{1}{c}{\cellcolor{badhighlight!70}0 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } \\ \hdashline
     \sffamily\makecell[l]{Omnidirectional \\ Camera (upwards)}            & 3                         & 3                          & 0                       & 5                              & 0                        & 0                    \\ \hdashline
     \sffamily Stereo Camera                                                & 4                         & 3                          & 5                       & 5                              & 5                        & 3                    \\ \hdashline
     \sffamily Thermal Camera                                               & 1                         & 5                          & 0                       & 5                              & 0                        & 1                    \\ \hdashline
@@ -655,7 +651,6 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
 \end{enumerate}
 \subsection{Team Member Responsibilities}
 \subsection{Provisional BOM}
-A bill of materials is included in Table \ref{Tab:provisional_bom} with potential components and rough pricing information. Batteries and motors will potentially be loaned to us from our sponsor, reducing overall project cost.
 \begin{table}[H]
 \centering
 \def\arraystretch{1.1}
@@ -663,9 +658,7 @@ A bill of materials is included in Table \ref{Tab:provisional_bom} with potentia
 \label{Tab:provisional_bom}
 \begin{tabular}{ llccl }
 \hline
-
     \sffamily\textbf{Manufacturer} & \sffamily\textbf{Part No.} & \sffamily\textbf{QTY} & \sffamily\textbf{Cost} & \sffamily\textbf{Description}\\
-
     \\[-.8ex]
     SuperDroid Robots & TD-111-135 & 1 & \$900 & Wheelchair Motors \& Encoders \\
 	SuperDroid Robots & TE-240-030 & 1 & \$330 & Motor Controller \\

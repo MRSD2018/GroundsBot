@@ -387,7 +387,7 @@ Once a base configuration was determined, a specific implementation of the platf
     
 %%%%%%%%%%sensor capability table%%%%%%%%%%%%%%%%%%%%   
 \newpage
-Once the platform was decided upon, analysis on different sensors and sensor combinations began. Sensors were evaluated individually first to establish baseline capability and relevance to the project. Then sensors were evaluated in different combinations, taking into account the results of the individual sensor study. The results showed that a stereo vision camera was the sensor that best fit the needs of GroundsBot (Table \ref{Tab:SensorCapabilitiesTable}).
+Once the platform was decided upon, analysis on different sensors and sensor combinations began. Sensors were evaluated individually first to establish baseline capability and relevance to the project. RGBD was eliminated completely due to its inability to perform in daylight. Then sensors were evaluated in different combinations, taking into account the results of the individual sensor study. The results showed that a stereo vision camera was the sensor that best fit the needs of GroundsBot (Table \ref{Tab:SensorCapabilitiesTable}).
 
 
     \begin{table}[H]
@@ -411,7 +411,7 @@ Once the platform was decided upon, analysis on different sensors and sensor com
     \sffamily LiDAR                                                        & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
     \sffamily Camera                                                       & 3                         & 3                          & 5                       & 5                              & 5                        & 1                    \\ \hdashline
     
-    \multicolumn{1}{l}{\sffamily\cellcolor{badhighlight!70}RGBD Camera }& \multicolumn{1}{c}{\cellcolor{badhighlight!70}5} & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 }   & \multicolumn{1}{c}{\cellcolor{badhighlight!70}0 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } \\ \hdashline
+    \multicolumn{1}{l}{\sffamily\cellcolor{badhighlight!70}RGBD Camera }& \multicolumn{1}{c}{\cellcolor{badhighlight!70}5} & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}0 }   & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } \\ \hdashline
     \sffamily\makecell[l]{Omnidirectional \\ Camera (upwards)}            & 3                         & 3                          & 0                       & 5                              & 0                        & 0                    \\ \hdashline
     \sffamily Stereo Camera                                                & 4                         & 3                          & 5                       & 5                              & 5                        & 3                    \\ \hdashline
     \sffamily Thermal Camera                                               & 1                         & 5                          & 0                       & 5                              & 0                        & 1                    \\ \hdashline

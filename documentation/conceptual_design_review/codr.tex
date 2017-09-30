@@ -257,7 +257,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 
 \newpage
 \section{Functional Architecture}
-  There are three subsystems that combine to accomplish the functionality needed for GroundsBot (Figure~\ref{fig:functional}). The User Interface accepts inputs from the groundskeeper, generating detailed mowing regions. The Charging Dock acts as a home point for charging the robot, while also providing a reference signal for correcting localization issues. The Mowing Robot includes internal subsystems which enable the robot to navigate the golf course, cut the rough, and return to the charging dock when needed.\\
+  There are three sub-systems that combine to accomplish the functionality needed for GroundsBot (Figure~\ref{fig:functional}). The User Interface accepts inputs from the groundskeeper, generating detailed mowing regions. The Charging Dock acts as a home point for charging the robot, while also providing a reference signal for correcting localization issues. The Mowing Robot includes internal sub-systems which enable the robot to navigate the golf course, cut the rough, and return to the charging dock when needed.\\
   
 \begin{figure}[H]
 \centering
@@ -267,9 +267,9 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \label{fig:functional}
 \end{figure}
 
-  The Mowing Robot subsystem is responsible for many critical tasks in the Autonomous Golf Rough Mowing system. The Vehicle Platform is one internal subsystem that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Mower Electronics subsystem provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this subsystem is crucial for the remaining systems, enabling full mowing autonomy.\\
+  The Mowing Robot sub-system is responsible for many critical tasks in the Autonomous Golf Rough Mowing system. The Vehicle Platform is one internal sub-system that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Mower Electronics sub-system provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this sub-system is crucial for the remaining systems, enabling full mowing autonomy.\\
   
-  The remaining subsystems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide Groundsbot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
+  The remaining sub-systems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide Groundsbot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
 
 \newpage
 \section{System Level Trade Studies}
@@ -319,27 +319,27 @@ The first step was to decide a platform configuration that will meet the system 
     \begin{adjustwidth}{-1in}{-1in}
     \centering
     \setlength{\dashlinedash}{.5pt}
-    \setlength\tabcolsep{4pt}
+    \setlength\tabcolsep{2pt}
     \def\arraystretch{2}
     
 
     \begin{tabular}{lcccccccc}
     \hline 
     \\[-5ex]                                                                                      & \makecell{\\ \\ \sffamily\normalsize{Speed}} & \makecell{\\ \sffamily\normalsize{Wheel} \\ \sffamily\normalsize{Compaction}} & \makecell{\\ \\ \sffamily\normalsize{Stability}} & \makecell{\\ \sffamily\normalsize{Platform} \\ \sffamily\normalsize{Complexity}} & \makecell{\\ \sffamily\normalsize{Odometry} \\ \sffamily\normalsize{Accuracy}} & \makecell{\\ \sffamily\normalsize{Turning} \\ \sffamily\normalsize{Radius} } & \makecell{\sffamily\normalsize{Performance} \\ \sffamily\normalsize{on Uneven} \\ \sffamily\normalsize{Terrain}} & \makecell{\\ \\ \sffamily\normalsize{Score}} \\ 
-    \makecell[l]{\sffamily Weights \\ (1-5)}                                            & 3     & 2                & 1         & 3                   & 4                 & 5                                          & 5                             &       \\ \hline
+    \makecell[l]{\normalsize\sffamily Weights \\ (1-5)}                                            & 3     & 2                & 1         & 3                   & 4                 & 5                                          & 5                             &       \\ \hline
     
     \\[-3ex]
-    \sffamily\makecell[l]{4 Wheel \\ Skid}                                             & 5     & 4                & 4         & 4                   & 1                 & 1                                          & 5                             & 73    \\ \hdashline 
+    \normalsize\sffamily\makecell[l]{4 Wheel \\ Skid}                                             & 5     & 4                & 4         & 4                   & 1                 & 1                                          & 5                             & 73    \\ \hdashline 
     
     %jesus christ this row is a goddamn mess BUT YOU GOTTA DO WHAT YOU GOTTA DO
-    \cellcolor{highlight}\sffamily\makecell[l]{2 Wheel \\ Differential \\ with Casters}& \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}3} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}107}   \\ \hdashline
+    \cellcolor{highlight}\normalsize\sffamily\makecell[l]{2 Wheel \\ Differential \\ with Casters}& \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}3} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}107}   \\ \hdashline
     
-    \sffamily\makecell[l]{AWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 2                   & 4                 & 2                                          & 5                             & 84    \\ \hdashline
-    \sffamily\makecell[l]{RWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 3                   & 5                 & 2                                          & 5                             & 91    \\ \hdashline
-    \sffamily\makecell[l]{ \\ Articulated \\ \quad }                                   & 3     & 4                & 2         & 1                   & 3                 & 2                                          & 5                             & 69    \\ \hdashline
-    \sffamily\makecell[l]{\\ Tracked  \\ \quad}                                        & 2     & 5                & 5         & 3                   & 1                 & 5                                          & 5                             & 84    \\ \hdashline
-   \sffamily\makecell[l]{3 Wheel \\ Delta}                                            & 1     & 3                & 1         & 1                   & 1                 & 5                                          & 1                             & 47    \\ \hdashline
-    \sffamily\makecell[l]{4 Wheel \\ Omniwheel}                                        & 2     & 4                & 2         & 1                   & 5                 & 5                                          & 1                             & 69    \\ 
+    \normalsize\sffamily\makecell[l]{AWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 2                   & 4                 & 2                                          & 5                             & 84    \\ \hdashline
+    \normalsize\sffamily\makecell[l]{RWD \\ Standard \\ Steering}                                 & 5     & 4                & 4         & 3                   & 5                 & 2                                          & 5                             & 91    \\ \hdashline
+    \normalsize\sffamily\makecell[l]{ \\ Articulated \\ \quad }                                   & 3     & 4                & 2         & 1                   & 3                 & 2                                          & 5                             & 69    \\ \hdashline
+    \normalsize\sffamily\makecell[l]{\\ Tracked  \\ \quad}                                        & 2     & 5                & 5         & 3                   & 1                 & 5                                          & 5                             & 84    \\ \hdashline
+   \normalsize\sffamily\makecell[l]{3 Wheel \\ Delta}                                            & 1     & 3                & 1         & 1                   & 1                 & 5                                          & 1                             & 47    \\ \hdashline
+    \normalsize\sffamily\makecell[l]{4 Wheel \\ Omniwheel}                                        & 2     & 4                & 2         & 1                   & 5                 & 5                                          & 1                             & 69    \\ 
     \end{tabular}
   
     \end{adjustwidth}
@@ -364,15 +364,15 @@ Once a base configuration was determined, a specific implementation of the platf
     \hline
     \\[-5ex]
                                                                & \normalsize\sffamily\makecell{ {Ease} \\ { of }\\  {Integration}} &\normalsize\sffamily\makecell{ {Ease} \\  {of} \\  {Repair}} & \normalsize\sffamily\makecell{ {Ease} \\  {of} \\  {Construction}} & \normalsize\sffamily\makecell{ {Flexiblility} \\  {for} \\  {Modifications}} & \normalsize\sffamily\makecell{\\ \\  {Cost}} & \normalsize\sffamily\makecell{ \\  {Lead-} \\  {time}} & \normalsize\sffamily\makecell{\\ \\  {Traction}} & \normalsize\sffamily\makecell{\\ \\  {Score}} \\
-    \sffamily Weights (1-5)                                          & 3                   & 2              & 3                    & 5                              & 3    & 2        & 4        &       \\ \hline
+    \normalsize\sffamily Weights (1-5)                                          & 3                   & 2              & 3                    & 5                              & 3    & 2        & 4        &       \\ \hline
     
     \\[-2ex]
-    \multicolumn{1}{l}{\sffamily\cellcolor{highlight}Complete DIY}& \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}2} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}93}    \\ \hdashline
-   \sffamily RC Lawnmower                                           & 5                   & 3              & 5                    & 4                              & 1    & 2        & 5        & 83    \\ \hdashline
-    \sffamily\makecell[l]{Modify Robot \\ Lawnmower}                & 3                   & 3              & 4                    & 1                              & 1    & 4        & 2        & 51    \\ \hdashline
-    \sffamily\makecell[l]{Modify Electric \\ Pushmower}             & 2                   & 2              & 3                    & 1                              & 2    & 5        & 1        & 44    \\ \hdashline
-    \sffamily\makecell[l]{Modify Electric \\ Ride on Mower}         & 2                   & 1              & 3                    & 1                              & 3    & 5        & 5        & 61    \\ \hdashline
-    \sffamily\makecell[l]{Stock Platform with \\ Mower Attached}    & 5                   & 3              & 5                    & 4                              & 1    & 3        & 3        & 77    \\ 
+    \multicolumn{1}{l}{\normalsize\sffamily\cellcolor{highlight}Complete DIY}& \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}2} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}93}    \\ \hdashline
+   \normalsize\sffamily RC Lawnmower                                           & 5                   & 3              & 5                    & 4                              & 1    & 2        & 5        & 83    \\ \hdashline
+    \normalsize\sffamily\makecell[l]{Modify Robot \\ Lawnmower}                & 3                   & 3              & 4                    & 1                              & 1    & 4        & 2        & 51    \\ \hdashline
+    \normalsize\sffamily\makecell[l]{Modify Electric \\ Pushmower}             & 2                   & 2              & 3                    & 1                              & 2    & 5        & 1        & 44    \\ \hdashline
+    \normalsize\sffamily\makecell[l]{Modify Electric \\ Ride on Mower}         & 2                   & 1              & 3                    & 1                              & 3    & 5        & 5        & 61    \\ \hdashline
+    \normalsize\sffamily\makecell[l]{Stock Platform with \\ Mower Attached}    & 5                   & 3              & 5                    & 4                              & 1    & 3        & 3        & 77    \\ 
     \end{tabular}
     
     \end{adjustwidth}
@@ -402,14 +402,14 @@ Once the platform was decided upon, analysis on different sensors and sensor com
                                                                      & \normalsize\sffamily\makecell{ {Identify} \\  {Static}  \\  {Obstacles}} & \normalsize\sffamily\makecell{ {Identify} \\  {Dynamic} \\  {Obstacles}} & \normalsize\sffamily\makecell{ {Detect} \\  {Grass /} \\  {No Grass}} & \normalsize\sffamily\makecell{ {Functions} \\  {Outdoors} \\  {In Daylight}} & \normalsize\sffamily\makecell{ {Detect} \\  {Grass} \\  {Transitions}} & \normalsize\sffamily\makecell{ {Sense} \\ Driveable \\  {Land}} \\ 
         \hline
     \\[-2ex]
-    \sffamily LiDAR                                                        & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
-    \sffamily Camera                                                       & 3                         & 3                          & 5                       & 5                              & 5                        & 1                    \\ \hdashline
+    \normalsize\sffamily LiDAR                                                        & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
+    \normalsize\sffamily Camera                                                       & 3                         & 3                          & 5                       & 5                              & 5                        & 1                    \\ \hdashline
     
-    \multicolumn{1}{l}{\sffamily\cellcolor{badhighlight!70}RGBD Camera }& \multicolumn{1}{c}{\cellcolor{badhighlight!70}5} & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 }   & \multicolumn{1}{c}{\cellcolor{badhighlight!70}0 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } \\ \hdashline
-    \sffamily\makecell[l]{Omnidirectional \\ Camera (upwards)}            & 3                         & 3                          & 0                       & 5                              & 0                        & 0                    \\ \hdashline
-    \sffamily Stereo Camera                                                & 4                         & 3                          & 5                       & 5                              & 5                        & 3                    \\ \hdashline
-    \sffamily Thermal Camera                                               & 1                         & 5                          & 0                       & 5                              & 0                        & 1                    \\ \hdashline
-    \sffamily Sonar                                                        & 3                         & 3                          & 0                       & 5                              & 0                        & 2                   \\    
+    \multicolumn{1}{l}{\normalsize\sffamily\cellcolor{badhighlight!70}RGBD Camera }& \multicolumn{1}{c}{\cellcolor{badhighlight!70}5} & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 }   & \multicolumn{1}{c}{\cellcolor{badhighlight!70}0 } & \multicolumn{1}{c}{\cellcolor{badhighlight!70}5 } \\ \hdashline
+    \normalsize\sffamily\makecell[l]{Omnidirectional \\ Camera (upwards)}            & 3                         & 3                          & 0                       & 5                              & 0                        & 0                    \\ \hdashline
+    \normalsize\sffamily Stereo Camera                                                & 4                         & 3                          & 5                       & 5                              & 5                        & 3                    \\ \hdashline
+    \normalsize\sffamily Thermal Camera                                               & 1                         & 5                          & 0                       & 5                              & 0                        & 1                    \\ \hdashline
+    \normalsize\sffamily Sonar                                                        & 3                         & 3                          & 0                       & 5                              & 0                        & 2                   \\    
     \end{tabular}
 
     \end{adjustwidth}
@@ -432,14 +432,14 @@ Once the platform was decided upon, analysis on different sensors and sensor com
     \hline
     \\[-2ex]
                                                                      & \normalsize\sffamily\makecell{\\ \\  {Ability}} & \normalsize\sffamily\makecell{\\ \\  {Cost}} & \normalsize\sffamily\makecell{ {Hardware} \\  {Integration} \\  {Complexity}} & \normalsize\sffamily\makecell{ {Software} \\  {Integration} \\  {Complexity}} & \normalsize\sffamily\makecell{ \\  {Computational} \\  {Intensity}} & \normalsize\sffamily\makecell{\\ \\  {Score}} \\ 
-    \sffamily Weights                                                      & 5       & 3    & 4                               & 5                               & 3                       &       \\ \hline
+    \normalsize\sffamily Weights                                                      & 5       & 3    & 4                               & 5                               & 3                       &       \\ \hline
     \\[-2ex]
-    \sffamily LiDAR + 1x Camera                                            & 4       & 2    & 3                               & 4                               & 3                       & 67    \\ \hdashline
-    \sffamily LiDAR + Stereo Camera                                        & 5       & 1    & 3                               & 3                               & 2                       & 61    \\ \hdashline
-    \sffamily\makecell[l]{Omnidirectional Camera + \\ Down Camera}        & 2       & 5    & 4                               & 2                               & 3                       & 60    \\ \hdashline
-    \multicolumn{1}{l}{\sffamily\cellcolor{highlight}Stereo Camera Only}& \multicolumn{1}{c}{\cellcolor{highlight}3} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}79}    \\ \hdashline
-    \sffamily\makecell[l]{Thermal Camera + \\ LiDAR + Camera}             & 4.5     & 1    & 3                               & 2                               & 2                       & 53.5  \\ \hdashline
-    \sffamily Many Cameras                                                 & 3       & 4    & 2                               & 2                               & 2                       & 51    \\ 
+    \normalsize\sffamily LiDAR + 1x Camera                                            & 4       & 2    & 3                               & 4                               & 3                       & 67    \\ \hdashline
+    \normalsize\sffamily LiDAR + Stereo Camera                                        & 5       & 1    & 3                               & 3                               & 2                       & 61    \\ \hdashline
+    \normalsize\sffamily\makecell[l]{Omnidirectional Camera + \\ Down Camera}        & 2       & 5    & 4                               & 2                               & 3                       & 60    \\ \hdashline
+    \multicolumn{1}{l}{\normalsize\sffamily\cellcolor{highlight}Stereo Camera Only}& \multicolumn{1}{c}{\cellcolor{highlight}3} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}79}    \\ \hdashline
+    \normalsize\sffamily\makecell[l]{Thermal Camera + \\ LiDAR + Camera}             & 4.5     & 1    & 3                               & 2                               & 2                       & 53.5  \\ \hdashline
+    \normalsize\sffamily Many Cameras                                                 & 3       & 4    & 2                               & 2                               & 2                       & 51    \\ 
     
     \end{tabular}
 
@@ -467,66 +467,68 @@ Once the platform was decided upon, analysis on different sensors and sensor com
 
   The Drive Train contains motors and motor drivers to propel GroundsBot across a golf course.  This also encompasses the mowing apparatus and mowing deck height control. \\
 
+
+
 \newpage
 \section{Subsystem Descriptions}
-  \subsection{UI}
-  It is critical for the user to communicate a desired mowing path to the robot. This input method must be separate from the robot itself, allowing the user to be somewhere else as the robot mows autonomously. \\
-  
-  This will be achieved through a mobile device, either a dedicated tablet or the user's own smartphone. An app or website will be loaded onto this device and allow for the user to input a map outline that will be communicated to the robot. 
-  
-  \subsection{Hardware}
-    \subsubsection{Platform}
-      Based on the trade study, a differential drive system with two drive wheels and caster wheels will be used. Another trade study was used to narrow down the platform to a DIY platform instead of a preexisting platform. This custom platform will utilize aluminum extrusions, allowing for easy re-sizing of the platform as well as simple adjustment of the sensor mounts. Currently, motors and batteries from Discovery Robotics will be integrated, but alternate products may be also be considered. 
-      
-    \subsubsection{Mower}
-      In addition to navigating a plot of grass, the system also needs to mow it. Given that a custom platform will be made, this will be done by attaching an existing electric push mower to the robot platform. Alternatively, it will also be possible to attach the blades from a manual reel mower to the platform. 
-  
-  \subsection{Software}
-    \subsubsection{Planner}
-      The planner subsystem consists of two parts: a global planner and a local planner. The global planner will take the user input from the UI and translate the input into a path that the robot will follow. This involves refining the outline that was provided by the user and then finding a path that will allow for maximum coverage of the selected area. \\ 
-      
-      The local planner will be responsible for adapting the route on-the-fly to avoid any obstacles that the robot may encounter. This system will also drive to and from the dock and cutting area. 
-      
-    \subsubsection{Localization and Perception}
-      An accurate description of the robot global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but visual SLAM based methods will also be investigated. \\
-      
-      The vision system will also be used to detect boundaries of the grass as the robot approaches the boundary. For obstacle detection, our trade study determined that a stereo camera system would best fit the detection requirements. However, if needed, a LIDAR may be added to improve the detection accuracy. 
-    
-    \subsubsection{Mobility}
-      The mobility subsystem will be responsible for controlling the robot motors. Part of this involves the robot going from point A to point B at any given time. Using current position information from the localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then transmit the necessary motor control signals to move towards this waypoint. \\
-      
-      The cutter motor speeds will also be controlled by this subsystem. This subsystem must both detect the speed of the motor, as well as apply the correct motor signals to maintain a constant speed when the cutter encounters an obstacle. 
+	\subsection{UI}
+	An important aspect of the project is a way for the user to communicate his desired mowing path to the robot. This input method must be separate from the robot itself, allowing the user to be somewhere else as the robot mows autonomously. \\
+	
+	This will be achieved through a mobile device, either a dedicated tablet or the user's own smartphone. An app or website will be loaded onto this device, and allow for the user to input a map outline that will be communicated to the robot. 
+	
+	\subsection{Hardware}
+		\subsubsection{Platform}
+			Based on the trade study, a differential drive system with two drive wheels and one or more caster wheels will be used. Another trade study was used to narrow down the platform to DIY platform instead of a preexisting platform. This custom platform will utilize aluminum extrusions, allowing for easy resizing of the platform as well as easy adjustment of the sensor mounts. Currently, motors and batteries from Discovery Robotics will be integrated, but alternate products may be also be considered. 
+			
+		\subsubsection{Mower}
+			In addition to navigating a plot of grass, the system also needs to mow it. Given that a custom platform will be made, this will be done by attaching an existing electric push mower to the robot platform. Alternatively, it is also possible to attach the blades from a manual reel mower to the platform. 
+	
+	\subsection{Software}
+		\subsubsection{Planner}
+			The planner subsystem consists of two parts, a global planner, and  a local planner. The global planner will take the user input from the UI, and translate that into a path that the robot will follow. This involves refining the outline that was provided by the user, and then finding a path that will allow for maximal coverage of the selected area. \\ 
+			
+			The local planner will be responsible for adapting the route on-the-fly to avoid any obstacles that the robot may encounter. This system will also take care of the driving to and from the dock to the actual cutting area. 
+			
+		\subsubsection{Localization and Perception}
+			An accurate description of the robot's global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but visual SLAM based methods will also be investigated. \\
+			
+			The vision system will also be used to detect boundaries of the grass as the robot gets closer to the boundary. For obstacle detection, a trade study determined that a stereo camera system would best fit the detection requirements. However, if needed, a LIDAR may be added to improve the detection accuracy. 
+		
+		\subsubsection{Mobility}
+			The mobility subsystem will be responsible for the control of the robot's motors. Part of this involves the robot going from point A to point B at any given time. Using current position information from localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then emit the necessary motor control signals to move towards this waypoint. \\
+			
+			The cutter motor speeds will also be controlled by this subsystem. This subsystem must both detect the speed of the motor, as well as apply the correct motor signals to maintain a constant speed when the cutter encounters an obstacle. 
+
 
 \newpage
 \section{Project Management}
 \subsection{Work Plan}
 \subsubsection{Tasks}
 The GroundsBot work plan is shown in the list below.  The plan is separated into high level categories and underlying subtasks. \\
-
-\begin{itemize}
-  \item [] \textbf{Chassis}
-    \subitem Complete BOM
-    \subitem Design Power Distribution and Sensor Integration PCBs % Changed to PCBs from PCBAs because we are "designing PCBs
-    \subitem Design Chassis
-    \subitem Design GPS RTK Base Station
-    \subitem Acquire Parts
-    \subitem Integrate Subsystems
-  \item [] \textbf{Simulation}
-    \subitem Design Simulation Environment
-    \subitem Complete Cursory Simulations
-  \item [] \textbf{Localization}
-    \subitem Integrate GPS + RTK Localization
-  \item [] \textbf{Perception}
-    \subitem Develop Static Obstacle Detection
-    \subitem Develop Dynamic Obstacle Detection
-  \item [] \textbf{Planning}
-    \subitem Develop Global Route Planner
-    \subitem Develop Obstacle Rerouting
-  \item [] \textbf{Control}
-    \subitem Develop Motor Control
-  \item [] \textbf{UI}
-    \subitem Create Web Application for Mapping
-\end{itemize}
+\begin{outline}[enumerate]
+  \1 Chassis
+    \2 Complete BOM
+    \2 Design Power Distribution and Sensor Integration PCBs % Changed to PCBs from PCBAs because we are "designing PCBs
+    \2 Design Chassis
+    \2 Design GPS RTK Base Station
+    \2 Acquire Parts
+    \2 Integrate Subsystems
+  \1 Simulation
+    \2 Design Simulation Environment
+    \2 Complete Cursory Simulations
+  \1 Localization
+    \2 Integrate GPS + RTK Localization
+  \1 Perception
+    \2 Develop Static Obstacle Detection
+    \2 Develop Dynamic Obstacle Detection
+  \1 Planning
+    \2 Develop Global Route Planner
+    \2 Develop Obstacle Rerouting
+  \1 Control
+    \2 Develop Motor Control
+  \1 UI
+    \2 Create Web Application for Mapping
+\end{outline}
 
    
 \subsubsection{Schedule}
@@ -541,7 +543,7 @@ The full list of milestones is laid out below in Table \ref{Tab:table_milestones
 
 \begin{tabular}{ll}
 \hline
-\normalsize\sffamily \textbf{Deadline} & \normalsize\sffamily \textbf{Milestone}                            \\
+\normalsize\sffamily {Deadline} & \normalsize\sffamily {Milestone}                            \\
 \\
 Progress Review 1 [OCT 17 2017] & Mechanical CAD Complete \\
     &Electrical CAD Complete                     \\
@@ -570,12 +572,12 @@ Fall Validation Experiment [NOV 28 2017]
     &GroundsBot Differentiates Grass From Other Objects \\
                                             \\
                                             
-January 2018
+January 2018 Milestone 
 
     &Global Planning Algorithm Complete          \\
     &Static and Dynamic Obstacle Detection Complete\\
                                                \\
-February 2018
+February 2018 Milestone 
   
     &Read User Map Input                        \\
     &GroundsBot Reroutes Around Obstacles       \\
@@ -603,11 +605,11 @@ April 2018
 	The aim of the fall validation experiment is to test individual subsystems. As such many of the systems requirements set for GroundsBot will not be fully met. All tests to be performed have been designed to indicate significant progress towards reaching the system requirements. More specifically the team plans to test the base functionality of the mobility, localization, planning, and perception subsystems of GroundsBot. The details of the test are laid out below.
 \\
 \begin{center}
-\textbf{Test 1:}
+ {Test 1:}
 \end{center}
- \textbf{Location:} Field by Doherty Apartments
+ {Location:} Field by Doherty Apartments
 \\
-\textbf{Equipment:} GroundsBot, GroundsBot dock/RTK base station, laptop
+ {Equipment:} GroundsBot, GroundsBot dock/RTK base station, laptop
 \begin{enumerate}
   \item Power on GroundsBot next to its docking station
   \item Establish connection between GroundsBot and mobile device
@@ -618,22 +620,25 @@ April 2018
 \end{enumerate}
 
 \begin{center}
-\textbf{Test 2:}
+ {Test 2:}
 \end{center}
-Test 2 has been designed to demonstrate base functionality of the perception subsystem. The team will present a perception algorithm capable of differentiating between grass (i.e. a mowable surface) and non-grass (i.e. a non-mowable surface.) This test will be performed outside of the fall validation experiment and a replay of the test will be displayed during the fall validation experiment.
+Test 2 has been designed to demonstrate base functionality of the perception subsystem. The team will present perception algorithm capable of differentiating between grass(i.e. a mowable surface) and non-grass (i.e. a non-mowable surface.) This test will be performed outside of the fall validation experiment and a replay of the test will be displayed during the fall validation experiment.
 
 \subsubsection{Spring Validation Experiment}
 
 	The spring validation experiment will be when the team will test the full GroundsBot system to demonstrate that all system requirements have been met. The details of the test are laid out below.
 \begin{center}
- \textbf{Test 1: }
+ {Test 1: }
 \end{center}
- \textbf{Location:} Field by Doherty Apartments \\
- \textbf{Equipment:} GroundsBot, GroundsBot dock/RTK base station, mobile device \\
+ {Location:} Field by Doherty Apartments
+ {Equipment:} GroundsBot, GroundsBot dock/RTK base station, mobile device
 \begin{enumerate}
   \item Power on GroundsBot next to its docking station
   \item Open UI on mobile interface and establish a connection with GroundsBot
-  \item Have a new user (someone not on Team A) use the UI to draw an outline of the area to be mowed on a map including both static obstacles and a non-mowable surface (i.e. concrete)
+  \item Have a new user (someone not on Team A) use the UI to draw an outline of the area to be mowed on a map
+  \begin{enumerate}
+    \item Area should include both static obstacles and a non-mowable surface (i.e. concrete)
+  \end{enumerate}
   \item Use the UI to submit the mowing area to GroundsBot
   \item Groundsbot will develop a coverage plan of the area input by the user
   \item Groundsbot will navigate to the area to be mowed
@@ -644,33 +649,12 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
 \end{enumerate}
 
 \subsection{Team Member Responsibilities}
-\begin{itemize}
-  \item [] \textbf{Joe Phaneuf}
-    \subitem  Team Lead
-    \subitem  Systems Engineer
-    \subitem  Project Management
-  \item [] \textbf{Henry Chen}
-    \subitem  Mechanical Design
-    \subitem  Prototyping
-    \subitem  Computer Vision
-  \item [] \textbf{Josh Bennett}
-    \subitem  Electrical Design
-    \subitem  Mechanical Design
-    \subitem  Instrumentation and Sensors
-  \item [] \textbf{Adam Driscoll}
-    \subitem  Control Systems
-    \subitem  Perception
-  \item [] \textbf{David Evans}
-    \subitem  Power Distribution
-    \subitem  Motion Planning
-    \subitem  Localization and Mapping
-\end{itemize}
+
 
 
 
 
 \subsection{Provisional BOM}
-A bill of materials is included in Table \ref{Tab:provisional_bom} with potential components and rough pricing information. Batteries and motors will be loaned to us from Discovery Robotics, reducing overall project cost. The batteries and motors shown in the BOM are backup components to be used if the loaned components do not fulfill project requirements.
 \begin{table}[H]
 \centering
 \def\arraystretch{1.1}

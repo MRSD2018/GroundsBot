@@ -31,7 +31,7 @@
 \titleformat*{\subsection}{\bfseries\sffamily\fontsize{12}{14}\selectfont}
 \titleformat*{\subsubsection}{\bfseries\sffamily\fontsize{12}{14}\selectfont}
 
-%\captionsetup[table]{font={sf, normalsize}}
+\captionsetup[table]{font={small, bf}}
 
 \renewcommand{\baselinestretch}{1.1} 
 
@@ -146,13 +146,12 @@ The system requirements were decided upon to demonstrate a proof of concept auto
   \begin{table}[H]
   \caption{Mandatory Performance Requirements}
   \label{table:mandatory performance}
-  
-  \vspace{1em}
 
   \def\arraystretch{1.5}
   	\begin{tabularx}{\textwidth}{ lXX }
-  	  	\hline
-		\sffamily\textbf{ID} & \sffamily\textbf{Requirement} & \sffamily\textbf{Description} \\
+  	  \hline
+
+		\sffamily\normalsize{ID} & \sffamily\normalsize{Requirement} & \sffamily\normalsize{Description} \\
     	M.P.1 &
     	First time user inputs map within 15 minutes &
     	GroundsBot should be easy to use \\
@@ -184,12 +183,11 @@ The system requirements were decided upon to demonstrate a proof of concept auto
   \caption{Desirable Performance Requirements}
   \label{table: desirable performance}
   
-  \vspace{1em}
 
   \def\arraystretch{1.5}
   \begin{tabularx}{\textwidth}{ lXX }
       \hline
-	  \sffamily\textbf{ID} & \sffamily\textbf{Requirement} & \sffamily\textbf{Description} \\
+	  \sffamily\normalsize{ID} & \sffamily\normalsize{Requirement} & \sffamily\normalsize{Description} \\
 	  D.P.1 &
 	  Mow to within 3 inches of a detected obstacles &
 	  A stretch goal for when M.P.6 (mow within 1 ft. of obstacles) is achieved \\
@@ -206,12 +204,11 @@ The system requirements were decided upon to demonstrate a proof of concept auto
    \caption{Mandatory Non-Functional Requirements}
     \label{table: mandatory non-functional}
     
-    \vspace{1em}
 
     \def\arraystretch{1.5}
     \begin{tabularx}{\textwidth}{ lXX }
      \hline
-  	 \sffamily\textbf{ID} & \sffamily\textbf{Requirement} & \sffamily\textbf{Description} \\
+  	 \sffamily\normalsize{ID} & \sffamily\normalsize{Requirement} & \sffamily\normalsize{Description} \\
 	  M.N.1 &
   	  Return home to within 5 feet of dock &
   	  Groundsbot should return to its starting position to remove as much hassle from the user as possible \\  	  
@@ -233,13 +230,12 @@ The system requirements were decided upon to demonstrate a proof of concept auto
   \begin{table}[H]
   	\caption{Desirable Non-Functional Requirements}
   	\label{table: desirable non-functional}
-  	\vspace{1em}
 
   	\def\arraystretch{1.5}
 	\begin{tabularx}{\textwidth}{ lXX }
   	\hline
-  	  \sffamily\textbf{ID} & \sffamily\textbf{Requirement} &
-  	  \sffamily\textbf{Description} \\
+  	  \sffamily\normalsize{ID} & \sffamily\normalsize{Requirement} &
+  	  \sffamily\normalsize{Description} \\
   	  D.N.1 &
   	  Operates in variable lighting conditions &
   	  Groundsbot should operate at night to avoid interrupting golfers\\
@@ -288,12 +284,12 @@ The first step was to decide a platform configuration that will meet the system 
     \centering
     \setlength{\dashlinedash}{.5pt}
     \setlength\tabcolsep{4pt}
-    \def\arraystretch{1}
+    \def\arraystretch{1.2}
     
 
     \begin{tabular}{lcccccccc}
     \hline
-\makecell{\sffamily\textbf{Configuration}} & \makecell{\sffamily\textbf{Description}} & \makecell{\sffamily\textbf{Diagram}}  \\ 
+\makecell{\sffamily\normalsize{Configuration}} & \makecell{\sffamily\normalsize{Description}} & \makecell{\sffamily\normalsize{Diagram}}  \\ 
     \makecell[l]{4 Wheel \\ Skid} &  \makecell[l]{Four driven wheels \\ with skid steering.} &  \makecell[l]{\\ \includegraphics[width=3cm]{4_wheel_skid}} \\  
     \makecell[l]{2 Wheel \\ Differential \\ with Casters} &  \makecell[l]{Two driven wheels \\ with casters for free \\ rotation.} &  \makecell[l]{\\ \includegraphics[width=3cm]{2_wheel_diff}} \\
     \makecell[l]{AWD \\ Standard \\ Steering} &  \makecell[l]{Four driven wheels \\ with standard \\differential steering.} &  \makecell[l]{\\ \includegraphics[width=3cm]{awd_standard_steer}} \\
@@ -322,13 +318,12 @@ The first step was to decide a platform configuration that will meet the system 
     \centering
     \setlength{\dashlinedash}{.5pt}
     \setlength\tabcolsep{4pt}
-    \def\arraystretch{1.9}
+    \def\arraystretch{2}
     
-    \vspace{1em}
 
     \begin{tabular}{lcccccccc}
-    \hline
-                                                                                      & \makecell{\\ \\ \sffamily\textbf{Speed}} & \makecell{\\ \sffamily\textbf{Wheel} \\ \sffamily\textbf{Compaction}} & \makecell{\\ \\ \sffamily\textbf{Stability}} & \makecell{\\ \sffamily\textbf{Platform} \\ \sffamily\textbf{Complexity}} & \makecell{\\ \sffamily\textbf{Odometry} \\ \sffamily\textbf{Accuracy}} & \makecell{\\ \sffamily\textbf{Turning} \\ \sffamily\textbf{Radius} } & \makecell{\sffamily\textbf{Performance} \\ \sffamily\textbf{on Uneven} \\ \sffamily\textbf{Terrain}} & \makecell{\\ \\ \sffamily\textbf{Score}} \\ 
+    \hline 
+    \\[-5ex]                                                                                      & \makecell{\\ \\ \sffamily\normalsize{Speed}} & \makecell{\\ \sffamily\normalsize{Wheel} \\ \sffamily\normalsize{Compaction}} & \makecell{\\ \\ \sffamily\normalsize{Stability}} & \makecell{\\ \sffamily\normalsize{Platform} \\ \sffamily\normalsize{Complexity}} & \makecell{\\ \sffamily\normalsize{Odometry} \\ \sffamily\normalsize{Accuracy}} & \makecell{\\ \sffamily\normalsize{Turning} \\ \sffamily\normalsize{Radius} } & \makecell{\sffamily\normalsize{Performance} \\ \sffamily\normalsize{on Uneven} \\ \sffamily\normalsize{Terrain}} & \makecell{\\ \\ \sffamily\normalsize{Score}} \\ 
     \makecell[l]{\sffamily Weights \\ (1-5)}                                            & 3     & 2                & 1         & 3                   & 4                 & 5                                          & 5                             &       \\ \hline
     
     \\[-3ex]
@@ -365,8 +360,8 @@ Once a base configuration was determined, a specific implementation of the platf
 
     \begin{tabular}{lcccccccc}
     \hline
-        
-                                                               & \sffamily\makecell{\textbf{Ease} \\\textbf{ of }\\ \textbf{Integration}} & \sffamily\makecell{\textbf{Ease} \\ \textbf{of} \\ \textbf{Repair}} & \sffamily\makecell{\textbf{Ease} \\ \textbf{of} \\ \textbf{Construction}} & \sffamily\makecell{\textbf{Flexiblility} \\ \textbf{for} \\ \textbf{Modifications}} & \sffamily\makecell{\\ \\ \textbf{Cost}} & \sffamily\makecell{ \\ \textbf{Lead-} \\ \textbf{time}} & \sffamily\makecell{\\ \\ \textbf{Traction}} & \sffamily\makecell{\\ \\ \textbf{Score}} \\
+    \\[-5ex]
+                                                               & \normalsize\sffamily\makecell{ {Ease} \\ { of }\\  {Integration}} &\normalsize\sffamily\makecell{ {Ease} \\  {of} \\  {Repair}} & \normalsize\sffamily\makecell{ {Ease} \\  {of} \\  {Construction}} & \normalsize\sffamily\makecell{ {Flexiblility} \\  {for} \\  {Modifications}} & \normalsize\sffamily\makecell{\\ \\  {Cost}} & \normalsize\sffamily\makecell{ \\  {Lead-} \\  {time}} & \normalsize\sffamily\makecell{\\ \\  {Traction}} & \normalsize\sffamily\makecell{\\ \\  {Score}} \\
     \sffamily Weights (1-5)                                          & 3                   & 2              & 3                    & 5                              & 3    & 2        & 4        &       \\ \hline
     
     \\[-2ex]
@@ -381,7 +376,8 @@ Once a base configuration was determined, a specific implementation of the platf
     \end{adjustwidth}
     \end{table}
     
-    
+\subsection{Sensor Trade Study}
+
 %%%%%%%%%%sensor capability table%%%%%%%%%%%%%%%%%%%%   
 Once the platform was decided upon, analysis on different sensors and sensor combinations began. Sensors were evaluated individually first to establish baseline capability and relevance to the project. Then sensors were evaluated in different combinations, taking into account the results of the individual sensor study. The results showed that a stereo vision camera was the sensor that best fit the needs of GroundsBot (Table \ref{Tab:SensorCapabilitiesTable}).
 
@@ -401,7 +397,7 @@ Once the platform was decided upon, analysis on different sensors and sensor com
 
     \begin{tabular}{lcccccc}
     \hline
-                                                                     & \sffamily\makecell{\textbf{Identify} \\ \textbf{Static}  \\ \textbf{Obstacles}} & \sffamily\makecell{\textbf{Identify} \\ \textbf{Dynamic} \\ \textbf{Obstacles}} & \sffamily\makecell{\textbf{Detect} \\ \textbf{Grass /} \\ \textbf{No Grass}} & \sffamily\makecell{\textbf{Functions} \\ \textbf{Outdoors} \\ \textbf{In Daylight}} &\sffamily\makecell{\textbf{Detect} \\ \textbf{Grass} \\ \textbf{Transitions}} & \sffamily\makecell{\textbf{Sense} \\ Driveable \\ \textbf{Land}} \\ 
+                                                                     & \normalsize\sffamily\makecell{ {Identify} \\  {Static}  \\  {Obstacles}} & \normalsize\sffamily\makecell{ {Identify} \\  {Dynamic} \\  {Obstacles}} & \normalsize\sffamily\makecell{ {Detect} \\  {Grass /} \\  {No Grass}} & \normalsize\sffamily\makecell{ {Functions} \\  {Outdoors} \\  {In Daylight}} & \normalsize\sffamily\makecell{ {Detect} \\  {Grass} \\  {Transitions}} & \normalsize\sffamily\makecell{ {Sense} \\ Driveable \\  {Land}} \\ 
         \hline
     \\[-2ex]
     \sffamily LiDAR                                                        & 5                         & 5                          & 0                       & 5                              & 0                        & 5                    \\ \hdashline
@@ -432,7 +428,8 @@ Once the platform was decided upon, analysis on different sensors and sensor com
 
     \begin{tabular}{lcccccc}
     \hline
-                                                                     & \sffamily\makecell{\\ \\ \textbf{Ability}} & \sffamily\makecell{\\ \\ \textbf{Cost}} & \sffamily\makecell{\textbf{Hardware} \\ \textbf{Integration} \\ \textbf{Complexity}} & \sffamily\makecell{\textbf{Software} \\ \textbf{Integration} \\ \textbf{Complexity}} & \sffamily\makecell{ \\ \textbf{Computational} \\ \textbf{Intensity}} & \sffamily\makecell{\\ \\ \textbf{Score}} \\ 
+    \\[-2ex]
+                                                                     & \normalsize\sffamily\makecell{\\ \\  {Ability}} & \normalsize\sffamily\makecell{\\ \\  {Cost}} & \normalsize\sffamily\makecell{ {Hardware} \\  {Integration} \\  {Complexity}} & \normalsize\sffamily\makecell{ {Software} \\  {Integration} \\  {Complexity}} & \normalsize\sffamily\makecell{ \\  {Computational} \\  {Intensity}} & \normalsize\sffamily\makecell{\\ \\  {Score}} \\ 
     \sffamily Weights                                                      & 5       & 3    & 4                               & 5                               & 3                       &       \\ \hline
     \\[-2ex]
     \sffamily LiDAR + 1x Camera                                            & 4       & 2    & 3                               & 4                               & 3                       & 67    \\ \hdashline
@@ -544,7 +541,7 @@ The full list of milestones is laid out below in Table \ref{Tab:table_milestones
 
 \begin{tabular}{ll}
 \hline
-\textbf{Deadline} & \textbf{Milestone}                            \\
+\normalsize\sffamily {Deadline} & \normalsize\sffamily {Milestone}                            \\
 \\
 Progress Review 1 [OCT 17 2017] & Mechanical CAD Complete \\
     &Electrical CAD Complete                     \\
@@ -597,8 +594,8 @@ April 2018
 
 \subsubsection{Progress Reviews}
 \noindent
-\textbf{Progress Review 1}: The goal for Progress Review 1 is to have all hardware design complete with parts on order. \\
-\textbf{Progress Review 2}: The goal for Progress Review 2 is to have an assembled frame/chassis, a full ROS simulation environment, and a completed GPS + RTK base station\\
+ {Progress Review 1}: The goal for Progress Review 1 is to have all hardware design complete with parts on order. \\
+ {Progress Review 2}: The goal for Progress Review 2 is to have an assembled frame/chassis, a full ROS simulation environment, and a completed GPS + RTK base station\\
 
 \subsection{System Validation Experiments}
 \subsubsection{Fall Validation Experiment}
@@ -606,11 +603,11 @@ April 2018
 	The aim of the fall validation experiment is to test individual subsystems. As such many of the systems requirements set for GroundsBot will not be fully met. All tests to be performed have been designed to indicate significant progress towards reaching the system requirements. More specifically the team plans to test the base functionality of the mobility, localization, planning, and perception subsystems of GroundsBot. The details of the test are laid out below.
 \\
 \begin{center}
-\textbf{Test 1:}
+ {Test 1:}
 \end{center}
-\textbf{Location:} Field by Doherty Apartments
+ {Location:} Field by Doherty Apartments
 \\
-\textbf{Equipment:} GroundsBot, GroundsBot dock/RTK base station, laptop
+ {Equipment:} GroundsBot, GroundsBot dock/RTK base station, laptop
 \begin{enumerate}
   \item Power on GroundsBot next to its docking station
   \item Establish connection between GroundsBot and mobile device
@@ -621,7 +618,7 @@ April 2018
 \end{enumerate}
 
 \begin{center}
-\textbf{Test 2:}
+ {Test 2:}
 \end{center}
 Test 2 has been designed to demonstrate base functionality of the perception subsystem. The team will present perception algorithm capable of differentiating between grass(i.e. a mowable surface) and non-grass (i.e. a non-mowable surface.) This test will be performed outside of the fall validation experiment and a replay of the test will be displayed during the fall validation experiment.
 
@@ -629,10 +626,10 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
 
 	The spring validation experiment will be when the team will test the full GroundsBot system to demonstrate that all system requirements have been met. The details of the test are laid out below.
 \begin{center}
-\textbf{Test 1: }
+ {Test 1: }
 \end{center}
-\textbf{Location:} Field by Doherty Apartments
-\textbf{Equipment:} GroundsBot, GroundsBot dock/RTK base station, mobile device
+ {Location:} Field by Doherty Apartments
+ {Equipment:} GroundsBot, GroundsBot dock/RTK base station, mobile device
 \begin{enumerate}
   \item Power on GroundsBot next to its docking station
   \item Open UI on mobile interface and establish a connection with GroundsBot
@@ -663,7 +660,7 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
 \label{Tab:provisional_bom}
 \begin{tabular}{ llccl }
 \hline
-    \sffamily\textbf{Manufacturer} & \sffamily\textbf{Part No.} & \sffamily\textbf{QTY} & \sffamily\textbf{Cost} & \sffamily\textbf{Description}\\
+    \normalsize\sffamily {Manufacturer} & \normalsize\sffamily {Part No.} & \normalsize\sffamily {QTY} & \normalsize\sffamily {Cost} & \normalsize\sffamily {Description}\\
     \\[-.8ex]
     SuperDroid Robots & TD-111-135 & 1 & \$900 & Wheelchair Motors \& Encoders \\
 	SuperDroid Robots & TE-240-030 & 1 & \$330 & Motor Controller \\
@@ -688,28 +685,28 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
 \def\arraystretch{1.7}
 
 \begin{tabular}{p{7cm}p{6cm}c}
-\textbf{Risk} & \textbf{Management Strategy} & \textbf{Risk Category}\\
+ {Risk} &  {Management Strategy} &  {Risk Category}\\
 \hline 
-\textbf{Too Few Features for Perception:} 
+ {Too Few Features for Perception:} 
 If we cannot consistently detect grass from non-grass features, perception subsystem will not be able to direct platform accurately
 &
 Install infrastructure such as fiducials to assist system in recognizing objects.
 &
 Technical\\
 
-\textbf{Team Falling Behind Due to Work:} 
+ {Team Falling Behind Due to Work:} 
 Team may overestimate capability and overwhelm itself with assignments.
 &
 Prepare for risk by managing tasks and using buffer weeks.  Mitigate effect by delaying milestones or cutting compromising targets.
 &
 Schedule\\
-\textbf{Localization Poor for Following Edges:} 
+ {Localization Poor for Following Edges:} 
 If our localization algorithms cannot accurately follow edge of lawn, system will not mow lawn effectively.
 &
 Prepare by understanding criticality of localization.  Mitigate effect by changing scope of mowing problem or adding infrastructure to assist.
 &
 Technical\\
-\textbf{Injury from Spinning Blade:} 
+ {Injury from Spinning Blade:} 
 
 Our system has a dangerous cutting instrument.  It can injure a team member or a bystander.
 &
@@ -717,28 +714,28 @@ Prepare by making sure team understands the risk of spinning blade.  Put warning
 &
 Technical\\
 
-\textbf{Poor Weather for Validation Experiments:} 
+ {Poor Weather for Validation Experiments:} 
 Poor weather on demonstration days would prevent us from system from performing.
 &1
 Team monitors upcoming weather before validation experiments.  Communicates with instructing team to reschedule if concerned by inclement weather.
 &
 Schedule\\
 
-\textbf{Team Member Has Family Constraints:} 
+ {Team Member Has Family Constraints:} 
 Any team member could experience a family emergency or reponsibility that occupies their time and focus.  One specific concern is Josh's wife is pregnant and expecting in December.
 &
 Mitigate the effect on entire team by spreading work across several team members and communicating consistently with absent team member to keep them in the loop.
 &
 Personal\\
 
-\textbf{Platform Devastating Event:} 
+ {Platform Devastating Event:} 
 Platform could have electrical, thermal, or kinetic event that leads to its destruction.
 &
 Team designs platform with risk in mind, and manages parts reserve to quickly rebuild platform if necessary.
 &
 Technical\\
 
-\textbf{Subsystem Harder Than Expected:} 
+ {Subsystem Harder Than Expected:} 
 Any subsystem could require more work than expected, taking away focus from other subsystems.
 &
 Team can prepare by focusing on critical subsystems first, and may revise scope related to subsystem if necessary.

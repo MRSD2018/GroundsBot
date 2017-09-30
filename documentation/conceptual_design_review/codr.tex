@@ -259,7 +259,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 
 \newpage
 \section{Functional Architecture}
-  There are three subsystems that combine to accomplish the functionality needed for GroundsBot (Figure~\ref{fig:functional}). The User Interface accepts inputs from the groundskeeper, generating detailed mowing regions. The Charging Dock acts as a home point for charging the robot, while also providing a reference signal for correcting localization issues. The Mowing Robot includes internal subsystems which enable the robot to navigate the golf course, cut the rough, and return to the charging dock when needed.\\
+  There are three sub-systems that combine to accomplish the functionality needed for GroundsBot (Figure~\ref{fig:functional}). The User Interface accepts inputs from the groundskeeper, generating detailed mowing regions. The Charging Dock acts as a home point for charging the robot, while also providing a reference signal for correcting localization issues. The Mowing Robot includes internal sub-systems which enable the robot to navigate the golf course, cut the rough, and return to the charging dock when needed.\\
   
 \begin{figure}[H]
 \centering
@@ -269,9 +269,9 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \label{fig:functional}
 \end{figure}
 
-  The Mowing Robot subsystem is responsible for many critical tasks in the Autonomous Golf Rough Mowing system. The Vehicle Platform is one internal subsystem that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Mower Electronics subsystem provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this subsystem is crucial for the remaining systems, enabling full mowing autonomy.\\
+  The Mowing Robot sub-system is responsible for many critical tasks in the Autonomous Golf Rough Mowing system. The Vehicle Platform is one internal sub-system that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Mower Electronics sub-system provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this sub-system is crucial for the remaining systems, enabling full mowing autonomy.\\
   
-  The remaining subsystems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide Groundsbot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
+  The remaining sub-systems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide Groundsbot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
 
 \newpage
 \section{System Level Trade Studies}
@@ -473,30 +473,30 @@ Once the platform was decided upon, analysis on different sensors and sensor com
 \newpage
 \section{Subsystem Descriptions}
 	\subsection{UI}
-	It is critical for the user to communicate a desired mowing path to the robot. This input method must be separate from the robot itself, allowing the user to be somewhere else as the robot mows autonomously. \\
+	An important aspect of the project is a way for the user to communicate his desired mowing path to the robot. This input method must be separate from the robot itself, allowing the user to be somewhere else as the robot mows autonomously. \\
 	
-	This will be achieved through a mobile device, either a dedicated tablet or the user's own smartphone. An app or website will be loaded onto this device and allow for the user to input a map outline that will be communicated to the robot. 
+	This will be achieved through a mobile device, either a dedicated tablet or the user's own smartphone. An app or website will be loaded onto this device, and allow for the user to input a map outline that will be communicated to the robot. 
 	
 	\subsection{Hardware}
 		\subsubsection{Platform}
-			Based on the trade study, a differential drive system with two drive wheels and caster wheels will be used. Another trade study was used to narrow down the platform to a DIY platform instead of a preexisting platform. This custom platform will utilize aluminum extrusions, allowing for easy re-sizing of the platform as well as simple adjustment of the sensor mounts. Currently, motors and batteries from Discovery Robotics will be integrated, but alternate products may be also be considered. 
+			Based on the trade study, a differential drive system with two drive wheels and one or more caster wheels will be used. Another trade study was used to narrow down the platform to DIY platform instead of a preexisting platform. This custom platform will utilize aluminum extrusions, allowing for easy resizing of the platform as well as easy adjustment of the sensor mounts. Currently, motors and batteries from Discovery Robotics will be integrated, but alternate products may be also be considered. 
 			
 		\subsubsection{Mower}
-			In addition to navigating a plot of grass, the system also needs to mow it. Given that a custom platform will be made, this will be done by attaching an existing electric push mower to the robot platform. Alternatively, it will also be possible to attach the blades from a manual reel mower to the platform. 
+			In addition to navigating a plot of grass, the system also needs to mow it. Given that a custom platform will be made, this will be done by attaching an existing electric push mower to the robot platform. Alternatively, it is also possible to attach the blades from a manual reel mower to the platform. 
 	
 	\subsection{Software}
 		\subsubsection{Planner}
-			The planner subsystem consists of two parts: a global planner and a local planner. The global planner will take the user input from the UI and translate the input into a path that the robot will follow. This involves refining the outline that was provided by the user and then finding a path that will allow for maximum coverage of the selected area. \\ 
+			The planner subsystem consists of two parts, a global planner, and  a local planner. The global planner will take the user input from the UI, and translate that into a path that the robot will follow. This involves refining the outline that was provided by the user, and then finding a path that will allow for maximal coverage of the selected area. \\ 
 			
-			The local planner will be responsible for adapting the route on-the-fly to avoid any obstacles that the robot may encounter. This system will also drive to and from the dock and cutting area. 
+			The local planner will be responsible for adapting the route on-the-fly to avoid any obstacles that the robot may encounter. This system will also take care of the driving to and from the dock to the actual cutting area. 
 			
 		\subsubsection{Localization and Perception}
-			An accurate description of the robot global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but visual SLAM based methods will also be investigated. \\
+			An accurate description of the robot's global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but visual SLAM based methods will also be investigated. \\
 			
-			The vision system will also be used to detect boundaries of the grass as the robot approaches the boundary. For obstacle detection, our trade study determined that a stereo camera system would best fit the detection requirements. However, if needed, a LIDAR may be added to improve the detection accuracy. 
+			The vision system will also be used to detect boundaries of the grass as the robot gets closer to the boundary. For obstacle detection, a trade study determined that a stereo camera system would best fit the detection requirements. However, if needed, a LIDAR may be added to improve the detection accuracy. 
 		
 		\subsubsection{Mobility}
-			The mobility subsystem will be responsible for controlling the robot motors. Part of this involves the robot going from point A to point B at any given time. Using current position information from the localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then transmit the necessary motor control signals to move towards this waypoint. \\
+			The mobility subsystem will be responsible for the control of the robot's motors. Part of this involves the robot going from point A to point B at any given time. Using current position information from localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then emit the necessary motor control signals to move towards this waypoint. \\
 			
 			The cutter motor speeds will also be controlled by this subsystem. This subsystem must both detect the speed of the motor, as well as apply the correct motor signals to maintain a constant speed when the cutter encounters an obstacle. 
 
@@ -533,10 +533,6 @@ The GroundsBot work plan is shown in the list below.  The plan is separated into
 
    
 \subsubsection{Schedule}
-\noindent
-\textbf{Progress Review 1}: The goal for Progress Review 1 is to have all hardware design complete with parts on order. \\
-\textbf{Progress Review 2}: The goal for Progress Review 2 is to have an assembled frame/chassis, a full ROS simulation environment, and a completed GPS + RTK base station\\
-
 The full list of milestones is laid out below in Table \ref{Tab:table_milestones}\\ 
 
 \begin{table}[H]
@@ -600,6 +596,9 @@ April 2018
 \end{table}
 
 \subsubsection{Progress Reviews}
+\noindent
+\textbf{Progress Review 1}: The goal for Progress Review 1 is to have all hardware design complete with parts on order. \\
+\textbf{Progress Review 2}: The goal for Progress Review 2 is to have an assembled frame/chassis, a full ROS simulation environment, and a completed GPS + RTK base station\\
 
 \subsection{System Validation Experiments}
 \subsubsection{Fall Validation Experiment}
@@ -649,7 +648,13 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
   \item Once GroundsBot has mowed the whole area it will return to the docking station
   \item GroundsBot will generate and transmit a coverage report to the UI indicating areas it could not mow
 \end{enumerate}
+
 \subsection{Team Member Responsibilities}
+
+
+
+
+
 \subsection{Provisional BOM}
 \begin{table}[H]
 \centering

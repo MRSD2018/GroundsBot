@@ -70,7 +70,7 @@
 \newpage
 \section{Project Description}
 
-People spend a lot of time mowing grass. This is particularly true for golf courses. Golf courses have hundreds of acres of land requiring careful maintenance. The median club in the United States spends \$1.2 million per year on maintenance \cite{clubbenchmarking}. A Pittsburgh area golf course superintendent \cite{interview-duxbury} revealed that his staff spends 65\% of their time mowing, and 60\% of that time is spent just on the rough. This is an industry ripe for automation.
+People spend a lot of time mowing grass. This is particularly true for golf courses. Golf courses have hundreds of acres of land requiring careful maintenance.  The median club in the United States spends \$1.2 million per year on maintenance \cite{clubbenchmarking}. A Pittsburgh area golf course superintendent \cite{interview-duxbury} revealed that his staff spends 65\% of their time mowing, and 60\% of that time is spent just on the rough. This is an industry ripe for automation.
 \\
 
 Autonomous mowers are commercially available today, however most of these units require buried wires, beacons, or extensive mapping to provide boundaries. For a golf course, the mowing area is so large that those setup methods are a barrier to deployment. The GroundsBot team aims to deliver an autonomous mower that can be deployed with minimal infrastructure, using a coarse boundary map provided by the user.
@@ -84,15 +84,15 @@ Autonomous mowers are commercially available today, however most of these units 
 
 \begin{tabularx}{\textwidth}{cX}
 \includegraphics[width=6cm, valign=t]{usecase1_1.png} & 
-Meet Steve. He's a golf course superintendent responsible for keeping the golf course looking professional. Right now, Steve and his groundskeeping team spend 65\% of their time just mowing grass. To save time, Steve just bought a GroundsBot unit to autonomously mow the rough around his golf course. \\
+Meet Steve.  He's a golf course superintendent responsible for keeping the golf course looking professional.  Right now, Steve and his groundskeeping team spend 65\% of their time just mowing grass.  To save him and his team time, Steve just bought a GroundsBot unit to autonomously mow the rough around his golf course. \\
 \includegraphics[width=6cm, valign=t]{usecase1_2.png} &
-To start the mowing process, Steve first has to draw an outline of the area he wants mowed. He also highlights any zones Groundsbot should avoid while mowing.
+To start the mowing process, Steve first has to draw an outline of the area he wants mowed.  He highlights his golf course boundaries, parking lots, fairways, greens, and sandtraps GroundsBot should avoid.
 \\
 \includegraphics[width=6cm, valign=t]{usecase1_3.png} &
-With the area to mow now outlined, the Groundsbot planning software creates a global route to cover all of the requested area. It avoids large obstacles like fairways, forests, and parking lots.
+With area to mow outlined, the GroundsBot planning software creates a global route to cover all of the requested area.  It avoids large obstacles like fairways, forests, and parking lots.
 \\
 \includegraphics[width=6cm, valign=t]{usecase1_4.png} &
-GroundsBot recieves the global route and localizes through GPS to determine where it is on the golf course.
+GroundsBot loads the global plan onto the robotic unit, and localizes itself with GPS to determine exactly where it is on the golf course.
 \\
 \end{tabularx}
 \end{table}
@@ -104,16 +104,16 @@ GroundsBot recieves the global route and localizes through GPS to determine wher
 
 \begin{tabularx}{\textwidth}{cX}
 \includegraphics[width=6cm, valign=t]{usecase1_5.png} &
-With the unit located and a global plan uploaded, GroundsBot begins mowing the area specified by Steve. It moves back and forth cutting the grass precisely, matching the quality care provided by Steve and his groundskeeping team.
+With the unit located, and a global plan uploaded, GroundsBot can start mowing the area specified by Steve.  It moves back a forth cutting the grass precisely just like Steve and his groundskeeping team would do.
 \\
 \includegraphics[width=6cm, valign=t]{usecase1_6.png} &
-If GroundsBot encounters unplanned obstacles like sand traps or individual trees, GroundsBot avoids the obstacle and cuts around it. Once GroundsBot has avoided the obstacle in its path, it continues with the original plan.
+If GroundsBot runs into unplanned obstacles like sandtraps or individual trees, GroundsBot avoids the obstacle and cuts a distance of 1ft away from the obstacle.  Once GroundsBot has avoided the obstacle in its path, it continues onto its original plan.
 \\
 \includegraphics[width=6cm, valign=t]{usecase1_7.png} &
-In order to maximize coverage, GroundsBot will navigate difficult terrain on a golf course, cutting the rough on steep hills.
+GroundsBot has to cut the hard to reach places on a golf course too, like steep hills.  GroundsBot can cut on hills with up to 30 degree slope.
 \\
 \includegraphics[width=6cm, valign=t]{usecase2_1.png} &
-Once GroundsBot is finished or low on power, it notifies Steve and returns back to the charging dock.
+Once GroundsBot is finished or low on power, it notifies Steve and returns back to where it first initialized.
 \\
 
 \end{tabularx}
@@ -126,16 +126,16 @@ Once GroundsBot is finished or low on power, it notifies Steve and returns back 
 
 \begin{tabularx}{\textwidth}{cX}
 \includegraphics[width=6cm, valign=t]{usecase2_2.png} &
-GroundsBot collected a lot of data while it was out cutting. It transfers diagnostics, coverage reports, and cutting data to Steve’s mobile device.
+GroundsBot collected a lot of data while it was out cutting.  It transfers diagnostics, coverage reports, and cutting data to Steve’s mobile device.
 \\
 \includegraphics[width=6cm, valign=t]{usecase2_3.png} &
-From here, Steve can analyze what areas of the course GroundsBot missed and what areas he has to send his team out to trim or tidy up.
+From here, Steve can analyze what areas of the course GroundsBot missed, and what areas he has to send his team out to trim or tidy up.
 \\
 \includegraphics[width=6cm, valign=t]{usecase2_4.png} &
-Steve sends out his groundskeeping team to quickly address missed spots or edging. This is a much faster experience for the team because they only have to touch up a few areas on the course.
+Steve sends out his groundskeeping team to quickly address missed spots or edging.  This is a much faster experience for the team because they only have to touch up a few areas on the course.
 \\
 \includegraphics[width=6cm, valign=t]{usecase2_5.png} &
-With the course looking professional, Steve and his groundskeeping team are happy they don’t have to worry about mowing. GroundsBot recharges to prepare for another day of mowing.
+With the course looking professional, and Steve and his groundskeeping team happy they don’t have to worry about mowing, GroundsBot gets recharged, ready for another day of mowing.
 \\
 
 \end{tabularx}
@@ -175,7 +175,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 		GroundsBot should be able to recognize obstacles in order to prevent collisions and mowing accidents \\
 		M.P.6 &
 		Mow to within 1 foot of detected obstacles &
-		GroundsBot should be able to detect an obstacle (M.P.5) and navigate around it to continue its mowing path \\
+		Groundsbot should be able to detect an obstacle (M.P.5) and navigate around it to continue its mowing path \\
 		M.P.7 &
 		Mow 90\% of a $\frac{1}{4}$ acre area &
 		GroundsBot will encounter obstacles along the way preventing it from 100\% coverage \\
@@ -217,7 +217,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
   	 \sffamily\normalsize{ID} & \sffamily\normalsize{Requirement} & \sffamily\normalsize{Description} \\
 	  M.N.1 &
   	  Return home to within 5 feet of dock &
-  	  GroundsBot should return to its starting position to remove as much hassle from the user as possible \\  	  
+  	  Groundsbot should return to its starting position to remove as much hassle from the user as possible \\  	  
   	  M.N.2 &
   	  Have a functional and easily accessible emergency stop &
   	  GroundsBot should be safe to use and easy to shut down in case of emergency\\
@@ -244,13 +244,13 @@ The system requirements were decided upon to demonstrate a proof of concept auto
   	  \sffamily\normalsize{Description} \\
   	  D.N.1 &
   	  Operates in variable lighting conditions &
-  	  GroundsBot should operate at night to avoid interrupting golfers\\
+  	  Groundsbot should operate at night to avoid interrupting golfers\\
   	  D.N.2 &
   	  Deck adjustable 0.5” to 2” &
   	  GroundsBot should be able to meet the grass height standards of different golf courses\\
   	  D.N.3 &
   	  Bot is resistant to impacts &
-  	  GroundsBot should be unaffected if hit by a golf ball while mowing\\
+  	  Groundsbot should be unaffected if hit by a golf ball while mowing\\
   	  D.N.4 &
   	  Return home to and mate with charging dock &
   	  A stretch goal if M.N.1 (return to within 5 ft. of dock) is achieved \\
@@ -271,14 +271,15 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \label{fig:functional}
 \end{figure}
 
+\newpage
   The Mowing Robot subsystem is responsible for many critical tasks in the Autonomous Golf Rough Mowing system. The Vehicle Platform is one internal subsystem that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Mower Electronics subsystem provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this subsystem is crucial for the remaining systems, enabling full mowing autonomy.\\
   
-  The remaining subsystems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide GroundsBot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
+  The remaining subsystems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide Groundsbot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
 
 \newpage
 \section{System Level Trade Studies}
   \subsection{Platform Configuration Trade Study}
-The first step was to decide a platform configuration that will meet the system requirements. A handful of common wheeled platforms \cite{husky} variants were considered (Table \ref{Tab:PlatformConfigDiagramsTable}). Each was evaluated on speed, wheel compaction, stability, complexity, ease of odometry, turning radius, and performance on uneven terrain. A two wheeled chassis with casters was selected (Table \ref{Tab:PlatformConfigTable}).
+The first step was to decide a platform configuration that will meet the system requirements. A handful of common wheeled platform variants were considered (Table \ref{Tab:PlatformConfigDiagramsTable}). Each was evaluated on speed, wheel compaction, stability, complexity, ease of odometry, turning radius, and performance on uneven terrain. A two wheeled chassis with casters was selected (Table \ref{Tab:PlatformConfigTable}).
 
 
      \begin{table}[H]
@@ -350,7 +351,7 @@ The first step was to decide a platform configuration that will meet the system 
     \end{table}
     
 %%%%%%%%%%platform base table%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
-Once a base configuration was determined, a specific implementation of the platform needed to be chosen. Several off-the-shelf as well as DIY platforms were considered \cite{husqvarna} \cite{superdroid}. A DIY platform was chosen (Table \ref{Tab:PlatformBaseTable}).
+Once a base configuration was determined, a specific implementation of the platform needed to be chosen. Several off-the-shelf as well as DIY platforms were considered.  A DIY platform was chosen (Table \ref{Tab:PlatformBaseTable}).
 
     \begin{table}[H]
     \begin{adjustwidth}{-1.5in}{-1.5in}
@@ -367,14 +368,14 @@ Once a base configuration was determined, a specific implementation of the platf
     \begin{tabular}{lcccccccc}
     \hline
     \\[-5ex]
-                                                               & \normalsize\sffamily\makecell{ {Ease} \\ { of }\\  {Integration}} &\normalsize\sffamily\makecell{ {Ease} \\  {of} \\  {Repair}} & \normalsize\sffamily\makecell{ {Ease} \\  {of} \\  {Construction}} & \normalsize\sffamily\makecell{ {Flexibility} \\  {for} \\  {Modifications}} & \normalsize\sffamily\makecell{\\ \\  {Cost}} & \normalsize\sffamily\makecell{ \\  {Lead-} \\  {time}} & \normalsize\sffamily\makecell{\\ \\  {Traction}} & \normalsize\sffamily\makecell{\\ \\  {Score}} \\
+                                                               & \normalsize\sffamily\makecell{ {Ease} \\ { of }\\  {Integration}} &\normalsize\sffamily\makecell{ {Ease} \\  {of} \\  {Repair}} & \normalsize\sffamily\makecell{ {Ease} \\  {of} \\  {Construction}} & \normalsize\sffamily\makecell{ {Flexiblility} \\  {for} \\  {Modifications}} & \normalsize\sffamily\makecell{\\ \\  {Cost}} & \normalsize\sffamily\makecell{ \\  {Lead-} \\  {time}} & \normalsize\sffamily\makecell{\\ \\  {Traction}} & \normalsize\sffamily\makecell{\\ \\  {Score}} \\
     \sffamily Weights (1-5)                                          & 3                   & 2              & 3                    & 5                              & 3    & 2        & 4        &       \\ \hline
     
     \\[-2ex]
     \multicolumn{1}{l}{\sffamily\cellcolor{highlight}Complete DIY}& \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}2} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}4} & \multicolumn{1}{c}{\cellcolor{highlight}5} & \multicolumn{1}{c}{\cellcolor{highlight}93}    \\ \hdashline
    \sffamily RC Lawnmower                                           & 5                   & 3              & 5                    & 4                              & 1    & 2        & 5        & 83    \\ \hdashline
     \sffamily\makecell[l]{Modify Robot \\ Lawnmower}                & 3                   & 3              & 4                    & 1                              & 1    & 4        & 2        & 51    \\ \hdashline
-    \sffamily\makecell[l]{Modify Electric \\ Push Mower}             & 2                   & 2              & 3                    & 1                              & 2    & 5        & 1        & 44    \\ \hdashline
+    \sffamily\makecell[l]{Modify Electric \\ Pushmower}             & 2                   & 2              & 3                    & 1                              & 2    & 5        & 1        & 44    \\ \hdashline
     \sffamily\makecell[l]{Modify Electric \\ Ride on Mower}         & 2                   & 1              & 3                    & 1                              & 3    & 5        & 5        & 61    \\ \hdashline
     \sffamily\makecell[l]{Stock Platform with \\ Mower Attached}    & 5                   & 3              & 5                    & 4                              & 1    & 3        & 3        & 77    \\ 
     \end{tabular}
@@ -461,15 +462,15 @@ Once the platform was decided upon, analysis on different sensors and sensor com
 \label{fig:cyberphysical}
 \end{figure}
 
-  The user interface and IO subsystems are the contact points for the operator. The WiFi access point allows the user to load mowing boundaries from their laptop or mobile device. This also enables the user to download coverage reports and diagnostics. Status LEDs allow the operator to understand the system status at a glance, while safety beacons alert humans to GroundsBot's presence at a distance.\\
+  The user interface and IO subsystems are the contact points for the operator.  The WiFi access point allows the user to load mowing boundaries from their laptop or mobile device.  This also enables the user to download coverage reports and diagnostics.  Status LEDs allow the operator to understand the system status at a glance, while safety beacons alert humans to GroundsBot's presence at a distance.\\
 
-  GroundsBot uses its sensor suite to ensure a clean cut. GPS \cite{swiftnav}, IMU, and Motor Encoders are used for coarse localization while the cameras are used to ensure optimal grass overlap while cutting. Cameras and also enable GroundsBot to detect static and dynamic obstacles. A GPS RTK base station allows for tighter localization.\\
+  GroundsBot uses its sensor suite to ensure a clean cut. GPS, IMU, and Motor Encoders are used for coarse localization while the cameras are used to ensure optimal grass overlap while cutting.  Cameras and also enable GroundsBot to detect static and dynamic obstacles. A GPS RTK base station allows for tighter localization.\\
 
   GroundsBot's battery subsystem reports charge status to the CPU to prevent GroundsBot from becoming stranded. The battery subsystem also contains standard protection protocols including charge control, under-voltage lockout, and over-current protection. \\
 
-  The CPU utilizes sensor information for localization, obstacle detection, and planning. After a local path is devised drive signals are sent to the motors. The CPU also logs coverage data and generates reports.\\
+  The CPU utilizes sensor information for localization, obstacle detection, and planning.  After a local path is devised drive signals are sent to the motors. The CPU also logs coverage data and generates reports.\\
 
-  The Drive Train contains motors and motor drivers to propel GroundsBot across a golf course. This also encompasses the mowing apparatus and mowing deck height control. \\
+  The Drive Train contains motors and motor drivers to propel GroundsBot across a golf course.  This also encompasses the mowing apparatus and mowing deck height control. \\
 
 \newpage
 \section{Subsystem Descriptions}
@@ -494,7 +495,7 @@ Once the platform was decided upon, analysis on different sensors and sensor com
     \subsubsection{Localization and Perception}
       An accurate description of the robot global position and orientation will be obtained from this subsystem. This information may be obtained from a high-accuracy GPS system, such as RTK-GPS, but visual SLAM based methods will also be investigated. \\
       
-      The vision system will also be used to detect boundaries of the grass as the robot approaches the boundary. For obstacle detection, our trade study determined that a stereo camera system would best fit the detection requirements. However, if needed, a LiDAR may be added to improve the detection accuracy. 
+      The vision system will also be used to detect boundaries of the grass as the robot approaches the boundary. For obstacle detection, our trade study determined that a stereo camera system would best fit the detection requirements. However, if needed, a LIDAR may be added to improve the detection accuracy. 
     
     \subsubsection{Mobility}
       The mobility subsystem will be responsible for controlling the robot motors. Part of this involves the robot going from point A to point B at any given time. Using current position information from the localization subsystem, this subsystem will find the next waypoint that will allow for the robot to follow the predetermined plan and then transmit the necessary motor control signals to move towards this waypoint. \\
@@ -505,7 +506,7 @@ Once the platform was decided upon, analysis on different sensors and sensor com
 \section{Project Management}
 \subsection{Work Plan}
 \subsubsection{Tasks}
-The GroundsBot work plan is shown in the list below. The plan is separated into high level categories and underlying subtasks. \\
+The GroundsBot work plan is shown in the list below.  The plan is separated into high level categories and underlying subtasks. \\
 
 \begin{itemize}
   \item [] \textbf{Chassis}
@@ -565,7 +566,7 @@ Progress Review 3 [NOV 7 2017]
 Progress Review 4 [NOV 21 2017] 
   
     &GroundsBot Accepts GPS Waypoints            \\
-    &GroundsBot Follows GPS Waypoints            \\
+    &GroundsBot Follows GPS waypoints            \\
     &Teleoperation Test Complete                 \\
                                                \\
 Fall Validation Experiment [NOV 28 2017] 
@@ -609,7 +610,7 @@ April 2018
 \begin{center}
 \textbf{Test 1:}
 \end{center}
- \textbf{Location:} Field by Doherty Apartments \cite{interview-guenther}
+ \textbf{Location:} Field by Doherty Apartments
 \\
 \textbf{Equipment:} GroundsBot, GroundsBot dock/RTK base station, laptop
 \begin{enumerate}
@@ -639,8 +640,8 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
   \item Open UI on mobile interface and establish a connection with GroundsBot
   \item Have a new user (someone not on Team A) use the UI to draw an outline of the area to be mowed on a map including both static obstacles and a non-mowable surface (i.e. concrete)
   \item Use the UI to submit the mowing area to GroundsBot
-  \item GroundsBot will develop a coverage plan of the area input by the user
-  \item GroundsBot will navigate to the area to be mowed
+  \item Groundsbot will develop a coverage plan of the area input by the user
+  \item Groundsbot will navigate to the area to be mowed
   \item Once it has reached the edge of the mowing area it will begin mowing
   \item GroundsBot will detect and avoid any obstacles it comes across while mowing and will also only mow where there is grass
   \item Once GroundsBot has mowed the whole area it will return to the docking station
@@ -719,32 +720,32 @@ Technical\\
  \textbf{Team Falling Behind Due to Work:} 
 Team may overestimate capability and overwhelm itself with assignments.
 &
-Prepare for risk by managing tasks and using buffer weeks. Mitigate effect by delaying milestones or cutting compromising targets.
+Prepare for risk by managing tasks and using buffer weeks.  Mitigate effect by delaying milestones or cutting compromising targets.
 &
 Schedule\\
  \textbf{Localization Poor for Following Edges:} 
 If our localization algorithms cannot accurately follow edge of lawn, system will not mow lawn effectively.
 &
-Prepare by understanding criticality of localization. Mitigate effect by changing scope of mowing problem or adding infrastructure to assist.
+Prepare by understanding criticality of localization.  Mitigate effect by changing scope of mowing problem or adding infrastructure to assist.
 &
 Technical\\
  \textbf{Injury from Spinning Blade:} 
 
-Our system has a dangerous cutting instrument. It can injure a team member or a bystander.
+Our system has a dangerous cutting instrument.  It can injure a team member or a bystander.
 &
-Prepare by making sure team understands the risk of spinning blade. Put warning lights and sounds to alert bystanders when testing.
+Prepare by making sure team understands the risk of spinning blade.  Put warning lights and sounds to alert bystanders when testing.
 &
 Technical\\
 
  \textbf{Poor Weather for Validation Experiments:} 
 Poor weather on demonstration days would prevent us from system from performing.
-&
-Team monitors upcoming weather before validation experiments.  Records the validation experiment before hand and replays in the case of inclement weather conditions.
+&1
+Team monitors upcoming weather before validation experiments.  Communicates with instructing team to reschedule if concerned by inclement weather.
 &
 Schedule\\
 
  \textbf{Team Member Has Family Constraints:} 
-Any team member could experience a family emergency or responsibility that occupies their time and focus. One specific concern is Josh's wife is pregnant and expecting in December.
+Any team member could experience a family emergency or reponsibility that occupies their time and focus.  One specific concern is Josh's wife is pregnant and expecting in December.
 &
 Mitigate the effect on entire team by spreading work across several team members and communicating consistently with absent team member to keep them in the loop.
 &
@@ -792,6 +793,8 @@ https://www.superdroidrobots.com/shop/item.aspx/prebuilt-2wd-66in-lawn-mower-wc-
 Duxbury, Jeff [Bob O’Connor Golf Course Superintendent]. (2017, September 16). Personal interview.
 \bibitem{interview-guenther} 
 Guenther, Steve [Carnegie Mellon University Director of Facilities Operations]. (2017, September 22). Personal interview.
+\bibitem{interview-zang} 
+Zang, Jason [Allegheny County Maintenance Manager]. (2017, September 25). Phone interview.
 \end{thebibliography}
 \endgroup
 

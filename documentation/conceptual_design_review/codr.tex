@@ -84,15 +84,15 @@ Autonomous mowers are commercially available today, however most of these units 
 
 \begin{tabularx}{\textwidth}{cX}
 \includegraphics[width=6cm, valign=t]{usecase1_1.png} & 
-Meet Steve. He's a golf course superintendent responsible for keeping the golf course looking professional. Right now, Steve and his groundskeeping team spend 65\% of their time just mowing grass. To save him and his team time, Steve just bought a GroundsBot unit to autonomously mow the rough around his golf course. \\
+Meet Steve. He's a golf course superintendent responsible for keeping the golf course looking professional. Right now, Steve and his groundskeeping team spend 65\% of their time just mowing grass. To save time, Steve just bought a GroundsBot unit to autonomously mow the rough around his golf course. \\
 \includegraphics[width=6cm, valign=t]{usecase1_2.png} &
-To start the mowing process, Steve first has to draw an outline of the area he wants mowed. He highlights his golf course boundaries, parking lots, fairways, greens, and sand traps GroundsBot should avoid.
+To start the mowing process, Steve first has to draw an outline of the area he wants mowed. He also highlights any zones Groundsbot should avoid while mowing.
 \\
 \includegraphics[width=6cm, valign=t]{usecase1_3.png} &
-With area to mow outlined, the GroundsBot planning software creates a global route to cover all of the requested area. It avoids large obstacles like fairways, forests, and parking lots.
+With the area to mow now outlined, the Groundsbot planning software creates a global route to cover all of the requested area. It avoids large obstacles like fairways, forests, and parking lots.
 \\
 \includegraphics[width=6cm, valign=t]{usecase1_4.png} &
-GroundsBot loads the global plan onto the robotic unit, and localizes itself with GPS to determine exactly where it is on the golf course.
+GroundsBot recieves the global route and localizes through GPS to determine where it is on the golf course.
 \\
 \end{tabularx}
 \end{table}
@@ -104,16 +104,16 @@ GroundsBot loads the global plan onto the robotic unit, and localizes itself wit
 
 \begin{tabularx}{\textwidth}{cX}
 \includegraphics[width=6cm, valign=t]{usecase1_5.png} &
-With the unit located, and a global plan uploaded, GroundsBot can start mowing the area specified by Steve. It moves back a forth cutting the grass precisely just like Steve and his groundskeeping team would do.
+With the unit located and a global plan uploaded, GroundsBot begins mowing the area specified by Steve. It moves back and forth cutting the grass precisely, matching the quality care provided by Steve and his groundskeeping team.
 \\
 \includegraphics[width=6cm, valign=t]{usecase1_6.png} &
-If GroundsBot runs into unplanned obstacles like sand traps or individual trees, GroundsBot avoids the obstacle and cuts a distance of 1ft away from the obstacle. Once GroundsBot has avoided the obstacle in its path, it continues onto its original plan.
+If GroundsBot encounters unplanned obstacles like sand traps or individual trees, GroundsBot avoids the obstacle and cuts around it. Once GroundsBot has avoided the obstacle in its path, it continues with the original plan.
 \\
 \includegraphics[width=6cm, valign=t]{usecase1_7.png} &
-GroundsBot has to cut the hard to reach places on a golf course too, like steep hills. GroundsBot can cut on hills with up to 30 degree slope.
+In order to maximize coverage, GroundsBot will navigate difficult terrain on a golf course, cutting the rough on steep hills.
 \\
 \includegraphics[width=6cm, valign=t]{usecase2_1.png} &
-Once GroundsBot is finished or low on power, it notifies Steve and returns back to where it first initialized.
+Once GroundsBot is finished or low on power, it notifies Steve and returns back to the charging dock.
 \\
 
 \end{tabularx}
@@ -129,13 +129,13 @@ Once GroundsBot is finished or low on power, it notifies Steve and returns back 
 GroundsBot collected a lot of data while it was out cutting. It transfers diagnostics, coverage reports, and cutting data to Steve’s mobile device.
 \\
 \includegraphics[width=6cm, valign=t]{usecase2_3.png} &
-From here, Steve can analyze what areas of the course GroundsBot missed, and what areas he has to send his team out to trim or tidy up.
+From here, Steve can analyze what areas of the course GroundsBot missed and what areas he has to send his team out to trim or tidy up.
 \\
 \includegraphics[width=6cm, valign=t]{usecase2_4.png} &
 Steve sends out his groundskeeping team to quickly address missed spots or edging. This is a much faster experience for the team because they only have to touch up a few areas on the course.
 \\
 \includegraphics[width=6cm, valign=t]{usecase2_5.png} &
-With the course looking professional, and Steve and his groundskeeping team happy they don’t have to worry about mowing, GroundsBot gets recharged, ready for another day of mowing.
+With the course looking professional, Steve and his groundskeeping team are happy they don’t have to worry about mowing. GroundsBot recharges to prepare for another day of mowing.
 \\
 
 \end{tabularx}
@@ -738,8 +738,8 @@ Technical\\
 
  \textbf{Poor Weather for Validation Experiments:} 
 Poor weather on demonstration days would prevent us from system from performing.
-&1
-Team monitors upcoming weather before validation experiments. Communicates with instructing team to reschedule if concerned by inclement weather.
+&
+Team monitors upcoming weather before validation experiments.  Records the validation experiment before hand and replays in the case of inclement weather conditions.
 &
 Schedule\\
 

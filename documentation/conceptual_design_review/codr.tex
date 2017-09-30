@@ -269,7 +269,7 @@ The system requirements were decided upon to demonstrate a proof of concept auto
 \label{fig:functional}
 \end{figure}
 
-  The Mowing Robot sub-system is responsible for many critical tasks in the Autonomous Golf Rough Mowing system. The Mowing Platform is one internal sub-system that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Platform Electronics sub-system provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this sub-system is crucial for the remaining systems, enabling full mowing autonomy.\\
+  The Mowing Robot sub-system is responsible for many critical tasks in the Autonomous Golf Rough Mowing system. The Vehicle Platform is one internal sub-system that ensures effective mowing operations by storing energy, providing mobility, and docking when charging is needed. The Mower Electronics sub-system provides electrical controls for the motors and hosts the computing resources needed to run the algorithms for mowing. The sensor data provided by this sub-system is crucial for the remaining systems, enabling full mowing autonomy.\\
   
   The remaining sub-systems within the Mowing Robot include Online Perception, Robot Localization, Navigation Planning, and Control. These software systems provide Groundsbot with awareness of surroundings, knowledge of position, and in-depth details about the grass. This enables successful navigation through complicated environments, and provides the information necessary to control GroundsBot effectively.\\
 
@@ -453,7 +453,9 @@ Once the platform was decided upon, analysis on different sensors and sensor com
 \newpage
 \section{Cyberphysical Architecture}
 \begin{figure}[H]
-\includegraphics[scale=0.2]{cyberphysical.png}
+\centering
+\def\svgwidth{\columnwidth}
+\input{img/cyberphysical.pdf_tex}
 \caption{Cyberphysical Architecture}
 \label{fig:cyberphysical}
 \end{figure}

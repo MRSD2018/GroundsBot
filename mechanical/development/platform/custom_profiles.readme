@@ -1,0 +1,3 @@
+To configure your solidworks application to use the 8020 profiles, follow the directions on this site: http://help.solidworks.com/2017/english/SolidWorks/sldworks/t_storing_custom_profiles_separate.htm
+
+When you are setting the custom folder, use "platform/custom_profiles" as the folder option.

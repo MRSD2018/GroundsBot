@@ -1,0 +1,35 @@
+Mower:
+
+Green Works: (Lithium Ion batteries)
+80 V 21" Brushless Mower (4 aH)		60 min mowing		0.5 Acres		https://www.greenworkstools.com/shop-by-tool/mowers/cordless-brushless-lawn-mower-407
+40 V 19" Brushless Mower (4 aH)		60 min mowing		0.275 Acres		https://www.greenworkstools.com/cordless-brushless-lawn-mower
+40 V 19" Brushless Mower (4 aH)		45 min mowing		0.15 Acres		https://www.greenworkstools.com/cordless-brushless-lawn-mower
+40 V 20" Mower with 2 blades (4 aH)	60 min mowing		0.275 Acres		https://www.greenworkstools.com/40v-20inch-cordless-twin-force-lawn-mower-kit
+
+Worx:(Lead Acid batteries)
+24 V 14" Mower (5 aH)			30 min mowing		0.14 Acres		https://www.worx.com/24v-cordless-lawn-mower-wg775.html
+36 V 19" Mower (10 aH)			45 min mowing		0.25 Acres		https://www.worx.com/36v-cordless-lawn-mower-wg770.html	
+
+EGO Power Plus: (Lithium Ion batteries) features fast recharge time of 40 min
+56 V 20" (7.5 aH)			90 min mowing		0.5 Acres		https://egopowerplus.com/collections/power-mowers/products/power-20-lawn-mower-with-steel-deck
+
+Sun Joe: (Lithium Ion Batteries)
+
+Apparently green works had a ciircuit board recall...
+https://www.consumerreports.org/recalls/greenworks-and-kobalt-electric-push-mowers-recalled-for-fire-hazard/
+
+Summary of throughput:
+
+Green Works:
+80 V 21" Brushless Mower (4 aH)		GLM801602		363 ft^2/min		$499
+40 V 19" Brushless Mower (4 aH)		2500502			200 ft^2/min		$365
+40 V 19" Mower (4 aH)			25223			144 ft^2/min		$261
+40 V 20" Mower with 2 blades (4 aH)	25302			144 ft^2/min		$287
+Worx:
+24 V 14" Mower (5 aH)			WG782			203 ft^2/min		$229
+36 V 19" Mower (10 aH)			WG788			242 ft^2/min		$393
+EGO Power Plus: 
+56 V 20" Mower (5 aH)			LM2000			350? ft^2/min		$605
+56 V 20" Mower (7.5 aH)			LM2001-X		350? ft^2/min		$800
+56 V 21" Mower (5.0 aH)			LM2101			350? ft^2/min		$593
+

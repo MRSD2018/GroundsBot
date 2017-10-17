@@ -1018,6 +1018,66 @@ DIN A4, landscape with location and doc. field</description>
 </sheet>
 </sheets>
 </module>
+<module name="POWER_TOP" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="JETSON" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="SENSOR_TOP" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
 </modules>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
@@ -1027,19 +1087,10 @@ DIN A4, landscape with location and doc. field</description>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="IMU1" module="IMU" x="190.5" y="78.74"/>
-<moduleinst name="CPU_INTERFACE1" module="JETSON_TX2_J26_GPIO" x="119.38" y="137.16"/>
-<moduleinst name="MOTOR_LEFT" module="MOTOR_INTERFACE" x="190.5" y="124.46"/>
-<moduleinst name="POWER_SUPPLIES1" module="POWER_SUPPLIES" x="190.5" y="147.32" rot="R180"/>
-<moduleinst name="MOWER_MOTOR" module="MOTOR_INTERFACE" x="190.5" y="101.6"/>
-<moduleinst name="JETSON_TX2_J21_EXPANSION1" module="JETSON_TX2_J21_EXPANSION" x="180.34" y="55.88"/>
-<moduleinst name="MICROCONTROLLER1" module="MICROCONTROLLER" x="53.34" y="111.76"/>
-<moduleinst name="JETSON_J17_UART1" module="JETSON_J17_UART" x="71.12" y="78.74"/>
-<moduleinst name="REACH_GPS1" module="REACH_GPS" x="71.12" y="55.88"/>
-<moduleinst name="RC_CONTROL1" module="RC_CONTROL" x="180.34" y="35.56"/>
-<moduleinst name="GPS_RF_COMM1" module="GPS_RF_COMM" x="109.22" y="106.68"/>
-<moduleinst name="VBAT_SENSE1" module="VBAT_SENSE" x="71.12" y="33.02"/>
-<moduleinst name="DECK_STEPPER1" module="DECK_STEPPER" x="124.46" y="66.04"/>
+<moduleinst name="MICROCONTROLLER1" module="MICROCONTROLLER" x="114.3" y="101.6"/>
+<moduleinst name="POWER_TOP1" module="POWER_TOP" x="152.4" y="124.46"/>
+<moduleinst name="JETSON1" module="JETSON" x="152.4" y="101.6"/>
+<moduleinst name="SENSOR_TOP1" module="SENSOR_TOP" x="152.4" y="78.74"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

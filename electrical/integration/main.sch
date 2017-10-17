@@ -154,35 +154,11 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="53.34" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
 <label x="53.34" y="124.46" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="0" y1="7.62" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
-<label x="0" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="0" y1="7.62" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
-<label x="0" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="-15.24" y1="2.54" x2="15.24" y2="2.54" width="0.1524" layer="91"/>
-<label x="-15.24" y="2.54" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="IMU_SCL" class="0">
 <segment>
 <wire x1="53.34" y1="121.92" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
 <label x="53.34" y="121.92" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="0" y1="5.08" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
-<label x="0" y="5.08" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="0" y1="5.08" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
-<label x="0" y="5.08" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="-15.24" y1="0" x2="15.24" y2="0" width="0.1524" layer="91"/>
-<label x="-15.24" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IMU_SDA" class="0">
@@ -190,35 +166,11 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="53.34" y1="119.38" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
 <label x="53.34" y="119.38" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="0" y1="2.54" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
-<label x="0" y="2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="0" y1="2.54" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
-<label x="0" y="2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="-15.24" y1="-2.54" x2="15.24" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-15.24" y="-2.54" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <wire x1="53.34" y1="116.84" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
 <label x="53.34" y="116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="0" y1="0" x2="30.48" y2="0" width="0.1524" layer="91"/>
-<label x="0" y="0" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="0" y1="0" x2="30.48" y2="0" width="0.1524" layer="91"/>
-<label x="0" y="0" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="-15.24" y1="-5.08" x2="15.24" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-15.24" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -403,24 +355,6 @@ DIN A4, landscape with location and doc. field</description>
 <busses>
 </busses>
 <nets>
-<net name="MOTOR_ENABLE" class="0">
-<segment>
-<wire x1="55.88" y1="134.62" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
-<label x="55.88" y="134.62" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ENCODER_ANLG" class="0">
-<segment>
-<wire x1="55.88" y1="132.08" x2="91.44" y2="132.08" width="0.1524" layer="91"/>
-<label x="55.88" y="132.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<wire x1="55.88" y1="129.54" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
-<label x="55.88" y="129.54" size="1.778" layer="95"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
@@ -858,6 +792,26 @@ DIN A4, landscape with location and doc. field</description>
 </sheet>
 </sheets>
 </module>
+<module name="DECK_STEPPER" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
 </modules>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
@@ -879,6 +833,7 @@ DIN A4, landscape with location and doc. field</description>
 <moduleinst name="RC_CONTROL1" module="RC_CONTROL" x="180.34" y="35.56"/>
 <moduleinst name="GPS_RF_COMM1" module="GPS_RF_COMM" x="109.22" y="106.68"/>
 <moduleinst name="VBAT_SENSE1" module="VBAT_SENSE" x="71.12" y="33.02"/>
+<moduleinst name="DECK_STEPPER1" module="DECK_STEPPER" x="124.46" y="66.04"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

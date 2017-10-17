@@ -243,10 +243,156 @@ DIN A4, landscape with location and doc. field</description>
 <busses>
 </busses>
 <nets>
-
-
-
-
+<net name="CAN_WAKE" class="0">
+<segment>
+<wire x1="55.88" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
+<label x="55.88" y="127" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VDD_3V3_SYS" class="0">
+<segment>
+<wire x1="55.88" y1="124.46" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
+<label x="55.88" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN0_STBY" class="0">
+<segment>
+<wire x1="55.88" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
+<label x="55.88" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VDD_1V8" class="0">
+<segment>
+<wire x1="55.88" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
+<label x="55.88" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN0_RX" class="0">
+<segment>
+<wire x1="55.88" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
+<label x="55.88" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AP2MDM_READY" class="0">
+<segment>
+<wire x1="55.88" y1="114.3" x2="96.52" y2="114.3" width="0.1524" layer="91"/>
+<label x="55.88" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN0_TX" class="0">
+<segment>
+<wire x1="55.88" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
+<label x="55.88" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VDD_5V0_IO_SYS" class="0">
+<segment>
+<wire x1="55.88" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
+<label x="55.88" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN0_ERR" class="0">
+<segment>
+<wire x1="55.88" y1="106.68" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
+<label x="55.88" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C_GP2_CLK" class="0">
+<segment>
+<wire x1="55.88" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
+<label x="55.88" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN1_STBY" class="0">
+<segment>
+<wire x1="55.88" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
+<label x="55.88" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C_GP2_DAT" class="0">
+<segment>
+<wire x1="55.88" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
+<label x="55.88" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN1_RX" class="0">
+<segment>
+<wire x1="55.88" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
+<label x="55.88" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="WDT_TIME_OUT_L" class="0">
+<segment>
+<wire x1="55.88" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
+<label x="55.88" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN1_TX" class="0">
+<segment>
+<wire x1="55.88" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
+<label x="55.88" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C_GP3_CLK" class="0">
+<segment>
+<wire x1="55.88" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
+<label x="55.88" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN1_ERR" class="0">
+<segment>
+<wire x1="55.88" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
+<label x="55.88" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C_GP3_DAT" class="0">
+<segment>
+<wire x1="55.88" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
+<label x="55.88" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<wire x1="55.88" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
+<label x="55.88" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SLEEP" class="0">
+<segment>
+<wire x1="55.88" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
+<label x="55.88" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2S1_CLK" class="0">
+<segment>
+<wire x1="55.88" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<label x="55.88" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2S1_SDOUT" class="0">
+<segment>
+<wire x1="55.88" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
+<label x="55.88" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2S1_SDIN" class="0">
+<segment>
+<wire x1="55.88" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
+<label x="55.88" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2S1_LRCLK" class="0">
+<segment>
+<wire x1="55.88" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
+<label x="55.88" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DSPK_OUT_CLK" class="0">
+<segment>
+<wire x1="55.88" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
+<label x="55.88" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

@@ -227,15 +227,6 @@ DIN A4, landscape with location and doc. field</description>
 </module>
 <module name="JETSON_TX2_J26_GPIO" prefix="" dx="50.8" dy="35.56">
 <ports>
-<port name="GND" side="left" coord="-5.08" direction="io"/>
-<port name="IMU_SCL" side="left" coord="-2.54" direction="io"/>
-<port name="IMU_SDA" side="left" coord="0" direction="io"/>
-<port name="LEFT_MOTOR_ENCODER_ANLG" side="left" coord="2.54" direction="io"/>
-<port name="LEFT_MOTOR_PWM" side="left" coord="5.08" direction="io"/>
-<port name="RIGHT_MOTOR_ENCODER_ANLG" side="left" coord="7.62" direction="io"/>
-<port name="RIGHT_MOTOR_PWM" side="left" coord="10.16" direction="io"/>
-<port name="MOTOR_ENABLE" side="left" coord="12.7" direction="io"/>
-<port name="CPU_VCC" side="left" coord="15.24" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -252,60 +243,10 @@ DIN A4, landscape with location and doc. field</description>
 <busses>
 </busses>
 <nets>
-<net name="CPU_VCC" class="0">
-<segment>
-<wire x1="83.82" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
-<label x="83.82" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="IMU_SCL" class="0">
-<segment>
-<wire x1="83.82" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
-<label x="83.82" y="104.14" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="IMU_SDA" class="0">
-<segment>
-<wire x1="83.82" y1="101.6" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
-<label x="83.82" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<wire x1="83.82" y1="99.06" x2="114.3" y2="99.06" width="0.1524" layer="91"/>
-<label x="83.82" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LEFT_MOTOR_ENCODER_ANLG" class="0">
-<segment>
-<wire x1="83.82" y1="96.52" x2="114.3" y2="96.52" width="0.1524" layer="91"/>
-<label x="83.82" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RIGHT_MOTOR_ENCODER_ANLG" class="0">
-<segment>
-<wire x1="83.82" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
-<label x="83.82" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LEFT_MOTOR_PWM" class="0">
-<segment>
-<wire x1="83.82" y1="91.44" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
-<label x="83.82" y="91.44" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RIGHT_MOTOR_PWM" class="0">
-<segment>
-<wire x1="83.82" y1="88.9" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
-<label x="83.82" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MOTOR_ENABLE" class="0">
-<segment>
-<wire x1="83.82" y1="86.36" x2="114.3" y2="86.36" width="0.1524" layer="91"/>
-<label x="83.82" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
+
+
+
+
 </nets>
 </sheet>
 </sheets>

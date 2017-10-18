@@ -605,6 +605,8 @@ DIN A4, landscape with location and doc. field</description>
 </module>
 <module name="12V" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="GND" side="left" coord="-5.08" direction="io"/>
+<port name="12V" side="left" coord="5.08" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -639,6 +641,8 @@ DIN A4, landscape with location and doc. field</description>
 </module>
 <module name="5V" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="GND" side="left" coord="-5.08" direction="io"/>
+<port name="5V" side="left" coord="5.08" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -673,6 +677,8 @@ DIN A4, landscape with location and doc. field</description>
 </module>
 <module name="3V3" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="GND" side="left" coord="-2.54" direction="io"/>
+<port name="3V3" side="left" coord="5.08" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1024,16 +1030,65 @@ DIN A4, landscape with location and doc. field</description>
 <variantdefs>
 </variantdefs>
 <parts>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
+<moduleinsts>
+<moduleinst name="3V3-1" module="3V3" x="106.68" y="142.24"/>
+<moduleinst name="5V1" module="5V" x="106.68" y="116.84"/>
+<moduleinst name="12V1" module="12V" x="106.68" y="91.44"/>
+</moduleinsts>
 <instances>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="N$1" class="0">
+<segment>
+<portref moduleinst="3V3-1" port="GND"/>
+<wire x1="86.36" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
+<label x="78.74" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<portref moduleinst="3V3-1" port="3V3"/>
+<wire x1="86.36" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
+<label x="78.74" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<portref moduleinst="5V1" port="5V"/>
+<wire x1="86.36" y1="121.92" x2="78.74" y2="121.92" width="0.1524" layer="91"/>
+<label x="78.74" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<portref moduleinst="5V1" port="GND"/>
+<wire x1="86.36" y1="111.76" x2="78.74" y2="111.76" width="0.1524" layer="91"/>
+<label x="78.74" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<portref moduleinst="12V1" port="12V"/>
+<wire x1="86.36" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
+<label x="78.74" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<portref moduleinst="12V1" port="GND"/>
+<wire x1="86.36" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
+<label x="78.74" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -1044,12 +1099,19 @@ DIN A4, landscape with location and doc. field</description>
 <variantdefs>
 </variantdefs>
 <parts>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
+<moduleinsts>
+<moduleinst name="JETSON_J17_UART1" module="JETSON_J17_UART" x="109.22" y="139.7"/>
+<moduleinst name="JETSON_TX2_J21_EXPANSION1" module="JETSON_TX2_J21_EXPANSION" x="109.22" y="116.84"/>
+<moduleinst name="JETSON_TX2_J26_GPIO1" module="JETSON_TX2_J26_GPIO" x="119.38" y="86.36"/>
+</moduleinsts>
 <instances>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -1064,12 +1126,46 @@ DIN A4, landscape with location and doc. field</description>
 <variantdefs>
 </variantdefs>
 <parts>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
+<moduleinsts>
+<moduleinst name="GPS_RF_COMM1" module="GPS_RF_COMM" x="124.46" y="132.08"/>
+<moduleinst name="IMU1" module="IMU" x="134.62" y="109.22"/>
+<moduleinst name="REACH_GPS1" module="REACH_GPS" x="124.46" y="86.36"/>
+</moduleinsts>
 <instances>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="MOTOR_TOP" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<moduleinsts>
+<moduleinst name="MOTOR_INTERFACE1" module="MOTOR_INTERFACE" x="124.46" y="119.38"/>
+<moduleinst name="MOTOR_INTERFACE2" module="MOTOR_INTERFACE" x="124.46" y="96.52"/>
+<moduleinst name="DECK_STEPPER1" module="DECK_STEPPER" x="114.3" y="73.66"/>
+</moduleinsts>
+<instances>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -1091,6 +1187,7 @@ DIN A4, landscape with location and doc. field</description>
 <moduleinst name="POWER_TOP1" module="POWER_TOP" x="152.4" y="124.46"/>
 <moduleinst name="JETSON1" module="JETSON" x="152.4" y="101.6"/>
 <moduleinst name="SENSOR_TOP1" module="SENSOR_TOP" x="152.4" y="78.74"/>
+<moduleinst name="MOTOR_TOP1" module="MOTOR_TOP" x="152.4" y="55.88"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

@@ -1932,6 +1932,67 @@ manufacturer:SAMTEC</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-molex">
+<description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="22-23-2031">
+<description>.100" (2.54mm) Center Header - 3 Pin</description>
+<wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="3.175" x2="3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="-3.175" x2="-3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-3.81" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MV">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="M">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="22-23-2031" prefix="X">
+<description>.100" (2.54mm) Center Header - 3 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2031">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2031" constant="no"/>
+<attribute name="OC_FARNELL" value="1462950" constant="no"/>
+<attribute name="OC_NEWARK" value="30C0862" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2540,40 +2601,41 @@ manufacturer:SAMTEC</description>
 </sheet>
 </sheets>
 </module>
-<module name="MICROCONTROLLER" prefix="" dx="30.48" dy="111.76">
+<module name="MICROCONTROLLER" prefix="" dx="45.72" dy="121.92">
 <ports>
-<port name="TX2_MISO" side="right" coord="7.62" direction="io"/>
-<port name="TX2_MOSI" side="right" coord="5.08" direction="io"/>
-<port name="TX2_SCK" side="right" coord="2.54" direction="io"/>
-<port name="MOTOR_L_CURR_SENSE" side="right" coord="-27.94" direction="io"/>
-<port name="MOTOR_L_ENABLE" side="right" coord="-25.4" direction="io"/>
-<port name="MOTOR_L_CHANNEL_B" side="right" coord="-22.86" direction="io"/>
-<port name="MOTOR_L_CHANNEL_A" side="right" coord="-20.32" direction="io"/>
-<port name="MOTOR_L_PWMB" side="right" coord="-17.78" direction="io"/>
-<port name="MOTOR_L_PWMA" side="right" coord="-15.24" direction="io"/>
-<port name="MOTOR_R_PWMA" side="right" coord="-33.02" direction="io"/>
-<port name="MOTOR_R_PWMB" side="right" coord="-35.56" direction="io"/>
-<port name="MOTOR_R_CHANNEL_A" side="right" coord="-38.1" direction="io"/>
-<port name="MOTOR_R_CHANNEL_B" side="right" coord="-40.64" direction="io"/>
-<port name="MOTOR_R_ENABLE" side="right" coord="-43.18" direction="io"/>
-<port name="MOTOR_R_CURR_SENSE" side="right" coord="-45.72" direction="io"/>
-<port name="IMU_SCL" side="right" coord="-2.54" direction="io"/>
-<port name="IMU_SDA" side="right" coord="-5.08" direction="io"/>
-<port name="SBUS" side="right" coord="-10.16" direction="io"/>
-<port name="MOWER_RELAY" side="right" coord="12.7" direction="io"/>
-<port name="VBATSENSE" side="right" coord="17.78" direction="io"/>
-<port name="LIMIT_R_LOW" side="right" coord="22.86" direction="io"/>
-<port name="LIMIT_R_HIGH" side="right" coord="25.4" direction="io"/>
-<port name="LIMIT_L_LOW" side="right" coord="30.48" direction="io"/>
-<port name="LIMIT_L_HIGH" side="right" coord="33.02" direction="io"/>
-<port name="STEPPER_R_STEP" side="right" coord="38.1" direction="io"/>
-<port name="STEPPER_R_ENABLE" side="right" coord="40.64" direction="io"/>
-<port name="STEPPER_R_DIR" side="right" coord="43.18" direction="io"/>
-<port name="STEPPER_L_STEP" side="right" coord="48.26" direction="io"/>
-<port name="STEPPER_L_ENABLE" side="right" coord="50.8" direction="io"/>
-<port name="STEPPER_L_DIR" side="right" coord="53.34" direction="io"/>
-<port name="VIN" side="right" coord="-50.8" direction="io"/>
-<port name="GND" side="right" coord="-53.34" direction="io"/>
+<port name="TX2_MISO" side="right" coord="38.1" direction="io"/>
+<port name="TX2_MOSI" side="right" coord="35.56" direction="io"/>
+<port name="TX2_SCK" side="right" coord="33.02" direction="io"/>
+<port name="MOTOR_L_CURR_SENSE" side="right" coord="2.54" direction="io"/>
+<port name="MOTOR_L_ENABLE" side="right" coord="5.08" direction="io"/>
+<port name="MOTOR_L_CHANNEL_B" side="right" coord="7.62" direction="io"/>
+<port name="MOTOR_L_CHANNEL_A" side="right" coord="10.16" direction="io"/>
+<port name="MOTOR_L_PWMB" side="right" coord="12.7" direction="io"/>
+<port name="MOTOR_L_PWMA" side="right" coord="15.24" direction="io"/>
+<port name="MOTOR_R_PWMA" side="right" coord="-2.54" direction="io"/>
+<port name="MOTOR_R_PWMB" side="right" coord="-5.08" direction="io"/>
+<port name="MOTOR_R_CHANNEL_A" side="right" coord="-7.62" direction="io"/>
+<port name="MOTOR_R_CHANNEL_B" side="right" coord="-10.16" direction="io"/>
+<port name="MOTOR_R_ENABLE" side="right" coord="-12.7" direction="io"/>
+<port name="MOTOR_R_CURR_SENSE" side="right" coord="-15.24" direction="io"/>
+<port name="IMU_SCL" side="right" coord="27.94" direction="io"/>
+<port name="IMU_SDA" side="right" coord="25.4" direction="io"/>
+<port name="SBUS" side="right" coord="20.32" direction="io"/>
+<port name="MOWER_RELAY" side="right" coord="43.18" direction="io"/>
+<port name="VBATSENSE" side="right" coord="48.26" direction="io"/>
+<port name="LIMIT_R_LOW" side="right" coord="-45.72" direction="io"/>
+<port name="LIMIT_R_HIGH" side="right" coord="-43.18" direction="io"/>
+<port name="LIMIT_L_LOW" side="right" coord="-30.48" direction="io"/>
+<port name="LIMIT_L_HIGH" side="right" coord="-27.94" direction="io"/>
+<port name="STEPPER_R_STEP" side="right" coord="-40.64" direction="io"/>
+<port name="STEPPER_R_ENABLE" side="right" coord="-38.1" direction="io"/>
+<port name="STEPPER_R_DIR" side="right" coord="-35.56" direction="io"/>
+<port name="STEPPER_L_STEP" side="right" coord="-25.4" direction="io"/>
+<port name="STEPPER_L_ENABLE" side="right" coord="-22.86" direction="io"/>
+<port name="STEPPER_L_DIR" side="right" coord="-20.32" direction="io"/>
+<port name="VIN" side="right" coord="58.42" direction="io"/>
+<port name="GND" side="right" coord="53.34" direction="io"/>
+<port name="3V3" side="right" coord="55.88" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3359,6 +3421,10 @@ manufacturer:SAMTEC</description>
 </module>
 <module name="REACH_GPS" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="5V" side="left" coord="7.62" direction="io"/>
+<port name="GND" side="left" coord="-7.62" direction="io"/>
+<port name="RX" side="left" coord="2.54" direction="io"/>
+<port name="TX" side="left" coord="-2.54" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3449,6 +3515,10 @@ manufacturer:SAMTEC</description>
 </module>
 <module name="GPS_RF_COMM" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="5V" side="left" coord="7.62" direction="io"/>
+<port name="GND" side="left" coord="-7.62" direction="io"/>
+<port name="RX" side="left" coord="2.54" direction="io"/>
+<port name="TX" side="left" coord="0" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3715,6 +3785,15 @@ manufacturer:SAMTEC</description>
 </module>
 <module name="SENSOR_TOP" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="5V" side="left" coord="7.62" direction="io"/>
+<port name="IMU_VCC" side="left" coord="5.08" direction="io"/>
+<port name="GND" side="left" coord="2.54" direction="io"/>
+<port name="IMU_SDA" side="left" coord="-7.62" direction="io"/>
+<port name="IMU_SCL" side="left" coord="-5.08" direction="io"/>
+<port name="REACH_RX" side="right" coord="7.62" direction="io"/>
+<port name="REACH_TX" side="right" coord="5.08" direction="io"/>
+<port name="RF_TX" side="right" coord="-7.62" direction="io"/>
+<port name="RF_RX" side="right" coord="-5.08" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3736,12 +3815,109 @@ manufacturer:SAMTEC</description>
 <busses>
 </busses>
 <nets>
+<net name="IMU_VCC" class="0">
+<segment>
+<portref moduleinst="IMU1" port="IMU_VCC"/>
+<wire x1="104.14" y1="116.84" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
+<label x="93.98" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IMU_SDA" class="0">
+<segment>
+<portref moduleinst="IMU1" port="IMU_SDA"/>
+<wire x1="104.14" y1="111.76" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
+<label x="93.98" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<portref moduleinst="IMU1" port="GND"/>
+<wire x1="104.14" y1="104.14" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
+<label x="93.98" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="106.68" y1="124.46" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
+<label x="96.52" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="REACH_GPS1" port="GND"/>
+<wire x1="104.14" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
+<label x="99.06" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<portref moduleinst="GPS_RF_COMM1" port="5V"/>
+<wire x1="104.14" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
+<label x="96.52" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="106.68" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
+<label x="99.06" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RF_RX" class="0">
+<segment>
+<portref moduleinst="GPS_RF_COMM1" port="RX"/>
+<wire x1="104.14" y1="134.62" x2="96.52" y2="134.62" width="0.1524" layer="91"/>
+<label x="96.52" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RF_TX" class="0">
+<segment>
+<portref moduleinst="GPS_RF_COMM1" port="TX"/>
+<wire x1="104.14" y1="132.08" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
+<label x="96.52" y="132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="REACH_RX" class="0">
+<segment>
+<portref moduleinst="REACH_GPS1" port="RX"/>
+<wire x1="104.14" y1="88.9" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
+<label x="93.98" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="REACH_TX" class="0">
+<segment>
+<portref moduleinst="REACH_GPS1" port="TX"/>
+<wire x1="104.14" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
+<label x="93.98" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IMU_SCL" class="0">
+<segment>
+<portref moduleinst="IMU1" port="IMU_SCL"/>
+<wire x1="104.14" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
+<label x="93.98" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </module>
-<module name="MOTOR_TOP" prefix="" dx="30.48" dy="20.32">
+<module name="MOTOR_TOP" prefix="" dx="30.48" dy="76.2">
 <ports>
+<port name="12V" side="left" coord="33.02" direction="io"/>
+<port name="5V" side="left" coord="30.48" direction="io"/>
+<port name="GND" side="left" coord="27.94" direction="io"/>
+<port name="PWM_A_1" side="left" coord="22.86" direction="io"/>
+<port name="PWM_B_1" side="left" coord="20.32" direction="io"/>
+<port name="ENABLE_1" side="left" coord="17.78" direction="io"/>
+<port name="CURRENT_SENSE_1" side="left" coord="15.24" direction="io"/>
+<port name="PWM_A_2" side="left" coord="10.16" direction="io"/>
+<port name="PWM_B_2" side="left" coord="7.62" direction="io"/>
+<port name="ENABLE_2" side="left" coord="5.08" direction="io"/>
+<port name="CURRENT_SENSE_2" side="left" coord="2.54" direction="io"/>
+<port name="DIR_1" side="left" coord="-2.54" direction="io"/>
+<port name="STEP_ENABLE_1" side="left" coord="-5.08" direction="io"/>
+<port name="STEP_1" side="left" coord="-7.62" direction="io"/>
+<port name="LIMIT_HIGH_1" side="left" coord="-10.16" direction="io"/>
+<port name="LIMIT_LOW_1" side="left" coord="-12.7" direction="io"/>
+<port name="DIR_2" side="left" coord="-25.4" direction="io"/>
+<port name="STEP_ENABLE_2" side="left" coord="-27.94" direction="io"/>
+<port name="STEP_2" side="left" coord="-30.48" direction="io"/>
+<port name="LIMIT_HIGH_2" side="left" coord="-33.02" direction="io"/>
+<port name="LIMIT_LOW_2" side="left" coord="-35.56" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3940,6 +4116,48 @@ manufacturer:SAMTEC</description>
 </sheet>
 </sheets>
 </module>
+<module name="RC_INPUT" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+<part name="X1" library="con-molex" deviceset="22-23-2031" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="X1" gate="-1" x="38.1" y="111.76" rot="R180"/>
+<instance part="X1" gate="-2" x="38.1" y="114.3" rot="R180"/>
+<instance part="X1" gate="-3" x="38.1" y="116.84" rot="R180"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="X1" gate="-3" pin="S"/>
+<wire x1="40.64" y1="116.84" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="X1" gate="-2" pin="S"/>
+<wire x1="40.64" y1="114.3" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SBUS_SIG" class="0">
+<segment>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="40.64" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+</nets>
+</sheet>
+</sheets>
+</module>
 </modules>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
@@ -3949,11 +4167,14 @@ manufacturer:SAMTEC</description>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="MICROCONTROLLER1" module="MICROCONTROLLER" x="86.36" y="93.98"/>
-<moduleinst name="POWER_TOP1" module="POWER_TOP" x="152.4" y="124.46"/>
-<moduleinst name="JETSON1" module="JETSON" x="152.4" y="101.6"/>
-<moduleinst name="SENSOR_TOP1" module="SENSOR_TOP" x="152.4" y="78.74"/>
-<moduleinst name="MOTOR_TOP1" module="MOTOR_TOP" x="152.4" y="55.88"/>
+<moduleinst name="MICROCONTROLLER1" module="MICROCONTROLLER" x="71.12" y="73.66" smashed="yes">
+<attribute name="NAME" x="71.12" y="127" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="POWER_TOP1" module="POWER_TOP" x="78.74" y="147.32"/>
+<moduleinst name="JETSON1" module="JETSON" x="152.4" y="142.24"/>
+<moduleinst name="SENSOR_TOP1" module="SENSOR_TOP" x="152.4" y="119.38"/>
+<moduleinst name="MOTOR_TOP1" module="MOTOR_TOP" x="152.4" y="66.04"/>
+<moduleinst name="RC_INPUT1" module="RC_INPUT" x="152.4" y="165.1"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -3961,6 +4182,180 @@ manufacturer:SAMTEC</description>
 <busses>
 </busses>
 <nets>
+<net name="N$1" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_PWMA"/>
+<portref moduleinst="MOTOR_TOP1" port="PWM_A_1"/>
+<wire x1="99.06" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<portref moduleinst="MOTOR_TOP1" port="PWM_B_1"/>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_PWMB"/>
+<wire x1="132.08" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_ENABLE"/>
+<wire x1="99.06" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="78.74" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="ENABLE_1"/>
+<wire x1="106.68" y1="83.82" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_CURR_SENSE"/>
+<wire x1="99.06" y1="76.2" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="76.2" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="CURRENT_SENSE_1"/>
+<wire x1="109.22" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_PWMA"/>
+<wire x1="99.06" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="71.12" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="PWM_A_2"/>
+<wire x1="111.76" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_PWMB"/>
+<wire x1="99.06" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="68.58" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="PWM_B_2"/>
+<wire x1="114.3" y1="73.66" x2="132.08" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_ENABLE"/>
+<wire x1="99.06" y1="60.96" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="60.96" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="ENABLE_2"/>
+<wire x1="116.84" y1="71.12" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_CURR_SENSE"/>
+<wire x1="99.06" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="58.42" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="CURRENT_SENSE_2"/>
+<wire x1="119.38" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="STEPPER_L_DIR"/>
+<wire x1="99.06" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="53.34" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DIR_1"/>
+<wire x1="121.92" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="STEPPER_L_ENABLE"/>
+<wire x1="99.06" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="50.8" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="STEP_ENABLE_1"/>
+<wire x1="124.46" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="STEPPER_L_STEP"/>
+<wire x1="99.06" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="127" y1="48.26" x2="127" y2="58.42" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="STEP_1"/>
+<wire x1="127" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="LIMIT_L_HIGH"/>
+<wire x1="99.06" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="45.72" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="LIMIT_HIGH_1"/>
+<wire x1="129.54" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="LIMIT_L_LOW"/>
+<wire x1="99.06" y1="43.18" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="LIMIT_LOW_1"/>
+<wire x1="132.08" y1="43.18" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<portref moduleinst="MOTOR_TOP1" port="DIR_2"/>
+<portref moduleinst="MICROCONTROLLER1" port="STEPPER_R_DIR"/>
+<wire x1="132.08" y1="40.64" x2="99.06" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="40.64" x2="99.06" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<portref moduleinst="MOTOR_TOP1" port="STEP_ENABLE_2"/>
+<wire x1="132.08" y1="38.1" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="38.1" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="STEPPER_R_ENABLE"/>
+<wire x1="101.6" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="STEPPER_R_STEP"/>
+<wire x1="99.06" y1="33.02" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="33.02" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="STEP_2"/>
+<wire x1="104.14" y1="35.56" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="LIMIT_R_HIGH"/>
+<wire x1="99.06" y1="30.48" x2="109.22" y2="30.48" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="LIMIT_HIGH_2"/>
+<wire x1="109.22" y1="30.48" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="33.02" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="LIMIT_R_LOW"/>
+<wire x1="99.06" y1="27.94" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="LIMIT_LOW_2"/>
+<wire x1="114.3" y1="27.94" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<portref moduleinst="SENSOR_TOP1" port="IMU_SCL"/>
+<wire x1="132.08" y1="114.3" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="114.3" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="IMU_SCL"/>
+<wire x1="119.38" y1="101.6" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="IMU_SDA"/>
+<wire x1="99.06" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="99.06" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
+<portref moduleinst="SENSOR_TOP1" port="IMU_SDA"/>
+<wire x1="121.92" y1="111.76" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

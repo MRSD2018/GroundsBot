@@ -2158,6 +2158,12 @@ manufacturer:SAMTEC</description>
 </module>
 <module name="MOTOR_INTERFACE" prefix="" dx="50.8" dy="20.32">
 <ports>
+<port name="5V" side="left" coord="7.62" direction="io"/>
+<port name="GND" side="left" coord="5.08" direction="io"/>
+<port name="PWM_A" side="left" coord="2.54" direction="io"/>
+<port name="PWM_B" side="left" coord="0" direction="io"/>
+<port name="ENABLE" side="left" coord="-2.54" direction="io"/>
+<port name="CURRENT_SENSE" side="left" coord="-5.08" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3540,6 +3546,13 @@ manufacturer:SAMTEC</description>
 </module>
 <module name="DECK_STEPPER" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="12V" side="left" coord="7.62" direction="io"/>
+<port name="GND" side="left" coord="5.08" direction="io"/>
+<port name="DIR" side="left" coord="2.54" direction="io"/>
+<port name="ENABLE" side="left" coord="0" direction="io"/>
+<port name="STEP" side="left" coord="-2.54" direction="io"/>
+<port name="LIMIT_HIGH" side="left" coord="-5.08" direction="io"/>
+<port name="LIMIT_LOW" side="left" coord="-7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3743,6 +3756,7 @@ manufacturer:SAMTEC</description>
 <moduleinst name="MOTOR_INTERFACE1" module="MOTOR_INTERFACE" x="124.46" y="119.38"/>
 <moduleinst name="MOTOR_INTERFACE2" module="MOTOR_INTERFACE" x="124.46" y="96.52"/>
 <moduleinst name="DECK_STEPPER1" module="DECK_STEPPER" x="114.3" y="73.66"/>
+<moduleinst name="DECK_STEPPER2" module="DECK_STEPPER" x="114.3" y="50.8"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -3750,6 +3764,178 @@ manufacturer:SAMTEC</description>
 <busses>
 </busses>
 <nets>
+<net name="5V" class="0">
+<segment>
+<portref moduleinst="MOTOR_INTERFACE1" port="5V"/>
+<wire x1="93.98" y1="127" x2="88.9" y2="127" width="0.1524" layer="91"/>
+<label x="88.9" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="MOTOR_INTERFACE2" port="5V"/>
+<wire x1="93.98" y1="104.14" x2="88.9" y2="104.14" width="0.1524" layer="91"/>
+<label x="88.9" y="104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<portref moduleinst="MOTOR_INTERFACE1" port="GND"/>
+<wire x1="93.98" y1="124.46" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
+<label x="88.9" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="MOTOR_INTERFACE2" port="GND"/>
+<wire x1="93.98" y1="101.6" x2="88.9" y2="101.6" width="0.1524" layer="91"/>
+<label x="88.9" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="DECK_STEPPER1" port="GND"/>
+<wire x1="93.98" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
+<label x="88.9" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="DECK_STEPPER2" port="GND"/>
+<wire x1="93.98" y1="55.88" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
+<label x="88.9" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_A_1" class="0">
+<segment>
+<portref moduleinst="MOTOR_INTERFACE1" port="PWM_A"/>
+<wire x1="93.98" y1="121.92" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
+<label x="83.82" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_B_1" class="0">
+<segment>
+<portref moduleinst="MOTOR_INTERFACE1" port="PWM_B"/>
+<wire x1="93.98" y1="119.38" x2="88.9" y2="119.38" width="0.1524" layer="91"/>
+<label x="83.82" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ENABLE_1" class="0">
+<segment>
+<portref moduleinst="MOTOR_INTERFACE1" port="ENABLE"/>
+<wire x1="93.98" y1="116.84" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
+<label x="83.82" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CURRENT_SENSE_1" class="0">
+<segment>
+<portref moduleinst="MOTOR_INTERFACE1" port="CURRENT_SENSE"/>
+<wire x1="93.98" y1="114.3" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
+<label x="71.12" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_A_2" class="0">
+<segment>
+<portref moduleinst="MOTOR_INTERFACE2" port="PWM_A"/>
+<wire x1="93.98" y1="99.06" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
+<label x="83.82" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_B_2" class="0">
+<segment>
+<portref moduleinst="MOTOR_INTERFACE2" port="PWM_B"/>
+<wire x1="93.98" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
+<label x="83.82" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ENABLE_2" class="0">
+<segment>
+<portref moduleinst="MOTOR_INTERFACE2" port="ENABLE"/>
+<wire x1="93.98" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
+<label x="83.82" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CURRENT_SENSE_2" class="0">
+<segment>
+<portref moduleinst="MOTOR_INTERFACE2" port="CURRENT_SENSE"/>
+<wire x1="93.98" y1="91.44" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
+<label x="71.12" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="12V" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER1" port="12V"/>
+<wire x1="93.98" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
+<label x="88.9" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="DECK_STEPPER2" port="12V"/>
+<wire x1="93.98" y1="58.42" x2="88.9" y2="58.42" width="0.1524" layer="91"/>
+<label x="88.9" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DIR_1" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER1" port="DIR"/>
+<wire x1="93.98" y1="76.2" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
+<label x="88.9" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="STEP_ENABLE_1" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER1" port="ENABLE"/>
+<wire x1="93.98" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
+<label x="73.66" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="STEP_1" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER1" port="STEP"/>
+<wire x1="93.98" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
+<label x="86.36" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LIMIT_HIGH_1" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER1" port="LIMIT_HIGH"/>
+<wire x1="93.98" y1="68.58" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
+<label x="78.74" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LIMIT_LOW_1" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER1" port="LIMIT_LOW"/>
+<wire x1="93.98" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
+<label x="81.28" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DIR_2" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER2" port="DIR"/>
+<wire x1="93.98" y1="53.34" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
+<label x="88.9" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="STEP_ENABLE_2" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER2" port="ENABLE"/>
+<wire x1="93.98" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
+<label x="76.2" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="STEP_2" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER2" port="STEP"/>
+<wire x1="93.98" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
+<label x="88.9" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LIMIT_HIGH_2" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER2" port="LIMIT_HIGH"/>
+<wire x1="93.98" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
+<label x="81.28" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LIMIT_LOW_2" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER2" port="LIMIT_LOW"/>
+<wire x1="93.98" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
+<label x="81.28" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

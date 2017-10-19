@@ -86,6 +86,24 @@
 <pad name="+SENSE" x="14" y="3.81" drill="1.8" diameter="2.8"/>
 <pad name="+VOUT" x="14" y="7.62" drill="1.8" diameter="2.8"/>
 </package>
+<package name="SIP-12">
+<pad name="ENABLE" x="0" y="13.97" drill="0.889" diameter="1.4224" shape="square"/>
+<pad name="VIN1" x="0" y="11.43" drill="0.889" diameter="1.4224"/>
+<pad name="VIN2" x="0" y="8.89" drill="0.889" diameter="1.4224"/>
+<pad name="VIN3" x="0" y="6.35" drill="0.889" diameter="1.4224"/>
+<pad name="GND1" x="0" y="3.81" drill="0.889" diameter="1.4224"/>
+<pad name="GND2" x="0" y="1.27" drill="0.889" diameter="1.4224"/>
+<pad name="GND3" x="0" y="-1.27" drill="0.889" diameter="1.4224"/>
+<pad name="GND4" x="0" y="-3.81" drill="0.889" diameter="1.4224"/>
+<pad name="VOUT1" x="0" y="-6.35" drill="0.889" diameter="1.4224"/>
+<pad name="VOUT2" x="0" y="-8.89" drill="0.889" diameter="1.4224"/>
+<pad name="VOUT3" x="0" y="-11.43" drill="0.889" diameter="1.4224"/>
+<pad name="VOUT-ADJ" x="0" y="-13.97" drill="0.889" diameter="1.4224"/>
+<wire x1="2.54" y1="-16.51" x2="2.54" y2="16.51" width="0.127" layer="21"/>
+<wire x1="2.54" y1="16.51" x2="-10.16" y2="16.51" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="16.51" x2="-10.16" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-16.51" x2="2.54" y2="-16.51" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="V36SE12004NRFA-SYM">
@@ -107,6 +125,28 @@
 48W DC-DC 12V Out
 Input:18-75V</text>
 </symbol>
+<symbol name="R-745.0P">
+<pin name="ENABLE" x="0" y="0" length="middle"/>
+<pin name="VIN1" x="0" y="-2.54" length="middle"/>
+<pin name="VIN2" x="0" y="-5.08" length="middle"/>
+<pin name="VIN3" x="0" y="-7.62" length="middle"/>
+<pin name="GND1" x="0" y="-10.16" length="middle"/>
+<pin name="GND2" x="0" y="-12.7" length="middle"/>
+<pin name="GND3" x="0" y="-15.24" length="middle"/>
+<pin name="GND4" x="0" y="-17.78" length="middle"/>
+<pin name="VOUT1" x="0" y="-20.32" length="middle"/>
+<pin name="VOUT2" x="0" y="-22.86" length="middle"/>
+<pin name="VOUT3" x="0" y="-25.4" length="middle"/>
+<pin name="VOUT-ADJ" x="0" y="-27.94" length="middle"/>
+<text x="20.32" y="-7.62" size="1.27" layer="94">RECOM
+R-723.3P
+20W DC-DC 5V Out
+6.5V - 28V</text>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-30.48" x2="40.64" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="40.64" y1="-30.48" x2="40.64" y2="2.54" width="0.254" layer="94"/>
+<wire x1="40.64" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="V36SE12004NRFA">
@@ -124,6 +164,32 @@ Input:18-75V</text>
 <connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
 <connect gate="G$1" pin="ENABLE" pad="ENABLE"/>
 <connect gate="G$1" pin="TRIM" pad="TRIM"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="R-745.0P">
+<gates>
+<gate name="G$1" symbol="R-745.0P" x="-7.62" y="15.24"/>
+</gates>
+<devices>
+<device name="" package="SIP-12">
+<connects>
+<connect gate="G$1" pin="ENABLE" pad="ENABLE"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="GND3" pad="GND3"/>
+<connect gate="G$1" pin="GND4" pad="GND4"/>
+<connect gate="G$1" pin="VIN1" pad="VIN1"/>
+<connect gate="G$1" pin="VIN2" pad="VIN2"/>
+<connect gate="G$1" pin="VIN3" pad="VIN3"/>
+<connect gate="G$1" pin="VOUT-ADJ" pad="VOUT-ADJ"/>
+<connect gate="G$1" pin="VOUT1" pad="VOUT1"/>
+<connect gate="G$1" pin="VOUT2" pad="VOUT2"/>
+<connect gate="G$1" pin="VOUT3" pad="VOUT3"/>
 </connects>
 <technologies>
 <technology name=""/>

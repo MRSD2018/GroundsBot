@@ -7,9 +7,9 @@ Fall Validation Experiment
 Test 1:
   Location: Field by Doherty Apartments
 
-  Equipment: GroundsBot, GroundsBot dock/RTK base station, laptop
+  Equipment: GroundsBot, GroundsBot base station, laptop
 
-      Power on GroundsBot next to its docking station
+      Power on GroundsBot 
 
       Establish connection between GroundsBot and mobile device
 
@@ -33,6 +33,18 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
     Apply algorithm to each picture
 
     Algorithm classifies each picture as a mowable or non-mowable surface with 90% accuracy
+
+Test 3:
+  Location: Field by Doherty Apartments
+
+  Equipment: GroundsBot, GroundsBot RTK base station, laptop
+  
+  GroundsBot directed to move in straight line
+  
+  GroundBot team member engages emergency stop
+
+  GroundsBot ceases to move
+
 
 Spring Validation Experiment
 
@@ -84,7 +96,3 @@ Test 3:
     User enters a mowing boundary containing a slope at maximum performance requirement
     
     GroundsBot successfully mows the region
-
-  
-
-

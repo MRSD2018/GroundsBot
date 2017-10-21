@@ -17,27 +17,34 @@ Test 1:
 
       Send waypoints to GroundsBot
 
-      GroundsBot will navigate to each waypoint entered, in the order they were entered
+      GroundsBot will navigate to each waypoint entered within 2 feet, in the order they were entered
 
-      Once the last waypoint is reached, GroundsBot will navigate back to the docking station (Note: the docking station will not be one of the entered waypoints)
+      Once the last waypoint is reached, GroundsBot will navigate back to starting position within 2 feet
 
 Test 2:
 
 Test 2 has been designed to demonstrate base functionality of the perception subsystem. The team will present a perception algorithm capable of differentiating between grass (i.e. a mowable surface) and non-grass (i.e. a non-mowable surface.) This test will be performed outside of the fall validation experiment and a replay of the test will be displayed during the fall validation experiment.
+  Location: Offline, report generated for FVE
+  
+  Equipment: ZED Stereo camera, laptop
 
+    Take 10 pictures each of: Fairway, Rough, Sidewalk, Parking Lot. Each picture is homogeneous (all grass, all pavement, etc...)
 
+    Apply algorithm to each picture
+
+    Algorithm classifies each picture as a mowable or non-mowable surface with 90% accuracy
 
 Spring Validation Experiment
 
 	The spring validation experiment will be when the team will test the full GroundsBot system to demonstrate that all system requirements have been met. The details of the test are laid out below.
 
- Test 1:
+Test 1:
 
   Location: Field by Doherty Apartments
 
-  Equipment: GroundsBot, GroundsBot dock/RTK base station, mobile device
+  Equipment: GroundsBot, GroundsBot RTK base station, mobile device
 
-      Power on GroundsBot next to its docking station
+      Power on GroundsBot
 
       Open UI on mobile interface and establish a connection with GroundsBot
 
@@ -45,14 +52,39 @@ Spring Validation Experiment
 
       Use the UI to submit the mowing area to GroundsBot
 
+      Area shall contain 5 static obstacles, such as trees, bushes, boxes etc..., one of which is minimum size from performance requirements
+
       GroundsBot will develop a coverage plan of the area input by the user
 
-      GroundsBot will navigate to the area to be mowed
+      GroundsBot mows area per performance requirements
 
-      Once it has reached the edge of the mowing area it will begin mowing
-
-      GroundsBot will detect and avoid any obstacles it comes across while mowing and will also only mow where there is grass
-
-      Once GroundsBot has mowed the whole area it will return to the docking station
+      GroundsBot returns to starting position per performance requirements
 
       GroundsBot will generate and transmit a coverage report to the UI indicating areas it could not mow
+
+
+Test 2:
+  Location: Field by Doherty Apartments
+
+  Equipment: GroundsBot, GroundsBot RTK base station, mobile device, soccer ball
+
+  GroundsBot is directed to move in a straight line
+
+  Team throws a soccerball in front of GroundsBot 5 times
+
+  GroundsBot stops until obstacle is out of range per performance requirements
+
+Test 3:
+  Location: Field by Doherty Apartments
+
+  Equipment: GroundsBot, GroundsBot RTK base station, mobile device, soccer ball
+
+  Test conducted offline, presented at FVE
+    
+    User enters a mowing boundary containing a slope at maximum performance requirement
+    
+    GroundsBot successfully mows the region
+
+  
+
+

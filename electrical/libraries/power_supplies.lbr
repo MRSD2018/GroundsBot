@@ -494,6 +494,16 @@
 <text x="-17.78" y="6.35" size="1.27" layer="21">&gt;Name</text>
 <text x="8.89" y="6.35" size="1.27" layer="21">&gt;Value</text>
 </package>
+<package name="LF445_0.807IN">
+<pad name="1" x="-10.2362" y="0" drill="1.2954" shape="square"/>
+<wire x1="-12.7" y1="3.81" x2="12.7" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-3.81" x2="12.7" y2="-3.81" width="0.127" layer="21"/>
+<text x="-11.43" y="5.08" size="1.27" layer="21">&gt;Name</text>
+<text x="3.81" y="5.08" size="1.27" layer="21">&gt;Value</text>
+<pad name="2" x="-5.0292" y="0" drill="1.2954" shape="square"/>
+<pad name="3" x="5.0292" y="0" drill="1.2954" shape="square"/>
+<pad name="4" x="10.2362" y="0" drill="1.2954" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="V36SE12004NRFA-SYM">
@@ -841,6 +851,24 @@ So dual pins for top/bot</text>
 </gates>
 <devices>
 <device name="" package="LF122_1.25IN">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE_HOLDER_0.205X0.787IN">
+<gates>
+<gate name="A" symbol="FUSE_HOLDER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LF445_0.807IN">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>

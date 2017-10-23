@@ -60,7 +60,7 @@ Test 1:
 
       Open UI on mobile interface and establish a connection with GroundsBot
 
-      Have a new user (someone not on Team A) use the UI to draw an outline of the area to be mowed on a map including both static obstacles and a non-mowable surface (i.e. concrete)
+      Have a new user use UI to define boundaries of area to be mowed
 
       Use the UI to submit the mowing area to GroundsBot
 

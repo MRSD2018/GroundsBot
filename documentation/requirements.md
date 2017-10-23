@@ -17,7 +17,7 @@ M.P.6 , Detect 80% of static objects greater than 3 inches in height and 2 inche
 
 M.P.7 , Detect 80% of dynamic objects greater than 6 inches in height and 6 inches in width travelling less than 4 mph, GroundsBot should be able to recognize obstacles in order to prevent collisions and mowing accidents 
 
-M.P.8 , Mow to within 1 foot of detected obstacles , GroundsBot should be able to detect an obstacle (M.P.5) and navigate around it to continue its mowing path 
+M.P.8 , Mow to within 1 foot of detected obstacles , GroundsBot should be able to detect an obstacle (M.P.6) and navigate around it to continue its mowing path 
 
 M.P.9 , Return home to within 5 feet of starting position , GroundsBot should return to its starting position to remove as much hassle from the user as possible   	  
 
@@ -26,7 +26,7 @@ Desirable Performance Requirements
 
 ID,Requirement,Description
 
-D.P.1 , Mow to within 3 inches of a detected obstacles , A stretch goal for when M.P.6 (mow within 1 ft. of obstacles) is achieved 
+D.P.1 , Mow to within 3 inches of a detected obstacles , A stretch goal for when M.P.8 (mow within 1 ft. of obstacles) is achieved 
 
 D.P.2 , Visually report mowing coverage and obstacles encountered , GroundsBot should report areas it missed to the user so the user knows where to manually mow to achieve full coverage
 

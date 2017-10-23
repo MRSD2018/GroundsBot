@@ -651,7 +651,7 @@ So dual pins for top/bot</text>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.0922" y1="-0.508" x2="1.0922" y2="-0.508" width="0.254" layer="94"/>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="AGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 <symbol name="36V_RAW">
 <pin name="36V_RAW" x="0" y="-5.08" length="middle" direction="sup" rot="R90"/>
@@ -664,6 +664,16 @@ So dual pins for top/bot</text>
 <symbol name="5V">
 <pin name="5V" x="0" y="0" length="middle" direction="sup" rot="R90"/>
 <wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="5V_CPU">
+<pin name="5V_CPU" x="0" y="0" length="middle" direction="sup" rot="R90"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="GND_CPU">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.0922" y1="-0.508" x2="1.0922" y2="-0.508" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="GND_CPU" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -715,7 +725,7 @@ So dual pins for top/bot</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DG85BM-5011-76-1024">
+<deviceset name="DG85BM-5011-76-1024" prefix="U">
 <gates>
 <gate name="G$1" symbol="DG85BM-5011-76-1024-SYM" x="0" y="0"/>
 </gates>
@@ -863,7 +873,7 @@ So dual pins for top/bot</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE_HOLDER_1.25X0.25IN">
+<deviceset name="FUSE_HOLDER_1.25X0.25IN" prefix="FH">
 <gates>
 <gate name="A" symbol="FUSE_HOLDER" x="0" y="0"/>
 </gates>
@@ -881,7 +891,7 @@ So dual pins for top/bot</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE_HOLDER_0.205X0.787IN">
+<deviceset name="FUSE_HOLDER_0.205X0.787IN" prefix="FH">
 <gates>
 <gate name="A" symbol="FUSE_HOLDER" x="0" y="0"/>
 </gates>
@@ -899,7 +909,7 @@ So dual pins for top/bot</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND" prefix="AGND">
+<deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="VR1" symbol="GND" x="0" y="0"/>
@@ -912,7 +922,7 @@ So dual pins for top/bot</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="36V_RAW">
+<deviceset name="36V_RAW" prefix="36V_RAW">
 <gates>
 <gate name="A" symbol="36V_RAW" x="0" y="5.08"/>
 </gates>
@@ -924,7 +934,7 @@ So dual pins for top/bot</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="36V">
+<deviceset name="36V" prefix="36V">
 <gates>
 <gate name="A" symbol="36V" x="0" y="0"/>
 </gates>
@@ -936,9 +946,34 @@ So dual pins for top/bot</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="5V">
+<deviceset name="5V" prefix="5V">
 <gates>
 <gate name="A" symbol="5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5V_CPU" prefix="5V_CPU">
+<gates>
+<gate name="G$1" symbol="5V_CPU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND_CPU" prefix="GND_CPU">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="GND_CPU" x="0" y="-2.54"/>
 </gates>
 <devices>
 <device name="">

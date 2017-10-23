@@ -87,7 +87,7 @@ Test 2:
 Test 3:
   Location: Field by Doherty Apartments
 
-  Equipment: GroundsBot, GroundsBot RTK base station, mobile device, soccer ball
+  Equipment: GroundsBot, GroundsBot RTK base station, mobile device
 
   Test conducted offline, presented at FVE
     

@@ -72,8 +72,6 @@ Test 1:
 
       GroundsBot returns to starting position per performance requirements
 
-      GroundsBot will generate and transmit a coverage report to the UI indicating areas it could not mow
-
 
 Test 2:
   Location: Field by Doherty Apartments

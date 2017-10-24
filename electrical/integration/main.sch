@@ -1993,6 +1993,103 @@ manufacturer:SAMTEC</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="NC7SZ04M5">
+<packages>
+<package name="SOT95P280X145-5N">
+<wire x1="-0.4826" y1="-1.4986" x2="0.4826" y2="-1.4986" width="0.1524" layer="21"/>
+<wire x1="0.8382" y1="-0.3302" x2="0.8382" y2="0.3302" width="0.1524" layer="21"/>
+<wire x1="0.4826" y1="1.4986" x2="0.3048" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.4986" x2="-0.4826" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21" curve="-180"/>
+<text x="-2.1372" y="1.37391875" size="1.272140625" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="-0.8382" y1="-1.4986" x2="0.8382" y2="-1.4986" width="0" layer="51"/>
+<wire x1="0.8382" y1="-1.4986" x2="0.8382" y2="-1.1938" width="0" layer="51"/>
+<wire x1="0.8382" y1="-1.1938" x2="0.8382" y2="-0.7112" width="0" layer="51"/>
+<wire x1="0.8382" y1="-0.7112" x2="0.8382" y2="0.7112" width="0" layer="51"/>
+<wire x1="0.8382" y1="1.4986" x2="0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.3048" y1="1.4986" x2="-0.8382" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.8382" y1="1.4986" x2="-0.8382" y2="1.1938" width="0" layer="51"/>
+<wire x1="-0.8382" y1="1.1938" x2="-0.8382" y2="0.7112" width="0" layer="51"/>
+<wire x1="-0.8382" y1="0.7112" x2="-0.8382" y2="0.254" width="0" layer="51"/>
+<wire x1="-0.8382" y1="0.254" x2="-0.8382" y2="-0.254" width="0" layer="51"/>
+<wire x1="-0.8382" y1="-0.254" x2="-0.8382" y2="-0.7112" width="0" layer="51"/>
+<wire x1="-0.8382" y1="1.1938" x2="-1.4986" y2="1.1938" width="0" layer="51"/>
+<wire x1="-1.4986" y1="1.1938" x2="-1.4986" y2="0.7112" width="0" layer="51"/>
+<wire x1="-1.4986" y1="0.7112" x2="-0.8382" y2="0.7112" width="0" layer="51"/>
+<wire x1="-0.8382" y1="0.254" x2="-1.4986" y2="0.254" width="0" layer="51"/>
+<wire x1="-1.4986" y1="0.254" x2="-1.4986" y2="-0.254" width="0" layer="51"/>
+<wire x1="-1.4986" y1="-0.254" x2="-0.8382" y2="-0.254" width="0" layer="51"/>
+<wire x1="-0.8382" y1="-1.4986" x2="-0.8382" y2="-1.1938" width="0" layer="51"/>
+<wire x1="-0.8382" y1="-1.1938" x2="-0.8382" y2="-0.7112" width="0" layer="51"/>
+<wire x1="-0.8382" y1="-0.7112" x2="-1.4986" y2="-0.7112" width="0" layer="51"/>
+<wire x1="-1.4986" y1="-0.7112" x2="-1.4986" y2="-1.1938" width="0" layer="51"/>
+<wire x1="-1.4986" y1="-1.1938" x2="-0.8382" y2="-1.1938" width="0" layer="51"/>
+<wire x1="0.8382" y1="-1.1938" x2="1.4986" y2="-1.1938" width="0" layer="51"/>
+<wire x1="1.4986" y1="-1.1938" x2="1.4986" y2="-0.7112" width="0" layer="51"/>
+<wire x1="1.4986" y1="-0.7112" x2="0.8382" y2="-0.7112" width="0" layer="51"/>
+<wire x1="0.8382" y1="1.4986" x2="0.8382" y2="1.1938" width="0" layer="51"/>
+<wire x1="0.8382" y1="1.1938" x2="0.8382" y2="0.7112" width="0" layer="51"/>
+<wire x1="0.8382" y1="0.7112" x2="1.4986" y2="0.7112" width="0" layer="51"/>
+<wire x1="1.4986" y1="0.7112" x2="1.4986" y2="1.1938" width="0" layer="51"/>
+<wire x1="1.4986" y1="1.1938" x2="0.8382" y2="1.1938" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51" curve="-180"/>
+<text x="-2.136259375" y="1.373309375" size="1.27158125" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-3.455859375" y="2.54106875" size="2.08368125" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.4597" y="-4.45181875" size="2.085990625" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<smd name="1" x="-1.2954" y="0.9398" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="2" x="-1.2954" y="0" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="3" x="-1.2954" y="-0.9398" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="4" x="1.2954" y="-0.9398" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="5" x="1.2954" y="0.9398" dx="1.27" dy="0.5588" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NC7SZ04M5">
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.4064" layer="94"/>
+<text x="-5.3654" y="12.1802" size="2.08513125" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-4.599259375" y="-19.0831" size="2.083640625" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="VCC" x="-17.78" y="5.08" length="middle" direction="pwr"/>
+<pin name="A" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="NC" x="-17.78" y="-5.08" length="middle" direction="nc"/>
+<pin name="GND" x="-17.78" y="-10.16" length="middle" direction="pas"/>
+<pin name="Y" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NC7SZ04M5" prefix="U">
+<description>Tiny logic UHS Inverter</description>
+<gates>
+<gate name="A" symbol="NC7SZ04M5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-5N">
+<connects>
+<connect gate="A" pin="A" pad="2"/>
+<connect gate="A" pin="GND" pad="3"/>
+<connect gate="A" pin="NC" pad="1"/>
+<connect gate="A" pin="VCC" pad="5"/>
+<connect gate="A" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="DESCRIPTION" value="NC7SZ04 Series 5.5 V Surface Mount TinyLogic UHS Inverter - SOT-23-5"/>
+<attribute name="MF" value="Fairchild Semiconductor"/>
+<attribute name="MP" value="NC7SZ04M5"/>
+<attribute name="PACKAGE" value="SOT-23-5 Fairchild Semiconductor"/>
+<attribute name="PRICE" value="0.28 USD"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2063,154 +2160,374 @@ manufacturer:SAMTEC</description>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="U$1" library="TSM-115-XX-XXX-DV" deviceset="TSM-115-XX-XXX-DV" device=""/>
+<part name="U$2" library="TSM-115-XX-XXX-DV" deviceset="TSM-115-XX-XXX-DV" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="88.9" y="121.92" size="1.778" layer="91">Connector to TX2</text>
+<text x="149.86" y="121.92" size="1.778" layer="91">Breakout Connector</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="U$1" gate="G$1" x="104.14" y="116.84"/>
+<instance part="U$1" gate="G$1" x="86.36" y="111.76"/>
+<instance part="U$2" gate="G$1" x="149.86" y="111.76"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="CAN_WAKE" class="0">
 <segment>
-<wire x1="55.88" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
-<label x="55.88" y="127" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
+<label x="76.2" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="111.76" x2="139.7" y2="111.76" width="0.1524" layer="91"/>
+<label x="139.7" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN0_STBY" class="0">
 <segment>
-<wire x1="55.88" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
-<label x="55.88" y="121.92" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="3"/>
+<wire x1="86.36" y1="109.22" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
+<label x="73.66" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="3"/>
+<wire x1="149.86" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
+<label x="137.16" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDD_1V8" class="0">
 <segment>
-<wire x1="55.88" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
-<label x="55.88" y="119.38" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="4"/>
+<wire x1="109.22" y1="109.22" x2="119.38" y2="109.22" width="0.1524" layer="91"/>
+<label x="109.22" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="4"/>
+<wire x1="172.72" y1="109.22" x2="182.88" y2="109.22" width="0.1524" layer="91"/>
+<label x="172.72" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN0_RX" class="0">
 <segment>
-<wire x1="55.88" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
-<label x="55.88" y="116.84" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="5"/>
+<wire x1="86.36" y1="106.68" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
+<label x="73.66" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="5"/>
+<wire x1="149.86" y1="106.68" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
+<label x="137.16" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AP2MDM_READY" class="0">
 <segment>
-<wire x1="55.88" y1="114.3" x2="96.52" y2="114.3" width="0.1524" layer="91"/>
-<label x="55.88" y="114.3" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="6"/>
+<wire x1="109.22" y1="106.68" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
+<label x="109.22" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="6"/>
+<wire x1="172.72" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
+<label x="172.72" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN0_TX" class="0">
 <segment>
-<wire x1="55.88" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
-<label x="55.88" y="111.76" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="7"/>
+<wire x1="86.36" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
+<label x="73.66" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="7"/>
+<wire x1="149.86" y1="104.14" x2="139.7" y2="104.14" width="0.1524" layer="91"/>
+<label x="137.16" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN0_ERR" class="0">
 <segment>
-<wire x1="55.88" y1="106.68" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
-<label x="55.88" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="9"/>
+<wire x1="86.36" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
+<label x="73.66" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="9"/>
+<wire x1="149.86" y1="101.6" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
+<label x="137.16" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_GP2_CLK" class="0">
 <segment>
-<wire x1="55.88" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
-<label x="55.88" y="99.06" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="12"/>
+<wire x1="109.22" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
+<label x="109.22" y="99.06" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="CAN1_STBY" class="0">
 <segment>
-<wire x1="55.88" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
-<label x="55.88" y="96.52" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="12"/>
+<wire x1="172.72" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
+<label x="172.72" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_GP2_DAT" class="0">
 <segment>
-<wire x1="55.88" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
-<label x="55.88" y="93.98" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="14"/>
+<wire x1="109.22" y1="96.52" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
+<label x="109.22" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="14"/>
+<wire x1="172.72" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
+<label x="172.72" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN1_RX" class="0">
 <segment>
-<wire x1="55.88" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
-<label x="55.88" y="91.44" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="15"/>
+<wire x1="86.36" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
+<label x="73.66" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="15"/>
+<wire x1="149.86" y1="93.98" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
+<label x="137.16" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WDT_TIME_OUT_L" class="0">
 <segment>
-<wire x1="55.88" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
-<label x="55.88" y="88.9" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="16"/>
+<wire x1="109.22" y1="93.98" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
+<label x="109.22" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="16"/>
+<wire x1="172.72" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
+<label x="172.72" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN1_TX" class="0">
 <segment>
-<wire x1="55.88" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
-<label x="55.88" y="86.36" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="17"/>
+<wire x1="86.36" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
+<label x="73.66" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="17"/>
+<wire x1="149.86" y1="91.44" x2="139.7" y2="91.44" width="0.1524" layer="91"/>
+<label x="137.16" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_GP3_CLK" class="0">
 <segment>
-<wire x1="55.88" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
-<label x="55.88" y="83.82" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="18"/>
+<wire x1="109.22" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
+<label x="109.22" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="18"/>
+<wire x1="172.72" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
+<label x="172.72" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN1_ERR" class="0">
 <segment>
-<wire x1="55.88" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
-<label x="55.88" y="81.28" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="19"/>
+<wire x1="86.36" y1="88.9" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
+<label x="73.66" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="19"/>
+<wire x1="149.86" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
+<label x="137.16" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_GP3_DAT" class="0">
 <segment>
-<wire x1="55.88" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
-<label x="55.88" y="78.74" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="20"/>
+<wire x1="109.22" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
+<label x="109.22" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="20"/>
+<wire x1="172.72" y1="88.9" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
+<label x="172.72" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="55.88" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
-<label x="55.88" y="76.2" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="11"/>
+<wire x1="86.36" y1="99.06" x2="76.2" y2="99.06" width="0.1524" layer="91"/>
+<label x="73.66" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="21"/>
+<wire x1="86.36" y1="86.36" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
+<label x="73.66" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="10"/>
+<wire x1="109.22" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
+<label x="109.22" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="28"/>
+<wire x1="109.22" y1="78.74" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
+<label x="109.22" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="11"/>
+<wire x1="149.86" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
+<label x="137.16" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="21"/>
+<wire x1="149.86" y1="86.36" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
+<label x="137.16" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="10"/>
+<wire x1="172.72" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
+<label x="172.72" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="28"/>
+<wire x1="172.72" y1="78.74" x2="182.88" y2="78.74" width="0.1524" layer="91"/>
+<label x="172.72" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SLEEP" class="0">
 <segment>
-<wire x1="55.88" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
-<label x="55.88" y="73.66" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="22"/>
+<wire x1="109.22" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
+<label x="109.22" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="22"/>
+<wire x1="172.72" y1="86.36" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
+<label x="172.72" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2S1_CLK" class="0">
 <segment>
-<wire x1="55.88" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
-<label x="55.88" y="71.12" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="23"/>
+<wire x1="86.36" y1="83.82" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
+<label x="73.66" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="23"/>
+<wire x1="149.86" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
+<label x="137.16" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2S1_SDOUT" class="0">
 <segment>
-<wire x1="55.88" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
-<label x="55.88" y="68.58" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="24"/>
+<wire x1="109.22" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
+<label x="109.22" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="24"/>
+<wire x1="172.72" y1="83.82" x2="182.88" y2="83.82" width="0.1524" layer="91"/>
+<label x="172.72" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2S1_SDIN" class="0">
 <segment>
-<wire x1="55.88" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
-<label x="55.88" y="66.04" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="25"/>
+<wire x1="86.36" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
+<label x="73.66" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="25"/>
+<wire x1="149.86" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<label x="137.16" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2S1_LRCLK" class="0">
 <segment>
-<wire x1="55.88" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
-<label x="55.88" y="63.5" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="26"/>
+<wire x1="109.22" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
+<label x="109.22" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="26"/>
+<wire x1="172.72" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
+<label x="172.72" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DSPK_OUT_CLK" class="0">
 <segment>
-<wire x1="55.88" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
-<label x="55.88" y="60.96" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="27"/>
+<wire x1="86.36" y1="78.74" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
+<label x="68.58" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="27"/>
+<wire x1="149.86" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<label x="132.08" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN1_STDBY" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="13"/>
+<wire x1="86.36" y1="96.52" x2="76.2" y2="96.52" width="0.1524" layer="91"/>
+<label x="71.12" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="13"/>
+<wire x1="149.86" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
+<label x="134.62" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DSPK_OUT_DAT" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="29"/>
+<wire x1="86.36" y1="76.2" x2="76.2" y2="76.2" width="0.1524" layer="91"/>
+<label x="68.58" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="29"/>
+<wire x1="149.86" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
+<label x="132.08" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VDD_3V3_SYS" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="111.76" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
+<label x="109.22" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
+<label x="172.72" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VDD_5V0_IO_SYS" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="8"/>
+<wire x1="109.22" y1="104.14" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
+<label x="109.22" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="8"/>
+<wire x1="172.72" y1="104.14" x2="182.88" y2="104.14" width="0.1524" layer="91"/>
+<label x="172.72" y="104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GNSS_PSS" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="30"/>
+<wire x1="109.22" y1="76.2" x2="119.38" y2="76.2" width="0.1524" layer="91"/>
+<label x="109.22" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="30"/>
+<wire x1="172.72" y1="76.2" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
+<label x="172.72" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -2285,208 +2602,504 @@ manufacturer:SAMTEC</description>
 </module>
 <module name="JETSON_TX2_J21_EXPANSION" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="GND" side="left" coord="7.62" direction="io"/>
+<port name="UART1_RXD_HDR_3V3" side="left" coord="2.54" direction="io"/>
+<port name="UART1_TXD_HDR_3V3" side="left" coord="0" direction="io"/>
+<port name="I2C_GP0_SCL_3V3_LVL" side="left" coord="-5.08" direction="io"/>
+<port name="I2C_GP0_SDA_3V3_LVL" side="left" coord="-7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="U$1" library="TSM-120-XX-XXX-DV" deviceset="TSM-120-XX-XXX-DV" device=""/>
+<part name="U$2" library="TSM-120-XX-XXX-DV" deviceset="TSM-120-XX-XXX-DV" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="101.6" y="137.16" size="1.778" layer="91">Connector to TX2</text>
+<text x="27.94" y="142.24" size="1.778" layer="91">Signals Connected to Other Modules</text>
+<text x="185.42" y="137.16" size="1.778" layer="91">Breakout Connector</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="U$1" gate="G$1" x="109.22" y="119.38"/>
+<instance part="U$1" gate="G$1" x="101.6" y="121.92"/>
+<instance part="U$2" gate="G$1" x="185.42" y="121.92"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="VDD_3V3_SYS" class="0">
 <segment>
-<wire x1="53.34" y1="134.62" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
-<label x="53.34" y="134.62" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="121.92" x2="91.44" y2="121.92" width="0.1524" layer="91"/>
+<label x="91.44" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="17"/>
+<wire x1="101.6" y1="101.6" x2="91.44" y2="101.6" width="0.1524" layer="91"/>
+<label x="83.82" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="121.92" x2="175.26" y2="121.92" width="0.1524" layer="91"/>
+<label x="175.26" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="17"/>
+<wire x1="185.42" y1="101.6" x2="175.26" y2="101.6" width="0.1524" layer="91"/>
+<label x="167.64" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_GP0_SDA_3V3_LVL" class="0">
 <segment>
-<wire x1="53.34" y1="129.54" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
-<label x="53.34" y="129.54" size="1.778" layer="95"/>
+<wire x1="27.94" y1="127" x2="68.58" y2="127" width="0.1524" layer="91"/>
+<label x="27.94" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="3"/>
+<wire x1="101.6" y1="119.38" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
+<label x="73.66" y="119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="3"/>
+<wire x1="185.42" y1="119.38" x2="175.26" y2="119.38" width="0.1524" layer="91"/>
+<label x="157.48" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDD_5V0_IO_SYS" class="0">
 <segment>
-<wire x1="53.34" y1="127" x2="93.98" y2="127" width="0.1524" layer="91"/>
-<label x="53.34" y="127" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="121.92" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
+<label x="124.46" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="4"/>
+<wire x1="124.46" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
+<label x="124.46" y="119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="121.92" x2="220.98" y2="121.92" width="0.1524" layer="91"/>
+<label x="208.28" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="4"/>
+<wire x1="208.28" y1="119.38" x2="220.98" y2="119.38" width="0.1524" layer="91"/>
+<label x="208.28" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_GP0_SCL_3V3_LVL" class="0">
 <segment>
-<wire x1="53.34" y1="124.46" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
-<label x="53.34" y="124.46" size="1.778" layer="95"/>
+<wire x1="27.94" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
+<label x="27.94" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="5"/>
+<wire x1="101.6" y1="116.84" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
+<label x="73.66" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="5"/>
+<wire x1="185.42" y1="116.84" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
+<label x="157.48" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AUDIO_I2S_MCLK_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="121.92" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
-<label x="53.34" y="121.92" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="7"/>
+<wire x1="101.6" y1="114.3" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
+<label x="73.66" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="7"/>
+<wire x1="185.42" y1="114.3" x2="175.26" y2="114.3" width="0.1524" layer="91"/>
+<label x="157.48" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART1_TXD_HDR_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="119.38" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
-<label x="53.34" y="119.38" size="1.778" layer="95"/>
+<wire x1="27.94" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
+<label x="27.94" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="8"/>
+<wire x1="124.46" y1="114.3" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
+<label x="124.46" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="8"/>
+<wire x1="208.28" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
+<label x="208.28" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART1_RXD_HDR_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
-<label x="53.34" y="116.84" size="1.778" layer="95"/>
+<wire x1="27.94" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<label x="27.94" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="124.46" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="10"/>
+<label x="124.46" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="208.28" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="10"/>
+<label x="208.28" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART1_RTS_HDR_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="114.3" x2="93.98" y2="114.3" width="0.1524" layer="91"/>
-<label x="53.34" y="114.3" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="11"/>
+<wire x1="101.6" y1="109.22" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
+<label x="73.66" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="11"/>
+<wire x1="185.42" y1="109.22" x2="175.26" y2="109.22" width="0.1524" layer="91"/>
+<label x="157.48" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AUDIO_I2S_SRCLK_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
-<label x="53.34" y="111.76" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="12"/>
+<wire x1="124.46" y1="109.22" x2="137.16" y2="109.22" width="0.1524" layer="91"/>
+<label x="124.46" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="12"/>
+<wire x1="208.28" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91"/>
+<label x="208.28" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AUDIO_CDC_IRQ_LVL" class="0">
 <segment>
-<wire x1="53.34" y1="109.22" x2="93.98" y2="109.22" width="0.1524" layer="91"/>
-<label x="53.34" y="109.22" size="1.778" layer="95"/>
+<wire x1="104.14" y1="106.68" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
+<label x="76.2" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="13"/>
+<wire x1="101.6" y1="106.68" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="187.96" y1="106.68" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
+<label x="160.02" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="13"/>
+<wire x1="185.42" y1="106.68" x2="175.26" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO_EXP_P17_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="106.68" x2="93.98" y2="106.68" width="0.1524" layer="91"/>
-<label x="53.34" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="15"/>
+<wire x1="101.6" y1="104.14" x2="91.44" y2="104.14" width="0.1524" layer="91"/>
+<label x="76.2" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="15"/>
+<wire x1="185.42" y1="104.14" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
+<label x="160.02" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AO_DMIC_IN_DAT_LVL" class="0">
 <segment>
-<wire x1="53.34" y1="104.14" x2="93.98" y2="104.14" width="0.1524" layer="91"/>
-<label x="53.34" y="104.14" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="16"/>
+<wire x1="124.46" y1="104.14" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
+<label x="124.46" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="16"/>
+<wire x1="208.28" y1="104.14" x2="220.98" y2="104.14" width="0.1524" layer="91"/>
+<label x="208.28" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MDM_WAKE_AP_LVL" class="0">
 <segment>
-<wire x1="53.34" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
-<label x="53.34" y="99.06" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="18"/>
+<wire x1="124.46" y1="101.6" x2="137.16" y2="101.6" width="0.1524" layer="91"/>
+<label x="124.46" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="18"/>
+<wire x1="208.28" y1="101.6" x2="220.98" y2="101.6" width="0.1524" layer="91"/>
+<label x="208.28" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI1_MOSI_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
-<label x="53.34" y="96.52" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="19"/>
+<wire x1="101.6" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<label x="81.28" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="19"/>
+<wire x1="185.42" y1="99.06" x2="175.26" y2="99.06" width="0.1524" layer="91"/>
+<label x="165.1" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI1_MISO_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
-<label x="53.34" y="93.98" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="21"/>
+<wire x1="101.6" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
+<label x="81.28" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="21"/>
+<wire x1="185.42" y1="96.52" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
+<label x="165.1" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_EXP_P16_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
-<label x="53.34" y="91.44" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="22"/>
+<wire x1="124.46" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
+<label x="124.46" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="22"/>
+<wire x1="208.28" y1="96.52" x2="220.98" y2="96.52" width="0.1524" layer="91"/>
+<label x="208.28" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI1_SCK_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
-<label x="53.34" y="88.9" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="23"/>
+<wire x1="101.6" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
+<label x="83.82" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="23"/>
+<wire x1="185.42" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
+<label x="167.64" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI1_CS0_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="86.36" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
-<label x="53.34" y="86.36" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="24"/>
+<wire x1="124.46" y1="93.98" x2="137.16" y2="93.98" width="0.1524" layer="91"/>
+<label x="124.46" y="93.98" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="SPI1_CS1_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="83.82" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
-<label x="53.34" y="83.82" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="24"/>
+<wire x1="208.28" y1="93.98" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
+<label x="208.28" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_GP1_DAT_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="81.28" x2="93.98" y2="81.28" width="0.1524" layer="91"/>
-<label x="53.34" y="81.28" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="27"/>
+<wire x1="101.6" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
+<label x="78.74" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="27"/>
+<wire x1="185.42" y1="88.9" x2="175.26" y2="88.9" width="0.1524" layer="91"/>
+<label x="162.56" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_GP1_CLK_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
-<label x="53.34" y="78.74" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="28"/>
+<wire x1="124.46" y1="88.9" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
+<label x="124.46" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="28"/>
+<wire x1="208.28" y1="88.9" x2="220.98" y2="88.9" width="0.1524" layer="91"/>
+<label x="208.28" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AUD_RST_LVL" class="0">
 <segment>
-<wire x1="53.34" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
-<label x="53.34" y="76.2" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="29"/>
+<wire x1="101.6" y1="86.36" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
+<label x="83.82" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="29"/>
+<wire x1="185.42" y1="86.36" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
+<label x="167.64" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOTION_INT_AP_L_LVL" class="0">
 <segment>
-<wire x1="53.34" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
-<label x="53.34" y="73.66" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="31"/>
+<wire x1="101.6" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
+<label x="71.12" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="31"/>
+<wire x1="185.42" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
+<label x="154.94" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AO_DMIC_IN_CLK_LVL" class="0">
 <segment>
-<wire x1="53.34" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
-<label x="53.34" y="71.12" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="32"/>
+<wire x1="124.46" y1="83.82" x2="137.16" y2="83.82" width="0.1524" layer="91"/>
+<label x="124.46" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="32"/>
+<wire x1="208.28" y1="83.82" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
+<label x="208.28" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AP_WAKE_BT_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
-<label x="53.34" y="68.58" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="33"/>
+<wire x1="101.6" y1="81.28" x2="91.44" y2="81.28" width="0.1524" layer="91"/>
+<label x="76.2" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="33"/>
+<wire x1="185.42" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
+<label x="160.02" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AUDIO_I2S_SFSYNC_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
-<label x="53.34" y="66.04" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="35"/>
+<wire x1="101.6" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
+<label x="71.12" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="35"/>
+<wire x1="185.42" y1="78.74" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
+<label x="154.94" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART1_CTS_HDR_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
-<label x="53.34" y="63.5" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="36"/>
+<wire x1="124.46" y1="78.74" x2="137.16" y2="78.74" width="0.1524" layer="91"/>
+<label x="124.46" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="36"/>
+<wire x1="208.28" y1="78.74" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
+<label x="208.28" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SAR_TOUT_LVL" class="0">
 <segment>
-<wire x1="53.34" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
-<label x="53.34" y="60.96" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="37"/>
+<wire x1="91.44" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
+<label x="81.28" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="37"/>
+<wire x1="175.26" y1="76.2" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
+<label x="165.1" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AUDIO_I2S_SIN_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
-<label x="53.34" y="58.42" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="38"/>
+<wire x1="124.46" y1="76.2" x2="137.16" y2="76.2" width="0.1524" layer="91"/>
+<label x="124.46" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="38"/>
+<wire x1="208.28" y1="76.2" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
+<label x="208.28" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="53.34" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
-<label x="53.34" y="55.88" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="9"/>
+<wire x1="101.6" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
+<label x="91.44" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="25"/>
+<wire x1="101.6" y1="91.44" x2="91.44" y2="91.44" width="0.1524" layer="91"/>
+<label x="91.44" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="39"/>
+<wire x1="101.6" y1="73.66" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
+<label x="91.44" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="6"/>
+<wire x1="124.46" y1="116.84" x2="137.16" y2="116.84" width="0.1524" layer="91"/>
+<label x="124.46" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="14"/>
+<wire x1="124.46" y1="106.68" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
+<label x="124.46" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="20"/>
+<wire x1="124.46" y1="99.06" x2="137.16" y2="99.06" width="0.1524" layer="91"/>
+<label x="124.46" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="30"/>
+<wire x1="124.46" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
+<label x="124.46" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="34"/>
+<wire x1="124.46" y1="81.28" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
+<label x="124.46" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="27.94" y1="132.08" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
+<label x="27.94" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="9"/>
+<wire x1="185.42" y1="111.76" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
+<label x="175.26" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="25"/>
+<wire x1="185.42" y1="91.44" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
+<label x="175.26" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="39"/>
+<wire x1="185.42" y1="73.66" x2="175.26" y2="73.66" width="0.1524" layer="91"/>
+<label x="175.26" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="6"/>
+<wire x1="208.28" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
+<label x="208.28" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="14"/>
+<wire x1="208.28" y1="106.68" x2="220.98" y2="106.68" width="0.1524" layer="91"/>
+<label x="208.28" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="20"/>
+<wire x1="208.28" y1="99.06" x2="220.98" y2="99.06" width="0.1524" layer="91"/>
+<label x="208.28" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="30"/>
+<wire x1="208.28" y1="86.36" x2="220.98" y2="86.36" width="0.1524" layer="91"/>
+<label x="208.28" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="34"/>
+<wire x1="208.28" y1="81.28" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
+<label x="208.28" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AUDIO_I2S_SOUT_3V3" class="0">
 <segment>
-<wire x1="53.34" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
-<label x="53.34" y="53.34" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="40"/>
+<wire x1="124.46" y1="73.66" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
+<label x="124.46" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="40"/>
+<wire x1="208.28" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
+<label x="208.28" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -2601,11 +3214,8 @@ manufacturer:SAMTEC</description>
 </sheet>
 </sheets>
 </module>
-<module name="MICROCONTROLLER" prefix="" dx="45.72" dy="121.92">
+<module name="MICROCONTROLLER" prefix="" dx="45.72" dy="127">
 <ports>
-<port name="TX2_MISO" side="right" coord="38.1" direction="io"/>
-<port name="TX2_MOSI" side="right" coord="35.56" direction="io"/>
-<port name="TX2_SCK" side="right" coord="33.02" direction="io"/>
 <port name="MOTOR_L_CURR_SENSE" side="right" coord="2.54" direction="io"/>
 <port name="MOTOR_L_ENABLE" side="right" coord="5.08" direction="io"/>
 <port name="MOTOR_L_CHANNEL_B" side="right" coord="7.62" direction="io"/>
@@ -2618,24 +3228,29 @@ manufacturer:SAMTEC</description>
 <port name="MOTOR_R_CHANNEL_B" side="right" coord="-10.16" direction="io"/>
 <port name="MOTOR_R_ENABLE" side="right" coord="-12.7" direction="io"/>
 <port name="MOTOR_R_CURR_SENSE" side="right" coord="-15.24" direction="io"/>
-<port name="IMU_SCL" side="right" coord="27.94" direction="io"/>
-<port name="IMU_SDA" side="right" coord="25.4" direction="io"/>
 <port name="SBUS" side="right" coord="20.32" direction="io"/>
 <port name="MOWER_RELAY" side="right" coord="43.18" direction="io"/>
 <port name="VBATSENSE" side="right" coord="48.26" direction="io"/>
-<port name="LIMIT_R_LOW" side="right" coord="-45.72" direction="io"/>
-<port name="LIMIT_R_HIGH" side="right" coord="-43.18" direction="io"/>
-<port name="LIMIT_L_LOW" side="right" coord="-30.48" direction="io"/>
-<port name="LIMIT_L_HIGH" side="right" coord="-27.94" direction="io"/>
-<port name="STEPPER_R_STEP" side="right" coord="-40.64" direction="io"/>
-<port name="STEPPER_R_ENABLE" side="right" coord="-38.1" direction="io"/>
-<port name="STEPPER_R_DIR" side="right" coord="-35.56" direction="io"/>
-<port name="STEPPER_L_STEP" side="right" coord="-25.4" direction="io"/>
-<port name="STEPPER_L_ENABLE" side="right" coord="-22.86" direction="io"/>
-<port name="STEPPER_L_DIR" side="right" coord="-20.32" direction="io"/>
 <port name="VIN" side="right" coord="58.42" direction="io"/>
 <port name="GND" side="right" coord="53.34" direction="io"/>
 <port name="3V3" side="right" coord="55.88" direction="io"/>
+<port name="DECK_1_IN_1" side="right" coord="-20.32" direction="io"/>
+<port name="DECK_1_IN_2" side="right" coord="-22.86" direction="io"/>
+<port name="DECK_1_PWM" side="right" coord="-25.4" direction="io"/>
+<port name="DECK_1_CURR_SENSE" side="right" coord="-27.94" direction="io"/>
+<port name="DECK_1_POS_SENSE" side="right" coord="-30.48" direction="io"/>
+<port name="DECK_2_IN_1" side="right" coord="-35.56" direction="io"/>
+<port name="DECK_2_IN_2" side="right" coord="-38.1" direction="io"/>
+<port name="DECK_2_PWM" side="right" coord="-40.64" direction="io"/>
+<port name="DECK_2_CURR_SENSE" side="right" coord="-43.18" direction="io"/>
+<port name="DECK_2_POS_SENSE" side="right" coord="-45.72" direction="io"/>
+<port name="DECK_3_IN_1" side="right" coord="-50.8" direction="io"/>
+<port name="DECK_3_IN_2" side="right" coord="-53.34" direction="io"/>
+<port name="DECK_3_PWM" side="right" coord="-55.88" direction="io"/>
+<port name="DECK_3_CURR_SENSE" side="right" coord="-58.42" direction="io"/>
+<port name="DECK_3_POS_SENSE" side="right" coord="-60.96" direction="io"/>
+<port name="DUE_TO_TX2" side="right" coord="38.1" direction="io"/>
+<port name="TX2_TO_DUE" side="right" coord="35.56" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -2718,27 +3333,6 @@ manufacturer:SAMTEC</description>
 <wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TX2_SCK" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="SCK_ICSP"/>
-<label x="73.66" y="139.7" size="1.778" layer="95"/>
-<wire x1="83.82" y1="139.7" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="TX2_MISO" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="MISO_ICSP"/>
-<label x="73.66" y="137.16" size="1.778" layer="95"/>
-<wire x1="83.82" y1="137.16" x2="73.66" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="TX2_MOSI" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="MOSI_ICSP"/>
-<label x="73.66" y="134.62" size="1.778" layer="95"/>
-<wire x1="83.82" y1="134.62" x2="73.66" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RESET" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="RESET_ICSP"/>
@@ -2788,18 +3382,18 @@ manufacturer:SAMTEC</description>
 <label x="78.74" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TX1" class="0">
+<net name="DUE_TO_TX2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="TX1"/>
 <wire x1="83.82" y1="111.76" x2="78.74" y2="111.76" width="0.1524" layer="91"/>
-<label x="78.74" y="111.76" size="1.778" layer="95"/>
+<label x="68.58" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RX1" class="0">
+<net name="TX2_TO_DUE" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="RX1"/>
 <wire x1="83.82" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
-<label x="78.74" y="109.22" size="1.778" layer="95"/>
+<label x="68.58" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX0" class="0">
@@ -2975,21 +3569,21 @@ manufacturer:SAMTEC</description>
 <label x="124.46" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="6" class="0">
+<net name="DECK_1_PWM" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="6"/>
 <wire x1="127" y1="152.4" x2="127" y2="157.48" width="0.1524" layer="91"/>
 <label x="127" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="7" class="0">
+<net name="DECK_2_PWM" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="7"/>
 <wire x1="129.54" y1="152.4" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
 <label x="129.54" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="8" class="0">
+<net name="DECK_3_PWM" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="8"/>
 <wire x1="132.08" y1="152.4" x2="132.08" y2="157.48" width="0.1524" layer="91"/>
@@ -3080,63 +3674,56 @@ manufacturer:SAMTEC</description>
 <label x="154.94" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STEPPER_L_STEP" class="0">
+<net name="DECK_1_IN_1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="29"/>
 <wire x1="154.94" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
 <label x="154.94" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STEPPER_L_DIR" class="0">
+<net name="DECK_1_IN_2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="30"/>
 <wire x1="154.94" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
 <label x="154.94" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STEPPER_L_ENABLE" class="0">
+<net name="DECK_2_IN_2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="31"/>
-<wire x1="154.94" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
-<label x="154.94" y="124.46" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="32"/>
+<wire x1="154.94" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
+<label x="154.94" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LIMIT_L_LOW" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="33"/>
-<wire x1="154.94" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
-<label x="154.94" y="119.38" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="STEPPER_R_STEP" class="0">
+<net name="DECK_3_IN_2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="34"/>
 <wire x1="154.94" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
 <label x="154.94" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STEPPER_R_DIR" class="0">
+<net name="DECK_3_IN_1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="35"/>
-<wire x1="154.94" y1="114.3" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
-<label x="154.94" y="114.3" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="33"/>
+<wire x1="154.94" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
+<label x="154.94" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STEPPER_R_ENABLE" class="0">
+<net name="36" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="36"/>
 <wire x1="154.94" y1="111.76" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
 <label x="154.94" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LIMIT_R_HIGH" class="0">
+<net name="37" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="37"/>
 <wire x1="154.94" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
 <label x="154.94" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LIMIT_R_LOW" class="0">
+<net name="38" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="38"/>
 <wire x1="154.94" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
@@ -3297,46 +3884,46 @@ manufacturer:SAMTEC</description>
 <label x="124.46" y="58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A8" class="0">
+<net name="DECK_3_POS_SENSE" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A8"/>
 <wire x1="121.92" y1="63.5" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
-<label x="121.92" y="58.42" size="1.778" layer="95" rot="R90"/>
+<label x="121.92" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A7" class="0">
+<net name="DECK_3_CURR_SENSE" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A7"/>
 <wire x1="119.38" y1="63.5" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
-<label x="119.38" y="58.42" size="1.778" layer="95" rot="R90"/>
+<label x="119.38" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A6" class="0">
+<net name="DECK_2_POS_SENSE" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A6"/>
 <wire x1="116.84" y1="63.5" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
-<label x="116.84" y="58.42" size="1.778" layer="95" rot="R90"/>
+<label x="116.84" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A5" class="0">
+<net name="DECK_2_CURR_SENSE" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A5"/>
 <wire x1="114.3" y1="63.5" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
-<label x="114.3" y="58.42" size="1.778" layer="95" rot="R90"/>
+<label x="114.3" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A4" class="0">
+<net name="DECK_1_POS_SENSE" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A4"/>
 <wire x1="111.76" y1="63.5" x2="111.76" y2="58.42" width="0.1524" layer="91"/>
-<label x="111.76" y="58.42" size="1.778" layer="95" rot="R90"/>
+<label x="111.76" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A3" class="0">
+<net name="DECK_1_CURR_SENSE" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A3"/>
 <wire x1="109.22" y1="63.5" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
-<label x="109.22" y="58.42" size="1.778" layer="95" rot="R90"/>
+<label x="109.22" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="VBATSENSE" class="0">
@@ -3360,11 +3947,39 @@ manufacturer:SAMTEC</description>
 <label x="101.6" y="33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="LIMIT_L_HIGH" class="0">
+<net name="DECK_2_IN_1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="32"/>
-<wire x1="154.94" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
-<label x="154.94" y="121.92" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="31"/>
+<wire x1="154.94" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
+<label x="154.94" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="35" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="35"/>
+<wire x1="154.94" y1="114.3" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
+<label x="154.94" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SCK_ICSP"/>
+<wire x1="83.82" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
+<label x="78.74" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="MISO_ICSP"/>
+<wire x1="83.82" y1="137.16" x2="78.74" y2="137.16" width="0.1524" layer="91"/>
+<label x="78.74" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="MOSI_ICSP"/>
+<wire x1="83.82" y1="134.62" x2="78.74" y2="134.62" width="0.1524" layer="91"/>
+<label x="78.74" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -3373,46 +3988,67 @@ manufacturer:SAMTEC</description>
 </module>
 <module name="JETSON_J17_UART" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="GND" side="left" coord="7.62" direction="io"/>
+<port name="RX" side="left" coord="-5.08" direction="io"/>
+<port name="TX" side="left" coord="-7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
+<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="96.52" y="106.68" size="1.778" layer="91">Max Voltage on RX and TX is 3.3V</text>
+<text x="104.14" y="142.24" size="1.778" layer="91">Connector to TX2</text>
+<text x="152.4" y="106.68" size="1.778" layer="91">Max Voltage on RX and TX is 3.3V</text>
+<text x="160.02" y="142.24" size="1.778" layer="91">Breakout Connector</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="JP1" gate="A" x="106.68" y="121.92"/>
+<instance part="JP1" gate="A" x="119.38" y="121.92"/>
+<instance part="JP2" gate="A" x="175.26" y="121.92"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="5V" class="0">
-<segment>
-<wire x1="55.88" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
-<label x="55.88" y="127" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="RX" class="0">
 <segment>
-<wire x1="55.88" y1="124.46" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
-<label x="55.88" y="124.46" size="1.778" layer="95"/>
+<wire x1="101.6" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
+<label x="101.6" y="121.92" size="1.778" layer="95"/>
+<pinref part="JP1" gate="A" pin="4"/>
+</segment>
+<segment>
+<wire x1="157.48" y1="121.92" x2="172.72" y2="121.92" width="0.1524" layer="91"/>
+<label x="157.48" y="121.92" size="1.778" layer="95"/>
+<pinref part="JP2" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="TX" class="0">
 <segment>
-<wire x1="55.88" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
-<label x="55.88" y="121.92" size="1.778" layer="95"/>
+<wire x1="101.6" y1="119.38" x2="116.84" y2="119.38" width="0.1524" layer="91"/>
+<label x="101.6" y="119.38" size="1.778" layer="95"/>
+<pinref part="JP1" gate="A" pin="5"/>
+</segment>
+<segment>
+<wire x1="157.48" y1="119.38" x2="172.72" y2="119.38" width="0.1524" layer="91"/>
+<label x="157.48" y="119.38" size="1.778" layer="95"/>
+<pinref part="JP2" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="55.88" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
-<label x="55.88" y="119.38" size="1.778" layer="95"/>
+<label x="101.6" y="129.54" size="1.778" layer="95"/>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="116.84" y1="129.54" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<label x="157.48" y="129.54" size="1.778" layer="95"/>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="172.72" y1="129.54" x2="157.48" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -3618,11 +4254,11 @@ manufacturer:SAMTEC</description>
 <ports>
 <port name="12V" side="left" coord="7.62" direction="io"/>
 <port name="GND" side="left" coord="5.08" direction="io"/>
-<port name="DIR" side="left" coord="2.54" direction="io"/>
-<port name="ENABLE" side="left" coord="0" direction="io"/>
-<port name="STEP" side="left" coord="-2.54" direction="io"/>
-<port name="LIMIT_HIGH" side="left" coord="-5.08" direction="io"/>
-<port name="LIMIT_LOW" side="left" coord="-7.62" direction="io"/>
+<port name="IN_1" side="left" coord="2.54" direction="io"/>
+<port name="IN_2" side="left" coord="0" direction="io"/>
+<port name="PWM" side="left" coord="-2.54" direction="io"/>
+<port name="CURR_SENSE" side="left" coord="-5.08" direction="io"/>
+<port name="POS_SENSE" side="left" coord="-7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3641,31 +4277,25 @@ manufacturer:SAMTEC</description>
 <busses>
 </busses>
 <nets>
-<net name="STEP" class="0">
+<net name="IN_1" class="0">
 <segment>
 <wire x1="55.88" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
 <label x="55.88" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DIR" class="0">
-<segment>
-<wire x1="55.88" y1="124.46" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
-<label x="55.88" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ENABLE" class="0">
+<net name="PWM" class="0">
 <segment>
 <wire x1="55.88" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
 <label x="55.88" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LIMIT_HIGH" class="0">
+<net name="CURR_SENSE" class="0">
 <segment>
 <wire x1="55.88" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
 <label x="55.88" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LIMIT_LOW" class="0">
+<net name="POS_SENSE" class="0">
 <segment>
 <wire x1="55.88" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
 <label x="55.88" y="116.84" size="1.778" layer="95"/>
@@ -3681,6 +4311,12 @@ manufacturer:SAMTEC</description>
 <segment>
 <wire x1="55.88" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
 <label x="55.88" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IN_2" class="0">
+<segment>
+<wire x1="55.88" y1="124.46" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
+<label x="55.88" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -3758,6 +4394,13 @@ manufacturer:SAMTEC</description>
 </module>
 <module name="JETSON" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="GND" side="left" coord="5.08" direction="io"/>
+<port name="DUE_TO_TX2" side="left" coord="-2.54" direction="io"/>
+<port name="TX2_TO_DUE" side="left" coord="-5.08" direction="io"/>
+<port name="UART0_RX" side="right" coord="-7.62" direction="io"/>
+<port name="UART0_TX" side="right" coord="-5.08" direction="io"/>
+<port name="I2C0_SCL" side="right" coord="2.54" direction="io"/>
+<port name="I2C0_SDA" side="right" coord="5.08" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3767,10 +4410,13 @@ manufacturer:SAMTEC</description>
 <sheets>
 <sheet>
 <plain>
+<text x="83.82" y="63.5" size="1.778" layer="91">No connections from GPIO Header to other modules</text>
 </plain>
 <moduleinsts>
 <moduleinst name="JETSON_J17_UART1" module="JETSON_J17_UART" x="109.22" y="139.7"/>
-<moduleinst name="JETSON_TX2_J21_EXPANSION1" module="JETSON_TX2_J21_EXPANSION" x="109.22" y="116.84"/>
+<moduleinst name="JETSON_TX2_J21_EXPANSION1" module="JETSON_TX2_J21_EXPANSION" x="109.22" y="116.84" smashed="yes">
+<attribute name="NAME" x="109.22" y="116.84" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
 <moduleinst name="JETSON_TX2_J26_GPIO1" module="JETSON_TX2_J26_GPIO" x="119.38" y="86.36"/>
 </moduleinsts>
 <instances>
@@ -3779,6 +4425,60 @@ manufacturer:SAMTEC</description>
 <busses>
 </busses>
 <nets>
+<net name="DUE_TO_TX2" class="0">
+<segment>
+<portref moduleinst="JETSON_J17_UART1" port="RX"/>
+<wire x1="88.9" y1="134.62" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
+<label x="73.66" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TX2_TO_DUE" class="0">
+<segment>
+<portref moduleinst="JETSON_J17_UART1" port="TX"/>
+<wire x1="88.9" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
+<label x="73.66" y="132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART0_RX" class="0">
+<segment>
+<portref moduleinst="JETSON_TX2_J21_EXPANSION1" port="UART1_RXD_HDR_3V3"/>
+<wire x1="88.9" y1="119.38" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
+<label x="76.2" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C0_SCL" class="0">
+<segment>
+<portref moduleinst="JETSON_TX2_J21_EXPANSION1" port="I2C_GP0_SCL_3V3_LVL"/>
+<wire x1="88.9" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
+<label x="76.2" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C0_SDA" class="0">
+<segment>
+<portref moduleinst="JETSON_TX2_J21_EXPANSION1" port="I2C_GP0_SDA_3V3_LVL"/>
+<wire x1="88.9" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
+<label x="76.2" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<portref moduleinst="JETSON_J17_UART1" port="GND"/>
+<wire x1="88.9" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
+<label x="81.28" y="147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="JETSON_TX2_J21_EXPANSION1" port="GND"/>
+<wire x1="88.9" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
+<label x="81.28" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART0_TX" class="0">
+<segment>
+<portref moduleinst="JETSON_TX2_J21_EXPANSION1" port="UART1_TXD_HDR_3V3"/>
+<wire x1="88.9" y1="116.84" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
+<label x="76.2" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -3788,12 +4488,10 @@ manufacturer:SAMTEC</description>
 <port name="5V" side="left" coord="7.62" direction="io"/>
 <port name="IMU_VCC" side="left" coord="5.08" direction="io"/>
 <port name="GND" side="left" coord="2.54" direction="io"/>
-<port name="IMU_SDA" side="left" coord="-7.62" direction="io"/>
-<port name="IMU_SCL" side="left" coord="-5.08" direction="io"/>
 <port name="REACH_RX" side="right" coord="7.62" direction="io"/>
 <port name="REACH_TX" side="right" coord="5.08" direction="io"/>
-<port name="RF_TX" side="right" coord="-7.62" direction="io"/>
-<port name="RF_RX" side="right" coord="-5.08" direction="io"/>
+<port name="IMU_SCL" side="right" coord="-5.08" direction="io"/>
+<port name="IMU_SDA" side="right" coord="-7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3805,7 +4503,6 @@ manufacturer:SAMTEC</description>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="GPS_RF_COMM1" module="GPS_RF_COMM" x="124.46" y="132.08"/>
 <moduleinst name="IMU1" module="IMU" x="134.62" y="109.22"/>
 <moduleinst name="REACH_GPS1" module="REACH_GPS" x="124.46" y="86.36"/>
 </moduleinsts>
@@ -3836,10 +4533,6 @@ manufacturer:SAMTEC</description>
 <label x="93.98" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="124.46" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
-<label x="96.52" y="124.46" size="1.778" layer="95"/>
-</segment>
-<segment>
 <portref moduleinst="REACH_GPS1" port="GND"/>
 <wire x1="104.14" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
 <label x="99.06" y="78.74" size="1.778" layer="95"/>
@@ -3847,27 +4540,8 @@ manufacturer:SAMTEC</description>
 </net>
 <net name="5V" class="0">
 <segment>
-<portref moduleinst="GPS_RF_COMM1" port="5V"/>
-<wire x1="104.14" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
-<label x="96.52" y="139.7" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="106.68" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
 <label x="99.06" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RF_RX" class="0">
-<segment>
-<portref moduleinst="GPS_RF_COMM1" port="RX"/>
-<wire x1="104.14" y1="134.62" x2="96.52" y2="134.62" width="0.1524" layer="91"/>
-<label x="96.52" y="134.62" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RF_TX" class="0">
-<segment>
-<portref moduleinst="GPS_RF_COMM1" port="TX"/>
-<wire x1="104.14" y1="132.08" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
-<label x="96.52" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="REACH_RX" class="0">
@@ -3895,29 +4569,34 @@ manufacturer:SAMTEC</description>
 </sheet>
 </sheets>
 </module>
-<module name="MOTOR_TOP" prefix="" dx="30.48" dy="76.2">
+<module name="MOTOR_TOP" prefix="" dx="30.48" dy="86.36">
 <ports>
-<port name="12V" side="left" coord="33.02" direction="io"/>
-<port name="5V" side="left" coord="30.48" direction="io"/>
-<port name="GND" side="left" coord="27.94" direction="io"/>
-<port name="PWM_A_1" side="left" coord="22.86" direction="io"/>
-<port name="PWM_B_1" side="left" coord="20.32" direction="io"/>
-<port name="ENABLE_1" side="left" coord="17.78" direction="io"/>
-<port name="CURRENT_SENSE_1" side="left" coord="15.24" direction="io"/>
-<port name="PWM_A_2" side="left" coord="10.16" direction="io"/>
-<port name="PWM_B_2" side="left" coord="7.62" direction="io"/>
-<port name="ENABLE_2" side="left" coord="5.08" direction="io"/>
-<port name="CURRENT_SENSE_2" side="left" coord="2.54" direction="io"/>
-<port name="DIR_1" side="left" coord="-2.54" direction="io"/>
-<port name="STEP_ENABLE_1" side="left" coord="-5.08" direction="io"/>
-<port name="STEP_1" side="left" coord="-7.62" direction="io"/>
-<port name="LIMIT_HIGH_1" side="left" coord="-10.16" direction="io"/>
-<port name="LIMIT_LOW_1" side="left" coord="-12.7" direction="io"/>
-<port name="DIR_2" side="left" coord="-25.4" direction="io"/>
-<port name="STEP_ENABLE_2" side="left" coord="-27.94" direction="io"/>
-<port name="STEP_2" side="left" coord="-30.48" direction="io"/>
-<port name="LIMIT_HIGH_2" side="left" coord="-33.02" direction="io"/>
-<port name="LIMIT_LOW_2" side="left" coord="-35.56" direction="io"/>
+<port name="12V" side="left" coord="40.64" direction="io"/>
+<port name="5V" side="left" coord="38.1" direction="io"/>
+<port name="GND" side="left" coord="35.56" direction="io"/>
+<port name="PWM_A_1" side="left" coord="30.48" direction="io"/>
+<port name="PWM_B_1" side="left" coord="27.94" direction="io"/>
+<port name="ENABLE_1" side="left" coord="25.4" direction="io"/>
+<port name="CURRENT_SENSE_1" side="left" coord="22.86" direction="io"/>
+<port name="PWM_A_2" side="left" coord="17.78" direction="io"/>
+<port name="PWM_B_2" side="left" coord="15.24" direction="io"/>
+<port name="ENABLE_2" side="left" coord="12.7" direction="io"/>
+<port name="CURRENT_SENSE_2" side="left" coord="10.16" direction="io"/>
+<port name="DECK_1_IN_1" side="left" coord="5.08" direction="io"/>
+<port name="DECK_1_IN_2" side="left" coord="2.54" direction="io"/>
+<port name="DECK_1_PWM" side="left" coord="0" direction="io"/>
+<port name="DECK_1_CURR_SENSE" side="left" coord="-2.54" direction="io"/>
+<port name="DECK_1_POS_SENSE" side="left" coord="-5.08" direction="io"/>
+<port name="DECK_2_IN_1" side="left" coord="-10.16" direction="io"/>
+<port name="DECK_2_IN_2" side="left" coord="-12.7" direction="io"/>
+<port name="DECK_2_PWM" side="left" coord="-15.24" direction="io"/>
+<port name="DECK_2_CURR_SENSE" side="left" coord="-17.78" direction="io"/>
+<port name="DECK_2_POS_SENSE" side="left" coord="-20.32" direction="io"/>
+<port name="DECK_3_IN_1" side="left" coord="-25.4" direction="io"/>
+<port name="DECK_3_IN_2" side="left" coord="-27.94" direction="io"/>
+<port name="DECK_3_PWM" side="left" coord="-30.48" direction="io"/>
+<port name="DECK_3_CURR_SENSE" side="left" coord="-33.02" direction="io"/>
+<port name="DECK_3_POS_SENSE" side="left" coord="-35.56" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3931,8 +4610,9 @@ manufacturer:SAMTEC</description>
 <moduleinsts>
 <moduleinst name="MOTOR_INTERFACE1" module="MOTOR_INTERFACE" x="124.46" y="119.38"/>
 <moduleinst name="MOTOR_INTERFACE2" module="MOTOR_INTERFACE" x="124.46" y="96.52"/>
-<moduleinst name="DECK_STEPPER1" module="DECK_STEPPER" x="114.3" y="73.66"/>
-<moduleinst name="DECK_STEPPER2" module="DECK_STEPPER" x="114.3" y="50.8"/>
+<moduleinst name="DECK_STEPPER1" module="DECK_STEPPER" x="119.38" y="73.66"/>
+<moduleinst name="DECK_STEPPER2" module="DECK_STEPPER" x="119.38" y="48.26"/>
+<moduleinst name="DECK_STEPPER3" module="DECK_STEPPER" x="119.38" y="25.4"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -3965,13 +4645,18 @@ manufacturer:SAMTEC</description>
 </segment>
 <segment>
 <portref moduleinst="DECK_STEPPER1" port="GND"/>
-<wire x1="93.98" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
 <label x="88.9" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
+<portref moduleinst="DECK_STEPPER3" port="GND"/>
+<wire x1="99.06" y1="30.48" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
+<label x="88.9" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
 <portref moduleinst="DECK_STEPPER2" port="GND"/>
-<wire x1="93.98" y1="55.88" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
-<label x="88.9" y="55.88" size="1.778" layer="95"/>
+<wire x1="99.06" y1="53.34" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
+<label x="88.9" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM_A_1" class="0">
@@ -4033,83 +4718,122 @@ manufacturer:SAMTEC</description>
 <net name="12V" class="0">
 <segment>
 <portref moduleinst="DECK_STEPPER1" port="12V"/>
-<wire x1="93.98" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
 <label x="88.9" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
+<portref moduleinst="DECK_STEPPER3" port="12V"/>
+<wire x1="99.06" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
+<label x="88.9" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
 <portref moduleinst="DECK_STEPPER2" port="12V"/>
-<wire x1="93.98" y1="58.42" x2="88.9" y2="58.42" width="0.1524" layer="91"/>
-<label x="88.9" y="58.42" size="1.778" layer="95"/>
+<wire x1="99.06" y1="55.88" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
+<label x="88.9" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DIR_1" class="0">
+<net name="DECK_1_IN_1" class="0">
 <segment>
-<portref moduleinst="DECK_STEPPER1" port="DIR"/>
-<wire x1="93.98" y1="76.2" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
-<label x="88.9" y="76.2" size="1.778" layer="95"/>
+<portref moduleinst="DECK_STEPPER1" port="IN_1"/>
+<wire x1="99.06" y1="76.2" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
+<label x="83.82" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STEP_ENABLE_1" class="0">
+<net name="DECK_1_IN_2" class="0">
 <segment>
-<portref moduleinst="DECK_STEPPER1" port="ENABLE"/>
-<wire x1="93.98" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
-<label x="73.66" y="73.66" size="1.778" layer="95"/>
+<portref moduleinst="DECK_STEPPER1" port="IN_2"/>
+<wire x1="99.06" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
+<label x="83.82" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STEP_1" class="0">
+<net name="DECK_1_PWM" class="0">
 <segment>
-<portref moduleinst="DECK_STEPPER1" port="STEP"/>
-<wire x1="93.98" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
-<label x="86.36" y="71.12" size="1.778" layer="95"/>
+<wire x1="101.6" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
+<label x="83.82" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LIMIT_HIGH_1" class="0">
+<net name="DECK_1_CURR_SENSE" class="0">
 <segment>
-<portref moduleinst="DECK_STEPPER1" port="LIMIT_HIGH"/>
-<wire x1="93.98" y1="68.58" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
-<label x="78.74" y="68.58" size="1.778" layer="95"/>
+<portref moduleinst="DECK_STEPPER1" port="CURR_SENSE"/>
+<wire x1="99.06" y1="68.58" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
+<label x="73.66" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LIMIT_LOW_1" class="0">
+<net name="DECK_1_POS_SENSE" class="0">
 <segment>
-<portref moduleinst="DECK_STEPPER1" port="LIMIT_LOW"/>
-<wire x1="93.98" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
-<label x="81.28" y="66.04" size="1.778" layer="95"/>
+<portref moduleinst="DECK_STEPPER1" port="POS_SENSE"/>
+<wire x1="99.06" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
+<label x="73.66" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DIR_2" class="0">
+<net name="DECK_2_IN_1" class="0">
 <segment>
-<portref moduleinst="DECK_STEPPER2" port="DIR"/>
-<wire x1="93.98" y1="53.34" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
-<label x="88.9" y="53.34" size="1.778" layer="95"/>
+<portref moduleinst="DECK_STEPPER2" port="IN_1"/>
+<wire x1="99.06" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
+<label x="83.82" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STEP_ENABLE_2" class="0">
+<net name="DECK_2_PWM" class="0">
 <segment>
-<portref moduleinst="DECK_STEPPER2" port="ENABLE"/>
-<wire x1="93.98" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
-<label x="76.2" y="50.8" size="1.778" layer="95"/>
+<portref moduleinst="DECK_STEPPER2" port="PWM"/>
+<wire x1="99.06" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
+<label x="83.82" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STEP_2" class="0">
+<net name="DECK_2_CURR_SENSE" class="0">
 <segment>
-<portref moduleinst="DECK_STEPPER2" port="STEP"/>
-<wire x1="93.98" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
-<label x="88.9" y="48.26" size="1.778" layer="95"/>
+<portref moduleinst="DECK_STEPPER2" port="CURR_SENSE"/>
+<wire x1="99.06" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
+<label x="73.66" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LIMIT_HIGH_2" class="0">
+<net name="DECK_2_POS_SENSE" class="0">
 <segment>
-<portref moduleinst="DECK_STEPPER2" port="LIMIT_HIGH"/>
-<wire x1="93.98" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
-<label x="81.28" y="45.72" size="1.778" layer="95"/>
+<portref moduleinst="DECK_STEPPER2" port="POS_SENSE"/>
+<wire x1="99.06" y1="40.64" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
+<label x="73.66" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LIMIT_LOW_2" class="0">
+<net name="DECK_3_IN_1" class="0">
 <segment>
-<portref moduleinst="DECK_STEPPER2" port="LIMIT_LOW"/>
-<wire x1="93.98" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
-<label x="81.28" y="43.18" size="1.778" layer="95"/>
+<portref moduleinst="DECK_STEPPER3" port="IN_1"/>
+<wire x1="99.06" y1="27.94" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
+<label x="83.82" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DECK_3_IN_2" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER3" port="IN_2"/>
+<wire x1="99.06" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
+<label x="83.82" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DECK_3_PWM" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER3" port="PWM"/>
+<wire x1="99.06" y1="22.86" x2="88.9" y2="22.86" width="0.1524" layer="91"/>
+<label x="83.82" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DECK_3_CURR_SENSE" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER3" port="CURR_SENSE"/>
+<wire x1="99.06" y1="20.32" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
+<label x="73.66" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DECK_3_POS_SENSE" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER3" port="POS_SENSE"/>
+<wire x1="99.06" y1="17.78" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
+<label x="73.66" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DECK_2_IN_2" class="0">
+<segment>
+<portref moduleinst="DECK_STEPPER2" port="IN_2"/>
+<wire x1="99.06" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
+<label x="83.82" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -4118,11 +4842,15 @@ manufacturer:SAMTEC</description>
 </module>
 <module name="RC_INPUT" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="5V" side="left" coord="7.62" direction="io"/>
+<port name="GND" side="left" coord="5.08" direction="io"/>
+<port name="SBUS_SIG_OUT" side="left" coord="-5.08" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
 <parts>
 <part name="X1" library="con-molex" deviceset="22-23-2031" device=""/>
+<part name="U1" library="NC7SZ04M5" deviceset="NC7SZ04M5" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4132,6 +4860,7 @@ manufacturer:SAMTEC</description>
 <instance part="X1" gate="-1" x="38.1" y="111.76" rot="R180"/>
 <instance part="X1" gate="-2" x="38.1" y="114.3" rot="R180"/>
 <instance part="X1" gate="-3" x="38.1" y="116.84" rot="R180"/>
+<instance part="U1" gate="A" x="93.98" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -4140,18 +4869,41 @@ manufacturer:SAMTEC</description>
 <segment>
 <pinref part="X1" gate="-3" pin="S"/>
 <wire x1="40.64" y1="116.84" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
+<label x="48.26" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="GND"/>
+<wire x1="76.2" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
+<label x="71.12" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
 <segment>
 <pinref part="X1" gate="-2" pin="S"/>
 <wire x1="40.64" y1="114.3" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
+<label x="48.26" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="VCC"/>
+<wire x1="76.2" y1="114.3" x2="71.12" y2="114.3" width="0.1524" layer="91"/>
+<label x="71.12" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SBUS_SIG" class="0">
+<net name="SBUS_SIG_IN" class="0">
 <segment>
 <pinref part="X1" gate="-1" pin="S"/>
-<wire x1="40.64" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="111.76" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
+<label x="48.26" y="111.76" size="1.778" layer="95"/>
+<wire x1="53.34" y1="111.76" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="A"/>
+<wire x1="53.34" y1="109.22" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SBUS_SIG_OUT" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="Y"/>
+<wire x1="111.76" y1="114.3" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
+<label x="111.76" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -4170,10 +4922,10 @@ manufacturer:SAMTEC</description>
 <moduleinst name="MICROCONTROLLER1" module="MICROCONTROLLER" x="71.12" y="73.66" smashed="yes">
 <attribute name="NAME" x="71.12" y="127" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="POWER_TOP1" module="POWER_TOP" x="78.74" y="147.32"/>
+<moduleinst name="POWER_TOP1" module="POWER_TOP" x="78.74" y="149.86"/>
 <moduleinst name="JETSON1" module="JETSON" x="152.4" y="142.24"/>
 <moduleinst name="SENSOR_TOP1" module="SENSOR_TOP" x="152.4" y="119.38"/>
-<moduleinst name="MOTOR_TOP1" module="MOTOR_TOP" x="152.4" y="66.04"/>
+<moduleinst name="MOTOR_TOP1" module="MOTOR_TOP" x="152.4" y="50.8"/>
 <moduleinst name="RC_INPUT1" module="RC_INPUT" x="152.4" y="165.1"/>
 </moduleinsts>
 <instances>
@@ -4182,178 +4934,265 @@ manufacturer:SAMTEC</description>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_PWMA"/>
-<portref moduleinst="MOTOR_TOP1" port="PWM_A_1"/>
-<wire x1="99.06" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<portref moduleinst="MOTOR_TOP1" port="PWM_B_1"/>
-<portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_PWMB"/>
-<wire x1="132.08" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_ENABLE"/>
-<wire x1="99.06" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="78.74" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="78.74" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="ENABLE_1"/>
-<wire x1="106.68" y1="83.82" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_CURR_SENSE"/>
-<wire x1="99.06" y1="76.2" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="76.2" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="CURRENT_SENSE_1"/>
-<wire x1="109.22" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="73.66" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_PWMA"/>
-<wire x1="99.06" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="71.12" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="71.12" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="71.12" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="PWM_A_2"/>
-<wire x1="111.76" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_PWMB"/>
-<wire x1="99.06" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="68.58" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_TOP1" port="PWM_B_2"/>
-<wire x1="114.3" y1="73.66" x2="132.08" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_ENABLE"/>
-<wire x1="99.06" y1="60.96" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="60.96" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="ENABLE_2"/>
-<wire x1="116.84" y1="71.12" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="127" y1="60.96" x2="127" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="127" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_CURR_SENSE"/>
-<wire x1="99.06" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="58.42" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="58.42" x2="129.54" y2="58.42" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="CURRENT_SENSE_2"/>
-<wire x1="119.38" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="58.42" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<portref moduleinst="MICROCONTROLLER1" port="STEPPER_L_DIR"/>
-<wire x1="99.06" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="53.34" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_TOP1" port="DIR_1"/>
-<wire x1="121.92" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_3_IN_1"/>
+<wire x1="99.06" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_3_IN_1"/>
+<wire x1="106.68" y1="22.86" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="25.4" x2="132.08" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<portref moduleinst="MICROCONTROLLER1" port="STEPPER_L_ENABLE"/>
-<wire x1="99.06" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="50.8" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_TOP1" port="STEP_ENABLE_1"/>
-<wire x1="124.46" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_3_IN_2"/>
+<wire x1="99.06" y1="20.32" x2="109.22" y2="20.32" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_3_IN_2"/>
+<wire x1="109.22" y1="20.32" x2="109.22" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="22.86" x2="132.08" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<portref moduleinst="MICROCONTROLLER1" port="STEPPER_L_STEP"/>
-<wire x1="99.06" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="127" y1="48.26" x2="127" y2="58.42" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_TOP1" port="STEP_1"/>
-<wire x1="127" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_3_PWM"/>
+<wire x1="99.06" y1="17.78" x2="111.76" y2="17.78" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_3_PWM"/>
+<wire x1="111.76" y1="17.78" x2="111.76" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="20.32" x2="132.08" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<portref moduleinst="MICROCONTROLLER1" port="LIMIT_L_HIGH"/>
-<wire x1="99.06" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="45.72" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_TOP1" port="LIMIT_HIGH_1"/>
-<wire x1="129.54" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_3_POS_SENSE"/>
+<wire x1="99.06" y1="12.7" x2="116.84" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="12.7" x2="116.84" y2="15.24" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_3_POS_SENSE"/>
+<wire x1="116.84" y1="15.24" x2="132.08" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<portref moduleinst="MICROCONTROLLER1" port="LIMIT_L_LOW"/>
-<wire x1="99.06" y1="43.18" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_TOP1" port="LIMIT_LOW_1"/>
-<wire x1="132.08" y1="43.18" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_3_CURR_SENSE"/>
+<wire x1="99.06" y1="15.24" x2="114.3" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="15.24" x2="114.3" y2="17.78" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_3_CURR_SENSE"/>
+<wire x1="114.3" y1="17.78" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<portref moduleinst="MOTOR_TOP1" port="DIR_2"/>
-<portref moduleinst="MICROCONTROLLER1" port="STEPPER_R_DIR"/>
-<wire x1="132.08" y1="40.64" x2="99.06" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="40.64" x2="99.06" y2="38.1" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_2_POS_SENSE"/>
+<wire x1="99.06" y1="27.94" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_2_POS_SENSE"/>
+<wire x1="129.54" y1="27.94" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<portref moduleinst="MOTOR_TOP1" port="STEP_ENABLE_2"/>
-<wire x1="132.08" y1="38.1" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="38.1" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
-<portref moduleinst="MICROCONTROLLER1" port="STEPPER_R_ENABLE"/>
-<wire x1="101.6" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_2_CURR_SENSE"/>
+<wire x1="99.06" y1="30.48" x2="127" y2="30.48" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_2_CURR_SENSE"/>
+<wire x1="127" y1="30.48" x2="127" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="127" y1="33.02" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<portref moduleinst="MICROCONTROLLER1" port="STEPPER_R_STEP"/>
-<wire x1="99.06" y1="33.02" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="33.02" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_TOP1" port="STEP_2"/>
-<wire x1="104.14" y1="35.56" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_2_PWM"/>
+<wire x1="99.06" y1="33.02" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_2_PWM"/>
+<wire x1="124.46" y1="33.02" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="35.56" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<portref moduleinst="MICROCONTROLLER1" port="LIMIT_R_HIGH"/>
-<wire x1="99.06" y1="30.48" x2="109.22" y2="30.48" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_TOP1" port="LIMIT_HIGH_2"/>
-<wire x1="109.22" y1="30.48" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="33.02" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_2_IN_2"/>
+<wire x1="99.06" y1="35.56" x2="121.92" y2="35.56" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_2_IN_2"/>
+<wire x1="121.92" y1="35.56" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<portref moduleinst="MICROCONTROLLER1" port="LIMIT_R_LOW"/>
-<wire x1="99.06" y1="27.94" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_TOP1" port="LIMIT_LOW_2"/>
-<wire x1="114.3" y1="27.94" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_2_IN_1"/>
+<wire x1="99.06" y1="38.1" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_2_IN_1"/>
+<wire x1="119.38" y1="38.1" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="40.64" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_1_POS_SENSE"/>
+<wire x1="99.06" y1="43.18" x2="129.54" y2="43.18" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_1_POS_SENSE"/>
+<wire x1="129.54" y1="43.18" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="45.72" x2="132.08" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_1_CURR_SENSE"/>
+<wire x1="99.06" y1="45.72" x2="127" y2="45.72" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_1_CURR_SENSE"/>
+<wire x1="127" y1="45.72" x2="127" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="127" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_1_PWM"/>
+<wire x1="99.06" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_1_PWM"/>
+<wire x1="124.46" y1="48.26" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="50.8" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_1_IN_2"/>
+<wire x1="99.06" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_1_IN_2"/>
+<wire x1="121.92" y1="50.8" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="53.34" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="DECK_1_IN_1"/>
+<wire x1="99.06" y1="53.34" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="DECK_1_IN_1"/>
+<wire x1="119.38" y1="53.34" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<portref moduleinst="MOTOR_TOP1" port="PWM_B_2"/>
+<wire x1="132.08" y1="66.04" x2="127" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="127" y1="66.04" x2="127" y2="68.58" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_PWMB"/>
+<wire x1="99.06" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_PWMB"/>
+<wire x1="99.06" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="PWM_B_1"/>
+<wire x1="106.68" y1="86.36" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="78.74" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_PWMA"/>
+<wire x1="99.06" y1="88.9" x2="109.22" y2="88.9" width="0.1524" layer="91"/>
+<portref moduleinst="MOTOR_TOP1" port="PWM_A_1"/>
+<wire x1="109.22" y1="88.9" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<portref moduleinst="JETSON1" port="UART0_RX"/>
+<wire x1="172.72" y1="134.62" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="134.62" x2="177.8" y2="127" width="0.1524" layer="91"/>
+<portref moduleinst="SENSOR_TOP1" port="REACH_RX"/>
+<wire x1="177.8" y1="127" x2="172.72" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<portref moduleinst="JETSON1" port="UART0_TX"/>
+<wire x1="172.72" y1="137.16" x2="180.34" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="137.16" x2="180.34" y2="124.46" width="0.1524" layer="91"/>
+<portref moduleinst="SENSOR_TOP1" port="REACH_TX"/>
+<wire x1="180.34" y1="124.46" x2="172.72" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
+<portref moduleinst="JETSON1" port="I2C0_SCL"/>
+<wire x1="172.72" y1="144.78" x2="185.42" y2="144.78" width="0.1524" layer="91"/>
 <portref moduleinst="SENSOR_TOP1" port="IMU_SCL"/>
-<wire x1="132.08" y1="114.3" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="114.3" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<portref moduleinst="MICROCONTROLLER1" port="IMU_SCL"/>
-<wire x1="119.38" y1="101.6" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="144.78" x2="185.42" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="114.3" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<portref moduleinst="MICROCONTROLLER1" port="IMU_SDA"/>
-<wire x1="99.06" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="99.06" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
+<portref moduleinst="JETSON1" port="I2C0_SDA"/>
+<wire x1="172.72" y1="147.32" x2="190.5" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="147.32" x2="190.5" y2="111.76" width="0.1524" layer="91"/>
 <portref moduleinst="SENSOR_TOP1" port="IMU_SDA"/>
-<wire x1="121.92" y1="111.76" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<portref moduleinst="JETSON1" port="TX2_TO_DUE"/>
+<wire x1="132.08" y1="137.16" x2="121.92" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="137.16" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="TX2_TO_DUE"/>
+<wire x1="121.92" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="DUE_TO_TX2"/>
+<wire x1="99.06" y1="111.76" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="111.76" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
+<portref moduleinst="JETSON1" port="DUE_TO_TX2"/>
+<wire x1="119.38" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

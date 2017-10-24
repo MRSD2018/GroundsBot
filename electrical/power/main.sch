@@ -1743,6 +1743,64 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="power_connectors">
+<packages>
+<package name="TERM-2POS-7.62MM-1720686">
+<pad name="1@1" x="0" y="0" drill="1.3" shape="square"/>
+<pad name="1@3" x="0" y="-7.62" drill="1.3" shape="square"/>
+<pad name="1@2" x="0" y="-5.08" drill="1.3" shape="square"/>
+<pad name="2@1" x="7.62" y="0" drill="1.3" shape="square"/>
+<pad name="2@3" x="7.62" y="-7.62" drill="1.3" shape="square"/>
+<pad name="2@2" x="7.62" y="-5.08" drill="1.3" shape="square"/>
+<wire x1="-5.21" y1="1.83" x2="12.83" y2="1.83" width="0.127" layer="21"/>
+<wire x1="-5.21" y1="-27.42" x2="12.83" y2="-27.42" width="0.127" layer="21"/>
+<wire x1="-5.21" y1="1.83" x2="-5.21" y2="-27.42" width="0.127" layer="21"/>
+<wire x1="12.83" y1="1.83" x2="12.83" y2="-27.42" width="0.127" layer="21"/>
+<text x="14.7" y="-25.3" size="1.27" layer="21" rot="R90">&gt;Name</text>
+<text x="14.6" y="-5.8" size="1.27" layer="21" rot="R90">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="1720686-SYM">
+<pin name="P$1@1" x="0" y="0" length="middle"/>
+<pin name="P$1@2" x="0" y="0" length="middle"/>
+<pin name="P$1@3" x="0" y="0" length="middle"/>
+<pin name="P$2@1" x="0" y="-2.54" length="middle"/>
+<pin name="P$2@2" x="0" y="-2.54" length="middle"/>
+<pin name="P$2@3" x="0" y="-2.54" length="middle"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="17.78" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="2.54" x2="17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="5.08" y="-10.16" size="1.27" layer="94">TERM BLOCK HDR 
+2POS 90DEG 7.62MM</text>
+<text x="5.08" y="5.08" size="1.27" layer="94">&gt;Name</text>
+<text x="5.08" y="-12.7" size="1.27" layer="94">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1720686" prefix="J">
+<gates>
+<gate name="G$1" symbol="1720686-SYM" x="-22.86" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="TERM-2POS-7.62MM-1720686">
+<connects>
+<connect gate="G$1" pin="P$1@1" pad="1@1"/>
+<connect gate="G$1" pin="P$1@2" pad="1@2"/>
+<connect gate="G$1" pin="P$1@3" pad="1@3"/>
+<connect gate="G$1" pin="P$2@1" pad="2@1"/>
+<connect gate="G$1" pin="P$2@2" pad="2@2"/>
+<connect gate="G$1" pin="P$2@3" pad="2@3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2527,6 +2585,8 @@ safety tether</text>
 <part name="36V6" library="power_supplies" deviceset="36V" device=""/>
 <part name="U$3" library="power_supplies" deviceset="5V" device=""/>
 <part name="GND6" library="power_supplies" deviceset="GND" device=""/>
+<part name="JMOWER" library="power_connectors" deviceset="1720686" device=""/>
+<part name="JDRIVE" library="power_connectors" deviceset="1720686" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2534,8 +2594,8 @@ safety tether</text>
 <plain>
 <text x="33.02" y="167.64" size="1.778" layer="97">FUSE INLINE</text>
 <text x="33.02" y="165.1" size="1.778" layer="97">CONNECTORS</text>
-<text x="213.36" y="144.78" size="1.778" layer="97">OUTPUT TO MOWER</text>
-<text x="208.28" y="88.9" size="1.778" layer="97">OUTPUT TO DRIVE POWER SUPPLY</text>
+<text x="218.44" y="160.02" size="1.778" layer="97">OUTPUT TO MOWER</text>
+<text x="210.82" y="96.52" size="1.778" layer="97">OUTPUT TO DRIVE POWER SUPPLY</text>
 </plain>
 <moduleinsts>
 <moduleinst name="ISOLATION1" module="ISO" x="33.02" y="129.54"/>
@@ -2550,8 +2610,8 @@ safety tether</text>
 <instance part="U3" gate="G$1" x="142.24" y="81.28"/>
 <instance part="36V1" gate="A" x="50.8" y="147.32"/>
 <instance part="36V3" gate="A" x="91.44" y="86.36"/>
-<instance part="GND3" gate="VR1" x="213.36" y="132.08"/>
-<instance part="GND2" gate="VR1" x="208.28" y="63.5"/>
+<instance part="GND3" gate="VR1" x="218.44" y="142.24"/>
+<instance part="GND2" gate="VR1" x="220.98" y="76.2"/>
 <instance part="U1" gate="A" x="121.92" y="20.32"/>
 <instance part="36V2" gate="A" x="86.36" y="149.86"/>
 <instance part="GND1" gate="VR1" x="121.92" y="137.16"/>
@@ -2564,6 +2624,8 @@ safety tether</text>
 <instance part="36V6" gate="A" x="22.86" y="147.32"/>
 <instance part="U$3" gate="A" x="12.7" y="147.32"/>
 <instance part="GND6" gate="VR1" x="15.24" y="109.22"/>
+<instance part="JMOWER" gate="G$1" x="220.98" y="147.32"/>
+<instance part="JDRIVE" gate="G$1" x="223.52" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -2717,6 +2779,17 @@ safety tether</text>
 <portref moduleinst="REGULATOR1" port="GND"/>
 <wire x1="33.02" y1="15.24" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="JMOWER" gate="G$1" pin="P$2@1"/>
+<pinref part="GND3" gate="VR1" pin="GND"/>
+<wire x1="218.44" y1="144.78" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="VR1" pin="GND"/>
+<wire x1="220.98" y1="78.74" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="JDRIVE" gate="G$1" pin="P$2@1"/>
+<wire x1="220.98" y1="81.28" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -2733,6 +2806,30 @@ safety tether</text>
 <pinref part="U$1" gate="A" pin="5V"/>
 <portref moduleinst="REGULATOR1" port="5V"/>
 <wire x1="30.48" y1="50.8" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P$30_B"/>
+<wire x1="203.2" y1="144.78" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="144.78" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="JMOWER" gate="G$1" pin="P$1@1"/>
+<wire x1="210.82" y1="147.32" x2="220.98" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="P$30_T"/>
+<wire x1="210.82" y1="147.32" x2="203.2" y2="147.32" width="0.1524" layer="91"/>
+<junction x="210.82" y="147.32"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P$30_B"/>
+<wire x1="203.2" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="81.28" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="JDRIVE" gate="G$1" pin="P$1@1"/>
+<wire x1="210.82" y1="83.82" x2="223.52" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="P$30_T"/>
+<wire x1="203.2" y1="83.82" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
+<junction x="210.82" y="83.82"/>
 </segment>
 </net>
 </nets>

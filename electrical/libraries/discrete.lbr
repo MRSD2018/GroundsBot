@@ -274,6 +274,26 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="STPS20M60D" prefix="D">
+<gates>
+<gate name="G$1" symbol="DIODE_TO220AC_2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO220AC">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="SCHOTTKY 60V 20A" constant="no"/>
+<attribute name="MANUFACTURER" value="STMicroelectronics" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2980,22 +2980,6 @@ inline on cable</text>
 <junction x="15.24" y="114.3"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<wire x1="142.24" y1="139.7" x2="160.02" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="FH1" gate="A" pin="3"/>
-<pinref part="FH1" gate="A" pin="4"/>
-<junction x="142.24" y="139.7"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<wire x1="147.32" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="FH2" gate="A" pin="3"/>
-<pinref part="FH2" gate="A" pin="4"/>
-<junction x="132.08" y="68.58"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <portref moduleinst="RELAY_CONTROL1" port="RMC+"/>
@@ -3112,19 +3096,25 @@ inline on cable</text>
 <net name="N$8" class="0">
 <segment>
 <pinref part="JMOWER" gate="G$1" pin="P$2@1"/>
-<wire x1="167.64" y1="139.7" x2="160.02" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="JMOWER" gate="G$1" pin="P$2@2"/>
-<junction x="167.64" y="139.7"/>
 <pinref part="JMOWER" gate="G$1" pin="P$2@3"/>
+<wire x1="142.24" y1="139.7" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="FH1" gate="A" pin="3"/>
+<pinref part="FH1" gate="A" pin="4"/>
+<junction x="142.24" y="139.7"/>
+<junction x="167.64" y="139.7"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="JDRIVE" gate="G$1" pin="P$2@1"/>
-<wire x1="147.32" y1="68.58" x2="167.64" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="JDRIVE" gate="G$1" pin="P$2@2"/>
-<junction x="167.64" y="68.58"/>
 <pinref part="JDRIVE" gate="G$1" pin="P$2@3"/>
+<pinref part="FH2" gate="A" pin="3"/>
+<pinref part="FH2" gate="A" pin="4"/>
+<junction x="132.08" y="68.58"/>
+<wire x1="167.64" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
+<junction x="167.64" y="68.58"/>
 </segment>
 </net>
 <net name="N$10" class="0">

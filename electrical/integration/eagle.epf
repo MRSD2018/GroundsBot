@@ -689,10 +689,13 @@ UsedLibraryUrn="urn:adsk.eagle:library:174"
 UsedLibraryUrn="urn:adsk.eagle:library:175"
 UsedLibraryUrn="urn:adsk.eagle:library:176"
 UsedLibraryUrn="urn:adsk.eagle:library:177"
+UsedLibraryUrn="urn:adsk.eagle:library:534"
+UsedLibraryUrn="urn:adsk.eagle:library:509"
+UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/sparkfun-IMU.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="298 48 1497 743"
+Loc="1311 -84 2510 611"
 State=1
 Number=0
 

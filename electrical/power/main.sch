@@ -2072,9 +2072,13 @@ Isolators allow for communication between systems in that event.</text>
 to 250mV in</text>
 <text x="167.64" y="144.78" size="1.778" layer="97" rot="R180">2.5V biased differential out
 Use single ended</text>
+<text x="218.44" y="15.24" size="1.778" layer="94">CPU_ISOLATION</text>
+<text x="228.6" y="5.08" size="1.778" layer="94">2/5</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+</instance>
 <instance part="U1" gate="A" x="78.74" y="119.38"/>
 <instance part="U2" gate="G$1" x="109.22" y="53.34" rot="MR0"/>
 <instance part="U$1" gate="A" x="88.9" y="63.5"/>
@@ -2275,9 +2279,13 @@ Use single ended</text>
 analog isolator: 6mA in our operating conditions
 
 Max power at full bat: 0.252W</text>
+<text x="218.44" y="15.24" size="1.778" layer="94">5V REGULATOR</text>
+<text x="231.14" y="5.08" size="1.778" layer="94">3/5</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+</instance>
 <instance part="U1" gate="A" x="157.48" y="114.3" rot="MR0"/>
 <instance part="U$1" gate="A" x="91.44" y="116.84"/>
 <instance part="GND" gate="VR1" x="91.44" y="99.06"/>
@@ -2361,9 +2369,13 @@ relays when battery voltage below
 threshold</text>
 <text x="22.86" y="86.36" size="2.54" layer="97">Threshold low: ~30V
 Threshold high: ~36V</text>
+<text x="218.44" y="15.24" size="1.778" layer="94">Under Voltage Lockout</text>
+<text x="228.6" y="5.08" size="1.778" layer="94">4/5</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+</instance>
 <instance part="U1" gate="A" x="144.78" y="93.98">
 <attribute name="DESCRIPTION" x="111.76" y="66.04" size="1.778" layer="96"/>
 </instance>
@@ -2560,12 +2572,16 @@ At max vbat 42V and lowest batch relay coil resistance 260R, CC XSTR drops 11.8V
 Need 50x50mm 1oz copper for 1.6W rating</text>
 <text x="134.62" y="137.16" size="2.54" layer="97">Wires to E-Stop</text>
 <text x="165.1" y="124.46" size="2.54" layer="97">Mower enable toggle</text>
+<text x="218.44" y="15.24" size="1.778" layer="94">RELAY COIL DRIVE</text>
+<text x="231.14" y="5.08" size="1.778" layer="94">5/5</text>
 </plain>
 <moduleinsts>
 <moduleinst name="UVLO1" module="UVLO" x="25.4" y="81.28"/>
 </moduleinsts>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+</instance>
 <instance part="U$1" gate="G$1" x="124.46" y="154.94"/>
 <instance part="U$2" gate="G$1" x="200.66" y="53.34" smashed="yes">
 <attribute name="NAME" x="198.12" y="50.8" size="1.778" layer="95" rot="R180"/>
@@ -2865,6 +2881,7 @@ Coil :24V @ 2W</text>
 36V nominal
 50A max, Fuse 
 inline on cable</text>
+<text x="228.6" y="5.08" size="1.778" layer="94">1/5</text>
 </plain>
 <moduleinsts>
 <moduleinst name="ISOLATION1" module="ISO" x="45.72" y="78.74"/>
@@ -2872,7 +2889,10 @@ inline on cable</text>
 <moduleinst name="REGULATOR1" module="REG" x="48.26" y="25.4"/>
 </moduleinsts>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+</instance>
 <instance part="FH1" gate="A" x="132.08" y="139.7"/>
 <instance part="FH2" gate="A" x="121.92" y="68.58"/>
 <instance part="36V1" gate="A" x="38.1" y="149.86"/>

@@ -6782,6 +6782,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-3.2512" y="2.286" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="0805">
+<description>&lt;p&gt;&lt;b&gt;Generic 2012 (0805) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="0" y="0.889" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.889" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-1.5" y1="0.8" x2="1.5" y2="0.8" width="0.0508" layer="39"/>
+<wire x1="1.5" y1="0.8" x2="1.5" y2="-0.8" width="0.0508" layer="39"/>
+<wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.0508" layer="39"/>
+<wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.0508" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="GND">
@@ -6895,6 +6907,18 @@ Input:18-75V</text>
 <wire x1="-1.0922" y1="-0.508" x2="1.0922" y2="-0.508" width="0.254" layer="94"/>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="GND_ISO" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="MOV">
+<pin name="P$1" x="0" y="10.16" length="middle" rot="R270"/>
+<pin name="P$2" x="0" y="-12.7" length="middle" rot="R90"/>
+<wire x1="-1.27" y1="5.08" x2="1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="-1.27" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-7.62" x2="-1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="-12.7" size="1.778" layer="94" rot="R90">&gt;Name</text>
+<text x="-2.54" y="5.08" size="1.778" layer="94" rot="R90">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -7144,6 +7168,46 @@ Input:18-75V</text>
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVR-M2012C120MT6AB" prefix="MOV">
+<gates>
+<gate name="G$1" symbol="MOV" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="0805">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="VARISTOR 12V 60A 0805 " constant="no"/>
+<attribute name="MANUFACTURER" value="TDK Corporation" constant="no"/>
+<attribute name="PART_NUMBER" value="AVR-M2012C120MT6AB " constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VC080503A100DP" prefix="MOV">
+<gates>
+<gate name="G$1" symbol="MOV" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="0805">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="VARISTOR 5V 40A 0805 " constant="no"/>
+<attribute name="MANUFACTURER" value="Avx" constant="no"/>
+<attribute name="PART_NUMBER" value="VC080503A100DP" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -21052,6 +21116,10 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device="" value="36V"/>
 <part name="F1" library="fuses" deviceset="0154004.DR" device=""/>
 <part name="F2" library="fuses" deviceset="0154004.DR" device=""/>
+<part name="GND8" library="power_supplies" deviceset="GND" device=""/>
+<part name="MOV1" library="power_supplies" deviceset="AVR-M2012C120MT6AB" device=""/>
+<part name="MOV2" library="power_supplies" deviceset="VC080503A100DP" device=""/>
+<part name="GND9" library="power_supplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21083,6 +21151,12 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <instance part="P+3" gate="1" x="180.34" y="162.56"/>
 <instance part="F1" gate="G$1" x="83.82" y="86.36"/>
 <instance part="F2" gate="G$1" x="86.36" y="139.7"/>
+<instance part="GND8" gate="VR1" x="48.26" y="111.76"/>
+<instance part="MOV1" gate="G$1" x="48.26" y="127">
+<attribute name="DESCRIPTION" x="40.64" y="111.76" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="MOV2" gate="G$1" x="48.26" y="73.66"/>
+<instance part="GND9" gate="VR1" x="48.26" y="58.42"/>
 </instances>
 <busses>
 </busses>
@@ -21097,6 +21171,9 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <pinref part="F2" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="139.7" x2="71.12" y2="139.7" width="0.1524" layer="91"/>
 <junction x="71.12" y="139.7"/>
+<wire x1="63.5" y1="139.7" x2="48.26" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="139.7" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="MOV1" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VIN1"/>
@@ -21124,20 +21201,6 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VOUT1"/>
-<wire x1="104.14" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="86.36" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VOUT2"/>
-<wire x1="99.06" y1="83.82" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VOUT3"/>
-<wire x1="104.14" y1="81.28" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="81.28" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
-<junction x="99.06" y="83.82"/>
-<pinref part="F1" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
-<junction x="99.06" y="86.36"/>
-</segment>
-<segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="160.02" x2="203.2" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="5V" gate="1" pin="+5V"/>
@@ -21151,6 +21214,9 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
 <junction x="68.58" y="86.36"/>
+<pinref part="MOV2" gate="G$1" pin="P$1"/>
+<wire x1="48.26" y1="83.82" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="86.36" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="36V" class="0">
@@ -21244,12 +21310,36 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <pinref part="GND7" gate="VR1" pin="GND"/>
 <wire x1="203.2" y1="144.78" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND8" gate="VR1" pin="GND"/>
+<pinref part="MOV1" gate="G$1" pin="P$2"/>
+</segment>
+<segment>
+<pinref part="MOV2" gate="G$1" pin="P$2"/>
+<pinref part="GND9" gate="VR1" pin="GND"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="F2" gate="G$1" pin="2"/>
 <pinref part="U$2" gate="G$1" pin="+VOUT"/>
 <wire x1="96.52" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="F1" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="VOUT1"/>
+<wire x1="93.98" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VOUT2"/>
+<wire x1="96.52" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="83.82" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
+<junction x="96.52" y="86.36"/>
+<pinref part="U$1" gate="G$1" pin="VOUT3"/>
+<wire x1="104.14" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="81.28" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
+<junction x="96.52" y="83.82"/>
 </segment>
 </net>
 </nets>

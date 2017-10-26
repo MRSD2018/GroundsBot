@@ -21204,7 +21204,9 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <instance part="MOV1" gate="G$1" x="48.26" y="127">
 <attribute name="DESCRIPTION" x="40.64" y="111.76" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="MOV2" gate="G$1" x="48.26" y="73.66"/>
+<instance part="MOV2" gate="G$1" x="48.26" y="73.66">
+<attribute name="DESCRIPTION" x="40.64" y="63.5" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="GND9" gate="VR1" x="48.26" y="58.42"/>
 </instances>
 <busses>
@@ -22803,6 +22805,7 @@ from mower supply</text>
 <instance part="MOV1" gate="G$1" x="167.64" y="119.38" smashed="yes">
 <attribute name="NAME" x="165.1" y="106.68" size="1.778" layer="94" rot="R90"/>
 <attribute name="VALUE" x="171.704" y="114.046" size="1.778" layer="94" rot="R90"/>
+<attribute name="DESCRIPTION" x="172.72" y="109.22" size="1.778" layer="96"/>
 </instance>
 <instance part="GND5" gate="VR1" x="167.64" y="104.14"/>
 </instances>

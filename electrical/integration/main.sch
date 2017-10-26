@@ -14620,14 +14620,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="discrete">
 <packages>
-<package name="59170-1-T-00-D-SMT">
-<smd name="P$1" x="7.425" y="0" dx="2.03" dy="2.03" layer="1"/>
-<smd name="P$2" x="-7.72" y="0" dx="1.14" dy="1.14" layer="1"/>
-<wire x1="-7.8" y1="1.5" x2="7.4" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-7.7" y1="-1.5" x2="7.5" y2="-1.5" width="0.127" layer="21"/>
-<text x="-7.7" y="2.1" size="1.27" layer="21">&gt;Name</text>
-<text x="-7.7" y="-3.1" size="1.27" layer="21">&gt;Value</text>
-</package>
 <package name="SOT230P700X160-4N">
 <wire x1="-1.75" y1="-3.25" x2="-1.75" y2="3.25" width="0.127" layer="51"/>
 <wire x1="-1.75" y1="3.25" x2="1.75" y2="3.25" width="0.127" layer="51"/>
@@ -14674,17 +14666,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <symbols>
-<symbol name="REED">
-<wire x1="0" y1="3.175" x2="0" y2="1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.905" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
-<circle x="0" y="-1.905" radius="0.127" width="0.4064" layer="94"/>
-<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<text x="2.54" y="-2.54" size="1.27" layer="94" rot="R90">&gt;Name</text>
-<text x="5.08" y="-2.54" size="1.27" layer="94" rot="R90">&gt;Value</text>
-<text x="-2.54" y="-5.08" size="1.27" layer="94" rot="R90">Reed Switch</text>
-</symbol>
 <symbol name="NPN">
 <wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
 <wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
@@ -14725,22 +14706,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="59170-1-T-00-D">
-<gates>
-<gate name="G$1" symbol="REED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="59170-1-T-00-D-SMT">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ZXTN25100DGTA">
 <gates>
 <gate name="G$1" symbol="NPN" x="0" y="-2.54"/>
@@ -22201,7 +22166,6 @@ Threshold high: ~36V</text>
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device="" value="Frame_Coil"/>
-<part name="U$1" library="discrete" deviceset="59170-1-T-00-D" device=""/>
 <part name="U$2" library="discrete" deviceset="ZXTN25100DGTA" device=""/>
 <part name="U$7" library="discrete" deviceset="ZXTN25100DGTA" device=""/>
 <part name="U$10" library="discrete" deviceset="ZXTN25100DGTA" device=""/>
@@ -22226,6 +22190,7 @@ Threshold high: ~36V</text>
 <part name="5V4" library="power_supplies" deviceset="5V_ISO" device=""/>
 <part name="GND_CPU8" library="power_supplies" deviceset="GND_ISO" device=""/>
 <part name="X3" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
+<part name="X1" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
 </parts>
 <sheets>
 <sheet>
@@ -22238,8 +22203,7 @@ Coil Control</text>
 Coil Control</text>
 <text x="7.62" y="154.94" size="5.08" layer="97">Relay coil drives, enables,
 and Unver Voltage LockOut</text>
-<text x="134.62" y="152.4" size="2.54" layer="97">Reed Switch to magnetic
-safety tether</text>
+<text x="134.62" y="152.4" size="2.54" layer="97">Connector to safety tether reed switch</text>
 <text x="12.7" y="12.7" size="2.54" layer="97">260 to 317 ohm coil resistance
 24V to drive coil
 Set I = 83mA
@@ -22259,7 +22223,6 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 </instance>
-<instance part="U$1" gate="G$1" x="124.46" y="154.94"/>
 <instance part="U$2" gate="G$1" x="200.66" y="53.34" smashed="yes">
 <attribute name="NAME" x="198.12" y="50.8" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="226.06" y="48.26" size="1.778" layer="96" rot="R180"/>
@@ -22308,6 +22271,7 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <instance part="5V4" gate="G$1" x="220.98" y="160.02" rot="R90"/>
 <instance part="GND_CPU8" gate="G$1" x="215.9" y="152.4" rot="R270"/>
 <instance part="X3" gate="G$1" x="116.84" y="139.7" rot="R180"/>
+<instance part="X1" gate="G$1" x="116.84" y="157.48" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -22442,17 +22406,19 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="P"/>
-<wire x1="124.46" y1="149.86" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="154.94" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="X3" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="139.7" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="1"/>
+<wire x1="121.92" y1="154.94" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="36V_RAW" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="S"/>
-<wire x1="124.46" y1="167.64" x2="124.46" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="167.64" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="36V_RAW1" gate="A" pin="36V_RAW"/>
+<pinref part="X1" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="157.48" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="36V_RAW6" gate="A" pin="36V_RAW"/>

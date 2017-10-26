@@ -597,6 +597,35 @@
 <wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.0508" layer="39"/>
 <wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.0508" layer="39"/>
 </package>
+<package name="S20K440">
+<description>&lt;b&gt;VARISTOR&lt;/b&gt;</description>
+<wire x1="-2.794" y1="11.303" x2="2.794" y2="11.303" width="0.1524" layer="21"/>
+<wire x1="-2.921" y1="0" x2="-2.921" y2="10.16" width="0.0508" layer="21"/>
+<wire x1="2.921" y1="-10.16" x2="2.921" y2="0" width="0.0508" layer="21"/>
+<wire x1="2.413" y1="-5.08" x2="2.413" y2="0" width="0.0508" layer="21"/>
+<wire x1="-2.413" y1="0" x2="-2.413" y2="5.08" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="-1.905" x2="4.064" y2="4.953" width="0.1524" layer="21"/>
+<wire x1="-4.064" y1="1.905" x2="-4.064" y2="-4.953" width="0.1524" layer="21"/>
+<wire x1="-3.429" y1="-3.937" x2="-3.429" y2="-6.223" width="0.1524" layer="51"/>
+<wire x1="3.429" y1="3.937" x2="3.429" y2="6.223" width="0.1524" layer="51"/>
+<wire x1="-4.064" y1="1.905" x2="-3.429" y2="2.54" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-4.064" y1="-4.953" x2="-3.429" y2="-5.588" width="0.1524" layer="51" curve="90"/>
+<wire x1="3.429" y1="5.588" x2="4.064" y2="4.953" width="0.1524" layer="51" curve="-90"/>
+<wire x1="3.429" y1="-2.54" x2="4.064" y2="-1.905" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.429" y1="-10.668" x2="3.429" y2="3.937" width="0.1524" layer="21"/>
+<wire x1="-3.429" y1="-3.937" x2="-3.429" y2="10.668" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="-11.303" x2="3.429" y2="-10.668" width="0.1524" layer="21" curve="90"/>
+<wire x1="-3.429" y1="-10.668" x2="-2.794" y2="-11.303" width="0.1524" layer="21" curve="90"/>
+<wire x1="-3.429" y1="10.668" x2="-2.794" y2="11.303" width="0.1524" layer="21" curve="-90"/>
+<wire x1="2.794" y1="11.303" x2="3.429" y2="10.668" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.794" y1="-11.303" x2="2.794" y2="-11.303" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="6.223" x2="3.429" y2="10.668" width="0.1524" layer="21"/>
+<wire x1="-3.429" y1="-10.668" x2="-3.429" y2="-6.223" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="-5.08" drill="1.1938" shape="long"/>
+<pad name="2" x="2.54" y="5.08" drill="1.1938" shape="long"/>
+<text x="-4.572" y="-9.525" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-4.572" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="V36SE12004NRFA-SYM">
@@ -1136,10 +1165,29 @@ So dual pins for top/bot</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DESCRIPTION" value="VARISTOR 5V 40A 0805
-" constant="no"/>
+<attribute name="DESCRIPTION" value="VARISTOR 5V 40A 0805 " constant="no"/>
 <attribute name="MANUFACTURER" value="Avx" constant="no"/>
 <attribute name="PART_NUMBER" value="VC080503A100DP" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOV-20D470K" prefix="MOV">
+<gates>
+<gate name="G$1" symbol="MOV" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="S20K440">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="VARISTOR 47V 2KA DISC 20MM" constant="no"/>
+<attribute name="MANUFACTURER" value="Bourns" constant="no"/>
+<attribute name="PART_NUMBER" value="MOV-20D470K " constant="no"/>
 </technology>
 </technologies>
 </device>

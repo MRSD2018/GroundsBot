@@ -19013,6 +19013,65 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="fuses">
+<packages>
+<package name="FUSE_0154004.DR">
+<wire x1="-4.863" y1="2.515" x2="4.863" y2="2.515" width="0.2" layer="21"/>
+<wire x1="4.863" y1="2.515" x2="4.863" y2="-2.515" width="0.2" layer="51"/>
+<wire x1="4.863" y1="-2.515" x2="-4.863" y2="-2.515" width="0.2" layer="21"/>
+<wire x1="-4.863" y1="-2.515" x2="-4.863" y2="2.515" width="0.2" layer="51"/>
+<wire x1="-5.55" y1="2.8" x2="5.55" y2="2.8" width="0.05" layer="39"/>
+<wire x1="5.55" y1="2.8" x2="5.55" y2="-2.8" width="0.05" layer="39"/>
+<wire x1="5.55" y1="-2.8" x2="-5.55" y2="-2.8" width="0.05" layer="39"/>
+<wire x1="-5.55" y1="-2.8" x2="-5.55" y2="2.8" width="0.05" layer="39"/>
+<circle x="-6" y="0.2" radius="0.22360625" width="0.2" layer="21"/>
+<text x="-4.457709375" y="2.854940625" size="1.2722" layer="25">&gt;NAME</text>
+<text x="-4.95853125" y="-4.15715" size="1.27218125" layer="27">&gt;VALUE</text>
+<smd name="1" x="-3.19" y="0" dx="4.24" dy="3.81" layer="1"/>
+<smd name="2" x="3.19" y="0" dx="4.24" dy="3.81" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="0154004.DR">
+<circle x="-5.08" y="0" radius="0.508" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0.508" x2="0" y2="0" width="0.254" layer="94" curve="-150"/>
+<wire x1="0" y1="0" x2="5.08" y2="-0.508" width="0.254" layer="94" curve="150"/>
+<circle x="5.08" y="0" radius="0.508" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-5.588" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.588" y1="0" x2="7.62" y2="0" width="0.1524" layer="94"/>
+<text x="-5.0964" y="2.5482" size="1.2741" layer="95">&gt;NAME</text>
+<text x="-5.09405" y="-5.09405" size="1.273509375" layer="96">&gt;VALUE</text>
+<pin name="1" x="-10.16" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="10.16" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0154004.DR" prefix="F">
+<description>154/154T/154L/154TL Series OMNI-BLOK® Fuse and Holder Assembly</description>
+<gates>
+<gate name="G$1" symbol="0154004.DR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FUSE_0154004.DR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="DESCRIPTION" value="Fuse Chip Very Fast Acting 4A SMD Solder Pad 9.73 X 5.03 X 3.81mm T/R CSA/PSE/UL"/>
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MP" value="0154004.DR"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="1.54 USD"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20991,6 +21050,8 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <part name="5V" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="12V" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device="" value="36V"/>
+<part name="F1" library="fuses" deviceset="0154004.DR" device=""/>
+<part name="F2" library="fuses" deviceset="0154004.DR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21006,7 +21067,9 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <instance part="C4" gate="G$1" x="68.58" y="81.28"/>
 <instance part="GND3" gate="VR1" x="71.12" y="142.24"/>
 <instance part="GND4" gate="VR1" x="71.12" y="124.46"/>
-<instance part="GND5" gate="VR1" x="68.58" y="91.44"/>
+<instance part="GND5" gate="VR1" x="68.58" y="91.44" smashed="yes">
+<attribute name="VALUE" x="66.04" y="91.44" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="GND6" gate="VR1" x="68.58" y="71.12"/>
 <instance part="R2" gate="G$1" x="193.04" y="149.86" rot="R90"/>
 <instance part="R3" gate="G$1" x="203.2" y="149.86" rot="R90"/>
@@ -21018,20 +21081,22 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <instance part="5V" gate="1" x="203.2" y="162.56"/>
 <instance part="12V" gate="1" x="193.04" y="162.56"/>
 <instance part="P+3" gate="1" x="180.34" y="162.56"/>
+<instance part="F1" gate="G$1" x="83.82" y="86.36"/>
+<instance part="F2" gate="G$1" x="86.36" y="139.7"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="12V" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="+VOUT"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="137.16" x2="71.12" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
 <label x="58.42" y="139.7" size="1.778" layer="95"/>
 <wire x1="71.12" y1="139.7" x2="63.5" y2="139.7" width="0.1524" layer="91"/>
-<junction x="71.12" y="139.7"/>
 <junction x="63.5" y="139.7"/>
+<pinref part="F2" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="139.7" x2="71.12" y2="139.7" width="0.1524" layer="91"/>
+<junction x="71.12" y="139.7"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VIN1"/>
@@ -21068,19 +21133,24 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <wire x1="104.14" y1="81.28" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="81.28" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
 <junction x="99.06" y="83.82"/>
-<wire x1="99.06" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
 <junction x="99.06" y="86.36"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="86.36" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
-<label x="58.42" y="86.36" size="1.778" layer="95"/>
-<wire x1="68.58" y1="86.36" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
-<junction x="68.58" y="86.36"/>
-<junction x="63.5" y="86.36"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="160.02" x2="203.2" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="5V" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="86.36" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="86.36" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
+<junction x="63.5" y="86.36"/>
+<label x="63.5" y="86.36" size="1.778" layer="95"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
+<junction x="68.58" y="86.36"/>
 </segment>
 </net>
 <net name="36V" class="0">
@@ -21173,6 +21243,13 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="VR1" pin="GND"/>
 <wire x1="203.2" y1="144.78" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="F2" gate="G$1" pin="2"/>
+<pinref part="U$2" gate="G$1" pin="+VOUT"/>
+<wire x1="96.52" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

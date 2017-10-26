@@ -13590,6 +13590,212 @@ Breakout</text>
 </deviceset>
 </devicesets>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="A3L-LOC" urn="urn:adsk.eagle:symbol:13881/1">
+<wire x1="288.29" y1="3.81" x2="342.265" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="3.81" x2="373.38" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="3.81" x2="383.54" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="3.81" x2="383.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="8.89" x2="383.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="13.97" x2="383.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="19.05" x2="383.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="288.29" y1="3.81" x2="288.29" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="288.29" y1="24.13" x2="342.265" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="24.13" x2="383.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="3.81" x2="373.38" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="8.89" x2="383.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="8.89" x2="342.265" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="8.89" x2="342.265" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="8.89" x2="342.265" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="13.97" x2="383.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="13.97" x2="342.265" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="19.05" x2="383.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="19.05" x2="342.265" y2="24.13" width="0.1016" layer="94"/>
+<text x="344.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="344.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="357.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
+<text x="343.916" y="4.953" size="2.54" layer="94">Sheet:</text>
+<frame x1="0" y1="0" x2="387.35" y2="260.35" columns="8" rows="5" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="A3L-LOC" urn="urn:adsk.eagle:component:13942/1" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+DIN A3, landscape with location and doc. field</description>
+<gates>
+<gate name="G$1" symbol="A3L-LOC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="LSF0204PWR">
+<packages>
+<package name="SOP65P640X120-14N">
+<wire x1="-2.2606" y1="1.8034" x2="-2.2606" y2="2.1082" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="2.1082" x2="-3.302" y2="2.1082" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="2.1082" x2="-3.302" y2="1.8034" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="1.8034" x2="-2.2606" y2="1.8034" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="1.143" x2="-2.2606" y2="1.4478" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="1.4478" x2="-3.302" y2="1.4478" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="1.4478" x2="-3.302" y2="1.143" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="1.143" x2="-2.2606" y2="1.143" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="0.508" x2="-2.2606" y2="0.7874" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="0.7874" x2="-3.302" y2="0.7874" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="0.7874" x2="-3.302" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="0.508" x2="-2.2606" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="-0.1524" x2="-2.2606" y2="0.1524" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="0.1524" x2="-3.302" y2="0.1524" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="0.1524" x2="-3.302" y2="-0.1524" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="-0.1524" x2="-2.2606" y2="-0.1524" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="-0.7874" x2="-2.2606" y2="-0.508" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="-0.508" x2="-3.302" y2="-0.508" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="-0.508" x2="-3.302" y2="-0.7874" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="-0.7874" x2="-2.2606" y2="-0.7874" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="-1.4478" x2="-2.2606" y2="-1.143" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="-1.143" x2="-3.302" y2="-1.143" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="-1.143" x2="-3.302" y2="-1.4478" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="-1.4478" x2="-2.2606" y2="-1.4478" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="-2.1082" x2="-2.2606" y2="-1.8034" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="-1.8034" x2="-3.302" y2="-1.8034" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="-1.8034" x2="-3.302" y2="-2.1082" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="-2.1082" x2="-2.2606" y2="-2.1082" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="-1.8034" x2="2.2606" y2="-2.1082" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="-2.1082" x2="3.302" y2="-2.1082" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="-2.1082" x2="3.302" y2="-1.8034" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="-1.8034" x2="2.2606" y2="-1.8034" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="-1.143" x2="2.2606" y2="-1.4478" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="-1.4478" x2="3.302" y2="-1.4478" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="-1.4478" x2="3.302" y2="-1.143" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="-1.143" x2="2.2606" y2="-1.143" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="-0.508" x2="2.2606" y2="-0.7874" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="-0.7874" x2="3.302" y2="-0.7874" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="-0.7874" x2="3.302" y2="-0.508" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="-0.508" x2="2.2606" y2="-0.508" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="0.1524" x2="2.2606" y2="-0.1524" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="-0.1524" x2="3.302" y2="-0.1524" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="-0.1524" x2="3.302" y2="0.1524" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="0.1524" x2="2.2606" y2="0.1524" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="0.7874" x2="2.2606" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="0.508" x2="3.302" y2="0.7874" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="0.7874" x2="2.2606" y2="0.7874" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="1.4478" x2="2.2606" y2="1.143" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="1.143" x2="3.302" y2="1.143" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="1.143" x2="3.302" y2="1.4478" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="1.4478" x2="2.2606" y2="1.4478" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="2.1082" x2="2.2606" y2="1.8034" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="1.8034" x2="3.302" y2="1.8034" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="1.8034" x2="3.302" y2="2.1082" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="2.1082" x2="2.2606" y2="2.1082" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="-2.54" x2="2.2606" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="-2.54" x2="2.2606" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="2.54" x2="0.3048" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="2.54" x2="-2.2606" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-2.2606" y1="2.54" x2="-2.2606" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0" layer="51" curve="-180"/>
+<text x="-3.766709375" y="2.188759375" size="1.272540625" layer="51" ratio="6" rot="SR0">*</text>
+<wire x1="-2.2606" y1="-2.54" x2="2.2606" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="2.2606" y1="2.54" x2="0.3048" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="2.54" x2="-2.2606" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0" layer="21" curve="-180"/>
+<wire x1="4.1656" y1="-0.4572" x2="4.1656" y2="-0.8382" width="0.1524" layer="21"/>
+<wire x1="4.1656" y1="-0.8382" x2="3.9116" y2="-0.8382" width="0.1524" layer="21"/>
+<wire x1="3.9116" y1="-0.8382" x2="3.9116" y2="-0.4572" width="0.1524" layer="21"/>
+<text x="-3.76481875" y="2.18766875" size="1.2719" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-4.70381875" y="3.6105" size="2.08493125" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.670959375" y="-5.59466875" size="2.085290625" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<smd name="1" x="-2.921" y="1.9558" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="2" x="-2.921" y="1.2954" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="3" x="-2.921" y="0.6604" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="4" x="-2.921" y="0" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="5" x="-2.921" y="-0.6604" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="6" x="-2.921" y="-1.2954" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="7" x="-2.921" y="-1.9558" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="8" x="2.921" y="-1.9558" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="9" x="2.921" y="-1.2954" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="10" x="2.921" y="-0.6604" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="11" x="2.921" y="0" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="12" x="2.921" y="0.6604" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="13" x="2.921" y="1.2954" dx="1.4732" dy="0.3556" layer="1"/>
+<smd name="14" x="2.921" y="1.9558" dx="1.4732" dy="0.3556" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LSF0204PWR">
+<wire x1="-17.78" y1="17.78" x2="5.08" y2="17.78" width="0.41" layer="94"/>
+<wire x1="5.08" y1="17.78" x2="5.08" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="-17.78" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="17.78" width="0.41" layer="94"/>
+<text x="-17.8073" y="18.8088" size="2.086" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-17.7883" y="-14.1701" size="2.08376875" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="EN" x="-22.86" y="-7.62" length="middle" direction="in"/>
+<pin name="VREF_B" x="10.16" y="15.24" length="middle" direction="in" rot="R180"/>
+<pin name="A1" x="-22.86" y="12.7" length="middle"/>
+<pin name="A2" x="-22.86" y="10.16" length="middle"/>
+<pin name="A3" x="-22.86" y="7.62" length="middle"/>
+<pin name="A4" x="-22.86" y="5.08" length="middle"/>
+<pin name="B1" x="10.16" y="12.7" length="middle" rot="R180"/>
+<pin name="VREF_A" x="-22.86" y="15.24" length="middle" direction="pwr"/>
+<pin name="B2" x="10.16" y="10.16" length="middle" rot="R180"/>
+<pin name="B3" x="10.16" y="7.62" length="middle" rot="R180"/>
+<pin name="B4" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="NC" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="NC-1" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LSF0204PWR" prefix="U">
+<description>None</description>
+<gates>
+<gate name="G$1" symbol="LSF0204PWR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP65P640X120-14N">
+<connects>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="B1" pad="13"/>
+<connect gate="G$1" pin="B2" pad="12"/>
+<connect gate="G$1" pin="B3" pad="11"/>
+<connect gate="G$1" pin="B4" pad="10"/>
+<connect gate="G$1" pin="EN" pad="8"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="NC" pad="6"/>
+<connect gate="G$1" pin="NC-1" pad="9"/>
+<connect gate="G$1" pin="VREF_A" pad="1"/>
+<connect gate="G$1" pin="VREF_B" pad="14"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="DESCRIPTION" value="4-Bit Bidirectional Multi-Voltage Level Translator for Open-Drain &amp;amp; Push- Pull 14-TSSOP -40 to 125"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MP" value="LSF0204PWR"/>
+<attribute name="PACKAGE" value="TSSOP-14 Texas Instruments"/>
+<attribute name="PRICE" value="0.62 USD"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13602,10 +13808,10 @@ Breakout</text>
 <modules>
 <module name="IMU" prefix="" dx="50.8" dy="20.32">
 <ports>
-<port name="GND" side="left" coord="-5.08" direction="io"/>
+<port name="GND" side="left" coord="-5.08" direction="pwr"/>
 <port name="IMU_SCL" side="left" coord="0" direction="io"/>
 <port name="IMU_SDA" side="left" coord="2.54" direction="io"/>
-<port name="IMU_VCC" side="left" coord="7.62" direction="io"/>
+<port name="IMU_VCC" side="left" coord="7.62" direction="pwr"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -14836,139 +15042,6 @@ Breakout</text>
 </sheet>
 </sheets>
 </module>
-<module name="JETSON_TX2_J21_EXPANSION" prefix="" dx="30.48" dy="20.32">
-<ports>
-<port name="GND" side="left" coord="7.62" direction="io"/>
-<port name="UART1_RXD_HDR_3V3" side="left" coord="2.54" direction="io"/>
-<port name="UART1_TXD_HDR_3V3" side="left" coord="0" direction="io"/>
-<port name="I2C_GP0_SCL_3V3_LVL" side="left" coord="-5.08" direction="io"/>
-<port name="I2C_GP0_SDA_3V3_LVL" side="left" coord="-7.62" direction="io"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-</sheets>
-</module>
-<module name="12V" prefix="" dx="30.48" dy="20.32">
-<ports>
-<port name="GND" side="left" coord="-5.08" direction="io"/>
-<port name="12V" side="left" coord="5.08" direction="io"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="12V" class="0">
-<segment>
-<wire x1="35.56" y1="96.52" x2="76.2" y2="96.52" width="0.1524" layer="91"/>
-<label x="35.56" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<wire x1="35.56" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
-<label x="35.56" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-</nets>
-</sheet>
-</sheets>
-</module>
-<module name="5V" prefix="" dx="30.48" dy="20.32">
-<ports>
-<port name="GND" side="left" coord="-5.08" direction="io"/>
-<port name="5V" side="left" coord="5.08" direction="io"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="5V" class="0">
-<segment>
-<wire x1="45.72" y1="99.06" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
-<label x="45.72" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<wire x1="45.72" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
-<label x="45.72" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-</nets>
-</sheet>
-</sheets>
-</module>
-<module name="3V3" prefix="" dx="30.48" dy="20.32">
-<ports>
-<port name="GND" side="left" coord="-2.54" direction="io"/>
-<port name="3V3" side="left" coord="5.08" direction="io"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="3V3" class="0">
-<segment>
-<wire x1="43.18" y1="106.68" x2="83.82" y2="106.68" width="0.1524" layer="91"/>
-<label x="43.18" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<wire x1="43.18" y1="104.14" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
-<label x="43.18" y="104.14" size="1.778" layer="95"/>
-</segment>
-</net>
-</nets>
-</sheet>
-</sheets>
-</module>
 <module name="MICROCONTROLLER" prefix="" dx="45.72" dy="127">
 <ports>
 <port name="MOTOR_L_CURR_SENSE" side="right" coord="2.54" direction="io"/>
@@ -14986,7 +15059,7 @@ Breakout</text>
 <port name="SBUS" side="right" coord="20.32" direction="io"/>
 <port name="MOWER_RELAY" side="right" coord="43.18" direction="io"/>
 <port name="VBATSENSE" side="right" coord="48.26" direction="io"/>
-<port name="GND" side="right" coord="53.34" direction="io"/>
+<port name="GND" side="right" coord="53.34" direction="pwr"/>
 <port name="DECK_1_IN_1" side="right" coord="-20.32" direction="io"/>
 <port name="DECK_1_IN_2" side="right" coord="-22.86" direction="io"/>
 <port name="DECK_1_PWM" side="right" coord="-25.4" direction="io"/>
@@ -15005,7 +15078,7 @@ Breakout</text>
 <port name="DUE_TO_TX2" side="right" coord="38.1" direction="io"/>
 <port name="TX2_TO_DUE" side="right" coord="35.56" direction="io"/>
 <port name="3V3" side="right" coord="55.88" direction="pwr"/>
-<port name="5V" side="right" coord="58.42" direction="io"/>
+<port name="VIN" side="right" coord="58.42" direction="pwr"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -16414,8 +16487,8 @@ Breakout</text>
 </module>
 <module name="REACH_GPS" prefix="" dx="30.48" dy="20.32">
 <ports>
-<port name="5V" side="left" coord="7.62" direction="io"/>
-<port name="GND" side="left" coord="-7.62" direction="io"/>
+<port name="5V" side="left" coord="7.62" direction="pwr"/>
+<port name="GND" side="left" coord="-7.62" direction="pwr"/>
 <port name="RX" side="left" coord="2.54" direction="io"/>
 <port name="TX" side="left" coord="-2.54" direction="io"/>
 </ports>
@@ -16450,48 +16523,6 @@ Breakout</text>
 <segment>
 <wire x1="55.88" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
 <label x="55.88" y="119.38" size="1.778" layer="95"/>
-</segment>
-</net>
-</nets>
-</sheet>
-</sheets>
-</module>
-<module name="RC_CONTROL" prefix="" dx="30.48" dy="20.32">
-<ports>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="JP1" gate="A" x="109.22" y="91.44"/>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="5V" class="0">
-<segment>
-<wire x1="58.42" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
-<label x="58.42" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<wire x1="58.42" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
-<label x="58.42" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SBUS" class="0">
-<segment>
-<wire x1="58.42" y1="91.44" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
-<label x="58.42" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -16546,55 +16577,6 @@ Breakout</text>
 <label x="55.88" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
-</nets>
-</sheet>
-</sheets>
-</module>
-<module name="VBAT_SENSE" prefix="" dx="30.48" dy="20.32">
-<ports>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-</sheets>
-</module>
-<module name="POWER_SUPPLIES" prefix="" dx="50.8" dy="20.32">
-<ports>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<moduleinsts>
-<moduleinst name="12V1" module="12V" x="109.22" y="127"/>
-<moduleinst name="5V1" module="5V" x="109.22" y="104.14"/>
-<moduleinst name="3V3-1" module="3V3" x="109.22" y="81.28"/>
-</moduleinsts>
-<instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-</instances>
-<busses>
-</busses>
-<nets>
 </nets>
 </sheet>
 </sheets>
@@ -16674,9 +16656,9 @@ Breakout</text>
 </module>
 <module name="POWER_TOP" prefix="" dx="30.48" dy="20.32">
 <ports>
-<port name="12V" side="right" coord="7.62" direction="io"/>
-<port name="5V" side="right" coord="2.54" direction="io"/>
-<port name="GND" side="right" coord="-5.08" direction="io"/>
+<port name="12V" side="right" coord="7.62" direction="pwr"/>
+<port name="5V" side="right" coord="2.54" direction="pwr"/>
+<port name="GND" side="right" coord="-5.08" direction="pwr"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -16904,7 +16886,7 @@ Breakout</text>
 </module>
 <module name="JETSON" prefix="" dx="30.48" dy="20.32">
 <ports>
-<port name="GND" side="left" coord="5.08" direction="io"/>
+<port name="GND" side="left" coord="5.08" direction="pwr"/>
 <port name="DUE_TO_TX2" side="left" coord="-2.54" direction="io"/>
 <port name="TX2_TO_DUE" side="left" coord="-5.08" direction="io"/>
 <port name="UART0_RX" side="right" coord="-7.62" direction="io"/>
@@ -16924,9 +16906,6 @@ Breakout</text>
 </plain>
 <moduleinsts>
 <moduleinst name="JETSON_J17_UART1" module="JETSON_J17_UART" x="109.22" y="139.7"/>
-<moduleinst name="JETSON_TX2_J21_EXPANSION1" module="JETSON_TX2_J21_EXPANSION" x="109.22" y="116.84" smashed="yes">
-<attribute name="NAME" x="109.22" y="116.84" size="2.032" layer="95" align="bottom-center"/>
-</moduleinst>
 <moduleinst name="JETSON_TX2_J26_GPIO1" module="JETSON_TX2_J26_GPIO" x="119.38" y="86.36"/>
 </moduleinsts>
 <instances>
@@ -16951,21 +16930,18 @@ Breakout</text>
 </net>
 <net name="UART0_RX" class="0">
 <segment>
-<portref moduleinst="JETSON_TX2_J21_EXPANSION1" port="UART1_RXD_HDR_3V3"/>
 <wire x1="88.9" y1="119.38" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
 <label x="76.2" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C0_SCL" class="0">
 <segment>
-<portref moduleinst="JETSON_TX2_J21_EXPANSION1" port="I2C_GP0_SCL_3V3_LVL"/>
 <wire x1="88.9" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
 <label x="76.2" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C0_SDA" class="0">
 <segment>
-<portref moduleinst="JETSON_TX2_J21_EXPANSION1" port="I2C_GP0_SDA_3V3_LVL"/>
 <wire x1="88.9" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
 <label x="76.2" y="109.22" size="1.778" layer="95"/>
 </segment>
@@ -16977,14 +16953,12 @@ Breakout</text>
 <label x="81.28" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<portref moduleinst="JETSON_TX2_J21_EXPANSION1" port="GND"/>
 <wire x1="88.9" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
 <label x="81.28" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART0_TX" class="0">
 <segment>
-<portref moduleinst="JETSON_TX2_J21_EXPANSION1" port="UART1_TXD_HDR_3V3"/>
 <wire x1="88.9" y1="116.84" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
 <label x="76.2" y="116.84" size="1.778" layer="95"/>
 </segment>
@@ -16995,7 +16969,7 @@ Breakout</text>
 </module>
 <module name="MOTOR_TOP" prefix="" dx="30.48" dy="86.36">
 <ports>
-<port name="GND" side="left" coord="35.56" direction="io"/>
+<port name="GND" side="left" coord="35.56" direction="pwr"/>
 <port name="PWM_A_1" side="left" coord="30.48" direction="io"/>
 <port name="PWM_B_1" side="left" coord="27.94" direction="io"/>
 <port name="ENABLE_1" side="left" coord="25.4" direction="io"/>
@@ -17207,8 +17181,9 @@ Breakout</text>
 <module name="RC_INPUT" prefix="" dx="30.48" dy="20.32">
 <ports>
 <port name="5V" side="left" coord="7.62" direction="pwr"/>
-<port name="GND" side="left" coord="5.08" direction="io"/>
+<port name="GND" side="left" coord="2.54" direction="pwr"/>
 <port name="SBUS_SIG_OUT" side="left" coord="-5.08" direction="io"/>
+<port name="3.3V" side="left" coord="5.08" direction="pwr"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -17247,11 +17222,6 @@ Breakout</text>
 <wire x1="40.64" y1="114.3" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
 <label x="48.26" y="114.3" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U1" gate="A" pin="VCC"/>
-<wire x1="76.2" y1="114.3" x2="71.12" y2="114.3" width="0.1524" layer="91"/>
-<label x="71.12" y="114.3" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SBUS_SIG_IN" class="0">
 <segment>
@@ -17270,113 +17240,254 @@ Breakout</text>
 <label x="111.76" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="VCC"/>
+<wire x1="76.2" y1="114.3" x2="71.12" y2="114.3" width="0.1524" layer="91"/>
+<label x="71.12" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </module>
 <module name="ENCODER" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="5V" side="left" coord="7.62" direction="pwr"/>
+<port name="GND" side="left" coord="5.08" direction="pwr"/>
+<port name="CHANNEL_A" side="left" coord="-5.08" direction="io"/>
+<port name="CHANNEL_B" side="left" coord="-7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
 <parts>
+<part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
+<instance part="FRAME1" gate="G$1" x="-83.82" y="-17.78"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="5V" class="0">
+<segment>
+<wire x1="15.24" y1="170.18" x2="45.72" y2="170.18" width="0.1524" layer="91"/>
+<label x="15.24" y="170.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<wire x1="15.24" y1="165.1" x2="45.72" y2="165.1" width="0.1524" layer="91"/>
+<label x="15.24" y="165.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CHANNEL_A" class="0">
+<segment>
+<wire x1="15.24" y1="160.02" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
+<label x="15.24" y="160.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CHANNEL_B" class="0">
+<segment>
+<wire x1="15.24" y1="154.94" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
+<label x="15.24" y="154.94" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </module>
-<module name="SENSOR_TOP" prefix="" dx="30.48" dy="20.32">
+<module name="SENSOR_TOP" prefix="" dx="35.56" dy="30.48">
 <ports>
-<port name="5V" side="left" coord="7.62" direction="io"/>
-<port name="IMU_VCC" side="left" coord="5.08" direction="io"/>
-<port name="GND" side="left" coord="2.54" direction="io"/>
+<port name="5V" side="left" coord="12.7" direction="pwr"/>
+<port name="IMU_VCC" side="left" coord="10.16" direction="pwr"/>
+<port name="GND" side="left" coord="7.62" direction="pwr"/>
 <port name="REACH_RX" side="right" coord="7.62" direction="io"/>
 <port name="REACH_TX" side="right" coord="5.08" direction="io"/>
 <port name="IMU_SCL" side="right" coord="-5.08" direction="io"/>
 <port name="IMU_SDA" side="right" coord="-7.62" direction="io"/>
+<port name="MOTOR_L_CHANNEL_A" side="left" coord="-2.54" direction="io"/>
+<port name="MOTOR_L_CHANNEL_B" side="left" coord="-5.08" direction="io"/>
+<port name="MOTOR_R_CHANNEL_A" side="left" coord="-10.16" direction="io"/>
+<port name="MOTOR_R_CHANNEL_B" side="left" coord="-12.7" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
+<part name="U1" library="LSF0204PWR" deviceset="LSF0204PWR" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="IMU1" module="IMU" x="134.62" y="109.22"/>
-<moduleinst name="REACH_GPS1" module="REACH_GPS" x="124.46" y="86.36"/>
-<moduleinst name="ENCODER1" module="ENCODER" x="124.46" y="157.48"/>
-<moduleinst name="ENCODER2" module="ENCODER" x="124.46" y="132.08"/>
+<moduleinst name="IMU1" module="IMU" x="144.78" y="73.66"/>
+<moduleinst name="REACH_GPS1" module="REACH_GPS" x="134.62" y="50.8"/>
+<moduleinst name="ENCODER1" module="ENCODER" x="134.62" y="121.92"/>
+<moduleinst name="ENCODER2" module="ENCODER" x="134.62" y="96.52"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="U1" gate="G$1" x="58.42" y="96.52"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="IMU_VCC" class="0">
-<segment>
-<portref moduleinst="IMU1" port="IMU_VCC"/>
-<wire x1="104.14" y1="116.84" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
-<label x="93.98" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="IMU_SDA" class="0">
 <segment>
 <portref moduleinst="IMU1" port="IMU_SDA"/>
-<wire x1="104.14" y1="111.76" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
-<label x="93.98" y="111.76" size="1.778" layer="95"/>
+<wire x1="114.3" y1="76.2" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
+<label x="104.14" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <portref moduleinst="IMU1" port="GND"/>
-<wire x1="104.14" y1="104.14" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
-<label x="93.98" y="104.14" size="1.778" layer="95"/>
+<wire x1="114.3" y1="68.58" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
+<label x="104.14" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
 <portref moduleinst="REACH_GPS1" port="GND"/>
-<wire x1="104.14" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
-<label x="99.06" y="78.74" size="1.778" layer="95"/>
+<wire x1="114.3" y1="43.18" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
+<label x="109.22" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="ENCODER1" port="GND"/>
+<wire x1="114.3" y1="127" x2="109.22" y2="127" width="0.1524" layer="91"/>
+<label x="109.22" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="ENCODER2" port="GND"/>
+<wire x1="114.3" y1="101.6" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
+<label x="109.22" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<wire x1="68.58" y1="88.9" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
+<label x="68.58" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
 <segment>
-<label x="99.06" y="93.98" size="1.778" layer="95"/>
+<label x="109.22" y="58.42" size="1.778" layer="95"/>
 <portref moduleinst="REACH_GPS1" port="5V"/>
-<wire x1="99.06" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="ENCODER1" port="5V"/>
+<wire x1="114.3" y1="129.54" x2="109.22" y2="129.54" width="0.1524" layer="91"/>
+<label x="109.22" y="129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="ENCODER2" port="5V"/>
+<wire x1="114.3" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
+<label x="109.22" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VREF_B"/>
+<wire x1="68.58" y1="111.76" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
+<label x="68.58" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="EN"/>
+<wire x1="35.56" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
+<label x="30.48" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="REACH_RX" class="0">
 <segment>
 <portref moduleinst="REACH_GPS1" port="RX"/>
-<wire x1="104.14" y1="88.9" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
-<label x="93.98" y="88.9" size="1.778" layer="95"/>
+<wire x1="114.3" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
+<label x="104.14" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="REACH_TX" class="0">
 <segment>
 <portref moduleinst="REACH_GPS1" port="TX"/>
-<wire x1="104.14" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
-<label x="93.98" y="83.82" size="1.778" layer="95"/>
+<wire x1="114.3" y1="48.26" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
+<label x="104.14" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IMU_SCL" class="0">
 <segment>
 <portref moduleinst="IMU1" port="IMU_SCL"/>
-<wire x1="104.14" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
-<label x="93.98" y="109.22" size="1.778" layer="95"/>
+<wire x1="114.3" y1="73.66" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
+<label x="104.14" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOTOR_R_CHANNEL_A_5V" class="0">
+<segment>
+<portref moduleinst="ENCODER1" port="CHANNEL_A"/>
+<wire x1="114.3" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="116.84" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="B1"/>
+<wire x1="86.36" y1="109.22" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MOTOR_R_CHANNEL_B" class="0">
+<segment>
+<portref moduleinst="ENCODER1" port="CHANNEL_B"/>
+<pinref part="U1" gate="G$1" pin="B2"/>
+<wire x1="68.58" y1="106.68" x2="88.9" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="106.68" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="114.3" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A2"/>
+<wire x1="35.56" y1="106.68" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
+<label x="7.62" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOTOR_L_CHANNEL_A" class="0">
+<segment>
+<portref moduleinst="ENCODER2" port="CHANNEL_A"/>
+<wire x1="114.3" y1="91.44" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="91.44" x2="88.9" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="B3"/>
+<wire x1="88.9" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A3"/>
+<wire x1="35.56" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
+<label x="7.62" y="104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOTOR_L_CHANNEL_B" class="0">
+<segment>
+<portref moduleinst="ENCODER2" port="CHANNEL_B"/>
+<pinref part="U1" gate="G$1" pin="B4"/>
+<wire x1="68.58" y1="101.6" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="101.6" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="88.9" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A4"/>
+<wire x1="35.56" y1="101.6" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
+<label x="7.62" y="101.6" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOTOR_R_CHANNEL_A" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="A1"/>
+<wire x1="35.56" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
+<label x="7.62" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="3V3" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VREF_A"/>
+<wire x1="35.56" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
+<label x="30.48" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="IMU1" port="IMU_VCC"/>
+<wire x1="114.3" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<label x="104.14" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -17397,7 +17508,7 @@ Breakout</text>
 </moduleinst>
 <moduleinst name="POWER_TOP1" module="POWER_TOP" x="78.74" y="149.86"/>
 <moduleinst name="JETSON1" module="JETSON" x="152.4" y="142.24"/>
-<moduleinst name="SENSOR_TOP1" module="SENSOR_TOP" x="152.4" y="111.76"/>
+<moduleinst name="SENSOR_TOP1" module="SENSOR_TOP" x="154.94" y="111.76"/>
 <moduleinst name="MOTOR_TOP1" module="MOTOR_TOP" x="152.4" y="50.8"/>
 <moduleinst name="RC_INPUT1" module="RC_INPUT" x="152.4" y="165.1"/>
 </moduleinsts>
@@ -17617,19 +17728,19 @@ Breakout</text>
 <net name="N$2" class="0">
 <segment>
 <portref moduleinst="JETSON1" port="UART0_RX"/>
-<wire x1="172.72" y1="134.62" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="134.62" x2="177.8" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="134.62" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
 <portref moduleinst="SENSOR_TOP1" port="REACH_RX"/>
-<wire x1="177.8" y1="119.38" x2="172.72" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="119.38" x2="180.34" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="119.38" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <portref moduleinst="JETSON1" port="UART0_TX"/>
-<wire x1="172.72" y1="137.16" x2="180.34" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="137.16" x2="180.34" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="137.16" x2="182.88" y2="116.84" width="0.1524" layer="91"/>
 <portref moduleinst="SENSOR_TOP1" port="REACH_TX"/>
-<wire x1="180.34" y1="116.84" x2="172.72" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="116.84" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -17638,7 +17749,7 @@ Breakout</text>
 <wire x1="172.72" y1="144.78" x2="185.42" y2="144.78" width="0.1524" layer="91"/>
 <portref moduleinst="SENSOR_TOP1" port="IMU_SCL"/>
 <wire x1="185.42" y1="144.78" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="106.68" x2="172.72" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="106.68" x2="177.8" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -17647,34 +17758,25 @@ Breakout</text>
 <wire x1="172.72" y1="147.32" x2="190.5" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="147.32" x2="190.5" y2="104.14" width="0.1524" layer="91"/>
 <portref moduleinst="SENSOR_TOP1" port="IMU_SDA"/>
-<wire x1="190.5" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <portref moduleinst="JETSON1" port="TX2_TO_DUE"/>
-<wire x1="132.08" y1="137.16" x2="121.92" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="137.16" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="137.16" x2="111.76" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="137.16" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
 <portref moduleinst="MICROCONTROLLER1" port="TX2_TO_DUE"/>
-<wire x1="121.92" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DUE_TO_TX2"/>
-<wire x1="99.06" y1="111.76" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="111.76" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="111.76" x2="109.22" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="111.76" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
 <portref moduleinst="JETSON1" port="DUE_TO_TX2"/>
-<wire x1="119.38" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<portref moduleinst="SENSOR_TOP1" port="IMU_VCC"/>
-<wire x1="132.08" y1="116.84" x2="116.84" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="116.84" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
-<portref moduleinst="MICROCONTROLLER1" port="3V3"/>
-<wire x1="116.84" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -17685,8 +17787,8 @@ Breakout</text>
 </segment>
 <segment>
 <portref moduleinst="RC_INPUT1" port="GND"/>
-<wire x1="132.08" y1="170.18" x2="127" y2="170.18" width="0.1524" layer="91"/>
-<label x="127" y="170.18" size="1.778" layer="95"/>
+<wire x1="132.08" y1="167.64" x2="127" y2="167.64" width="0.1524" layer="91"/>
+<label x="127" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <portref moduleinst="POWER_TOP1" port="GND"/>
@@ -17705,8 +17807,8 @@ Breakout</text>
 </segment>
 <segment>
 <portref moduleinst="SENSOR_TOP1" port="GND"/>
-<wire x1="132.08" y1="114.3" x2="127" y2="114.3" width="0.1524" layer="91"/>
-<label x="127" y="114.3" size="1.778" layer="95"/>
+<wire x1="132.08" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>
+<label x="127" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -17722,13 +17824,8 @@ Breakout</text>
 </segment>
 <segment>
 <portref moduleinst="SENSOR_TOP1" port="5V"/>
-<wire x1="132.08" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>
-<label x="127" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<label x="101.6" y="132.08" size="1.778" layer="95"/>
-<portref moduleinst="MICROCONTROLLER1" port="5V"/>
-<wire x1="104.14" y1="132.08" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="124.46" x2="127" y2="124.46" width="0.1524" layer="91"/>
+<label x="127" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -17738,6 +17835,70 @@ Breakout</text>
 <wire x1="114.3" y1="160.02" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
 <portref moduleinst="MICROCONTROLLER1" port="SBUS"/>
 <wire x1="114.3" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="12V" class="0">
+<segment>
+<label x="101.6" y="132.08" size="1.778" layer="95"/>
+<wire x1="104.14" y1="132.08" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="POWER_TOP1" port="12V"/>
+<wire x1="99.06" y1="157.48" x2="104.14" y2="157.48" width="0.1524" layer="91"/>
+<label x="99.06" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="3V3" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="3V3"/>
+<wire x1="99.06" y1="129.54" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
+<label x="99.06" y="129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="RC_INPUT1" port="3.3V"/>
+<wire x1="132.08" y1="170.18" x2="127" y2="170.18" width="0.1524" layer="91"/>
+<label x="127" y="170.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="SENSOR_TOP1" port="IMU_VCC"/>
+<wire x1="132.08" y1="121.92" x2="127" y2="121.92" width="0.1524" layer="91"/>
+<label x="127" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<portref moduleinst="SENSOR_TOP1" port="MOTOR_L_CHANNEL_A"/>
+<wire x1="132.08" y1="109.22" x2="116.84" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="109.22" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_CHANNEL_A"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_CHANNEL_B"/>
+<wire x1="99.06" y1="81.28" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
+<portref moduleinst="SENSOR_TOP1" port="MOTOR_L_CHANNEL_B"/>
+<wire x1="104.14" y1="81.28" x2="104.14" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="106.68" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<portref moduleinst="SENSOR_TOP1" port="MOTOR_R_CHANNEL_A"/>
+<wire x1="132.08" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="101.6" x2="119.38" y2="66.04" width="0.1524" layer="91"/>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_CHANNEL_A"/>
+<wire x1="119.38" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_CHANNEL_B"/>
+<wire x1="99.06" y1="63.5" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="63.5" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
+<portref moduleinst="SENSOR_TOP1" port="MOTOR_R_CHANNEL_B"/>
+<wire x1="121.92" y1="99.06" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -17781,9 +17942,6 @@ Breakout</text>
 <approved hash="106,1@MICROCONTROLLER,83.82,139.7,SCK,,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,226.06,50.8,SCLK,,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,83.82,68.58,VIN,,,,,"/>
-<approved hash="105,1@RC_CONTROL,78.74,96.52,5V,,,,,"/>
-<approved hash="105,1@RC_CONTROL,78.74,93.98,GND,,,,,"/>
-<approved hash="105,1@RC_CONTROL,78.74,91.44,SBUS,,,,,"/>
 <approved hash="111,1@POWER_TOP,30.48,154.94,GND,,,,,"/>
 <approved hash="111,1@POWER_TOP,30.48,154.94,GND,,,,,"/>
 <approved hash="111,1@POWER_TOP,30.48,157.48,36V,,,,,"/>
@@ -17795,19 +17953,12 @@ Breakout</text>
 <approved hash="113,1@MOTOR_INTERFACE,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@MOTOR_INTERFACE,110.403,122.146,JMOTORDRIVER,,,,,"/>
 <approved hash="113,2@JETSON_TX2_J26_GPIO,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1@12V,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1@5V,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1@3V3,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@JETSON_J17_UART,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@JETSON_J17_UART,117.077,124.686,JP1,,,,,"/>
 <approved hash="113,1@JETSON_J17_UART,172.957,124.686,JP2,,,,,"/>
 <approved hash="113,1@REACH_GPS,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1@RC_CONTROL,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1@RC_CONTROL,106.917,94.2061,JP1,,,,,"/>
 <approved hash="113,1@GPS_RF_COMM,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@GPS_RF_COMM,106.917,124.686,JP1,,,,,"/>
-<approved hash="113,1@VBAT_SENSE,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1@POWER_SUPPLIES,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@DECK_STEPPER,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@DECK_STEPPER,110.403,119.606,JMOTORDRIVER,,,,,"/>
 <approved hash="113,1@POWER_TOP,130.071,89.431,FRAME1,,,,,"/>

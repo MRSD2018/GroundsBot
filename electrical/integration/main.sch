@@ -20491,7 +20491,7 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 </sheet>
 </sheets>
 </module>
-<module name="TEST" prefix="" dx="30.48" dy="20.32">
+<module name="RELAY_CONTROL_TOP" prefix="" dx="30.48" dy="20.32">
 <ports>
 </ports>
 <variantdefs>
@@ -20819,7 +20819,6 @@ from mower supply</text>
 <moduleinst name="REACH_GPS1" module="REACH_GPS" x="134.62" y="50.8"/>
 <moduleinst name="ENCODER1" module="ENCODER" x="134.62" y="121.92"/>
 <moduleinst name="ENCODER2" module="ENCODER" x="134.62" y="96.52"/>
-<moduleinst name="TEST1" module="TEST" x="43.18" y="22.86"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -21401,7 +21400,6 @@ from mower supply</text>
 <approved hash="104,2@JETSON_TX2_J26_GPIO,25.4,83.82,U1,VDD,VDD_3V3_SYS,,,"/>
 <approved hash="104,1@MICROCONTROLLER,20.32,5.08,U1,VDD,3V3,,,"/>
 <approved hash="104,1@RC_INPUT,76.2,114.3,U1,VCC,5V,,,"/>
-<approved hash="119,1@SENSOR_TOP,104.14,93.98,net,5V,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,109.22,152.4,5VA,,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,111.76,152.4,5VB,,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,99.06,152.4,AREF,,,,,"/>
@@ -21453,7 +21451,6 @@ from mower supply</text>
 <approved hash="113,1@DECK_STEPPER,110.403,119.606,JMOTORDRIVER,,,,,"/>
 <approved hash="113,1@POWER_TOP,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@JETSON,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1@SENSOR_TOP,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@MOTOR_TOP,130.071,89.431,FRAME1,,,,,"/>
 </errors>
 </schematic>

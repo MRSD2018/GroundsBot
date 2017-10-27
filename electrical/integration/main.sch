@@ -21397,7 +21397,7 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 </sheet>
 </sheets>
 </module>
-<module name="MOTOR_TOP" prefix="" dx="30.48" dy="86.36">
+<module name="MOTOR_TOP" prefix="" dx="55.88" dy="86.36">
 <ports>
 <port name="GND" side="right" coord="-35.56" direction="pwr"/>
 <port name="PWM_A_1" side="left" coord="38.1" direction="io"/>
@@ -22693,7 +22693,7 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 </sheet>
 </sheets>
 </module>
-<module name="RELAY_CONTROL_TOP" prefix="" dx="30.48" dy="20.32">
+<module name="RELAY_CONTROL_TOP" prefix="" dx="50.8" dy="20.32">
 <ports>
 <port name="36V" side="right" coord="7.62" direction="pwr"/>
 <port name="GND" side="right" coord="-7.62" direction="pwr"/>
@@ -24109,7 +24109,7 @@ from mower supply</text>
 <moduleinst name="POWER_TOP1" module="POWER_TOP" x="63.5" y="149.86"/>
 <moduleinst name="JETSON1" module="JETSON" x="152.4" y="114.3"/>
 <moduleinst name="SENSOR_TOP1" module="SENSOR_TOP" x="218.44" y="76.2"/>
-<moduleinst name="MOTOR_TOP1" module="MOTOR_TOP" x="152.4" y="50.8"/>
+<moduleinst name="MOTOR_TOP1" module="MOTOR_TOP" x="137.16" y="50.8"/>
 <moduleinst name="RC_INPUT1" module="RC_INPUT" x="152.4" y="139.7"/>
 <moduleinst name="RELAY_CONTROL_TOP1" module="RELAY_CONTROL_TOP" x="198.12" y="139.7"/>
 </moduleinsts>
@@ -24123,34 +24123,34 @@ from mower supply</text>
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_ENABLE"/>
 <portref moduleinst="MOTOR_TOP1" port="ENABLE_1"/>
-<wire x1="99.06" y1="78.74" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_CURR_SENSE"/>
 <portref moduleinst="MOTOR_TOP1" port="CURRENT_SENSE_1"/>
-<wire x1="132.08" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_PWMA"/>
-<wire x1="99.06" y1="71.12" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="71.12" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="PWM_A_2"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_ENABLE"/>
-<wire x1="99.06" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="60.96" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="ENABLE_2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_CURR_SENSE"/>
-<wire x1="99.06" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="CURRENT_SENSE_2"/>
 </segment>
 </net>
@@ -24158,27 +24158,27 @@ from mower supply</text>
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_3_IN_1"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_3_IN_1"/>
-<wire x1="99.06" y1="22.86" x2="132.08" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="22.86" x2="104.14" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_3_IN_2"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_3_IN_2"/>
-<wire x1="99.06" y1="20.32" x2="132.08" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_3_PWM"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_3_PWM"/>
-<wire x1="99.06" y1="17.78" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="17.78" x2="104.14" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_3_POS_SENSE"/>
-<wire x1="99.06" y1="12.7" x2="132.08" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="12.7" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_3_POS_SENSE"/>
 </segment>
 </net>
@@ -24186,77 +24186,76 @@ from mower supply</text>
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_3_CURR_SENSE"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_3_CURR_SENSE"/>
-<wire x1="99.06" y1="15.24" x2="132.08" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="15.24" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_2_POS_SENSE"/>
-<wire x1="99.06" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_2_POS_SENSE"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_2_CURR_SENSE"/>
-<wire x1="99.06" y1="30.48" x2="124.46" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_2_CURR_SENSE"/>
-<wire x1="124.46" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_2_PWM"/>
-<wire x1="99.06" y1="33.02" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="33.02" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_2_PWM"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_2_IN_2"/>
-<wire x1="99.06" y1="35.56" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="35.56" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_2_IN_2"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_2_IN_1"/>
-<wire x1="99.06" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="38.1" x2="104.14" y2="38.1" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_2_IN_1"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_1_POS_SENSE"/>
-<wire x1="99.06" y1="43.18" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="43.18" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_1_POS_SENSE"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_1_CURR_SENSE"/>
-<wire x1="99.06" y1="45.72" x2="132.08" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_1_CURR_SENSE"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_1_PWM"/>
-<wire x1="99.06" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="48.26" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_1_PWM"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_1_IN_2"/>
-<wire x1="99.06" y1="50.8" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="50.8" x2="104.14" y2="50.8" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_1_IN_2"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="DECK_1_IN_1"/>
-<wire x1="99.06" y1="53.34" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="53.34" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
 <portref moduleinst="MOTOR_TOP1" port="DECK_1_IN_1"/>
 </segment>
 </net>
@@ -24264,21 +24263,21 @@ from mower supply</text>
 <segment>
 <portref moduleinst="MOTOR_TOP1" port="PWM_B_2"/>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_R_PWMB"/>
-<wire x1="99.06" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_PWMB"/>
 <portref moduleinst="MOTOR_TOP1" port="PWM_B_1"/>
-<wire x1="99.06" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOTOR_L_PWMA"/>
 <portref moduleinst="MOTOR_TOP1" port="PWM_A_1"/>
-<wire x1="99.06" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -24354,7 +24353,7 @@ from mower supply</text>
 </segment>
 <segment>
 <portref moduleinst="MOTOR_TOP1" port="GND"/>
-<wire x1="172.72" y1="15.24" x2="182.88" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="15.24" x2="182.88" y2="15.24" width="0.1524" layer="91"/>
 <label x="177.8" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -24364,8 +24363,8 @@ from mower supply</text>
 </segment>
 <segment>
 <portref moduleinst="RELAY_CONTROL_TOP1" port="GND"/>
-<label x="220.98" y="132.08" size="1.778" layer="95"/>
-<wire x1="218.44" y1="132.08" x2="231.14" y2="132.08" width="0.1524" layer="91"/>
+<label x="231.14" y="132.08" size="1.778" layer="95"/>
+<wire x1="228.6" y1="132.08" x2="241.3" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -24386,8 +24385,8 @@ from mower supply</text>
 </segment>
 <segment>
 <portref moduleinst="RELAY_CONTROL_TOP1" port="+5V"/>
-<wire x1="218.44" y1="142.24" x2="231.14" y2="142.24" width="0.1524" layer="91"/>
-<label x="220.98" y="142.24" size="1.778" layer="95"/>
+<wire x1="228.6" y1="142.24" x2="241.3" y2="142.24" width="0.1524" layer="91"/>
+<label x="231.14" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -24466,8 +24465,8 @@ from mower supply</text>
 <net name="36V" class="0">
 <segment>
 <portref moduleinst="RELAY_CONTROL_TOP1" port="36V"/>
-<label x="220.98" y="147.32" size="1.778" layer="95"/>
-<wire x1="218.44" y1="147.32" x2="231.14" y2="147.32" width="0.1524" layer="91"/>
+<label x="231.14" y="147.32" size="1.778" layer="95"/>
+<wire x1="228.6" y1="147.32" x2="241.3" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="POWER_TOP1" port="36V"/>
@@ -24478,8 +24477,8 @@ from mower supply</text>
 <net name="MOW_EN" class="0">
 <segment>
 <portref moduleinst="RELAY_CONTROL_TOP1" port="MOW_EN"/>
-<wire x1="218.44" y1="144.78" x2="231.14" y2="144.78" width="0.1524" layer="91"/>
-<label x="220.98" y="144.78" size="1.778" layer="95"/>
+<wire x1="228.6" y1="144.78" x2="241.3" y2="144.78" width="0.1524" layer="91"/>
+<label x="231.14" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <portref moduleinst="MICROCONTROLLER1" port="MOWER_RELAY"/>
@@ -24495,8 +24494,8 @@ from mower supply</text>
 </segment>
 <segment>
 <portref moduleinst="RELAY_CONTROL_TOP1" port="VSENSE"/>
-<label x="220.98" y="137.16" size="1.778" layer="95"/>
-<wire x1="218.44" y1="137.16" x2="231.14" y2="137.16" width="0.1524" layer="91"/>
+<label x="231.14" y="137.16" size="1.778" layer="95"/>
+<wire x1="228.6" y1="137.16" x2="241.3" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

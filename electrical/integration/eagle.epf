@@ -6,6 +6,8 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibraryUrn="urn:adsk.eagle:library:509"
+UsedLibraryUrn="urn:adsk.eagle:library:534"
 UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/19inch.lbr"
 UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/40xx.lbr"
 UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/41xx.lbr"
@@ -293,6 +295,7 @@ UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/smd-ipc.lbr"
 UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/smd-special.lbr"
 UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/solomon-systech.lbr"
 UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/solpad.lbr"
+UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/sparkfun-IMU.lbr"
 UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/speaker.lbr"
 UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/special-drill.lbr"
 UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/special.lbr"
@@ -338,6 +341,7 @@ UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/u-blox.lbr"
 UsedLibrary="/home/zeumer/Documents/GroundsBot/electrical/libraries/CMD17-21VGD_TR8.lbr"
 UsedLibrary="/home/zeumer/Documents/GroundsBot/electrical/libraries/DUElib130425.lbr"
 UsedLibrary="/home/zeumer/Documents/GroundsBot/electrical/libraries/LMV762MM.lbr"
+UsedLibrary="/home/zeumer/Documents/GroundsBot/electrical/libraries/LSF0204PWR.lbr"
 UsedLibrary="/home/zeumer/Documents/GroundsBot/electrical/libraries/NC7SZ04M5.lbr"
 UsedLibrary="/home/zeumer/Documents/GroundsBot/electrical/libraries/PCF8574ATD.lbr"
 UsedLibrary="/home/zeumer/Documents/GroundsBot/electrical/libraries/SFH615A-3X009T.lbr"
@@ -689,13 +693,10 @@ UsedLibraryUrn="urn:adsk.eagle:library:174"
 UsedLibraryUrn="urn:adsk.eagle:library:175"
 UsedLibraryUrn="urn:adsk.eagle:library:176"
 UsedLibraryUrn="urn:adsk.eagle:library:177"
-UsedLibraryUrn="urn:adsk.eagle:library:534"
-UsedLibraryUrn="urn:adsk.eagle:library:509"
-UsedLibrary="/home/zeumer/eagle-8.4.0/lbr/sparkfun-IMU.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="1311 -84 2510 611"
+Loc="1311 48 2510 743"
 State=1
 Number=0
 

@@ -23914,6 +23914,9 @@ from mower supply</text>
 <part name="R10" library="SparkFun-Resistors" deviceset="150KOHM" device="-0603-1/10W-1%" value="150k"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="300KOHM" device="-0603-1/10W-1%" value="300k"/>
 <part name="PAD1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
+<part name="GND5" library="power_supplies" deviceset="GND" device=""/>
+<part name="R8" library="SparkFun-Resistors" deviceset="1.20KOHM" device="-0603-1/10W-1%" value="1.20k"/>
 </parts>
 <sheets>
 <sheet>
@@ -23984,6 +23987,12 @@ wire to 24V at motor controller</text>
 <instance part="R10" gate="G$1" x="200.66" y="66.04" rot="R90"/>
 <instance part="R7" gate="G$1" x="200.66" y="50.8" rot="R90"/>
 <instance part="PAD1" gate="P" x="185.42" y="76.2" rot="R270"/>
+<instance part="C3" gate="G$1" x="81.28" y="50.8"/>
+<instance part="GND5" gate="VR1" x="81.28" y="40.64"/>
+<instance part="R8" gate="G$1" x="96.52" y="58.42" smashed="yes">
+<attribute name="NAME" x="91.948" y="58.674" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="102.362" y="60.452" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -24013,6 +24022,11 @@ wire to 24V at motor controller</text>
 <segment>
 <pinref part="U4" gate="A" pin="GND2"/>
 <pinref part="GND4" gate="VR1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND5" gate="VR1" pin="GND"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="43.18" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_A" class="0">
@@ -24051,8 +24065,11 @@ wire to 24V at motor controller</text>
 <label x="40.64" y="106.68" size="1.778" layer="95"/>
 <wire x1="40.64" y1="106.68" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="106.68" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U4" gate="A" pin="VOUTP"/>
-<wire x1="81.28" y1="58.42" x2="127" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="58.42" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<junction x="81.28" y="58.42"/>
 </segment>
 </net>
 <net name="5V_ISO" class="0">
@@ -24211,6 +24228,13 @@ wire to 24V at motor controller</text>
 <pinref part="PAD1" gate="P" pin="P"/>
 <wire x1="182.88" y1="60.96" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="60.96" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="U4" gate="A" pin="VOUTP"/>
+<wire x1="101.6" y1="58.42" x2="127" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

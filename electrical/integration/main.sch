@@ -19239,6 +19239,200 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-hirose-df13">
+<description>&lt;b&gt;Hirose DF13 Series.&lt;/b&gt;&lt;p&gt;
+
+1.25mm Pitch Miniature Crimping Connector.&lt;p&gt;
+Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http://www.hirose.co.jp/cataloge_hp/e53600014.pdf&lt;/a&gt;&lt;p&gt;
+
+&lt;author&gt;Created by Dmitriy Ivashin (divashin@gmail.com)&lt;/author&gt;</description>
+<packages>
+<package name="DF13-6P-1.25DSA">
+<description>Single Row Straight Pin Header (Through hole)</description>
+<wire x1="-4.575" y1="-2.19" x2="4.575" y2="-2.19" width="0.3048" layer="21"/>
+<wire x1="-4.575" y1="1.21" x2="4.575" y2="1.21" width="0.3048" layer="21"/>
+<wire x1="-4.575" y1="1.21" x2="-4.575" y2="0" width="0.3048" layer="21"/>
+<wire x1="-4.575" y1="0" x2="-4.575" y2="-0.81" width="0.3048" layer="21"/>
+<wire x1="-4.575" y1="-0.81" x2="-4.575" y2="-2.19" width="0.3048" layer="21"/>
+<wire x1="4.575" y1="-2.19" x2="4.575" y2="-0.81" width="0.3048" layer="21"/>
+<wire x1="4.575" y1="-0.81" x2="4.575" y2="0" width="0.3048" layer="21"/>
+<wire x1="4.575" y1="0" x2="4.575" y2="1.21" width="0.3048" layer="21"/>
+<wire x1="-4.075" y1="-1.59" x2="4.075" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="-4.075" y1="0.81" x2="-4.075" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.075" y1="0" x2="-4.075" y2="-0.81" width="0.1" layer="21"/>
+<wire x1="-4.075" y1="-0.81" x2="-4.075" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="4.075" y1="0.81" x2="4.075" y2="0" width="0.127" layer="21"/>
+<wire x1="4.075" y1="0" x2="4.075" y2="-0.81" width="0.1" layer="21"/>
+<wire x1="4.075" y1="-0.81" x2="4.075" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="-4.075" y1="0.81" x2="4.075" y2="0.81" width="0.127" layer="21"/>
+<wire x1="-4.575" y1="0" x2="-4.075" y2="0" width="0.127" layer="21"/>
+<wire x1="4.075" y1="0" x2="4.575" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.575" y1="-0.81" x2="-4.075" y2="-0.81" width="0.127" layer="21"/>
+<wire x1="4.075" y1="-0.81" x2="4.575" y2="-0.81" width="0.127" layer="21"/>
+<pad name="P$1" x="3.125" y="0" drill="0.6" diameter="1.016" shape="square"/>
+<pad name="P$2" x="1.875" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$3" x="0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$4" x="-0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$5" x="-1.875" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$6" x="-3.125" y="0" drill="0.6" diameter="1.016"/>
+<text x="-3.125" y="1.875" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.125" y="-3.75" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="DF13-6P-1.25DS">
+<description>Single Row Right Angle Pin Header (Through hole)</description>
+<wire x1="-4.57" y1="-4.47" x2="4.565" y2="-4.475" width="0.3048" layer="21"/>
+<wire x1="-4.57" y1="0.9" x2="-4.57" y2="-0.98" width="0.3048" layer="21"/>
+<wire x1="-4.57" y1="-0.98" x2="-4.57" y2="-4.47" width="0.3048" layer="21"/>
+<wire x1="-4.57" y1="-0.98" x2="4.575" y2="-0.98" width="0.127" layer="21"/>
+<wire x1="-4.57" y1="-0.81" x2="-4.57" y2="-0.98" width="0.3048" layer="21"/>
+<wire x1="-4.57" y1="-0.98" x2="-4.57" y2="-2.19" width="0.3048" layer="21"/>
+<wire x1="-4.57" y1="0.9" x2="4.565" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="4.565" y1="-4.475" x2="4.565" y2="0.9" width="0.3048" layer="21"/>
+<pad name="P$1" x="3.125" y="0" drill="0.6" diameter="1.016" shape="square"/>
+<pad name="P$2" x="1.875" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$3" x="0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$4" x="-0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$5" x="-1.875" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$6" x="-3.125" y="0" drill="0.6" diameter="1.016"/>
+<text x="-3.125" y="1.575" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.125" y="-6.255" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="DF13C-6P-1.25V">
+<description>Single Row Straight Pin Header (SMT)</description>
+<wire x1="-5.325" y1="-3.6" x2="5.325" y2="-3.6" width="0.3048" layer="21"/>
+<wire x1="5.325" y1="-3.6" x2="5.325" y2="0" width="0.3048" layer="21"/>
+<wire x1="5.325" y1="0" x2="-5.325" y2="0" width="0.3048" layer="21"/>
+<wire x1="-5.325" y1="0" x2="-5.325" y2="-3.6" width="0.3048" layer="21"/>
+<smd name="M$1" x="-5.575" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="M$0" x="5.575" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="P$1" x="-3.125" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$2" x="-1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$3" x="-0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$4" x="0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$5" x="1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$6" x="3.125" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<text x="-4.725" y="1.525" size="2.54" layer="21">.</text>
+<rectangle x1="-3.75" y1="-2.475" x2="3.75" y2="-0.1" layer="39"/>
+</package>
+<package name="DF13A-6P-1.25H">
+<description>Single Row Straight Pin Header (SMT)</description>
+<wire x1="-4.9" y1="0.3" x2="4.9" y2="0.3" width="0.3048" layer="21"/>
+<wire x1="5.325" y1="0.9" x2="5.325" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="4.9" y1="5.3" x2="-4.9" y2="5.3" width="0.3048" layer="21"/>
+<wire x1="-5.325" y1="4.5" x2="-5.325" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="-4.9" y1="5.3" x2="-4.9" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="-4.9" y1="4.5" x2="-5.325" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="4.9" y1="5.3" x2="4.9" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="4.9" y1="4.5" x2="5.325" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="-4.9" y1="0.3" x2="-4.9" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="-4.9" y1="0.9" x2="-5.325" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="4.9" y1="0.3" x2="4.9" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="4.9" y1="0.9" x2="5.325" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="-4.9" y1="4.5" x2="-4.9" y2="0.9" width="0.127" layer="21"/>
+<wire x1="4.9" y1="4.5" x2="4.9" y2="0.9" width="0.127" layer="21"/>
+<smd name="P$1" x="-3.125" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$2" x="-1.875" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="M$0" x="-5.475" y="2.4" dx="1.6" dy="2.2" layer="1"/>
+<smd name="M$1" x="5.475" y="2.4" dx="1.6" dy="2.2" layer="1"/>
+<smd name="P$3" x="-0.625" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$4" x="0.625" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$5" x="1.875" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$6" x="3.125" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<text x="-4.7" y="-1.875" size="2.54" layer="21">.</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CON-1X6P">
+<wire x1="1.905" y1="6.35" x2="-1.905" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-8.89" x2="-1.905" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-8.89" x2="1.905" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="1.905" y1="6.35" x2="1.905" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-0.635" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-0.635" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-0.635" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="5.08" x2="0.635" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="-5.08" x2="0.635" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="-7.62" x2="0.635" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-1.905" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.905" y="-11.7475" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="-5.08" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="3" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="4" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="5" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="6" x="-5.08" y="-7.62" visible="pad" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DF13-6P-1.25">
+<description>DF13-6P
+1.25mm Pitch Miniature Crimping Connector.</description>
+<gates>
+<gate name="G$1" symbol="CON-1X6P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DSA" package="DF13-6P-1.25DSA">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DS" package="DF13-6P-1.25DS">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="V" package="DF13C-6P-1.25V">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="H" package="DF13A-6P-1.25H">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -21102,18 +21296,18 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 </sheet>
 </sheets>
 </module>
-<module name="REACH_GPS" prefix="" dx="30.48" dy="20.32">
+<module name="REACH_GPS" prefix="" dx="50.8" dy="20.32">
 <ports>
 <port name="5V" side="left" coord="7.62" direction="pwr"/>
 <port name="GND" side="left" coord="-7.62" direction="pwr"/>
-<port name="RX" side="left" coord="2.54" direction="io"/>
-<port name="TX" side="left" coord="-2.54" direction="io"/>
+<port name="REACH_RX" side="left" coord="2.54" direction="io"/>
+<port name="REACH_TX" side="left" coord="-2.54" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="X1" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS4_?" device="43045-0409" value="43045-0409"/>
+<part name="U$1" library="con-hirose-df13" deviceset="DF13-6P-1.25" device="V"/>
 </parts>
 <sheets>
 <sheet>
@@ -21121,37 +21315,47 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="X1" gate="G$1" x="101.6" y="124.46" rot="MR180"/>
+<instance part="U$1" gate="G$1" x="119.38" y="121.92" rot="MR180"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="RX" class="0">
+<net name="REACH_RX" class="0">
 <segment>
-<wire x1="55.88" y1="124.46" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
 <label x="55.88" y="124.46" size="1.778" layer="95"/>
-<pinref part="X1" gate="G$1" pin="3"/>
+<wire x1="55.88" y1="124.46" x2="101.6" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="124.46" x2="101.6" y2="127" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="5"/>
+<wire x1="101.6" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TX" class="0">
+<net name="REACH_TX" class="0">
 <segment>
-<wire x1="55.88" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
 <label x="55.88" y="121.92" size="1.778" layer="95"/>
-<pinref part="X1" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="121.92" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="121.92" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="4"/>
+<wire x1="104.14" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="55.88" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
 <label x="55.88" y="119.38" size="1.778" layer="95"/>
-<pinref part="X1" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="119.38" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="119.38" x2="96.3676" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="119.38" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="116.84" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="119.38" x2="96.3676" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="4"/>
-<wire x1="96.52" y1="127" x2="55.88" y2="127" width="0.1524" layer="91"/>
 <label x="55.88" y="127" size="1.778" layer="95"/>
+<wire x1="99.06" y1="127" x2="55.88" y2="127" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="127" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="6"/>
+<wire x1="99.06" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -22816,7 +23020,7 @@ from mower supply</text>
 <port name="5V" side="left" coord="12.7" direction="pwr"/>
 <port name="GND" side="left" coord="7.62" direction="pwr"/>
 <port name="REACH_RX" side="right" coord="7.62" direction="io"/>
-<port name="REACH_TX" side="right" coord="5.08" direction="io"/>
+<port name="REACH_TX" side="right" coord="10.16" direction="io"/>
 <port name="IMU_SCL" side="right" coord="-5.08" direction="io"/>
 <port name="IMU_SDA" side="right" coord="-7.62" direction="io"/>
 <port name="MOTOR_L_CHANNEL_A" side="left" coord="-2.54" direction="io"/>
@@ -22837,7 +23041,7 @@ from mower supply</text>
 </plain>
 <moduleinsts>
 <moduleinst name="IMU1" module="IMU" x="187.96" y="83.82"/>
-<moduleinst name="REACH_GPS1" module="REACH_GPS" x="177.8" y="60.96"/>
+<moduleinst name="REACH_GPS1" module="REACH_GPS" x="187.96" y="60.96"/>
 <moduleinst name="ENCODER1" module="ENCODER" x="177.8" y="132.08"/>
 <moduleinst name="ENCODER2" module="ENCODER" x="177.8" y="106.68"/>
 </moduleinsts>
@@ -22913,14 +23117,14 @@ from mower supply</text>
 </net>
 <net name="REACH_RX" class="0">
 <segment>
-<portref moduleinst="REACH_GPS1" port="RX"/>
+<portref moduleinst="REACH_GPS1" port="REACH_RX"/>
 <label x="139.7" y="63.5" size="1.778" layer="95"/>
 <wire x1="157.48" y1="63.5" x2="139.7" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="REACH_TX" class="0">
 <segment>
-<portref moduleinst="REACH_GPS1" port="TX"/>
+<portref moduleinst="REACH_GPS1" port="REACH_TX"/>
 <wire x1="157.48" y1="58.42" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
 <label x="139.7" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -24779,18 +24983,18 @@ wire to 24V at motor controller</text>
 <segment>
 <portref moduleinst="JETSON1" port="UART0_RX"/>
 <wire x1="172.72" y1="106.68" x2="248.92" y2="106.68" width="0.1524" layer="91"/>
-<portref moduleinst="SENSOR_TOP1" port="REACH_RX"/>
-<wire x1="241.3" y1="83.82" x2="248.92" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="83.82" x2="248.92" y2="106.68" width="0.1524" layer="91"/>
+<portref moduleinst="SENSOR_TOP1" port="REACH_TX"/>
+<wire x1="241.3" y1="86.36" x2="248.92" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="86.36" x2="248.92" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <portref moduleinst="JETSON1" port="UART0_TX"/>
-<wire x1="172.72" y1="109.22" x2="254" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="254" y1="109.22" x2="254" y2="81.28" width="0.1524" layer="91"/>
-<portref moduleinst="SENSOR_TOP1" port="REACH_TX"/>
-<wire x1="254" y1="81.28" x2="241.3" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="109.22" x2="251.46" y2="109.22" width="0.1524" layer="91"/>
+<portref moduleinst="SENSOR_TOP1" port="REACH_RX"/>
+<wire x1="241.3" y1="83.82" x2="251.46" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="83.82" x2="251.46" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">

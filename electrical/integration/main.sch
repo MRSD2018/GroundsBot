@@ -20198,12 +20198,22 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <label x="116.84" y="152.4" size="1.778" layer="95" rot="R90"/>
 <wire x1="116.84" y1="152.4" x2="116.84" y2="175.26" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="5"/>
+<label x="195.58" y="142.24" size="1.778" layer="95"/>
+<wire x1="231.14" y1="142.24" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="MOTOR_L_PWMB" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="3"/>
 <label x="119.38" y="152.4" size="1.778" layer="95" rot="R90"/>
 <wire x1="119.38" y1="152.4" x2="119.38" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="7"/>
+<label x="195.58" y="139.7" size="1.778" layer="95"/>
+<wire x1="231.14" y1="139.7" x2="195.58" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_R_PWMA" class="0">
@@ -20212,12 +20222,22 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <label x="121.92" y="152.4" size="1.778" layer="95" rot="R90"/>
 <wire x1="121.92" y1="152.4" x2="121.92" y2="175.26" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="9"/>
+<label x="195.58" y="137.16" size="1.778" layer="95"/>
+<wire x1="231.14" y1="137.16" x2="195.58" y2="137.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="MOTOR_R_PWMB" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="5"/>
 <label x="124.46" y="152.4" size="1.778" layer="95" rot="R90"/>
 <wire x1="124.46" y1="152.4" x2="124.46" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="11"/>
+<label x="195.58" y="134.62" size="1.778" layer="95"/>
+<wire x1="231.14" y1="134.62" x2="195.58" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DECK_1_PWM" class="0">
@@ -20406,12 +20426,22 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <label x="154.94" y="129.54" size="1.778" layer="95"/>
 <wire x1="154.94" y1="129.54" x2="185.42" y2="129.54" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="20"/>
+<label x="256.54" y="124.46" size="1.778" layer="95"/>
+<wire x1="254" y1="124.46" x2="287.02" y2="124.46" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="DECK_1_IN_2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="30"/>
 <label x="154.94" y="127" size="1.778" layer="95"/>
 <wire x1="154.94" y1="127" x2="185.42" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="22"/>
+<label x="256.54" y="121.92" size="1.778" layer="95"/>
+<wire x1="254" y1="121.92" x2="287.02" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DECK_2_IN_2" class="0">
@@ -20420,6 +20450,11 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <label x="154.94" y="121.92" size="1.778" layer="95"/>
 <wire x1="154.94" y1="121.92" x2="185.42" y2="121.92" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="26"/>
+<label x="256.54" y="116.84" size="1.778" layer="95"/>
+<wire x1="254" y1="116.84" x2="287.02" y2="116.84" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="DECK_3_IN_2" class="0">
 <segment>
@@ -20427,12 +20462,22 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <label x="154.94" y="116.84" size="1.778" layer="95"/>
 <wire x1="154.94" y1="116.84" x2="185.42" y2="116.84" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="30"/>
+<label x="256.54" y="111.76" size="1.778" layer="95"/>
+<wire x1="254" y1="111.76" x2="287.02" y2="111.76" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="DECK_3_IN_1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="33"/>
 <label x="154.94" y="119.38" size="1.778" layer="95"/>
 <wire x1="154.94" y1="119.38" x2="185.42" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="28"/>
+<label x="256.54" y="114.3" size="1.778" layer="95"/>
+<wire x1="254" y1="114.3" x2="287.02" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="36" class="0">
@@ -20741,6 +20786,11 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <label x="121.92" y="33.02" size="1.778" layer="95" rot="R90"/>
 <wire x1="121.92" y1="63.5" x2="121.92" y2="30.48" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="254" y1="81.28" x2="289.56" y2="81.28" width="0.1524" layer="91"/>
+<label x="256.54" y="81.28" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="6"/>
+</segment>
 </net>
 <net name="DECK_3_CURR_SENSE" class="0">
 <segment>
@@ -20760,6 +20810,11 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <label x="116.84" y="33.02" size="1.778" layer="95" rot="R90"/>
 <wire x1="116.84" y1="63.5" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="254" y1="86.36" x2="289.56" y2="86.36" width="0.1524" layer="91"/>
+<label x="256.54" y="86.36" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="DECK_2_CURR_SENSE" class="0">
 <segment>
@@ -20778,6 +20833,11 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <pinref part="U$1" gate="G$1" pin="A4"/>
 <label x="111.76" y="33.02" size="1.778" layer="95" rot="R90"/>
 <wire x1="111.76" y1="63.5" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="37"/>
+<label x="195.58" y="40.64" size="1.778" layer="95"/>
+<wire x1="231.14" y1="40.64" x2="195.58" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DECK_1_CURR_SENSE" class="0">
@@ -20834,6 +20894,11 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <label x="154.94" y="124.46" size="1.778" layer="95"/>
 <wire x1="154.94" y1="124.46" x2="185.42" y2="124.46" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="24"/>
+<label x="256.54" y="119.38" size="1.778" layer="95"/>
+<wire x1="254" y1="119.38" x2="287.02" y2="119.38" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="35" class="0">
 <segment>
@@ -20852,6 +20917,11 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <pinref part="U$1" gate="G$1" pin="SCK_ICSP"/>
 <label x="68.58" y="139.7" size="1.778" layer="95"/>
 <wire x1="83.82" y1="139.7" x2="66.04" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="254" y1="50.8" x2="289.56" y2="50.8" width="0.1524" layer="91"/>
+<label x="256.54" y="50.8" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="30"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -20876,104 +20946,6 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <wire x1="254" y1="53.34" x2="289.56" y2="53.34" width="0.1524" layer="91"/>
 <label x="256.54" y="53.34" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="28"/>
-</segment>
-</net>
-<net name="MOTOR_L_PWM_A" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="5"/>
-<label x="195.58" y="142.24" size="1.778" layer="95"/>
-<wire x1="231.14" y1="142.24" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MOTOR_L_PWM_B" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="7"/>
-<label x="195.58" y="139.7" size="1.778" layer="95"/>
-<wire x1="231.14" y1="139.7" x2="195.58" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MOTOR_R_PWM_A" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="9"/>
-<label x="195.58" y="137.16" size="1.778" layer="95"/>
-<wire x1="231.14" y1="137.16" x2="195.58" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MOTOR_R_PWM_B" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="11"/>
-<label x="195.58" y="134.62" size="1.778" layer="95"/>
-<wire x1="231.14" y1="134.62" x2="195.58" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DECK_1_IN1" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="20"/>
-<label x="256.54" y="124.46" size="1.778" layer="95"/>
-<wire x1="254" y1="124.46" x2="287.02" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DECK_1_IN2" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="22"/>
-<label x="256.54" y="121.92" size="1.778" layer="95"/>
-<wire x1="254" y1="121.92" x2="287.02" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DECK_2_IN1" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="24"/>
-<label x="256.54" y="119.38" size="1.778" layer="95"/>
-<wire x1="254" y1="119.38" x2="287.02" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DECK_2_IN2" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="26"/>
-<label x="256.54" y="116.84" size="1.778" layer="95"/>
-<wire x1="254" y1="116.84" x2="287.02" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DECK_3_IN1" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="28"/>
-<label x="256.54" y="114.3" size="1.778" layer="95"/>
-<wire x1="254" y1="114.3" x2="287.02" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DECK_3_IN2" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="30"/>
-<label x="256.54" y="111.76" size="1.778" layer="95"/>
-<wire x1="254" y1="111.76" x2="287.02" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DECK_1_POS" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="37"/>
-<label x="195.58" y="40.64" size="1.778" layer="95"/>
-<wire x1="231.14" y1="40.64" x2="195.58" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DECK_2_POS" class="0">
-<segment>
-<wire x1="254" y1="86.36" x2="289.56" y2="86.36" width="0.1524" layer="91"/>
-<label x="256.54" y="86.36" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="DECK_3_POS" class="0">
-<segment>
-<wire x1="254" y1="81.28" x2="289.56" y2="81.28" width="0.1524" layer="91"/>
-<label x="256.54" y="81.28" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="6"/>
-</segment>
-</net>
-<net name="SCLK" class="0">
-<segment>
-<wire x1="254" y1="50.8" x2="289.56" y2="50.8" width="0.1524" layer="91"/>
-<label x="256.54" y="50.8" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="30"/>
 </segment>
 </net>
 <net name="LED_SDA" class="0">
@@ -21660,7 +21632,7 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <port name="36V_RAW" side="left" coord="7.62" direction="pwr"/>
 <port name="5V_ISO" side="left" coord="2.54" direction="pwr"/>
 <port name="GND_ISO" side="left" coord="-5.08" direction="pwr"/>
-<port name="+5V" side="right" coord="7.62" direction="pwr"/>
+<port name="5V" side="right" coord="7.62" direction="pwr"/>
 <port name="GND" side="right" coord="-7.62" direction="pwr"/>
 <port name="MOW_EN" side="right" coord="5.08" direction="io"/>
 <port name="MOW_EN_ISO" side="left" coord="-7.62" direction="io"/>
@@ -21679,7 +21651,6 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <part name="R2" library="SparkFun-Resistors" deviceset="330KOHM" device="-0603-1/10W-1%" value="330k"/>
 <part name="GND5" library="power_supplies" deviceset="GND" device=""/>
 <part name="GND6" library="power_supplies" deviceset="GND" device=""/>
-<part name="5V" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="5V1" library="power_supplies" deviceset="5V_ISO" device=""/>
 <part name="36V_RAW2" library="power_supplies" deviceset="36V_RAW" device=""/>
 <part name="GND_CPU5" library="power_supplies" deviceset="GND_ISO" device=""/>
@@ -21691,7 +21662,6 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <part name="36V_RAW6" library="power_supplies" deviceset="36V_RAW" device=""/>
 <part name="5V4" library="power_supplies" deviceset="5V_ISO" device=""/>
 <part name="GND_CPU8" library="power_supplies" deviceset="GND_ISO" device=""/>
-<part name="5V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND1" library="power_supplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -21739,7 +21709,6 @@ Use single ended</text>
 <instance part="R2" gate="G$1" x="152.4" y="106.68" rot="R90"/>
 <instance part="GND5" gate="VR1" x="142.24" y="99.06"/>
 <instance part="GND6" gate="VR1" x="152.4" y="96.52"/>
-<instance part="5V" gate="1" x="144.78" y="127"/>
 <instance part="5V1" gate="G$1" x="88.9" y="63.5"/>
 <instance part="36V_RAW2" gate="A" x="45.72" y="139.7"/>
 <instance part="GND_CPU5" gate="G$1" x="45.72" y="96.52"/>
@@ -21751,7 +21720,6 @@ Use single ended</text>
 <instance part="36V_RAW6" gate="A" x="215.9" y="144.78" rot="R90"/>
 <instance part="5V4" gate="G$1" x="220.98" y="137.16" rot="R90"/>
 <instance part="GND_CPU8" gate="G$1" x="215.9" y="129.54" rot="R270"/>
-<instance part="5V3" gate="1" x="215.9" y="124.46" rot="R90"/>
 <instance part="GND1" gate="VR1" x="218.44" y="114.3" rot="R270"/>
 </instances>
 <busses>
@@ -21823,19 +21791,6 @@ Use single ended</text>
 <label x="226.06" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="VDD2"/>
-<pinref part="5V" gate="1" pin="+5V"/>
-<wire x1="137.16" y1="119.38" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="119.38" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="5V3" gate="1" pin="+5V"/>
-<wire x1="218.44" y1="124.46" x2="238.76" y2="124.46" width="0.1524" layer="91"/>
-<label x="223.52" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="MOW_EN_ISO" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="E"/>
@@ -21904,6 +21859,13 @@ Use single ended</text>
 <pinref part="5V4" gate="G$1" pin="5V_ISO"/>
 <wire x1="220.98" y1="137.16" x2="238.76" y2="137.16" width="0.1524" layer="91"/>
 <label x="223.52" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="VDD2"/>
+<wire x1="137.16" y1="119.38" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
+<label x="139.7" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -22150,6 +22112,7 @@ Threshold high: ~36V</text>
 <wire x1="121.92" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="127" y1="88.9" x2="160.02" y2="88.9" width="0.1524" layer="91"/>
+<junction x="127" y="88.9"/>
 </segment>
 </net>
 <net name="5V_ISO" class="0">
@@ -22562,7 +22525,7 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <port name="GND" side="right" coord="-7.62" direction="pwr"/>
 <port name="MOW_EN" side="right" coord="5.08" direction="io"/>
 <port name="VSENSE" side="right" coord="-2.54" direction="io"/>
-<port name="+5V" side="right" coord="2.54" direction="pwr"/>
+<port name="5V" side="right" coord="2.54" direction="pwr"/>
 <port name="5V_ISO" side="top" coord="-22.86" direction="pwr"/>
 <port name="GND_ISO" side="top" coord="-17.78" direction="pwr"/>
 </ports>
@@ -22591,7 +22554,6 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <part name="GND_CPU6" library="power_supplies" deviceset="GND_ISO" device=""/>
 <part name="GND_CPU7" library="power_supplies" deviceset="GND_ISO" device=""/>
 <part name="GND3" library="power_supplies" deviceset="GND" device=""/>
-<part name="5V" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="36V_RAW6" library="power_supplies" deviceset="36V_RAW" device=""/>
 <part name="5V4" library="power_supplies" deviceset="5V_ISO" device=""/>
 <part name="GND_CPU8" library="power_supplies" deviceset="GND_ISO" device=""/>
@@ -22601,7 +22563,6 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <part name="X4" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
 <part name="GND4" library="power_supplies" deviceset="GND" device=""/>
 <part name="36V1" library="power_supplies" deviceset="36V" device=""/>
-<part name="5V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="MOV1" library="power_supplies" deviceset="MOV-20D470K" device=""/>
 <part name="GND5" library="power_supplies" deviceset="GND" device=""/>
 </parts>
@@ -22652,7 +22613,6 @@ from mower supply</text>
 <instance part="GND_CPU6" gate="G$1" x="86.36" y="35.56"/>
 <instance part="GND_CPU7" gate="G$1" x="88.9" y="12.7"/>
 <instance part="GND3" gate="VR1" x="149.86" y="60.96"/>
-<instance part="5V" gate="1" x="152.4" y="88.9"/>
 <instance part="36V_RAW6" gate="A" x="17.78" y="162.56" rot="R90"/>
 <instance part="5V4" gate="G$1" x="22.86" y="154.94" rot="R90"/>
 <instance part="GND_CPU8" gate="G$1" x="17.78" y="147.32" rot="R270"/>
@@ -22662,7 +22622,6 @@ from mower supply</text>
 <instance part="X4" gate="G$1" x="30.48" y="73.66" rot="R180"/>
 <instance part="GND4" gate="VR1" x="228.6" y="160.02" rot="R270"/>
 <instance part="36V1" gate="A" x="233.68" y="152.4" rot="R90"/>
-<instance part="5V5" gate="1" x="228.6" y="142.24" rot="R90"/>
 <instance part="MOV1" gate="G$1" x="167.64" y="119.38" smashed="yes">
 <attribute name="NAME" x="165.1" y="106.68" size="1.778" layer="94" rot="R90"/>
 <attribute name="VALUE" x="171.704" y="114.046" size="1.778" layer="94" rot="R90"/>
@@ -22860,19 +22819,6 @@ from mower supply</text>
 <label x="152.4" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="5V" gate="1" pin="+5V"/>
-<portref moduleinst="ISO1" port="+5V"/>
-<wire x1="142.24" y1="81.28" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="81.28" x2="152.4" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="5V5" gate="1" pin="+5V"/>
-<wire x1="231.14" y1="142.24" x2="241.3" y2="142.24" width="0.1524" layer="91"/>
-<label x="236.22" y="142.24" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <portref moduleinst="RELAY_CONTROL1" port="MOW_EN_ISO"/>
@@ -22894,6 +22840,13 @@ from mower supply</text>
 <portref moduleinst="RELAY_CONTROL1" port="RDC-"/>
 <pinref part="X1" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="38.1" x2="142.24" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<portref moduleinst="ISO1" port="5V"/>
+<wire x1="142.24" y1="81.28" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
+<label x="144.78" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -23997,7 +23950,6 @@ from mower supply</text>
 <part name="U4" library="power_supplies" deviceset="AMC1200SDUB" device=""/>
 <part name="R9" library="SparkFun-Resistors" deviceset="330KOHM" device="-0603-1/10W-1%" value="330k"/>
 <part name="GND6" library="power_supplies" deviceset="GND" device=""/>
-<part name="5V" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND_CPU1" library="power_supplies" deviceset="GND_ISO" device=""/>
 <part name="GND_CPU8" library="power_supplies" deviceset="GND_ISO" device=""/>
 <part name="GND4" library="power_supplies" deviceset="GND" device=""/>
@@ -24067,8 +24019,7 @@ wire to 24V at motor controller</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="U4" gate="A" x="185.42" y="60.96" rot="MR0"/>
 <instance part="R9" gate="G$1" x="114.3" y="48.26" rot="R90"/>
-<instance part="GND6" gate="VR1" x="114.3" y="38.1"/>
-<instance part="5V" gate="1" x="119.38" y="81.28"/>
+<instance part="GND6" gate="VR1" x="114.3" y="30.48"/>
 <instance part="GND_CPU1" gate="G$1" x="200.66" y="40.64"/>
 <instance part="GND_CPU8" gate="G$1" x="187.96" y="45.72"/>
 <instance part="GND4" gate="VR1" x="127" y="50.8"/>
@@ -24097,8 +24048,9 @@ wire to 24V at motor controller</text>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="40.64" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="33.02" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="VR1" pin="GND"/>
+<label x="114.3" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U4" gate="A" pin="GND2"/>
@@ -24108,19 +24060,32 @@ wire to 24V at motor controller</text>
 <net name="PWM_A" class="0">
 <segment>
 <label x="40.64" y="149.86" size="1.778" layer="95"/>
-<wire x1="70.9676" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="70.9676" y1="149.86" x2="66.04" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="149.86" x2="73.66" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="149.86" x2="70.9676" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_B" class="0">
 <segment>
 <label x="40.64" y="132.08" size="1.778" layer="95"/>
-<wire x1="40.64" y1="132.08" x2="76.0476" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="132.08" x2="76.0476" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="132.08" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="76.0476" y1="132.08" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENABLE" class="0">
 <segment>
 <label x="40.64" y="114.3" size="1.778" layer="95"/>
-<wire x1="68.4276" y1="114.3" x2="40.64" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="78.5876" y1="114.3" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="114.3" x2="40.64" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="78.5876" y1="114.3" x2="81.28" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CURRENT_SENSE" class="0">
@@ -24246,27 +24211,8 @@ wire to 24V at motor controller</text>
 <wire x1="91.44" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="114.3" x2="81.28" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="5V" class="0">
 <segment>
-<pinref part="5V" gate="1" pin="+5V"/>
 <wire x1="119.38" y1="60.96" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U4" gate="A" pin="VDD2"/>
 <wire x1="119.38" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
@@ -24339,6 +24285,9 @@ wire to 24V at motor controller</text>
 <port name="DECK_3_PWM" side="left" coord="-33.02" direction="io"/>
 <port name="DECK_3_CURR_SENSE" side="left" coord="-35.56" direction="io"/>
 <port name="DECK_3_POS_SENSE" side="left" coord="-38.1" direction="io"/>
+<port name="GND_ISO" side="right" coord="-33.02" direction="io"/>
+<port name="5V" side="top" coord="-12.7" direction="io"/>
+<port name="5V_ISO" side="top" coord="-7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -24353,11 +24302,9 @@ wire to 24V at motor controller</text>
 <part name="5V1" library="power_supplies" deviceset="5V_ISO" device=""/>
 <part name="GND_CPU1" library="power_supplies" deviceset="GND_ISO" device=""/>
 <part name="GND6" library="power_supplies" deviceset="GND" device=""/>
-<part name="5V" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="5V2" library="power_supplies" deviceset="5V_ISO" device=""/>
 <part name="GND_CPU2" library="power_supplies" deviceset="GND_ISO" device=""/>
 <part name="GND1" library="power_supplies" deviceset="GND" device=""/>
-<part name="5V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24385,13 +24332,11 @@ wire to 24V at motor controller</text>
 <attribute name="VALUE" x="139.7" y="81.28" size="1.27" layer="96" rot="R90"/>
 </instance>
 <instance part="GND6" gate="VR1" x="101.6" y="91.44"/>
-<instance part="5V" gate="1" x="101.6" y="160.02"/>
 <instance part="5V2" gate="G$1" x="129.54" y="73.66"/>
 <instance part="GND_CPU2" gate="G$1" x="129.54" y="15.24" smashed="yes">
 <attribute name="VALUE" x="129.54" y="5.08" size="1.27" layer="96" rot="R90"/>
 </instance>
 <instance part="GND1" gate="VR1" x="91.44" y="15.24"/>
-<instance part="5V3" gate="1" x="91.44" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -24615,13 +24560,11 @@ wire to 24V at motor controller</text>
 </segment>
 <segment>
 <portref moduleinst="MOTOR_ISO1" port="5V"/>
-<pinref part="5V" gate="1" pin="+5V"/>
 <wire x1="101.6" y1="157.48" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
 <label x="101.6" y="147.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <portref moduleinst="MOTOR_ISO2" port="5V"/>
-<pinref part="5V3" gate="1" pin="+5V"/>
 <wire x1="91.44" y1="68.58" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
 <label x="91.44" y="63.5" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -24954,9 +24897,14 @@ wire to 24V at motor controller</text>
 <label x="180.34" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<portref moduleinst="RELAY_CONTROL_TOP1" port="+5V"/>
+<portref moduleinst="RELAY_CONTROL_TOP1" port="5V"/>
 <wire x1="228.6" y1="142.24" x2="241.3" y2="142.24" width="0.1524" layer="91"/>
 <label x="231.14" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="MOTOR_TOP1" port="5V"/>
+<wire x1="124.46" y1="99.06" x2="124.46" y2="106.68" width="0.1524" layer="91"/>
+<label x="124.46" y="101.6" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -25074,12 +25022,22 @@ wire to 24V at motor controller</text>
 <pinref part="5V1" gate="G$1" pin="5V_ISO"/>
 <wire x1="175.26" y1="162.56" x2="175.26" y2="154.94" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<portref moduleinst="MOTOR_TOP1" port="5V_ISO"/>
+<wire x1="129.54" y1="99.06" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
+<label x="129.54" y="99.06" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="GND_ISO" class="0">
 <segment>
 <portref moduleinst="RELAY_CONTROL_TOP1" port="GND_ISO"/>
 <pinref part="GND_CPU1" gate="G$1" pin="GND_ISO"/>
 <wire x1="180.34" y1="162.56" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="MOTOR_TOP1" port="GND_ISO"/>
+<wire x1="182.88" y1="17.78" x2="170.18" y2="17.78" width="0.1524" layer="91"/>
+<label x="172.72" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -25113,7 +25071,6 @@ wire to 24V at motor controller</text>
 <approved hash="106,1@MICROCONTROLLER,83.82,86.36,NC,,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,83.82,132.08,RESET,,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,83.82,81.28,RST,,,,,"/>
-<approved hash="106,1@MICROCONTROLLER,83.82,139.7,SCK,,,,,"/>
 <approved hash="113,1@IMU,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@JETSON_TX2_J26_GPIO,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@JETSON_J17_UART,130.071,89.431,FRAME1,,,,,"/>

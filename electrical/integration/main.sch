@@ -24146,8 +24146,8 @@ wire to 24V at motor controller</text>
 <instance part="GND3" gate="VR1" x="93.98" y="144.78" smashed="yes" rot="R270">
 <attribute name="VALUE" x="94.488" y="145.288" size="1.778" layer="96"/>
 </instance>
-<instance part="GND_CPU3" gate="G$1" x="205.74" y="127" smashed="yes" rot="R270">
-<attribute name="VALUE" x="206.756" y="127.254" size="1.778" layer="96"/>
+<instance part="GND_CPU3" gate="G$1" x="203.2" y="114.3" smashed="yes" rot="R270">
+<attribute name="VALUE" x="204.216" y="114.554" size="1.778" layer="96"/>
 </instance>
 <instance part="U1" gate="G$1" x="114.3" y="129.54"/>
 <instance part="R2" gate="G$1" x="137.16" y="127" smashed="yes" rot="R180">
@@ -24303,8 +24303,10 @@ wire to 24V at motor controller</text>
 </segment>
 <segment>
 <pinref part="GND_CPU3" gate="G$1" pin="GND_ISO"/>
-<pinref part="X1" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="127" x2="220.98" y2="127" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="114.3" x2="215.9" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="6"/>
+<wire x1="215.9" y1="114.3" x2="218.2876" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="218.2876" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>

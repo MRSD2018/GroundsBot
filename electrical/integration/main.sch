@@ -14051,82 +14051,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply1" urn="urn:adsk.eagle:library:371">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
- GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
- Please keep in mind, that these devices are necessary for the
- automatic wiring of the supply signals.&lt;p&gt;
- The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
- In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="+5V" urn="urn:adsk.eagle:symbol:26929/1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-<symbol name="+12V" urn="urn:adsk.eagle:symbol:26931/1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+12V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-<symbol name="+24V" urn="urn:adsk.eagle:symbol:26935/1">
-<wire x1="1.27" y1="-0.635" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+24V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="+5V" urn="urn:adsk.eagle:component:26963/1" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+12V" urn="urn:adsk.eagle:component:26959/1" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+12V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+24V" urn="urn:adsk.eagle:component:26964/1" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+24V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="sparkfun-IMU">
 <packages>
 <package name="SPARKFUN-9DOF-BREAKOUT">
@@ -21262,15 +21186,16 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <part name="GND1" library="power_supplies" deviceset="GND" device=""/>
 <part name="GND2" library="power_supplies" deviceset="GND" device=""/>
 <part name="GND7" library="power_supplies" deviceset="GND" device=""/>
-<part name="5V" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="12V" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device="" value="36V"/>
 <part name="F1" library="fuses" deviceset="0154004.DR" device=""/>
 <part name="F2" library="fuses" deviceset="0154004.DR" device=""/>
 <part name="GND8" library="power_supplies" deviceset="GND" device=""/>
 <part name="MOV1" library="power_supplies" deviceset="AVR-M2012C120MT6AB" device=""/>
 <part name="MOV2" library="power_supplies" deviceset="VC080503A100DP" device=""/>
 <part name="GND9" library="power_supplies" deviceset="GND" device=""/>
+<part name="LED1" library="CMD17-21VGD_TR8" deviceset="CMD17-21VGD_TR8" device=""/>
+<part name="LED2" library="CMD17-21VGD_TR8" deviceset="CMD17-21VGD_TR8" device=""/>
+<part name="LED3" library="CMD17-21VGD_TR8" deviceset="CMD17-21VGD_TR8" device=""/>
+<part name="36V2" library="power_supplies" deviceset="36V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21294,12 +21219,9 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <instance part="R3" gate="G$1" x="203.2" y="149.86" rot="R90"/>
 <instance part="R4" gate="G$1" x="180.34" y="149.86" rot="R90"/>
 <instance part="36V1" gate="A" x="63.5" y="157.48"/>
-<instance part="GND1" gate="VR1" x="180.34" y="132.08"/>
-<instance part="GND2" gate="VR1" x="193.04" y="132.08"/>
-<instance part="GND7" gate="VR1" x="203.2" y="132.08"/>
-<instance part="5V" gate="1" x="203.2" y="162.56"/>
-<instance part="12V" gate="1" x="193.04" y="162.56"/>
-<instance part="P+3" gate="1" x="180.34" y="162.56"/>
+<instance part="GND1" gate="VR1" x="180.34" y="114.3"/>
+<instance part="GND2" gate="VR1" x="193.04" y="114.3"/>
+<instance part="GND7" gate="VR1" x="203.2" y="114.3"/>
 <instance part="F1" gate="G$1" x="83.82" y="86.36"/>
 <instance part="F2" gate="G$1" x="86.36" y="139.7"/>
 <instance part="GND8" gate="VR1" x="48.26" y="111.76"/>
@@ -21310,6 +21232,19 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <attribute name="DESCRIPTION" x="40.64" y="63.5" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND9" gate="VR1" x="48.26" y="58.42"/>
+<instance part="LED1" gate="A" x="180.34" y="137.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="177.651840625" y="129.492890625" size="2.085609375" layer="95" ratio="10" rot="SR270"/>
+<attribute name="DESCRIPTION" x="170.18" y="152.4" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="LED2" gate="A" x="193.04" y="137.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="190.351840625" y="129.492890625" size="2.085609375" layer="95" ratio="10" rot="SR270"/>
+<attribute name="DESCRIPTION" x="182.88" y="152.4" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="LED3" gate="A" x="203.2" y="137.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="200.511840625" y="129.492890625" size="2.085609375" layer="95" ratio="10" rot="SR270"/>
+<attribute name="DESCRIPTION" x="193.04" y="152.4" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="36V2" gate="A" x="180.34" y="160.02"/>
 </instances>
 <busses>
 </busses>
@@ -21318,7 +21253,7 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="137.16" x2="71.12" y2="139.7" width="0.1524" layer="91"/>
-<label x="58.42" y="139.7" size="1.778" layer="95"/>
+<label x="53.34" y="139.7" size="1.778" layer="95"/>
 <wire x1="71.12" y1="139.7" x2="63.5" y2="139.7" width="0.1524" layer="91"/>
 <junction x="63.5" y="139.7"/>
 <pinref part="F2" gate="G$1" pin="1"/>
@@ -21341,22 +21276,24 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <wire x1="99.06" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 <junction x="99.06" y="101.6"/>
 <junction x="99.06" y="104.14"/>
-<label x="58.42" y="104.14" size="1.778" layer="95"/>
+<label x="76.2" y="104.14" size="1.778" layer="95"/>
 <wire x1="68.58" y1="104.14" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
 <junction x="68.58" y="104.14"/>
 <junction x="63.5" y="104.14"/>
+<label x="193.04" y="162.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="160.02" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="12V" gate="1" pin="+12V"/>
+<wire x1="193.04" y1="160.02" x2="193.04" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="157.48" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="160.02" x2="193.04" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="160.02" x2="203.2" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="5V" gate="1" pin="+5V"/>
+<label x="203.2" y="157.48" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -21387,7 +21324,7 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="160.02" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="1" pin="+24V"/>
+<pinref part="36V2" gate="A" pin="36V"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -21449,27 +21386,27 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <label x="91.44" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="GND1" gate="VR1" pin="GND"/>
-<wire x1="180.34" y1="144.78" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="GND2" gate="VR1" pin="GND"/>
-<wire x1="193.04" y1="144.78" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="GND7" gate="VR1" pin="GND"/>
-<wire x1="203.2" y1="144.78" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND8" gate="VR1" pin="GND"/>
 <pinref part="MOV1" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <pinref part="MOV2" gate="G$1" pin="P$2"/>
 <pinref part="GND9" gate="VR1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="A" pin="2"/>
+<pinref part="GND1" gate="VR1" pin="GND"/>
+<wire x1="180.34" y1="127" x2="180.34" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="A" pin="2"/>
+<pinref part="GND2" gate="VR1" pin="GND"/>
+<wire x1="193.04" y1="127" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="VR1" pin="GND"/>
+<pinref part="LED3" gate="A" pin="2"/>
+<wire x1="203.2" y1="116.84" x2="203.2" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -21493,6 +21430,27 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <wire x1="104.14" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="81.28" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
 <junction x="96.52" y="83.82"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="LED1" gate="A" pin="1"/>
+<wire x1="180.34" y1="144.78" x2="180.34" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="LED2" gate="A" pin="1"/>
+<wire x1="193.04" y1="144.78" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="LED3" gate="A" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="137.16" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -25044,9 +25002,6 @@ wire to 24V at motor controller</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1@POWER_TOP,203.2,160.02,+5V,5V,,,,"/>
-<approved hash="102,1@POWER_TOP,193.04,160.02,+12V,12V,,,,"/>
-<approved hash="102,1@POWER_TOP,180.34,160.02,+24V,36V,,,,"/>
 <approved hash="104,1@MICROCONTROLLER,20.32,5.08,U1,VDD,3V3,,,"/>
 <approved hash="104,1@RC_INPUT,76.2,114.3,U1,VCC,3.3V,,,"/>
 <approved hash="104,1@REG,154.94,114.3,U1,OUT,5V_ISO,,,"/>

@@ -20042,6 +20042,31 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="20.32" y1="-15.24" x2="10.16" y2="-15.24" width="0.1524" layer="91"/>
 <label x="10.16" y="-15.24" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND_A"/>
+<label x="104.14" y="152.4" size="1.778" layer="95" rot="R90"/>
+<wire x1="104.14" y1="152.4" x2="104.14" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND1"/>
+<label x="101.6" y="152.4" size="1.778" layer="95" rot="R90"/>
+<wire x1="101.6" y1="152.4" x2="101.6" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND_B"/>
+<label x="106.68" y="152.4" size="1.778" layer="95" rot="R90"/>
+<wire x1="106.68" y1="152.4" x2="106.68" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND_1"/>
+<label x="68.58" y="73.66" size="1.778" layer="95"/>
+<wire x1="83.82" y1="73.66" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND_2"/>
+<label x="68.58" y="71.12" size="1.778" layer="95"/>
+<wire x1="83.82" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -20220,25 +20245,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <junction x="2.54" y="5.08"/>
 </segment>
 </net>
-<net name="GND1" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND_1"/>
-<label x="68.58" y="73.66" size="1.778" layer="95"/>
-<wire x1="83.82" y1="73.66" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND1"/>
-<label x="101.6" y="152.4" size="1.778" layer="95" rot="R90"/>
-<wire x1="101.6" y1="152.4" x2="101.6" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND_2"/>
-<label x="68.58" y="71.12" size="1.778" layer="95"/>
-<wire x1="83.82" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VIN"/>
@@ -20275,20 +20281,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <pinref part="U$1" gate="G$1" pin="AREF"/>
 <label x="99.06" y="152.4" size="1.778" layer="95" rot="R90"/>
 <wire x1="99.06" y1="152.4" x2="99.06" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GNDA" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND_A"/>
-<label x="104.14" y="152.4" size="1.778" layer="95" rot="R90"/>
-<wire x1="104.14" y1="152.4" x2="104.14" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GNDB" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND_B"/>
-<label x="106.68" y="152.4" size="1.778" layer="95" rot="R90"/>
-<wire x1="106.68" y1="152.4" x2="106.68" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5VA" class="0">

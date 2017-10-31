@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20100,11 +20100,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </net>
 <net name="RX2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="RX2"/>
-<label x="68.58" y="114.3" size="1.778" layer="95"/>
-<wire x1="83.82" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="35"/>
 <label x="195.58" y="104.14" size="1.778" layer="95"/>
 <wire x1="231.14" y1="104.14" x2="195.58" y2="104.14" width="0.1524" layer="91"/>
@@ -20148,14 +20143,14 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </net>
 <net name="SBUS" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="RX0"/>
-<label x="68.58" y="104.14" size="1.778" layer="95"/>
-<wire x1="83.82" y1="104.14" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="1"/>
 <label x="195.58" y="147.32" size="1.778" layer="95"/>
 <wire x1="231.14" y1="147.32" x2="195.58" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="RX2"/>
+<label x="68.58" y="114.3" size="1.778" layer="95"/>
+<wire x1="83.82" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DBGRST" class="0">
@@ -21221,6 +21216,13 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="-2.54" x2="172.72" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="-2.54" x2="172.72" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RX0" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="RX0"/>
+<label x="68.58" y="104.14" size="1.778" layer="95"/>
+<wire x1="83.82" y1="104.14" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

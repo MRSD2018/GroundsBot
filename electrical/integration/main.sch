@@ -14857,80 +14857,6 @@ Source: www.st.com, BAT60J.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="ST141D00">
-<packages>
-<package name="SW_ST141D00">
-<wire x1="-12.65" y1="-2.75" x2="-12.65" y2="2.75" width="0" layer="46"/>
-<wire x1="-11.55" y1="2.75" x2="-11.55" y2="-2.75" width="0" layer="46"/>
-<wire x1="-12.65" y1="2.75" x2="-12.1" y2="3.3" width="0" layer="46" curve="-90"/>
-<wire x1="-12.1" y1="3.3" x2="-11.55" y2="2.75" width="0" layer="46" curve="-90"/>
-<wire x1="-12.1" y1="-3.3" x2="-12.65" y2="-2.75" width="0" layer="46" curve="-90"/>
-<wire x1="-11.55" y1="-2.75" x2="-12.1" y2="-3.3" width="0" layer="46" curve="-90"/>
-<wire x1="11.55" y1="-2.75" x2="11.55" y2="2.75" width="0" layer="46"/>
-<wire x1="12.65" y1="2.75" x2="12.65" y2="-2.75" width="0" layer="46"/>
-<wire x1="11.55" y1="2.75" x2="12.1" y2="3.3" width="0" layer="46" curve="-90"/>
-<wire x1="12.1" y1="3.3" x2="12.65" y2="2.75" width="0" layer="46" curve="-90"/>
-<wire x1="12.1" y1="-3.3" x2="11.55" y2="-2.75" width="0" layer="46" curve="-90"/>
-<wire x1="12.65" y1="-2.75" x2="12.1" y2="-3.3" width="0" layer="46" curve="-90"/>
-<wire x1="-14" y1="7.75" x2="14" y2="7.75" width="0.127" layer="21"/>
-<wire x1="14" y1="7.75" x2="14" y2="-7.75" width="0.127" layer="51"/>
-<wire x1="14" y1="-7.75" x2="-14" y2="-7.75" width="0.127" layer="21"/>
-<wire x1="-14" y1="-7.75" x2="-14" y2="7.75" width="0.127" layer="51"/>
-<wire x1="-14" y1="4" x2="-14" y2="7.75" width="0.127" layer="21"/>
-<wire x1="-14" y1="-7.75" x2="-14" y2="-4" width="0.127" layer="21"/>
-<wire x1="14" y1="-7.75" x2="14" y2="-4" width="0.127" layer="21"/>
-<wire x1="14" y1="4" x2="14" y2="7.75" width="0.127" layer="21"/>
-<wire x1="-14.25" y1="8" x2="14.25" y2="8" width="0.127" layer="39"/>
-<wire x1="14.25" y1="8" x2="14.25" y2="-8" width="0.127" layer="39"/>
-<wire x1="14.25" y1="-8" x2="-14.25" y2="-8" width="0.127" layer="39"/>
-<wire x1="-14.25" y1="-8" x2="-14.25" y2="8" width="0.127" layer="39"/>
-<circle x="-15.2" y="0.05" radius="0.25" width="0.6096" layer="21"/>
-<text x="-13.8232" y="8.063559375" size="1.272140625" layer="25">&gt;NAME</text>
-<text x="-14.0016" y="-9.25106875" size="1.27015" layer="27">&gt;VALUE</text>
-<pad name="1" x="-12.1" y="0" drill="1.05" diameter="3.7" shape="long" rot="R90"/>
-<pad name="3" x="12.1" y="0" drill="1.05" diameter="3.7" shape="long" rot="R90"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ST141D00">
-<circle x="-1.27" y="0" radius="0.254" width="0.254" layer="94"/>
-<circle x="1.27" y="0" radius="0.254" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="0" x2="1.27" y2="0.762" width="0.254" layer="94"/>
-<wire x1="-1.524" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="1.524" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<text x="-2.54148125" y="2.54148125" size="1.270740625" layer="95">&gt;NAME</text>
-<text x="-2.54455" y="-2.54455" size="1.27226875" layer="96">&gt;VALUE</text>
-<pin name="3" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="1" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ST141D00" prefix="S">
-<description>ST1 Series SP Off-On Through Hole High Amp Toggle Switch</description>
-<gates>
-<gate name="G$1" symbol="ST141D00" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SW_ST141D00">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Good"/>
-<attribute name="DESCRIPTION" value="ST1 Series SP Off-On Through Hole High Amp Toggle Switch"/>
-<attribute name="MF" value="E-Switch"/>
-<attribute name="MP" value="ST141D00"/>
-<attribute name="PACKAGE" value="None"/>
-<attribute name="PRICE" value="3.46 USD"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="LMV762MM">
 <packages>
 <package name="SOP65P490X110-8N">
@@ -21972,7 +21898,6 @@ Threshold high: ~36V</text>
 <part name="RCCM" library="passive" deviceset="RES_52R3_2512_1W_1%" device=""/>
 <part name="RCCB1" library="passive" deviceset="RES_52R3_2512_1W_1%" device=""/>
 <part name="RCCB2" library="passive" deviceset="RES_52R3_2512_1W_1%" device=""/>
-<part name="S2" library="ST141D00" deviceset="ST141D00" device=""/>
 <part name="5V1" library="power_supplies" deviceset="5V_ISO" device=""/>
 <part name="36V_RAW2" library="power_supplies" deviceset="36V_RAW" device=""/>
 <part name="GND_CPU5" library="power_supplies" deviceset="GND_ISO" device=""/>
@@ -21984,10 +21909,11 @@ Threshold high: ~36V</text>
 <part name="36V_RAW6" library="power_supplies" deviceset="36V_RAW" device=""/>
 <part name="5V4" library="power_supplies" deviceset="5V_ISO" device=""/>
 <part name="GND_CPU8" library="power_supplies" deviceset="GND_ISO" device=""/>
-<part name="X3" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
-<part name="X1" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
+<part name="JESTP" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
+<part name="JTHR" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
 <part name="D1" library="discrete" deviceset="1N4148WSTR" device=""/>
 <part name="D2" library="discrete" deviceset="1N4148WSTR" device=""/>
+<part name="JMOW" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
 </parts>
 <sheets>
 <sheet>
@@ -21996,7 +21922,7 @@ Threshold high: ~36V</text>
 <wire x1="134.62" y1="175.26" x2="254" y2="175.26" width="0.1524" layer="97" style="longdash"/>
 <text x="129.54" y="116.84" size="2.54" layer="97">Drive Motor Relay
 Coil Control</text>
-<text x="208.28" y="116.84" size="2.54" layer="97">Mow Motor Relay
+<text x="228.6" y="106.68" size="2.54" layer="97">Mow Motor Relay
 Coil Control</text>
 <text x="7.62" y="154.94" size="5.08" layer="97">Relay coil drives, enables,
 and Unver Voltage LockOut</text>
@@ -22009,7 +21935,7 @@ PWR = 0.083^2 * 52  = 0.358W
 At max vbat 42V and lowest batch relay coil resistance 260R, CC XSTR drops 11.8V =&gt; 1W
 Need 50x50mm 1oz copper for 1.6W rating</text>
 <text x="134.62" y="137.16" size="2.54" layer="97">Wires to E-Stop</text>
-<text x="165.1" y="124.46" size="2.54" layer="97">Mower enable toggle</text>
+<text x="208.28" y="127" size="2.54" layer="97">Mower enable toggle</text>
 <text x="218.44" y="15.24" size="1.778" layer="94">RELAY COIL DRIVE</text>
 <text x="231.14" y="5.08" size="1.778" layer="94">5/5</text>
 </plain>
@@ -22055,7 +21981,6 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <attribute name="NAME" x="201.676" y="93.98" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="196.596" y="96.52" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
-<instance part="S2" gate="G$1" x="203.2" y="124.46" rot="R270"/>
 <instance part="5V1" gate="G$1" x="20.32" y="101.6"/>
 <instance part="36V_RAW2" gate="A" x="25.4" y="109.22"/>
 <instance part="GND_CPU5" gate="G$1" x="25.4" y="58.42"/>
@@ -22067,8 +21992,8 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <instance part="36V_RAW6" gate="A" x="215.9" y="167.64" rot="R90"/>
 <instance part="5V4" gate="G$1" x="220.98" y="160.02" rot="R90"/>
 <instance part="GND_CPU8" gate="G$1" x="215.9" y="152.4" rot="R270"/>
-<instance part="X3" gate="G$1" x="116.84" y="139.7" rot="R180"/>
-<instance part="X1" gate="G$1" x="116.84" y="157.48" rot="R180"/>
+<instance part="JESTP" gate="G$1" x="116.84" y="139.7" rot="R180"/>
+<instance part="JTHR" gate="G$1" x="116.84" y="157.48" rot="R180"/>
 <instance part="D1" gate="G$1" x="124.46" y="109.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="124.079" y="104.394" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="123.571" y="112.014" size="1.778" layer="96" rot="R90"/>
@@ -22077,6 +22002,7 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <attribute name="NAME" x="202.819" y="104.394" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="199.771" y="101.854" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="JMOW" gate="G$1" x="198.12" y="124.46" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -22114,10 +22040,10 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <segment>
 <wire x1="203.2" y1="111.76" x2="226.06" y2="111.76" width="0.1524" layer="91"/>
 <label x="213.36" y="111.76" size="2.54" layer="95"/>
-<pinref part="S2" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="119.38" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="121.92" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <junction x="203.2" y="111.76"/>
+<pinref part="JMOW" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RMC-" class="0">
@@ -22153,15 +22079,16 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <segment>
 <wire x1="124.46" y1="111.76" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
 <label x="134.62" y="111.76" size="2.54" layer="95"/>
-<wire x1="124.46" y1="111.76" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="137.16" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="129.54" x2="203.2" y2="129.54" width="0.1524" layer="91"/>
-<junction x="124.46" y="129.54"/>
-<pinref part="S2" gate="G$1" pin="3"/>
-<pinref part="X3" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="111.76" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="137.16" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="132.08" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
+<junction x="124.46" y="132.08"/>
+<pinref part="JESTP" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="137.16" x2="124.46" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <junction x="124.46" y="111.76"/>
+<pinref part="JMOW" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="124.46" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RDC-" class="0">
@@ -22222,9 +22149,9 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <net name="N$1" class="0">
 <segment>
 <wire x1="124.46" y1="154.94" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="X3" gate="G$1" pin="2"/>
+<pinref part="JESTP" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="139.7" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="JTHR" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="154.94" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -22232,7 +22159,7 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <segment>
 <wire x1="124.46" y1="167.64" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="36V_RAW1" gate="A" pin="36V_RAW"/>
-<pinref part="X1" gate="G$1" pin="2"/>
+<pinref part="JTHR" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="157.48" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -22334,8 +22261,8 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <part name="GND_CPU8" library="power_supplies" deviceset="GND_ISO" device=""/>
 <part name="X1" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
 <part name="X2" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
-<part name="X3" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
-<part name="X4" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
+<part name="JBAT" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
+<part name="JISO" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
 <part name="GND4" library="power_supplies" deviceset="GND" device=""/>
 <part name="36V1" library="power_supplies" deviceset="36V" device=""/>
 <part name="MOV1" library="power_supplies" deviceset="MOV-20D470K" device=""/>
@@ -22393,8 +22320,8 @@ from mower supply</text>
 <instance part="GND_CPU8" gate="G$1" x="17.78" y="147.32" rot="R270"/>
 <instance part="X1" gate="G$1" x="193.04" y="38.1"/>
 <instance part="X2" gate="G$1" x="200.66" y="48.26"/>
-<instance part="X3" gate="G$1" x="86.36" y="132.08" rot="R180"/>
-<instance part="X4" gate="G$1" x="30.48" y="73.66" rot="R180"/>
+<instance part="JBAT" gate="G$1" x="86.36" y="132.08" rot="R180"/>
+<instance part="JISO" gate="G$1" x="30.48" y="73.66" rot="R180"/>
 <instance part="GND4" gate="VR1" x="228.6" y="160.02" rot="R270"/>
 <instance part="36V1" gate="A" x="233.68" y="152.4" rot="R90"/>
 <instance part="MOV1" gate="G$1" x="167.64" y="119.38" smashed="yes">
@@ -22442,7 +22369,7 @@ from mower supply</text>
 <pinref part="GND1" gate="VR1" pin="GND"/>
 <wire x1="93.98" y1="127" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="129.54" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="X3" gate="G$1" pin="1"/>
+<pinref part="JBAT" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -22519,7 +22446,7 @@ from mower supply</text>
 <pinref part="36V_RAW5" gate="A" pin="36V_RAW"/>
 <wire x1="53.34" y1="73.66" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
 <label x="40.64" y="73.66" size="1.778" layer="95"/>
-<pinref part="X4" gate="G$1" pin="2"/>
+<pinref part="JISO" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="36V_RAW3" gate="A" pin="36V_RAW"/>
@@ -22543,7 +22470,7 @@ from mower supply</text>
 <pinref part="FH3" gate="A" pin="2"/>
 <wire x1="91.44" y1="132.08" x2="127" y2="132.08" width="0.1524" layer="91"/>
 <junction x="127" y="132.08"/>
-<pinref part="X3" gate="G$1" pin="2"/>
+<pinref part="JBAT" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND_ISO" class="0">
@@ -22552,7 +22479,7 @@ from mower supply</text>
 <wire x1="38.1" y1="71.12" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="GND_CPU1" gate="G$1" pin="GND_ISO"/>
 <label x="38.1" y="58.42" size="1.778" layer="95" rot="R90"/>
-<pinref part="X4" gate="G$1" pin="1"/>
+<pinref part="JISO" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND_CPU2" gate="G$1" pin="GND_ISO"/>

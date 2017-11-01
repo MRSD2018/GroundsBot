@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -24467,9 +24467,7 @@ wire to 24V at motor controller</text>
 <port name="DECK_3_PWM" side="left" coord="-33.02" direction="io"/>
 <port name="DECK_3_CURR_SENSE" side="left" coord="-35.56" direction="io"/>
 <port name="DECK_3_POS_SENSE" side="left" coord="-38.1" direction="io"/>
-<port name="GND_ISO" side="right" coord="-33.02" direction="io"/>
 <port name="5V" side="top" coord="-12.7" direction="io"/>
-<port name="5V_ISO" side="top" coord="-7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -24481,26 +24479,20 @@ wire to 24V at motor controller</text>
 <part name="X6" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS4_?" device="43045-0409" value="43045-0409"/>
 <part name="X7" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS4_?" device="43045-0409" value="43045-0409"/>
 <part name="X8" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS4_?" device="43045-0409" value="43045-0409"/>
-<part name="5V1" library="power_supplies" deviceset="5V_ISO" device=""/>
-<part name="GND_CPU1" library="power_supplies" deviceset="GND_ISO" device=""/>
 <part name="GND6" library="power_supplies" deviceset="GND" device=""/>
-<part name="5V2" library="power_supplies" deviceset="5V_ISO" device=""/>
-<part name="GND_CPU2" library="power_supplies" deviceset="GND_ISO" device=""/>
+<part name="JDL" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS6_?" device="43045-0609" value="43045-0609"/>
+<part name="JDR" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS6_?" device="43045-0609" value="43045-0609"/>
 <part name="GND1" library="power_supplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="48.26" y="58.42" size="1.778" layer="95">Motor Controller 2</text>
+<text x="147.32" y="73.66" size="1.778" layer="95">Motor Controller Right</text>
 <text x="193.04" y="165.1" size="1.778" layer="95">Deck Controller 1</text>
 <text x="193.04" y="139.7" size="1.778" layer="95">Deck Controller 2</text>
 <text x="193.04" y="116.84" size="1.778" layer="95">Deck Controller 3</text>
-<text x="55.88" y="147.32" size="1.778" layer="95">Motor Controller 1</text>
+<text x="147.32" y="124.46" size="1.778" layer="95">Motor Controller Left</text>
 </plain>
-<moduleinsts>
-<moduleinst name="MOTOR_ISO1" module="MOTOR_ISO" x="119.38" y="124.46"/>
-<moduleinst name="MOTOR_ISO2" module="MOTOR_ISO" x="109.22" y="43.18"/>
-</moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="X3" gate="G$1" x="241.3" y="152.4"/>
@@ -24509,16 +24501,10 @@ wire to 24V at motor controller</text>
 <instance part="X6" gate="G$1" x="241.3" y="81.28"/>
 <instance part="X7" gate="G$1" x="241.3" y="60.96"/>
 <instance part="X8" gate="G$1" x="241.3" y="38.1"/>
-<instance part="5V1" gate="G$1" x="139.7" y="157.48"/>
-<instance part="GND_CPU1" gate="G$1" x="139.7" y="91.44" smashed="yes">
-<attribute name="VALUE" x="139.7" y="81.28" size="1.27" layer="96" rot="R90"/>
-</instance>
-<instance part="GND6" gate="VR1" x="101.6" y="91.44"/>
-<instance part="5V2" gate="G$1" x="129.54" y="73.66"/>
-<instance part="GND_CPU2" gate="G$1" x="129.54" y="15.24" smashed="yes">
-<attribute name="VALUE" x="129.54" y="5.08" size="1.27" layer="96" rot="R90"/>
-</instance>
-<instance part="GND1" gate="VR1" x="91.44" y="15.24"/>
+<instance part="GND6" gate="VR1" x="119.38" y="106.68"/>
+<instance part="JDL" gate="G$1" x="139.7" y="116.84"/>
+<instance part="JDR" gate="G$1" x="139.7" y="68.58"/>
+<instance part="GND1" gate="VR1" x="119.38" y="58.42"/>
 </instances>
 <busses>
 </busses>
@@ -24555,40 +24541,45 @@ wire to 24V at motor controller</text>
 <pinref part="X6" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<portref moduleinst="MOTOR_ISO1" port="GND"/>
 <pinref part="GND6" gate="VR1" pin="GND"/>
-<wire x1="101.6" y1="93.98" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
-<label x="101.6" y="99.06" size="1.778" layer="95" rot="R90"/>
+<wire x1="119.38" y1="109.22" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="JDL" gate="G$1" pin="6"/>
+<wire x1="119.38" y1="111.76" x2="134.62" y2="111.76" width="0.1524" layer="91"/>
+<label x="121.92" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<portref moduleinst="MOTOR_ISO2" port="GND"/>
 <pinref part="GND1" gate="VR1" pin="GND"/>
-<wire x1="91.44" y1="17.78" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
-<label x="91.44" y="17.78" size="1.778" layer="95" rot="R90"/>
+<wire x1="119.38" y1="60.96" x2="119.38" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="JDR" gate="G$1" pin="6"/>
+<wire x1="119.38" y1="63.5" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_A_1" class="0">
 <segment>
-<label x="58.42" y="129.54" size="1.778" layer="95"/>
-<wire x1="86.2076" y1="129.54" x2="58.42" y2="129.54" width="0.1524" layer="91"/>
+<label x="83.82" y="121.92" size="1.778" layer="95"/>
+<pinref part="JDL" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="121.92" x2="134.62" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_B_1" class="0">
 <segment>
-<label x="58.42" y="127" size="1.778" layer="95"/>
-<wire x1="58.42" y1="127" x2="86.2076" y2="127" width="0.1524" layer="91"/>
+<label x="83.82" y="119.38" size="1.778" layer="95"/>
+<pinref part="JDL" gate="G$1" pin="3"/>
+<wire x1="83.82" y1="119.38" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENABLE_1" class="0">
 <segment>
-<label x="58.42" y="124.46" size="1.778" layer="95"/>
-<wire x1="86.2076" y1="124.46" x2="58.42" y2="124.46" width="0.1524" layer="91"/>
+<label x="83.82" y="116.84" size="1.778" layer="95"/>
+<pinref part="JDL" gate="G$1" pin="4"/>
+<wire x1="83.82" y1="116.84" x2="134.62" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CURRENT_SENSE_1" class="0">
 <segment>
-<label x="58.42" y="121.92" size="1.778" layer="95"/>
-<wire x1="58.42" y1="121.92" x2="86.2076" y2="121.92" width="0.1524" layer="91"/>
+<label x="83.82" y="114.3" size="1.778" layer="95"/>
+<pinref part="JDL" gate="G$1" pin="5"/>
+<wire x1="83.82" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="-5.08" y="0" size="1.778" layer="95"/>
@@ -24597,26 +24588,30 @@ wire to 24V at motor controller</text>
 </net>
 <net name="PWM_A_2" class="0">
 <segment>
-<label x="48.26" y="48.26" size="1.778" layer="95"/>
-<wire x1="48.26" y1="48.26" x2="76.0476" y2="48.26" width="0.1524" layer="91"/>
+<label x="83.82" y="73.66" size="1.778" layer="95"/>
+<pinref part="JDR" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_B_2" class="0">
 <segment>
-<label x="48.26" y="45.72" size="1.778" layer="95"/>
-<wire x1="48.26" y1="45.72" x2="76.0476" y2="45.72" width="0.1524" layer="91"/>
+<label x="83.82" y="71.12" size="1.778" layer="95"/>
+<pinref part="JDR" gate="G$1" pin="3"/>
+<wire x1="83.82" y1="71.12" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENABLE_2" class="0">
 <segment>
-<label x="48.26" y="43.18" size="1.778" layer="95"/>
-<wire x1="48.26" y1="43.18" x2="76.0476" y2="43.18" width="0.1524" layer="91"/>
+<label x="83.82" y="68.58" size="1.778" layer="95"/>
+<pinref part="JDR" gate="G$1" pin="4"/>
+<wire x1="83.82" y1="68.58" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CURRENT_SENSE_2" class="0">
 <segment>
-<label x="48.26" y="40.64" size="1.778" layer="95"/>
-<wire x1="48.26" y1="40.64" x2="76.0476" y2="40.64" width="0.1524" layer="91"/>
+<label x="83.82" y="66.04" size="1.778" layer="95"/>
+<pinref part="JDR" gate="G$1" pin="5"/>
+<wire x1="83.82" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DECK_1_IN_1" class="0">
@@ -24741,42 +24736,14 @@ wire to 24V at motor controller</text>
 <pinref part="X6" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<portref moduleinst="MOTOR_ISO1" port="5V"/>
-<wire x1="101.6" y1="157.48" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
-<label x="101.6" y="147.32" size="1.778" layer="95" rot="R90"/>
+<wire x1="119.38" y1="124.46" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
+<label x="124.46" y="127" size="1.778" layer="95" rot="R180"/>
+<pinref part="JDL" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<portref moduleinst="MOTOR_ISO2" port="5V"/>
-<wire x1="91.44" y1="68.58" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
-<label x="91.44" y="63.5" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="5V_ISO" class="0">
-<segment>
-<pinref part="5V1" gate="G$1" pin="5V_ISO"/>
-<wire x1="139.7" y1="157.48" x2="139.7" y2="142.24" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_ISO1" port="5V_ISO"/>
-<label x="139.7" y="144.78" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="5V2" gate="G$1" pin="5V_ISO"/>
-<wire x1="129.54" y1="73.66" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_ISO2" port="5V_ISO"/>
-<label x="129.54" y="63.5" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="GND_ISO" class="0">
-<segment>
-<pinref part="GND_CPU1" gate="G$1" pin="GND_ISO"/>
-<wire x1="139.7" y1="93.98" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_ISO1" port="GND_ISO"/>
-<label x="139.7" y="96.52" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="GND_CPU2" gate="G$1" pin="GND_ISO"/>
-<wire x1="129.54" y1="17.78" x2="129.54" y2="25.4" width="0.1524" layer="91"/>
-<portref moduleinst="MOTOR_ISO2" port="GND_ISO"/>
-<label x="129.54" y="15.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="119.38" y1="76.2" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
+<label x="124.46" y="78.74" size="1.778" layer="95" rot="R180"/>
+<pinref part="JDR" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -25204,22 +25171,12 @@ wire to 24V at motor controller</text>
 <pinref part="5V1" gate="G$1" pin="5V_ISO"/>
 <wire x1="175.26" y1="162.56" x2="175.26" y2="154.94" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<portref moduleinst="MOTOR_TOP1" port="5V_ISO"/>
-<wire x1="129.54" y1="99.06" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
-<label x="129.54" y="99.06" size="1.778" layer="95" rot="R90"/>
-</segment>
 </net>
 <net name="GND_ISO" class="0">
 <segment>
 <portref moduleinst="RELAY_CONTROL_TOP1" port="GND_ISO"/>
 <pinref part="GND_CPU1" gate="G$1" pin="GND_ISO"/>
 <wire x1="180.34" y1="162.56" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<portref moduleinst="MOTOR_TOP1" port="GND_ISO"/>
-<wire x1="182.88" y1="17.78" x2="170.18" y2="17.78" width="0.1524" layer="91"/>
-<label x="172.72" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -25243,9 +25200,6 @@ wire to 24V at motor controller</text>
 <approved hash="106,1@MICROCONTROLLER,83.82,99.06,DBGRST,,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,83.82,96.52,DBGSDIO,,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,83.82,93.98,DBGSWCLK,,,,,"/>
-<approved hash="106,1@MICROCONTROLLER,83.82,71.12,GND2,,,,,"/>
-<approved hash="106,1@MICROCONTROLLER,104.14,152.4,GNDA,,,,,"/>
-<approved hash="106,1@MICROCONTROLLER,106.68,152.4,GNDB,,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,83.82,83.82,IOREF,,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,83.82,86.36,NC,,,,,"/>
 <approved hash="106,1@MICROCONTROLLER,83.82,132.08,RESET,,,,,"/>

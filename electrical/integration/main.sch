@@ -19991,65 +19991,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="MOTOR_L_PWMA" class="0">
 <segment>
-<label x="139.7" y="99.06" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="99.06" x2="175.26" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="2"/>
+<label x="142.24" y="93.98" size="1.778" layer="95"/>
+<wire x1="139.8524" y1="93.98" x2="172.5676" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_L_PWMB" class="0">
 <segment>
-<label x="139.7" y="96.52" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="3"/>
-<wire x1="139.8524" y1="96.52" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
+<label x="142.24" y="91.44" size="1.778" layer="95"/>
+<wire x1="139.8524" y1="91.44" x2="172.5676" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_R_PWMA" class="0">
 <segment>
-<label x="139.7" y="93.98" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="4"/>
+<label x="142.24" y="88.9" size="1.778" layer="95"/>
+<wire x1="139.8524" y1="88.9" x2="172.5676" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_R_PWMB" class="0">
 <segment>
-<label x="139.7" y="91.44" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="91.44" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="5"/>
+<label x="142.24" y="86.36" size="1.778" layer="95"/>
+<wire x1="139.8524" y1="86.36" x2="172.5676" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DECK_1_PWM" class="0">
 <segment>
-<label x="139.7" y="88.9" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="88.9" x2="175.26" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="6"/>
+<label x="142.24" y="83.82" size="1.778" layer="95"/>
+<wire x1="139.8524" y1="83.82" x2="172.5676" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DECK_2_PWM" class="0">
 <segment>
-<label x="139.7" y="86.36" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="7"/>
-<wire x1="139.8524" y1="86.36" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
+<label x="142.24" y="81.28" size="1.778" layer="95"/>
+<wire x1="139.8524" y1="81.28" x2="172.5676" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DECK_3_PWM" class="0">
 <segment>
-<label x="139.7" y="83.82" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="8"/>
-<wire x1="139.8524" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="9" class="0">
-<segment>
-<label x="139.7" y="81.28" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="9"/>
-</segment>
-</net>
-<net name="10" class="0">
-<segment>
-<label x="139.7" y="78.74" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="78.74" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="10"/>
+<label x="142.24" y="78.74" size="1.778" layer="95"/>
+<wire x1="139.8524" y1="78.74" x2="172.5676" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="11" class="0">
@@ -20082,9 +20061,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="MOTOR_L_CHANNEL_A" class="0">
 <segment>
-<label x="213.36" y="137.16" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="23"/>
-<wire x1="210.82" y1="137.16" x2="243.84" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="99.06" x2="175.26" y2="99.06" width="0.1524" layer="91"/>
+<label x="142.24" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOTOR_L_CHANNEL_B" class="0">
@@ -20099,13 +20078,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="213.36" y="132.08" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="25"/>
 <wire x1="210.82" y1="132.08" x2="243.84" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MOTOR_R_CHANNEL_A" class="0">
-<segment>
-<label x="213.36" y="129.54" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="26"/>
-<wire x1="210.82" y1="129.54" x2="243.84" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_R_CHANNEL_B" class="0">
@@ -20523,8 +20495,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="RX0" class="0">
 <segment>
 <label x="142.24" y="101.6" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="1(TX0)"/>
-<wire x1="139.7" y1="101.6" x2="175.26" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="101.6" x2="172.5676" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A12" class="0">
@@ -20562,6 +20533,75 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="68.58" y1="111.76" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="78.74" x2="127" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="127" y1="63.5" x2="127" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="1(TX0)"/>
+<wire x1="172.72" y1="101.6" x2="175.26" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="4"/>
+<wire x1="172.72" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="5"/>
+<wire x1="172.72" y1="91.44" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="6"/>
+<wire x1="175.26" y1="88.9" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="7"/>
+<wire x1="172.72" y1="86.36" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="8"/>
+<wire x1="172.72" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="9"/>
+<wire x1="172.72" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="10"/>
+<wire x1="172.72" y1="78.74" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="23" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="23"/>
+<wire x1="210.82" y1="137.16" x2="243.84" y2="137.16" width="0.1524" layer="91"/>
+<label x="213.36" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="26" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="26"/>
+<wire x1="210.82" y1="129.54" x2="243.84" y2="129.54" width="0.1524" layer="91"/>
+<label x="213.36" y="129.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOTOR_R_CHANNEL_A" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="3"/>
+<wire x1="139.7" y1="96.52" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
+<label x="142.24" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

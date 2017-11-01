@@ -22120,8 +22120,8 @@ from mower supply</text>
 <instance part="36V_RAW6" gate="A" x="17.78" y="162.56" rot="R90"/>
 <instance part="5V4" gate="G$1" x="22.86" y="154.94" rot="R90"/>
 <instance part="GND_CPU8" gate="G$1" x="17.78" y="147.32" rot="R270"/>
-<instance part="JDC" gate="G$1" x="193.04" y="38.1"/>
-<instance part="JMC" gate="G$1" x="200.66" y="48.26"/>
+<instance part="JDC" gate="G$1" x="200.66" y="40.64" rot="MR180"/>
+<instance part="JMC" gate="G$1" x="190.5" y="50.8" rot="MR180"/>
 <instance part="JBAT" gate="G$1" x="86.36" y="132.08" rot="R180"/>
 <instance part="JISO" gate="G$1" x="30.48" y="73.66" rot="R180"/>
 <instance part="GND4" gate="VR1" x="228.6" y="160.02" rot="R270"/>
@@ -22155,15 +22155,19 @@ from mower supply</text>
 <net name="N$2" class="0">
 <segment>
 <portref moduleinst="RELAY_CONTROL1" port="RMC+"/>
-<wire x1="195.58" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="JMC" gate="G$1" pin="1"/>
+<wire x1="185.2676" y1="50.8" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="JMC" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="50.8" x2="185.2676" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <portref moduleinst="RELAY_CONTROL1" port="RMC-"/>
-<wire x1="195.58" y1="48.26" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="JMC" gate="G$1" pin="2"/>
+<wire x1="185.2676" y1="48.26" x2="182.88" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="JMC" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="48.26" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="48.26" x2="185.2676" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -22335,15 +22339,15 @@ from mower supply</text>
 <net name="N$3" class="0">
 <segment>
 <portref moduleinst="RELAY_CONTROL1" port="RDC+"/>
-<pinref part="JDC" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="40.64" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="JDC" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="40.64" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <portref moduleinst="RELAY_CONTROL1" port="RDC-"/>
-<pinref part="JDC" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="38.1" x2="142.24" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="JDC" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="38.1" x2="142.24" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">

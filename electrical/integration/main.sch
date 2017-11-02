@@ -19884,23 +19884,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="139.8524" y1="63.5" x2="175.26" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="5V" class="0">
-<segment>
-<label x="142.24" y="160.02" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="5V@0"/>
-<wire x1="139.7" y1="160.02" x2="175.26" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<label x="142.24" y="157.48" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="5V@1"/>
-<wire x1="139.7" y1="157.48" x2="175.26" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<label x="142.24" y="154.94" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="5V@2"/>
-<wire x1="139.7" y1="154.94" x2="175.26" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="TX3" class="0">
 <segment>
 <label x="215.9" y="160.02" size="1.778" layer="95"/>

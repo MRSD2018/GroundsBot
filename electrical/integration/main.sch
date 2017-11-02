@@ -19326,7 +19326,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 </module>
-<module name="JETSON_TX2_J26_GPIO" prefix="" dx="50.8" dy="35.56">
+<module name="JETSON_TX2_J26_GPIO" prefix="TX2" dx="50.8" dy="35.56">
 <ports>
 </ports>
 <variantdefs>
@@ -19708,7 +19708,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 </module>
-<module name="MICROCONTROLLER" prefix="" dx="45.72" dy="127">
+<module name="UC" prefix="" dx="45.72" dy="127">
 <ports>
 <port name="MOTOR_L_CURR_SENSE" side="right" coord="2.54" direction="io"/>
 <port name="MOTOR_L_ENABLE" side="right" coord="5.08" direction="io"/>
@@ -19774,6 +19774,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </parts>
 <sheets>
 <sheet>
+<description>Microcontroller</description>
 <plain>
 <text x="20.32" y="157.48" size="2.54" layer="90">LED Control</text>
 </plain>
@@ -20591,7 +20592,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 </module>
-<module name="JETSON_J17_UART" prefix="" dx="30.48" dy="20.32">
+<module name="URT" prefix="" dx="30.48" dy="20.32">
 <ports>
 <port name="GND" side="left" coord="7.62" direction="io"/>
 <port name="RX" side="left" coord="-5.08" direction="io"/>
@@ -20606,6 +20607,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </parts>
 <sheets>
 <sheet>
+<description>Jetson TX2 Uart J17</description>
 <plain>
 <text x="96.52" y="106.68" size="1.778" layer="91">Max Voltage on RX and TX is 3.3V</text>
 <text x="104.14" y="142.24" size="1.778" layer="91">Connector to TX2</text>
@@ -21094,7 +21096,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 </module>
-<module name="ENCODER" prefix="" dx="30.48" dy="20.32">
+<module name="ENCODER" prefix="ENC" dx="30.48" dy="20.32">
 <ports>
 <port name="5V" side="left" coord="7.62" direction="pwr"/>
 <port name="GND" side="left" coord="5.08" direction="pwr"/>
@@ -23170,7 +23172,7 @@ from mower supply</text>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="JETSON_J17_UART1" module="JETSON_J17_UART" x="114.3" y="139.7"/>
+<moduleinst name="JETSON_J17_UART1" module="URT" x="114.3" y="139.7"/>
 <moduleinst name="JETSON_TX2_J21_EXPANSION1" module="JETSON_TX2_J21_EXPANSION" x="147.32" y="116.84"/>
 </moduleinsts>
 <instances>
@@ -23943,12 +23945,12 @@ wire to 24V at motor controller</text>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="MICROCONTROLLER1" module="MICROCONTROLLER" x="71.12" y="73.66" smashed="yes">
+<moduleinst name="MICROCONTROLLER1" module="UC" x="71.12" y="73.66" smashed="yes">
 <attribute name="NAME" x="71.12" y="127" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="POWER_TOP1" module="POWER_TOP" x="63.5" y="149.86"/>
-<moduleinst name="JETSON1" module="JETSON" x="152.4" y="114.3"/>
-<moduleinst name="SENSOR_TOP1" module="SENSOR_TOP" x="218.44" y="76.2"/>
+<moduleinst name="JETSON1" module="JETSON" x="152.4" y="114.3" offset="100"/>
+<moduleinst name="SENSOR_TOP1" module="SENSOR_TOP" x="218.44" y="76.2" offset="300"/>
 <moduleinst name="MOTOR_TOP1" module="MOTOR_TOP" x="137.16" y="50.8"/>
 <moduleinst name="RC_INPUT1" module="RC_INPUT" x="152.4" y="139.7"/>
 <moduleinst name="RELAY_CONTROL_TOP1" module="RELAY_CONTROL_TOP" x="198.12" y="139.7"/>

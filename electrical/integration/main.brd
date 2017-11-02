@@ -5499,7 +5499,26 @@ design rules under a new name.</description>
 <vertex x="-16.7" y="-41.9"/>
 <vertex x="-7.7" y="-42"/>
 </polygon>
-<wire x1="-8.85" y1="-39.98" x2="52.64" y2="-70.13" width="0" layer="19" extent="1-1"/>
+<polygon width="0.25" layer="1">
+<vertex x="-10.8" y="-37.8"/>
+<vertex x="-10.8" y="-49.9"/>
+<vertex x="-0.1" y="-49.9"/>
+<vertex x="-0.1" y="-91.9"/>
+<vertex x="38" y="-91.9"/>
+<vertex x="38" y="-80.1"/>
+<vertex x="41.5" y="-76.6"/>
+<vertex x="49.6" y="-76.6"/>
+<vertex x="54" y="-72.2"/>
+<vertex x="54" y="-67.8"/>
+<vertex x="53.5" y="-67.3"/>
+<vertex x="35.5" y="-67.3"/>
+<vertex x="32" y="-70.8"/>
+<vertex x="32" y="-88.3"/>
+<vertex x="17.4" y="-88.3"/>
+<vertex x="17.4" y="-83"/>
+<vertex x="4.7" y="-83"/>
+<vertex x="4.3" y="-37.8"/>
+</polygon>
 </signal>
 <signal name="MICROCONTROLLER1:AREF">
 <contactref element="MICROCONTROLLER1:U$1" pad="AREF"/>
@@ -6506,10 +6525,6 @@ design rules under a new name.</description>
 <contactref element="POWER_TOP1:R4" pad="2"/>
 <contactref element="RELAY_CONTROL_TOP1:D2" pad="1"/>
 <contactref element="RELAY_CONTROL_TOP1:D2" pad="2"/>
-<wire x1="-35.0552" y1="-5.69" x2="-30.0516" y2="-8.39" width="0.25" layer="1"/>
-<wire x1="-30.0516" y1="-8.39" x2="-16.2084" y2="-8.3332" width="0.25" layer="1"/>
-<wire x1="-16.2084" y1="-8.3332" x2="-16.2084" y2="-10.5084" width="0.25" layer="1"/>
-<wire x1="-16.2084" y1="-10.5084" x2="-20.5" y2="-14.8" width="0.25" layer="1"/>
 <polygon width="0.25" layer="1">
 <vertex x="-41" y="3.3"/>
 <vertex x="-29.7" y="3.3"/>
@@ -6533,8 +6548,7 @@ design rules under a new name.</description>
 <vertex x="-25.7" y="-11.5"/>
 <vertex x="-41" y="-11.5"/>
 </polygon>
-<wire x1="-23.28" y1="-15.55" x2="-23.2" y2="-15.47" width="0.25" layer="16"/>
-<wire x1="-23.2" y1="-15.47" x2="-20.25" y2="-15.47" width="0.25" layer="16"/>
+<wire x1="-20.25" y1="-15.47" x2="-23.28" y2="-15.55" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="POWER_TOP1:N$1">
 <contactref element="POWER_TOP1:F2" pad="2"/>
@@ -6666,11 +6680,7 @@ design rules under a new name.</description>
 <signal name="SENSOR_TOP1:N$4">
 <contactref element="SENSOR_TOP1:ENCODER2:X1" pad="4"/>
 <contactref element="SENSOR_TOP1:U1" pad="10"/>
-<wire x1="29.29" y1="-86.81" x2="29.09" y2="-86.81" width="0.25" layer="1"/>
-<wire x1="29.09" y1="-86.81" x2="26.5" y2="-89.4" width="0.25" layer="1"/>
-<wire x1="26.5" y1="-89.4" x2="25.5" y2="-89.4" width="0.25" layer="1"/>
-<wire x1="25.5" y1="-89.4" x2="24.2" y2="-88.1" width="0.25" layer="1"/>
-<wire x1="24.2" y1="-88.1" x2="24.2" y2="-74.4" width="0.25" layer="1"/>
+<wire x1="24.2" y1="-84.4" x2="24.2" y2="-74.4" width="0.25" layer="1"/>
 <wire x1="33.4" y1="-65.2" x2="33.5" y2="-65.3" width="0.25" layer="1"/>
 <wire x1="33.5" y1="-65.3" x2="50.4" y2="-65.3" width="0.25" layer="1"/>
 <wire x1="50.4" y1="-65.3" x2="51.2" y2="-65.5" width="0.25" layer="1"/>
@@ -6685,6 +6695,12 @@ design rules under a new name.</description>
 <wire x1="76.556384375" y1="-48.556384375" x2="78.465421875" y2="-48.556384375" width="0.25" layer="1"/>
 <wire x1="78.465421875" y1="-48.556384375" x2="78.6" y2="-48.42180625" width="0.25" layer="1"/>
 <wire x1="59.61276875" y1="-65.5" x2="76.556384375" y2="-48.556384375" width="0.25" layer="1"/>
+<wire x1="26.29906875" y1="-88.039" x2="25.28093125" y2="-88.039" width="0.25" layer="1"/>
+<wire x1="25.28093125" y1="-88.039" x2="24.561" y2="-87.31906875" width="0.25" layer="1"/>
+<wire x1="29.29" y1="-86.81" x2="27.52806875" y2="-86.81" width="0.25" layer="1"/>
+<wire x1="27.52806875" y1="-86.81" x2="26.29906875" y2="-88.039" width="0.25" layer="1"/>
+<wire x1="24.561" y1="-84.761" x2="24.2" y2="-84.4" width="0.25" layer="1"/>
+<wire x1="24.561" y1="-87.31906875" x2="24.561" y2="-84.761" width="0.25" layer="1"/>
 </signal>
 <signal name="RELAY_CONTROL_TOP1:ISO1:N$1">
 <contactref element="RELAY_CONTROL_TOP1:ISO1:U1" pad="6"/>
@@ -7141,10 +7157,6 @@ design rules under a new name.</description>
 <contactref element="RELAY_CONTROL_TOP1:R2" pad="2"/>
 <contactref element="RELAY_CONTROL_TOP1:MOV1" pad="1"/>
 <wire x1="-5.2792" y1="6.57" x2="-10.4862" y2="6.57" width="0.25" layer="1"/>
-<wire x1="-10.4862" y1="6.57" x2="-19.81" y2="6.57" width="0.25" layer="1"/>
-<wire x1="-19.81" y1="6.57" x2="-22.32" y2="4.06" width="0.25" layer="1"/>
-<wire x1="-22.32" y1="4.06" x2="-19.02" y2="4.5616" width="0.25" layer="1"/>
-<wire x1="-19.02" y1="4.5616" x2="-16.2084" y2="-3.05" width="0.25" layer="1"/>
 <polygon width="0.25" layer="1">
 <vertex x="-26.3" y="12"/>
 <vertex x="-13.3" y="12"/>
@@ -7175,15 +7187,6 @@ design rules under a new name.</description>
 <contactref element="RELAY_CONTROL_TOP1:FH3" pad="1"/>
 <contactref element="RELAY_CONTROL_TOP1:FH3" pad="2"/>
 <contactref element="RELAY_CONTROL_TOP1:JBAT" pad="P$2"/>
-<wire x1="4.7792" y1="6.57" x2="9.73" y2="6.57" width="0.25" layer="16"/>
-<wire x1="9.73" y1="6.57" x2="13.4" y2="2.9" width="0.25" layer="16"/>
-<wire x1="13.4" y1="-0.02" x2="13.4" y2="2.9" width="0.25" layer="16"/>
-<wire x1="28.25" y1="-14.935" x2="28.15" y2="-14.05" width="0.25" layer="16"/>
-<wire x1="28.15" y1="-14.05" x2="31.6" y2="-10.6" width="0.25" layer="16"/>
-<wire x1="31.6" y1="-10.6" x2="31.6" y2="-8.3" width="0.25" layer="16"/>
-<wire x1="31.6" y1="-8.3" x2="30" y2="-6.7" width="0.25" layer="16"/>
-<wire x1="30" y1="-6.7" x2="20.08" y2="-6.7" width="0.25" layer="16"/>
-<wire x1="20.08" y1="-6.7" x2="13.4" y2="-0.02" width="0.25" layer="16"/>
 <polygon width="0.25" layer="16">
 <vertex x="2.2" y="12.1"/>
 <vertex x="2.2" y="3.5"/>

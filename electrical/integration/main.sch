@@ -13835,14 +13835,14 @@ Source: www.st.com, BAT60J.pdf</description>
 <text x="-3.02855" y="0.8144" size="1.2725" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-4.911890625" y="1.806959375" size="2.08691875" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.72253125" y="-3.942190625" size="2.085540625" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-<smd name="1" x="-2.2098" y="0.9652" dx="1.3716" dy="0.4572" layer="1"/>
-<smd name="2" x="-2.2098" y="0.3302" dx="1.3716" dy="0.4572" layer="1"/>
-<smd name="3" x="-2.2098" y="-0.3302" dx="1.3716" dy="0.4572" layer="1"/>
-<smd name="4" x="-2.2098" y="-0.9652" dx="1.3716" dy="0.4572" layer="1"/>
-<smd name="5" x="2.2098" y="-0.9652" dx="1.3716" dy="0.4572" layer="1"/>
-<smd name="6" x="2.2098" y="-0.3302" dx="1.3716" dy="0.4572" layer="1"/>
-<smd name="7" x="2.2098" y="0.3302" dx="1.3716" dy="0.4572" layer="1"/>
-<smd name="8" x="2.2098" y="0.9652" dx="1.3716" dy="0.4572" layer="1"/>
+<smd name="1" x="-2.2098" y="0.9652" dx="1.3716" dy="0.3556" layer="1"/>
+<smd name="2" x="-2.2098" y="0.3302" dx="1.3716" dy="0.3556" layer="1"/>
+<smd name="3" x="-2.2098" y="-0.3302" dx="1.3716" dy="0.3556" layer="1"/>
+<smd name="4" x="-2.2098" y="-0.9652" dx="1.3716" dy="0.3556" layer="1"/>
+<smd name="5" x="2.2098" y="-0.9652" dx="1.3716" dy="0.3556" layer="1"/>
+<smd name="6" x="2.2098" y="-0.3302" dx="1.3716" dy="0.3556" layer="1"/>
+<smd name="7" x="2.2098" y="0.3302" dx="1.3716" dy="0.3556" layer="1"/>
+<smd name="8" x="2.2098" y="0.9652" dx="1.3716" dy="0.3556" layer="1"/>
 </package>
 </packages>
 <symbols>

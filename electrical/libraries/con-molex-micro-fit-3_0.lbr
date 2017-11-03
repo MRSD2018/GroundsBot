@@ -653,6 +653,7 @@
 <smd name="TAB2" x="3.88" y="0" dx="1.65" dy="3.43" layer="1" rot="R90"/>
 <smd name="P$2" x="0" y="10.1" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$1" x="0" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<text x="2.54" y="11.43" size="1.27" layer="21" rot="R270">&gt;Name</text>
 </package>
 <package name="43045-0409">
 <description>Molex Micro-Fit 3.0 - Header Shrouded, Surface mount, Right Angle, Solderable tabs;   P/N: SD-43045-0409, SD-43045-0410, SD-43045-0411
@@ -684,6 +685,7 @@
 <smd name="P$2" x="-1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$3" x="1.5" y="10.1" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$1" x="1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<text x="5.08" y="6.35" size="1.27" layer="21" rot="R90">&gt;Name</text>
 </package>
 <package name="43045-0609">
 <description>Molex Micro-Fit 3.0 - Header Shrouded, Surface mount, Right Angle, Solderable tabs;   P/N: SD-43045-0609, SD-43045-0610, SD-43045-0611
@@ -718,6 +720,7 @@
 <smd name="P$1" x="3" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$6" x="-3" y="10.1" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$3" x="-3" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<text x="6.35" y="6.35" size="1.27" layer="21" rot="R90">&gt;Name</text>
 </package>
 <package name="43045-0809">
 <description>Molex Micro-Fit 3.0 - Header Shrouded, Surface mount, Right Angle, Solderable tabs;   P/N: SD-43045-0809, SD-43045-0810, SD-43045-0811

@@ -13879,6 +13879,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <smd name="TAB2" x="3.88" y="0" dx="1.65" dy="3.43" layer="1" rot="R90"/>
 <smd name="P$2" x="0" y="10.1" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$1" x="0" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<text x="2.54" y="11.43" size="1.27" layer="21" rot="R270">&gt;Name</text>
 </package>
 <package name="43045-0206">
 <description>Molex Micro-Fit 3.0 - Header Shrouded, Surface mount, Right Angle, Solderable Retention clips;   P/N: SD-43045-0206, SD-43045-0207, SD-43045-0208
@@ -14663,6 +14664,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <smd name="P$1" x="3" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$6" x="-3" y="10.1" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$3" x="-3" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<text x="6.35" y="6.35" size="1.27" layer="21" rot="R90">&gt;Name</text>
 </package>
 <package name="43045-0606">
 <description>Molex Micro-Fit 3.0 - Header Shrouded, Surface mount, Right Angle, Solderable Retention clips;   P/N: SD-43045-0606, SD-43045-0607, SD-43045-0608
@@ -15893,6 +15895,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <smd name="P$2" x="-1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$3" x="1.5" y="10.1" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$1" x="1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<text x="5.08" y="6.35" size="1.27" layer="21" rot="R90">&gt;Name</text>
 </package>
 <package name="43045-0406">
 <description>Molex Micro-Fit 3.0 - Header Shrouded, Surface mount, Right Angle, Solderable retention clips;   P/N: SD-43045-0406, SD-43045-0407, SD-43045-0408
@@ -20394,7 +20397,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="JP3" library="power_connectors" deviceset="61300611121" device="" value="61300611121"/>
+<part name="JP3" library="power_connectors" deviceset="61300611121" device="" value="61300611121">
+<attribute name="SILK" value="TX2UART"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -20405,7 +20410,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="JP3" gate="A" x="119.38" y="121.92"/>
+<instance part="JP3" gate="A" x="119.38" y="121.92">
+<attribute name="DESCRIPTION" x="119.38" y="121.92" size="1.778" layer="96"/>
+<attribute name="SILK" x="119.38" y="121.92" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -20435,7 +20443,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 </module>
-<module name="REACH_GPS" prefix="" dx="50.8" dy="20.32">
+<module name="RCH" prefix="" dx="50.8" dy="20.32">
 <ports>
 <port name="5V" side="left" coord="7.62" direction="pwr"/>
 <port name="GND" side="left" coord="-7.62" direction="pwr"/>
@@ -20446,15 +20454,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="U$1" library="con-hirose-df13" deviceset="DF13-6P-1.25" device="V"/>
+<part name="U$1" library="con-hirose-df13" deviceset="DF13-6P-1.25" device="V">
+<attribute name="SILK" value="GPSUART"/>
+</part>
 </parts>
 <sheets>
 <sheet>
+<description>REACH GPS</description>
 <plain>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="U$1" gate="G$1" x="119.38" y="121.92" rot="MR180"/>
+<instance part="U$1" gate="G$1" x="119.38" y="121.92" rot="MR180">
+<attribute name="SILK" x="119.38" y="121.92" size="1.778" layer="96" rot="MR180" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -20501,7 +20514,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 </module>
-<module name="POWER_TOP" prefix="" dx="30.48" dy="20.32">
+<module name="PWR" prefix="" dx="30.48" dy="20.32">
 <ports>
 <port name="12V" side="right" coord="5.08" direction="pwr"/>
 <port name="5V" side="right" coord="2.54" direction="pwr"/>
@@ -20542,6 +20555,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </parts>
 <sheets>
 <sheet>
+<description>Power Top</description>
 <plain>
 </plain>
 <instances>
@@ -20800,7 +20814,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 </module>
-<module name="RC_INPUT" prefix="" dx="30.48" dy="20.32">
+<module name="RC" prefix="" dx="30.48" dy="20.32">
 <ports>
 <port name="5V" side="left" coord="7.62" direction="pwr"/>
 <port name="GND" side="left" coord="2.54" direction="pwr"/>
@@ -20811,15 +20825,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </variantdefs>
 <parts>
 <part name="U1" library="NC7SZ04M5" deviceset="NC7SZ04M5" device=""/>
-<part name="X1" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS4_?" device="43045-0409" value="43045-0409"/>
+<part name="X1" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS4_?" device="43045-0409" value="43045-0409">
+<attribute name="SILK" value="RCRX"/>
+</part>
 </parts>
 <sheets>
 <sheet>
+<description>RC Receiver</description>
 <plain>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="93.98" y="109.22"/>
-<instance part="X1" gate="G$1" x="30.48" y="109.22" rot="MR0"/>
+<instance part="X1" gate="G$1" x="30.48" y="109.22" rot="MR0">
+<attribute name="SILK" x="30.48" y="109.22" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -20869,7 +20888,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 </module>
-<module name="ENCODER" prefix="ENC" dx="30.48" dy="20.32">
+<module name="ENC" prefix="ENC" dx="30.48" dy="20.32">
 <ports>
 <port name="5V" side="left" coord="7.62" direction="pwr"/>
 <port name="GND" side="left" coord="5.08" direction="pwr"/>
@@ -20880,15 +20899,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device="" value="FRAME1"/>
-<part name="X1" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751264" device="" package3d_urn="urn:adsk.eagle:package:9397/1" value="1984989"/>
+<part name="X1" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751264" device="" package3d_urn="urn:adsk.eagle:package:9397/1" value="1984989">
+<attribute name="SILK" value="ENC"/>
+</part>
 </parts>
 <sheets>
 <sheet>
+<description>Motor Encoder</description>
 <plain>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-83.82" y="-17.78"/>
-<instance part="X1" gate="-1" x="60.96" y="175.26"/>
+<instance part="X1" gate="-1" x="60.96" y="175.26">
+<attribute name="SILK" x="60.96" y="175.26" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="X1" gate="-2" x="60.96" y="167.64"/>
 <instance part="X1" gate="-3" x="60.96" y="160.02"/>
 <instance part="X1" gate="-4" x="60.96" y="152.4"/>
@@ -21520,11 +21544,17 @@ Threshold high: ~36V</text>
 <part name="36V_RAW6" library="power_supplies" deviceset="36V_RAW" device=""/>
 <part name="5V4" library="power_supplies" deviceset="5V_ISO" device=""/>
 <part name="GND_CPU8" library="power_supplies" deviceset="GND_ISO" device=""/>
-<part name="JESTP" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
-<part name="JTHR" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
+<part name="JESTP" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209">
+<attribute name="SILK" value="ESTOP"/>
+</part>
+<part name="JTHR" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209">
+<attribute name="SILK" value="TETHER"/>
+</part>
 <part name="D1" library="discrete" deviceset="1N4148WSTR" device=""/>
 <part name="D2" library="discrete" deviceset="1N4148WSTR" device=""/>
-<part name="JMOW" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
+<part name="JMOW" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209">
+<attribute name="SILK" value="MOW"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -21603,8 +21633,12 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <instance part="36V_RAW6" gate="A" x="215.9" y="167.64" rot="R90"/>
 <instance part="5V4" gate="G$1" x="220.98" y="160.02" rot="R90"/>
 <instance part="GND_CPU8" gate="G$1" x="215.9" y="152.4" rot="R270"/>
-<instance part="JESTP" gate="G$1" x="116.84" y="139.7" rot="R180"/>
-<instance part="JTHR" gate="G$1" x="116.84" y="157.48" rot="R180"/>
+<instance part="JESTP" gate="G$1" x="116.84" y="139.7" rot="R180">
+<attribute name="SILK" x="116.84" y="139.7" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="JTHR" gate="G$1" x="116.84" y="157.48" rot="R180">
+<attribute name="SILK" x="116.84" y="157.48" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="D1" gate="G$1" x="124.46" y="109.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="124.079" y="104.394" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="123.571" y="112.014" size="1.778" layer="96" rot="R90"/>
@@ -21613,7 +21647,9 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <attribute name="NAME" x="202.819" y="104.394" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="199.771" y="101.854" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JMOW" gate="G$1" x="198.12" y="124.46" rot="R180"/>
+<instance part="JMOW" gate="G$1" x="198.12" y="124.46" rot="R180">
+<attribute name="SILK" x="198.12" y="124.46" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -21832,7 +21868,7 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 </sheet>
 </sheets>
 </module>
-<module name="RELAY_CONTROL_TOP" prefix="" dx="50.8" dy="20.32">
+<module name="RL" prefix="" dx="50.8" dy="20.32">
 <ports>
 <port name="36V" side="right" coord="7.62" direction="pwr"/>
 <port name="GND" side="right" coord="-7.62" direction="pwr"/>
@@ -21870,10 +21906,18 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 <part name="36V_RAW6" library="power_supplies" deviceset="36V_RAW" device=""/>
 <part name="5V4" library="power_supplies" deviceset="5V_ISO" device=""/>
 <part name="GND_CPU8" library="power_supplies" deviceset="GND_ISO" device=""/>
-<part name="JDC" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
-<part name="JMC" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
-<part name="JBAT" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
-<part name="JISO" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209"/>
+<part name="JDC" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209">
+<attribute name="SILK" value="DRIVE_REL"/>
+</part>
+<part name="JMC" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209">
+<attribute name="SILK" value="MOW_REL"/>
+</part>
+<part name="JBAT" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209">
+<attribute name="SILK" value="BAT"/>
+</part>
+<part name="JISO" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43045-0209" value="43045-0209">
+<attribute name="SILK" value="ISO"/>
+</part>
 <part name="GND4" library="power_supplies" deviceset="GND" device=""/>
 <part name="36V1" library="power_supplies" deviceset="36V" device=""/>
 <part name="MOV1" library="power_supplies" deviceset="MOV-20D470K" device=""/>
@@ -21881,6 +21925,7 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 </parts>
 <sheets>
 <sheet>
+<description>Relay Control Top</description>
 <plain>
 <text x="228.6" y="5.08" size="1.778" layer="94">1/5</text>
 <text x="12.7" y="99.06" size="2.54" layer="97">Iso Connector:
@@ -21929,10 +21974,18 @@ from mower supply</text>
 <instance part="36V_RAW6" gate="A" x="17.78" y="162.56" rot="R90"/>
 <instance part="5V4" gate="G$1" x="22.86" y="154.94" rot="R90"/>
 <instance part="GND_CPU8" gate="G$1" x="17.78" y="147.32" rot="R270"/>
-<instance part="JDC" gate="G$1" x="200.66" y="40.64" rot="MR180"/>
-<instance part="JMC" gate="G$1" x="190.5" y="50.8" rot="MR180"/>
-<instance part="JBAT" gate="G$1" x="86.36" y="132.08" rot="R180"/>
-<instance part="JISO" gate="G$1" x="30.48" y="73.66" rot="R180"/>
+<instance part="JDC" gate="G$1" x="200.66" y="40.64" rot="MR180">
+<attribute name="SILK" x="200.66" y="40.64" size="1.778" layer="96" rot="MR180" display="off"/>
+</instance>
+<instance part="JMC" gate="G$1" x="190.5" y="50.8" rot="MR180">
+<attribute name="SILK" x="190.5" y="50.8" size="1.778" layer="96" rot="MR180" display="off"/>
+</instance>
+<instance part="JBAT" gate="G$1" x="86.36" y="132.08" rot="R180">
+<attribute name="SILK" x="86.36" y="132.08" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="JISO" gate="G$1" x="30.48" y="73.66" rot="R180">
+<attribute name="SILK" x="30.48" y="73.66" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND4" gate="VR1" x="228.6" y="160.02" rot="R270"/>
 <instance part="36V1" gate="A" x="233.68" y="152.4" rot="R90"/>
 <instance part="MOV1" gate="G$1" x="167.64" y="119.38" smashed="yes">
@@ -22170,7 +22223,7 @@ from mower supply</text>
 </sheet>
 </sheets>
 </module>
-<module name="SENSOR_TOP" prefix="" dx="35.56" dy="30.48">
+<module name="SNS" prefix="" dx="35.56" dy="30.48">
 <ports>
 <port name="5V" side="left" coord="12.7" direction="pwr"/>
 <port name="GND" side="left" coord="7.62" direction="pwr"/>
@@ -22192,13 +22245,14 @@ from mower supply</text>
 </parts>
 <sheets>
 <sheet>
+<description>Sensor Top</description>
 <plain>
 </plain>
 <moduleinsts>
 <moduleinst name="IMU1" module="IMU" x="187.96" y="83.82"/>
-<moduleinst name="REACH_GPS1" module="REACH_GPS" x="187.96" y="60.96"/>
-<moduleinst name="ENCODER1" module="ENCODER" x="177.8" y="132.08"/>
-<moduleinst name="ENCODER2" module="ENCODER" x="177.8" y="106.68"/>
+<moduleinst name="REACH_GPS1" module="RCH" x="187.96" y="60.96"/>
+<moduleinst name="ENCODER1" module="ENC" x="177.8" y="132.08"/>
+<moduleinst name="ENCODER2" module="ENC" x="177.8" y="106.68"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -22371,7 +22425,7 @@ from mower supply</text>
 </sheet>
 </sheets>
 </module>
-<module name="JETSON_TX2_J21_EXPANSION" prefix="" dx="96.52" dy="20.32">
+<module name="TX2" prefix="" dx="96.52" dy="20.32">
 <ports>
 <port name="GND" side="left" coord="7.62" direction="io"/>
 <port name="UART1_RXD_HDR_3V3" side="left" coord="2.54" direction="io"/>
@@ -22383,7 +22437,9 @@ from mower supply</text>
 </variantdefs>
 <parts>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device="" value="FRAME3"/>
-<part name="U$3" library="TSM-120-XX-XXX-DV" deviceset="TSM-120-XX-XXX-DV" device=""/>
+<part name="U$3" library="TSM-120-XX-XXX-DV" deviceset="TSM-120-XX-XXX-DV" device="">
+<attribute name="SILK" value="TX2_J21"/>
+</part>
 <part name="U1" library="PCF8574ATD" deviceset="PCF8574ATD" device=""/>
 <part name="LED1" library="CMD17-21VGD_TR8" deviceset="CMD17-21VGD_TR8" device=""/>
 <part name="LED2" library="CMD17-21VGD_TR8" deviceset="CMD17-21VGD_TR8" device=""/>
@@ -22407,6 +22463,7 @@ from mower supply</text>
 </parts>
 <sheets>
 <sheet>
+<description>Jetson TX2 J21 Interface</description>
 <plain>
 <text x="101.6" y="160.02" size="1.778" layer="97">Connector to TX2</text>
 <text x="10.16" y="157.48" size="1.778" layer="97">Signals Connected to Other Modules</text>
@@ -22418,7 +22475,9 @@ from mower supply</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="U$3" gate="G$1" x="96.52" y="149.86"/>
+<instance part="U$3" gate="G$1" x="96.52" y="149.86">
+<attribute name="SILK" x="96.52" y="149.86" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U1" gate="A" x="58.42" y="73.66"/>
 <instance part="LED1" gate="A" x="193.04" y="43.18" rot="R270"/>
 <instance part="LED2" gate="A" x="177.8" y="43.18" rot="R270"/>
@@ -22946,7 +23005,7 @@ from mower supply</text>
 </plain>
 <moduleinsts>
 <moduleinst name="JETSON_J17_UART1" module="URT" x="114.3" y="139.7"/>
-<moduleinst name="JETSON_TX2_J21_EXPANSION1" module="JETSON_TX2_J21_EXPANSION" x="147.32" y="116.84"/>
+<moduleinst name="JETSON_TX2_J21_EXPANSION1" module="TX2" x="147.32" y="116.84"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -23398,7 +23457,7 @@ wire to 24V at motor controller</text>
 </sheet>
 </sheets>
 </module>
-<module name="MOTOR_TOP" prefix="" dx="55.88" dy="86.36">
+<module name="MTR" prefix="" dx="55.88" dy="86.36">
 <ports>
 <port name="GND" side="right" coord="-35.56" direction="pwr"/>
 <port name="PWM_A_1" side="left" coord="38.1" direction="io"/>
@@ -23437,12 +23496,17 @@ wire to 24V at motor controller</text>
 <part name="X7" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS4_?" device="43045-0409" value="43045-0409"/>
 <part name="X8" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS4_?" device="43045-0409" value="43045-0409"/>
 <part name="GND6" library="power_supplies" deviceset="GND" device=""/>
-<part name="JDL" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS6_?" device="43045-0609" value="43045-0609"/>
-<part name="JDR" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS6_?" device="43045-0609" value="43045-0609"/>
+<part name="JDL" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS6_?" device="43045-0609" value="43045-0609">
+<attribute name="SILK" value="MTRL"/>
+</part>
+<part name="JDR" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS6_?" device="43045-0609" value="43045-0609">
+<attribute name="SILK" value="MTRR"/>
+</part>
 <part name="GND1" library="power_supplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
+<description>Motor Iso</description>
 <plain>
 <text x="147.32" y="73.66" size="1.778" layer="95">Motor Controller Right</text>
 <text x="193.04" y="165.1" size="1.778" layer="95">Deck Controller 1</text>
@@ -23459,8 +23523,12 @@ wire to 24V at motor controller</text>
 <instance part="X7" gate="G$1" x="241.3" y="60.96"/>
 <instance part="X8" gate="G$1" x="241.3" y="38.1"/>
 <instance part="GND6" gate="VR1" x="119.38" y="106.68"/>
-<instance part="JDL" gate="G$1" x="139.7" y="116.84"/>
-<instance part="JDR" gate="G$1" x="139.7" y="68.58"/>
+<instance part="JDL" gate="G$1" x="139.7" y="116.84">
+<attribute name="SILK" x="139.7" y="116.84" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="JDR" gate="G$1" x="139.7" y="68.58">
+<attribute name="SILK" x="139.7" y="68.58" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND1" gate="VR1" x="119.38" y="58.42"/>
 </instances>
 <busses>
@@ -23721,12 +23789,12 @@ wire to 24V at motor controller</text>
 <moduleinst name="MICROCONTROLLER1" module="UC" x="71.12" y="73.66" smashed="yes">
 <attribute name="NAME" x="71.12" y="127" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="POWER_TOP1" module="POWER_TOP" x="63.5" y="149.86"/>
+<moduleinst name="POWER_TOP1" module="PWR" x="63.5" y="149.86"/>
 <moduleinst name="JETSON1" module="JETSON" x="152.4" y="114.3" offset="100"/>
-<moduleinst name="SENSOR_TOP1" module="SENSOR_TOP" x="218.44" y="76.2" offset="300"/>
-<moduleinst name="MOTOR_TOP1" module="MOTOR_TOP" x="137.16" y="50.8"/>
-<moduleinst name="RC_INPUT1" module="RC_INPUT" x="152.4" y="139.7"/>
-<moduleinst name="RELAY_CONTROL_TOP1" module="RELAY_CONTROL_TOP" x="198.12" y="139.7"/>
+<moduleinst name="SENSOR_TOP1" module="SNS" x="218.44" y="76.2" offset="300"/>
+<moduleinst name="MOTOR_TOP1" module="MTR" x="137.16" y="50.8"/>
+<moduleinst name="RC_INPUT1" module="RC" x="152.4" y="139.7"/>
+<moduleinst name="RELAY_CONTROL_TOP1" module="RL" x="198.12" y="139.7"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="22.86" y="2.54"/>

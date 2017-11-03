@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -117,8 +117,8 @@
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="top_connector_position" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="bot_connector_position" color="2" fill="10" visible="no" active="yes"/>
-<layer number="202" name="top_keepout" color="3" fill="10" visible="yes" active="yes"/>
-<layer number="203" name="bot_keepout" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="top_keepout" color="3" fill="10" visible="no" active="yes"/>
+<layer number="203" name="bot_keepout" color="4" fill="10" visible="no" active="yes"/>
 <layer number="204" name="arduino_position" color="5" fill="10" visible="no" active="yes"/>
 <layer number="205" name="dxf_groundsbot_test" color="6" fill="10" visible="no" active="yes"/>
 <layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
@@ -262,6 +262,49 @@
 <wire x1="30.288" y1="-22.3018" x2="31.304" y2="-22.3018" width="0.001" layer="204"/>
 <wire x1="29.526" y1="-23.0638" x2="49.846" y2="-23.0638" width="0.001" layer="204"/>
 <wire x1="29.526" y1="-20.5238" x2="29.526" y2="-23.0638" width="0.001" layer="204"/>
+<text x="23.8" y="-11.1" size="1.778" layer="21" rot="R90">ISO</text>
+<text x="37.4" y="-16.3" size="1.778" layer="21" rot="R90">TETHER</text>
+<text x="49.6" y="-14.2" size="1.778" layer="21" rot="R90">ESTOP</text>
+<text x="62" y="-17" size="1.778" layer="21" rot="R90">DRV REL</text>
+<text x="74.9" y="-16.8" size="1.778" layer="21" rot="R90">MOW EN</text>
+<text x="87.5" y="-17.8" size="1.778" layer="21" rot="R90">MOW REL</text>
+<text x="116.1" y="-21.8" size="1.778" layer="21" rot="R180">MTR RT</text>
+<text x="119" y="-37.9" size="1.778" layer="21" rot="R180">MRT LFT</text>
+<text x="115.9" y="-58.1" size="1.778" layer="21" rot="R180">RCRX</text>
+<text x="120.1" y="-72.2" size="1.778" layer="21" rot="R180">GPS UART</text>
+<text x="103.7" y="-72.4" size="1.778" layer="21" rot="R270">DECK 1</text>
+<text x="84.2" y="-72.5" size="1.778" layer="21" rot="R270">DECK 2</text>
+<text x="64.5" y="-73" size="1.778" layer="21" rot="R270">DECK 3</text>
+<text x="38.1" y="-81.9" size="1.778" layer="21">ENC RT</text>
+<text x="21.9" y="-81.8" size="1.778" layer="21">ENC LFT</text>
+<text x="16" y="-72.5" size="1.778" layer="21" rot="R90">BAT</text>
+<text x="15.7" y="-80.6" size="1.778" layer="21" rot="R90">BAT</text>
+<text x="-23.4" y="-49.1" size="1.778" layer="21">TX2_12V</text>
+<text x="22.2" y="-14.3" size="1.778" layer="22" rot="MR90">BAT IN</text>
+<text x="-18.1" y="-2.6" size="0.5" layer="21" rot="R90">LED_36V</text>
+<text x="-2.3" y="-38" size="0.5" layer="21" rot="R90">LED_12V</text>
+<text x="8.5" y="-11.2" size="0.5" layer="21">LED_5V</text>
+<text x="31.5" y="-61.8" size="1" layer="21">ucLED1
+
+ucLED2
+ucLED3
+ucLED4
+ucLED5
+ucLED6
+ucLED7
+
+ucLED8
+</text>
+<text x="30.9" y="-34.7" size="1" layer="21" rot="R90">tx2LED1
+
+tx2LED2
+tx2LED3
+tx2LED4
+tx2LED5
+tx2LED6
+tx2LED7
+
+tx2LED8</text>
 </plain>
 <libraries>
 <library name="power_connectors">
@@ -1665,6 +1708,7 @@ manufacturer:SAMTEC</description>
 <smd name="TAB2" x="3.88" y="0" dx="1.65" dy="3.43" layer="1" rot="R90"/>
 <smd name="P$2" x="0" y="10.1" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$1" x="0" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<text x="2.54" y="11.43" size="1.27" layer="21" rot="R270">&gt;Name</text>
 </package>
 <package name="43045-0609">
 <description>Molex Micro-Fit 3.0 - Header Shrouded, Surface mount, Right Angle, Solderable tabs;   P/N: SD-43045-0609, SD-43045-0610, SD-43045-0611
@@ -1699,6 +1743,7 @@ manufacturer:SAMTEC</description>
 <smd name="P$1" x="3" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$6" x="-3" y="10.1" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$3" x="-3" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<text x="6.35" y="6.35" size="1.27" layer="21" rot="R90">&gt;Name</text>
 </package>
 <package name="43045-0409">
 <description>Molex Micro-Fit 3.0 - Header Shrouded, Surface mount, Right Angle, Solderable tabs;   P/N: SD-43045-0409, SD-43045-0410, SD-43045-0411
@@ -1730,6 +1775,7 @@ manufacturer:SAMTEC</description>
 <smd name="P$2" x="-1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$3" x="1.5" y="10.1" dx="2.92" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$1" x="1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<text x="5.08" y="6.35" size="1.27" layer="21" rot="R90">&gt;Name</text>
 </package>
 </packages>
 </library>
@@ -4493,6 +4539,7 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER" value="Wurth" x="11.02" y="-83.045" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="9.1912" y="-90.7412" size="1.27" layer="25" ratio="10" rot="R90" display="off"/>
 <attribute name="PART_NUMBER" value="61300611121" x="11.02" y="-83.045" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SILK" value="TX2UART" x="11.02" y="-83.045" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="14.195" y="-90.665" size="1.27" layer="27" rot="R90" display="off"/>
 </element>
 <element name="JETSON1:JETSON_TX2_J21_EXPANSION1:LED1" library="CMD17-21VGD_TR8" package="LED_CMD17-21VGD_TR8" value="CMD17-21VGD_TR8" x="16.758471875" y="-38.5" smashed="yes" rot="R90">
@@ -4617,6 +4664,7 @@ design rules under a new name.</description>
 </element>
 <element name="JETSON1:JETSON_TX2_J21_EXPANSION1:U$3" library="TSM-120-XX-XXX-DV" package="TSM-120-XX-XXX-D" value="TSM-120-XX-XXX-DV" x="8.064" y="-45" smashed="yes" rot="R90">
 <attribute name="NAME" x="2.984" y="-48.175" size="1.27" layer="25" rot="R90" display="off"/>
+<attribute name="SILK" value="TX2_J21" x="8.064" y="-45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="14.414" y="-48.175" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="14.414" y="-48.175" size="1.27" layer="27" rot="R90" display="off"/>
 </element>
@@ -4803,15 +4851,15 @@ design rules under a new name.</description>
 <attribute name="PRICE" value="1.54 USD" x="-20.39" y="-34.77" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="-16.23285" y="-29.81146875" size="1.27218125" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="POWER_TOP1:LED1" library="CMD17-21VGD_TR8" package="LED_CMD17-21VGD_TR8" value="CMD17-21VGD_TR8" x="-19.8" y="-1.9" smashed="yes" rot="R90">
-<attribute name="AVAILABILITY" value="Good" x="-19.8" y="-1.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="Led, Green, 1.25mm x 1.4mm, 7mcd, 570nm, Full Reel" x="-19.8" y="-1.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="Chicago Miniature Lighting" x="-19.8" y="-1.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MP" value="CMD17-21VGD/TR8" x="-19.8" y="-1.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-21.097709375" y="-6.60738125" size="2.086509375" layer="25" ratio="10" rot="SR90" display="off"/>
-<attribute name="PACKAGE" value="0805 Chicago Miniature Lighting" x="-19.8" y="-1.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PRICE" value="0.18 USD" x="-19.8" y="-1.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-16.290540625" y="-7.59651875" size="2.08533125" layer="27" ratio="10" rot="SR90" display="off"/>
+<element name="POWER_TOP1:LED1" library="CMD17-21VGD_TR8" package="LED_CMD17-21VGD_TR8" value="CMD17-21VGD_TR8" x="-25.7" y="1.4" smashed="yes">
+<attribute name="AVAILABILITY" value="Good" x="-25.7" y="1.4" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="Led, Green, 1.25mm x 1.4mm, 7mcd, 570nm, Full Reel" x="-25.7" y="1.4" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Chicago Miniature Lighting" x="-25.7" y="1.4" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="CMD17-21VGD/TR8" x="-25.7" y="1.4" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-30.40738125" y="2.697709375" size="2.086509375" layer="25" ratio="10" rot="SR0" display="off"/>
+<attribute name="PACKAGE" value="0805 Chicago Miniature Lighting" x="-25.7" y="1.4" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="0.18 USD" x="-25.7" y="1.4" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-31.39651875" y="-2.109459375" size="2.08533125" layer="27" ratio="10" rot="SR0" display="off"/>
 </element>
 <element name="POWER_TOP1:LED2" library="CMD17-21VGD_TR8" package="LED_CMD17-21VGD_TR8" value="CMD17-21VGD_TR8" x="-4.11" y="-36.57" smashed="yes" rot="R270">
 <attribute name="AVAILABILITY" value="Good" x="-4.11" y="-36.57" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4855,9 +4903,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="5.095" y="-13.575" size="1.27" layer="25" rot="R180" display="off"/>
 <attribute name="VALUE" x="5.095" y="-11.035" size="1.27" layer="27" rot="R180" display="off"/>
 </element>
-<element name="POWER_TOP1:R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1695" x="-20.06" y="-7.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="-19.425" y="-6.925" size="1.27" layer="25" rot="R270" display="off"/>
-<attribute name="VALUE" x="-21.965" y="-6.925" size="1.27" layer="27" rot="R270" display="off"/>
+<element name="POWER_TOP1:R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1695" x="-31.06" y="1.46" smashed="yes" rot="R180">
+<attribute name="NAME" x="-30.425" y="0.825" size="1.27" layer="25" rot="R180" display="off"/>
+<attribute name="VALUE" x="-30.425" y="3.365" size="1.27" layer="27" rot="R180" display="off"/>
 </element>
 <element name="POWER_TOP1:U$1" library="power_supplies" package="SIP-12" value="R-745.0P" x="-10.7" y="-16.01" smashed="yes" rot="R180">
 <attribute name="NAME" x="-15.78" y="-0.77" size="1.27" layer="21" rot="R270" display="off"/>
@@ -4877,7 +4925,9 @@ design rules under a new name.</description>
 <attribute name="PRICE" value="0.28 USD" x="114.43" y="-56.63" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="109.97818125" y="-60.0897" size="2.085990625" layer="28" ratio="10" rot="SMR90" display="off"/>
 </element>
-<element name="RC_INPUT1:X1" library="con-molex-micro-fit-3_0" package="43045-0409" value="43045-0409" x="122.32" y="-63.46" smashed="yes" rot="R90"/>
+<element name="RC_INPUT1:X1" library="con-molex-micro-fit-3_0" package="43045-0409" value="43045-0409" x="122.32" y="-63.46" smashed="yes" rot="R90">
+<attribute name="SILK" value="RCRX" x="122.32" y="-63.46" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="RELAY_CONTROL_TOP1:D2" library="discrete" package="TO220AC" value="STPS20M60D" x="-44.25" y="-3.05" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="SCHOTTKY 60V 20A" x="-44.25" y="-3.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="STMicroelectronics" x="-44.25" y="-3.05" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5067,18 +5117,31 @@ design rules under a new name.</description>
 <attribute name="PRICE" value="1.26 USD" x="99.36" y="-9.03" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="95.417809375" y="-14.75253125" size="2.085540625" layer="28" ratio="10" rot="SMR90" display="off"/>
 </element>
-<element name="RELAY_CONTROL_TOP1:RELAY_CONTROL1:JTHR" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="41.53" y="-4.435" smashed="yes" rot="R180"/>
-<element name="RELAY_CONTROL_TOP1:RELAY_CONTROL1:JESTP" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="53.76" y="-4.435" smashed="yes" rot="R180"/>
-<element name="RELAY_CONTROL_TOP1:JDC" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="66.19" y="-4.435" smashed="yes" rot="R180"/>
-<element name="RELAY_CONTROL_TOP1:JMC" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="91.62" y="-4.435" smashed="yes" rot="R180"/>
-<element name="RELAY_CONTROL_TOP1:JBAT" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="28.25" y="-4.835" smashed="yes" rot="MR180"/>
-<element name="RELAY_CONTROL_TOP1:JISO" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="28.28" y="-4.82" smashed="yes" rot="R180"/>
+<element name="RELAY_CONTROL_TOP1:RELAY_CONTROL1:JTHR" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="41.53" y="-4.435" smashed="yes" rot="R180">
+<attribute name="SILK" value="TETHER" x="41.53" y="-4.435" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="RELAY_CONTROL_TOP1:RELAY_CONTROL1:JESTP" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="53.76" y="-4.435" smashed="yes" rot="R180">
+<attribute name="SILK" value="ESTOP" x="53.76" y="-4.435" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="RELAY_CONTROL_TOP1:JDC" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="66.19" y="-4.435" smashed="yes" rot="R180">
+<attribute name="SILK" value="DRIVE_REL" x="66.19" y="-4.435" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="RELAY_CONTROL_TOP1:JMC" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="91.62" y="-4.435" smashed="yes" rot="R180">
+<attribute name="SILK" value="MOW_REL" x="91.62" y="-4.435" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="RELAY_CONTROL_TOP1:JBAT" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="28.25" y="-4.835" smashed="yes" rot="MR180">
+<attribute name="SILK" value="BAT" x="31.25" y="4.765" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="RELAY_CONTROL_TOP1:JISO" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="28.28" y="-4.82" smashed="yes" rot="R180">
+<attribute name="SILK" value="ISO" x="28.28" y="-4.82" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="SENSOR_TOP1:ENCODER1:X1" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" package="1751264" package3d_urn="urn:adsk.eagle:package:9397/1" value="1984989" x="40.92" y="-86.71" smashed="yes">
 <attribute name="MF" value="" x="40.92" y="-86.71" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="1751264" x="40.92" y="-86.71" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="35.6325" y="-80.715" size="1.27" layer="25" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="40.92" y="-86.71" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="10R0934" x="40.92" y="-86.71" size="1.778" layer="27" display="off"/>
+<attribute name="SILK" value="ENC" x="40.92" y="-86.71" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="40.6175" y="-82.5825" size="1.27" layer="27" display="off"/>
 </element>
 <element name="SENSOR_TOP1:ENCODER2:X1" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" package="1751264" package3d_urn="urn:adsk.eagle:package:9397/1" value="1984989" x="24.04" y="-86.71" smashed="yes">
@@ -5087,12 +5150,15 @@ design rules under a new name.</description>
 <attribute name="NAME" x="16.435" y="-89.5675" size="1.27" layer="25" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="24.04" y="-86.71" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="10R0934" x="24.04" y="-86.71" size="1.778" layer="27" display="off"/>
+<attribute name="SILK" value="ENC" x="24.04" y="-86.71" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="23.7375" y="-82.5825" size="1.27" layer="27" display="off"/>
 </element>
 <element name="SENSOR_TOP1:IMU1:U$1" library="sparkfun-IMU" package="SPARKFUN-9DOF-BREAKOUT" value="LSM9DS1" x="38.61" y="-43.25" smashed="yes">
 <attribute name="NAME" x="57.66" y="-41.98" size="1.778" layer="21" rot="R90" display="off"/>
 </element>
-<element name="SENSOR_TOP1:REACH_GPS1:U$1" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13-6P-1.25V" x="122.91" y="-77.92" smashed="yes" rot="R90"/>
+<element name="SENSOR_TOP1:REACH_GPS1:U$1" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13-6P-1.25V" x="122.91" y="-77.92" smashed="yes" rot="R90">
+<attribute name="SILK" value="GPSUART" x="122.91" y="-77.92" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="U301" library="LSF0204PWR" package="SOP65P640X120-14N" value="LSF0204PWR" x="85.93" y="-37.72" smashed="yes" rot="R270">
 <attribute name="AVAILABILITY" value="Good" x="85.93" y="-37.72" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="4-Bit Bidirectional Multi-Voltage Level Translator for Open-Drain &amp;amp; Push- Pull 14-TSSOP -40 to 125" x="85.93" y="-37.72" size="1.778" layer="27" rot="R270" display="off"/>
@@ -5103,9 +5169,15 @@ design rules under a new name.</description>
 <attribute name="PRICE" value="0.62 USD" x="85.93" y="-37.72" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="80.33533125" y="-32.049040625" size="2.085290625" layer="27" ratio="10" rot="SR270" display="off"/>
 </element>
-<element name="MOTOR_TOP1:JDL" library="con-molex-micro-fit-3_0" package="43045-0609" value="43045-0609" x="122.32" y="-46.7" smashed="yes" rot="R90"/>
-<element name="MOTOR_TOP1:JDR" library="con-molex-micro-fit-3_0" package="43045-0609" value="43045-0609" x="122.32" y="-28.8" smashed="yes" rot="R90"/>
-<element name="RELAY_CONTROL_TOP1:RELAY_CONTROL1:JMOW" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="79.2" y="-4.435" smashed="yes" rot="R180"/>
+<element name="MOTOR_TOP1:JDL" library="con-molex-micro-fit-3_0" package="43045-0609" value="43045-0609" x="122.32" y="-46.7" smashed="yes" rot="R90">
+<attribute name="SILK" value="MTRL" x="122.32" y="-46.7" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="MOTOR_TOP1:JDR" library="con-molex-micro-fit-3_0" package="43045-0609" value="43045-0609" x="122.32" y="-28.8" smashed="yes" rot="R90">
+<attribute name="SILK" value="MTRR" x="122.32" y="-28.8" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="RELAY_CONTROL_TOP1:RELAY_CONTROL1:JMOW" library="con-molex-micro-fit-3_0" package="43045-0209" value="43045-0209" x="79.2" y="-4.435" smashed="yes" rot="R180">
+<attribute name="SILK" value="MOW" x="79.2" y="-4.435" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="MICROCONTROLLER1:U$1" library="SparkFun-Boards" package="ARDUINO_MEGA" value="ARDUINO_MEGA_R3FULL" x="56.45" y="-46" smashed="yes">
 <attribute name="NAME" x="57.72" y="-18.06" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center" display="off"/>
 <attribute name="VALUE" x="56.45" y="-73.94" size="0.6096" layer="27" font="vector" ratio="20" align="top-center" display="off"/>
@@ -5395,9 +5467,9 @@ design rules under a new name.</description>
 <wire x1="10.7868" y1="-12.91" x2="10.7868" y2="-14.5868" width="0.25" layer="1"/>
 <wire x1="10.7868" y1="-14.5868" x2="10.8" y2="-14.6" width="0.25" layer="1"/>
 <via x="10.8" y="-14.6" extent="1-16" drill="0.35"/>
-<wire x1="-19.8" y1="-0.8332" x2="-21.1668" y2="-0.8332" width="0.25" layer="1"/>
-<wire x1="-21.1668" y1="-0.8332" x2="-21.2" y2="-0.8" width="0.25" layer="1"/>
-<via x="-21.2" y="-0.8" extent="1-16" drill="0.35"/>
+<wire x1="-24.6332" y1="1.4" x2="-24.6668" y2="0.3668" width="0.25" layer="1"/>
+<wire x1="-24.6668" y1="0.3668" x2="-24.7" y2="-0.3" width="0.25" layer="1"/>
+<via x="-24.7" y="-0.3" extent="1-16" drill="0.35"/>
 <wire x1="19.345" y1="-62.5052" x2="19.345" y2="-64.255" width="0.25" layer="1"/>
 <wire x1="19.345" y1="-64.255" x2="19.3" y2="-64.3" width="0.25" layer="1"/>
 <via x="19.3" y="-64.3" extent="1-16" drill="0.35"/>
@@ -6791,8 +6863,8 @@ design rules under a new name.</description>
 <signal name="POWER_TOP1:N$3">
 <contactref element="POWER_TOP1:R4" pad="1"/>
 <contactref element="POWER_TOP1:LED1" pad="1"/>
-<wire x1="-20.06" y1="-6.71" x2="-20.06" y2="-3.2268" width="0.25" layer="1"/>
-<wire x1="-20.06" y1="-3.2268" x2="-19.8" y2="-2.9668" width="0.25" layer="1"/>
+<wire x1="-30.21" y1="1.46" x2="-26.8268" y2="1.46" width="0.1524" layer="1"/>
+<wire x1="-26.8268" y1="1.46" x2="-26.7668" y2="1.4" width="0.1524" layer="1"/>
 </signal>
 <signal name="POWER_TOP1:N$4">
 <contactref element="POWER_TOP1:R2" pad="1"/>
@@ -7806,71 +7878,105 @@ design rules under a new name.</description>
 <errors>
 <approved hash="18,29,46810c5d01574b8b"/>
 <approved hash="18,29,a47950ae5feb7498"/>
+<approved hash="18,29,d270cb2b4c13c74c"/>
+<approved hash="18,30,dfcd7c9635559bd2"/>
+<approved hash="18,30,20a7b6e3c9043e8f"/>
+<approved hash="18,30,23bcab564368cb82"/>
+<approved hash="18,30,6b55f575e0427e62"/>
+<approved hash="18,29,98f7b156315418f5"/>
+<approved hash="18,29,9560ba1f511d7e62"/>
+<approved hash="18,29,e2bf00727076f9a0"/>
 <approved hash="18,29,acc2a23743b50634"/>
 <approved hash="18,29,da01d9d2b5684354"/>
+<approved hash="18,29,863e56529853edcf"/>
 <approved hash="18,29,2f74aa359f1c2e59"/>
-<approved hash="18,29,e9e7f91904ab1611"/>
 <approved hash="18,29,8a4590db6ccd7277"/>
+<approved hash="18,29,e9e7f91904ab1611"/>
 <approved hash="18,29,4b4bec1078262006"/>
 <approved hash="18,29,e0034c3f4aa80af9"/>
-<approved hash="18,29,88b41517e51a7749"/>
 <approved hash="18,29,b0e22ef9de9c4c27"/>
+<approved hash="18,29,88b41517e51a7749"/>
 <approved hash="18,29,3f98bd90e15b9dbe"/>
 <approved hash="18,29,346204a401a63160"/>
-<approved hash="18,29,5da39a5ddb7ec537"/>
-<approved hash="18,29,249d9064d445be39"/>
+<approved hash="18,29,b058e3da2dc24eb0"/>
+<approved hash="18,29,9687c50307316805"/>
+<approved hash="18,29,a18af21c301858ee"/>
+<approved hash="18,29,a8def8483a4c513a"/>
+<approved hash="18,29,67c1530a54b25969"/>
+<approved hash="18,29,67cf530053b0586f"/>
+<approved hash="18,29,67bb50f450b4596b"/>
+<approved hash="18,29,67d16f1a6fb25869"/>
+<approved hash="18,29,8adc2749d5934606"/>
 <approved hash="18,29,2d9f8c13cfccb73b"/>
+<approved hash="18,29,249d9064d445be39"/>
+<approved hash="18,29,5da39a5ddb7ec537"/>
 <approved hash="18,29,269defd6a9b7bd39"/>
+<approved hash="18,29,d293e7524a517f90"/>
+<approved hash="18,29,fa6c2a2c297df93d"/>
+<approved hash="18,29,c6e216a22a93fad3"/>
+<approved hash="18,29,5f08e7874a98f217"/>
+<approved hash="18,29,86eed6aeea82bac2"/>
+<approved hash="18,29,ba60ea20e96cb92c"/>
 <approved hash="18,29,76cbb2458d50ff9d"/>
 <approved hash="18,29,d16feb50d0c581e7"/>
 <approved hash="18,29,88f5601d79ff6fe5"/>
 <approved hash="18,29,3471a5858c728076"/>
 <approved hash="18,29,50c507a10aab5dcf"/>
+<approved hash="18,29,c695f0be244ade5e"/>
 <approved hash="18,29,303ec9ed6af05937"/>
 <approved hash="18,29,2a79e6075ccfda05"/>
 <approved hash="18,29,e54eecc8a5e34c79"/>
-<approved hash="18,29,6dabd8cc20dbf3f8"/>
+<approved hash="18,29,e447d0abf8df0842"/>
+<approved hash="18,29,3f51f697f61a0c18"/>
 <approved hash="18,29,f3bb7aa317eb1672"/>
+<approved hash="18,29,6dabd8cc20dbf3f8"/>
+<approved hash="18,29,4e0e6a64662d7d9f"/>
 <approved hash="18,29,6eee143d544b3f96"/>
+<approved hash="18,29,cd8160ce68c3c58c"/>
 <approved hash="18,29,25fe64c2c7c086fc"/>
 <approved hash="18,29,e9423c5126fadbd6"/>
 <approved hash="18,29,788d100842408b6d"/>
-<approved hash="18,29,ec35280d68467a02"/>
 <approved hash="18,29,1508f761b0497124"/>
+<approved hash="18,29,ec35280d68467a02"/>
 <approved hash="18,29,53bb6c3dafedfbb4"/>
 <approved hash="18,29,5813b819b8284560"/>
 <approved hash="18,29,401624d4038960f9"/>
-<approved hash="18,29,2da61c0035fe531d"/>
 <approved hash="18,29,d58f85dab29c71a9"/>
+<approved hash="18,29,2da61c0035fe531d"/>
 <approved hash="18,29,369be96f53c8267e"/>
 <approved hash="18,29,2bb86f66fe2f7779"/>
 <approved hash="18,29,f0eff9abc828b9b5"/>
+<approved hash="18,29,8bad95cba0bb67c0"/>
 <approved hash="18,29,dc781391631b86ea"/>
 <approved hash="18,29,9d68b761ff014394"/>
-<approved hash="18,29,d270cb2b4c13c74c"/>
-<approved hash="18,29,355ff001dc4d37b4"/>
-<approved hash="18,29,f567ec31a603cb96"/>
 <approved hash="18,29,0a7313576bc569d2"/>
 <approved hash="18,29,0ec66a11f3122880"/>
 <approved hash="18,29,2159324fac3d0908"/>
+<approved hash="18,29,355ff001dc4d37b4"/>
+<approved hash="18,29,f567ec31a603cb96"/>
 <approved hash="18,29,e893a2af01247148"/>
 <approved hash="18,29,39959b8153c6d936"/>
+<approved hash="18,29,b760f720f674b634"/>
 <approved hash="18,29,2175f698c1374e5f"/>
-<approved hash="18,29,3c7e464506b63eb8"/>
 <approved hash="18,29,040d633ef1d13288"/>
+<approved hash="18,29,3c7e464506b63eb8"/>
 <approved hash="18,29,c69e2f53d4a76ed5"/>
 <approved hash="18,29,bbdf5dae97584494"/>
 <approved hash="18,29,465b5f41c57f23a0"/>
+<approved hash="18,29,4c26e1641e2bb16d"/>
+<approved hash="18,29,3928c40273fe4d4a"/>
+<approved hash="18,29,7d66e2b5e9c17e2d"/>
+<approved hash="18,29,acad1ada89ae1be0"/>
+<approved hash="18,29,386ff82fc03e007e"/>
 <approved hash="18,29,6be5b16e736ca9e7"/>
 <approved hash="18,29,362b2cc8190edc2c"/>
 <approved hash="18,29,7ea07021ec3be2ba"/>
 <approved hash="18,29,91b55a365a1891ab"/>
-<approved hash="18,30,3b28f12234d4c5ee"/>
 <approved hash="18,30,2462ebfc29aada34"/>
 <approved hash="18,30,36cefc483e1ec8f8"/>
-<approved hash="18,30,dfcd7c9635559bd2"/>
-<approved hash="18,30,20a7b6e3c9043e8f"/>
-<approved hash="18,30,23bcab564368cb82"/>
+<approved hash="18,30,3b28f12234d4c5ee"/>
+<approved hash="18,30,080424fef7713fb5"/>
+<approved hash="18,30,291bd1f139cfc125"/>
 <approved hash="18,30,65937ae3050bc4b4"/>
 <approved hash="18,30,65963bdda5149b9a"/>
 <approved hash="18,30,52affd080f5a6140"/>
@@ -7886,6 +7992,10 @@ design rules under a new name.</description>
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

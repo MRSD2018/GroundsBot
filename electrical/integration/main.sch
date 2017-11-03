@@ -19771,43 +19771,64 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="MOTOR_L_PWMA" class="0">
 <segment>
 <label x="142.24" y="93.98" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="93.98" x2="172.5676" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="139.8524" y1="93.98" x2="167.64" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="4"/>
+<wire x1="167.64" y1="93.98" x2="172.5676" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="93.98" x2="172.5676" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_L_PWMB" class="0">
 <segment>
 <label x="142.24" y="91.44" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="91.44" x2="172.5676" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="139.8524" y1="91.44" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="5"/>
+<wire x1="165.1" y1="91.44" x2="172.5676" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="91.44" x2="172.5676" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_R_PWMA" class="0">
 <segment>
 <label x="142.24" y="88.9" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="88.9" x2="172.5676" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="139.8524" y1="88.9" x2="167.64" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="6"/>
+<wire x1="167.64" y1="88.9" x2="172.5676" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="88.9" x2="172.5676" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_R_PWMB" class="0">
 <segment>
 <label x="142.24" y="86.36" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="86.36" x2="172.5676" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="139.8524" y1="86.36" x2="167.64" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="7"/>
+<wire x1="167.64" y1="86.36" x2="172.5676" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="86.36" x2="172.5676" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DECK_1_PWM" class="0">
 <segment>
 <label x="142.24" y="83.82" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="83.82" x2="172.5676" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="139.8524" y1="83.82" x2="167.64" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="8"/>
+<wire x1="167.64" y1="83.82" x2="172.5676" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="83.82" x2="172.5676" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DECK_2_PWM" class="0">
 <segment>
 <label x="142.24" y="81.28" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="81.28" x2="172.5676" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="139.8524" y1="81.28" x2="165.1" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="9"/>
+<wire x1="165.1" y1="81.28" x2="172.5676" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="81.28" x2="172.5676" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DECK_3_PWM" class="0">
 <segment>
 <label x="142.24" y="78.74" size="1.778" layer="95"/>
-<wire x1="139.8524" y1="78.74" x2="172.5676" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="139.8524" y1="78.74" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="10"/>
+<wire x1="167.64" y1="78.74" x2="172.5676" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="78.74" x2="172.5676" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="11" class="0">
@@ -20274,7 +20295,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="RX0" class="0">
 <segment>
 <label x="142.24" y="101.6" size="1.778" layer="95"/>
-<wire x1="139.7" y1="101.6" x2="172.5676" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="101.6" x2="167.64" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="1(TX0)"/>
+<wire x1="167.64" y1="101.6" x2="172.5676" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="101.6" x2="172.5676" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A12" class="0">
@@ -20312,54 +20336,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="68.58" y1="111.76" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="78.74" x2="127" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="127" y1="63.5" x2="127" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="1(TX0)"/>
-<wire x1="172.72" y1="101.6" x2="175.26" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="4"/>
-<wire x1="172.72" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="5"/>
-<wire x1="172.72" y1="91.44" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="6"/>
-<wire x1="175.26" y1="88.9" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="7"/>
-<wire x1="172.72" y1="86.36" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="8"/>
-<wire x1="172.72" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="9"/>
-<wire x1="172.72" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="10"/>
-<wire x1="172.72" y1="78.74" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="23" class="0">
@@ -24208,7 +24184,6 @@ wire to 24V at motor controller</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1@RC_INPUT,76.2,114.3,U1,VCC,3.3V,,,"/>
 <approved hash="104,1@REG,154.94,114.3,U1,OUT,5V_ISO,,,"/>
 <approved hash="104,1@REG,154.94,111.76,U1,GND_2,GND_ISO,,,"/>
 <approved hash="104,1@REG,154.94,109.22,U1,GND_3,GND_ISO,,,"/>
@@ -24219,12 +24194,7 @@ wire to 24V at motor controller</text>
 <approved hash="104,1@UVLO,127,81.28,U1,V-,GND_ISO,,,"/>
 <approved hash="113,1@IMU,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@JETSON_TX2_J26_GPIO,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1@JETSON_J17_UART,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1@JETSON_J17_UART,172.957,124.686,JP2,,,,,"/>
-<approved hash="113,1@REACH_GPS,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1@POWER_TOP,130.071,89.431,FRAME1,,,,,"/>
 <approved hash="113,1@JETSON,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1@MOTOR_TOP,130.071,89.431,FRAME1,,,,,"/>
 </errors>
 </schematic>
 </drawing>

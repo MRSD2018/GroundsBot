@@ -43,7 +43,7 @@ Test 3:
   
   GroundBot team member engages emergency stop
 
-  GroundsBot ceases to move within 1 second
+  GroundsBot ceases to move within 2 seconds
 
 
 Spring Validation Experiment

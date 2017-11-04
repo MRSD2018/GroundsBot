@@ -11,7 +11,7 @@ Test 1:
 
       Power on GroundsBot 
 
-      Establish connection between GroundsBot and mobile device
+      Establish connection between GroundsBot and laptop
 
       Input GPS waypoints following a typical zigzag pattern a groundskeeper might make when mowing a lawn
 
@@ -26,7 +26,7 @@ Test 2:
 Test 2 has been designed to demonstrate base functionality of the perception subsystem. The team will present a perception algorithm capable of differentiating between grass (i.e. a mowable surface) and non-grass (i.e. a non-mowable surface.) This test will be performed outside of the fall validation experiment and a replay of the test will be displayed during the fall validation experiment.
   Location: Offline, report generated for FVE
   
-  Equipment: ZED Stereo camera, laptop
+  Equipment: Bumblebee Stereo camera, laptop
 
     Take 10 pictures each of: Fairway, Rough, Sidewalk, Parking Lot. Each picture is homogeneous (all grass, all pavement, etc...)
 
@@ -43,7 +43,7 @@ Test 3:
   
   GroundBot team member engages emergency stop
 
-  GroundsBot ceases to move
+  GroundsBot ceases to move within 1 second
 
 
 Spring Validation Experiment
@@ -54,11 +54,11 @@ Test 1:
 
   Location: Field by Doherty Apartments
 
-  Equipment: GroundsBot, GroundsBot RTK base station, mobile device
+  Equipment: GroundsBot, GroundsBot RTK base station, laptop, Five obstacles (one at minimum of performance requirements)
 
       Power on GroundsBot
 
-      Open UI on mobile interface and establish a connection with GroundsBot
+      Open UI on laptop and establish a connection with GroundsBot
 
       Have a new user use UI to define boundaries of area to be mowed
 
@@ -76,7 +76,7 @@ Test 1:
 Test 2:
   Location: Field by Doherty Apartments
 
-  Equipment: GroundsBot, GroundsBot RTK base station, mobile device, soccer ball
+  Equipment: GroundsBot, GroundsBot RTK base station, laptop, soccer ball
 
   GroundsBot is directed to move in a straight line
 
@@ -87,7 +87,7 @@ Test 2:
 Test 3:
   Location: Field by Doherty Apartments
 
-  Equipment: GroundsBot, GroundsBot RTK base station, mobile device
+  Equipment: GroundsBot, GroundsBot RTK base station, laptop
 
   Test conducted offline, presented at FVE
     

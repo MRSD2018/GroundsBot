@@ -505,7 +505,11 @@ manufacturer:SAMTEC</description>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="CONN HEADER 30POS SMT VERT 30AU" constant="no"/>
+<attribute name="MANUFACTURER" value="3M" constant="no"/>
+<attribute name="MPN" value="N2530-6V0C-RB-WF" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -816,8 +820,8 @@ manufacturer:SAMTEC</description>
 <technology name="">
 <attribute name="AVAILABILITY" value="Good"/>
 <attribute name="DESCRIPTION" value="NC7SZ04 Series 5.5 V Surface Mount TinyLogic UHS Inverter - SOT-23-5"/>
-<attribute name="MF" value="Fairchild Semiconductor"/>
-<attribute name="MP" value="NC7SZ04M5"/>
+<attribute name="MANUFACTURER" value="Fairchild Semiconductor"/>
+<attribute name="MPN" value="NC7SZ04M5"/>
 <attribute name="PACKAGE" value="SOT-23-5 Fairchild Semiconductor"/>
 <attribute name="PRICE" value="0.28 USD"/>
 </technology>
@@ -989,8 +993,8 @@ manufacturer:SAMTEC</description>
 <technology name="">
 <attribute name="AVAILABILITY" value="Unavailable"/>
 <attribute name="DESCRIPTION" value="Smt t/r"/>
-<attribute name="MF" value="NXP Semiconductors"/>
-<attribute name="MP" value="PCF8574ATD-T"/>
+<attribute name="MANUFACTURER" value="NXP Semiconductors"/>
+<attribute name="MPN" value="PCF8574ATD-T"/>
 <attribute name="PACKAGE" value="SOIC-16 NXP Semiconductors"/>
 <attribute name="PRICE" value="1.10 USD"/>
 </technology>
@@ -1095,8 +1099,8 @@ manufacturer:SAMTEC</description>
 <technology name="">
 <attribute name="AVAILABILITY" value="Good"/>
 <attribute name="DESCRIPTION" value="Led, Green, 1.25mm x 1.4mm, 7mcd, 570nm, Full Reel"/>
-<attribute name="MF" value="Chicago Miniature Lighting"/>
-<attribute name="MP" value="CMD17-21VGD/TR8"/>
+<attribute name="MANUFACTURER" value="Chicago Miniature Lighting"/>
+<attribute name="MPN" value="CMD17-21VGD/TR8"/>
 <attribute name="PACKAGE" value="0805 Chicago Miniature Lighting"/>
 <attribute name="PRICE" value="0.18 USD"/>
 </technology>
@@ -5738,7 +5742,11 @@ Input:18-75V</text>
 <connect gate="G$1" pin="VOUT3" pad="VOUT3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="CONV DC/DC 2A 6.5-28VIN 5V" constant="no"/>
+<attribute name="MANUFACTURER" value="Recom" constant="no"/>
+<attribute name="MPN" value="R-725.0P" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5760,7 +5768,11 @@ Input:18-75V</text>
 <connect gate="G$1" pin="TRIM" pad="TRIM"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="MODULE DC/DC 1/16 BRICK 12V 4A" constant="no"/>
+<attribute name="MANUFACTURER" value="Delta Electronics" constant="no"/>
+<attribute name="MPN" value="V36SE12004NRFA" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5790,7 +5802,11 @@ Input:18-75V</text>
 <connect gate="A" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="2x FUSE CLIP CARTRIDGE 600V 20A PCB" constant="no"/>
+<attribute name="MANUFACTURER" value="LittelFuse" constant="no"/>
+<attribute name="MPN" value="01000020Z" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5813,8 +5829,9 @@ Input:18-75V</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER_PART_NUMBER" value="AMC1200SDUB" constant="no"/>
-<attribute name="VENDOR" value="Texas Instruments" constant="no"/>
+<attribute name="DESCRIPTION" value="IC OPAMP ISOLATION 100KHZ 8SOP" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MPN" value="AMC1200SDUB" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5874,8 +5891,9 @@ Input:18-75V</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER_PART_NUMBER" value="LM2936HVMAX5.0NOPB" constant="no"/>
-<attribute name="VENDOR" value="Texas Instruments" constant="no"/>
+<attribute name="DESCRIPTION" value="IC REG LINEAR 5V 50MA 8SOIC" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MPN" value="LM2936HVMAX5.0NOPB" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5968,7 +5986,7 @@ Input:18-75V</text>
 <technology name="">
 <attribute name="DESCRIPTION" value="VARISTOR 12V 60A 0805 " constant="no"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" constant="no"/>
-<attribute name="PART_NUMBER" value="AVR-M2012C120MT6AB " constant="no"/>
+<attribute name="MPN" value="AVR-M2012C120MT6AB " constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5988,7 +6006,7 @@ Input:18-75V</text>
 <technology name="">
 <attribute name="DESCRIPTION" value="VARISTOR 5V 40A 0805 " constant="no"/>
 <attribute name="MANUFACTURER" value="Avx" constant="no"/>
-<attribute name="PART_NUMBER" value="VC080503A100DP" constant="no"/>
+<attribute name="MPN" value="VC080503A100DP" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6008,7 +6026,7 @@ Input:18-75V</text>
 <technology name="">
 <attribute name="DESCRIPTION" value="VARISTOR 47V 2KA DISC 20MM" constant="no"/>
 <attribute name="MANUFACTURER" value="Bourns" constant="no"/>
-<attribute name="PART_NUMBER" value="MOV-20D470K " constant="no"/>
+<attribute name="MPN" value="MOV-20D470K " constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12851,7 +12869,11 @@ Breakout</text>
 <connect gate="G$1" pin="VCC" pad="VDD"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="9DoF IMU Breakout" constant="no"/>
+<attribute name="MANUFACTURER" value="Sparkfun" constant="no"/>
+<attribute name="MPN" value="LSM9DS1-Breakout" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13053,8 +13075,8 @@ DIN A3, landscape with location and doc. field</description>
 <technology name="">
 <attribute name="AVAILABILITY" value="Good"/>
 <attribute name="DESCRIPTION" value="4-Bit Bidirectional Multi-Voltage Level Translator for Open-Drain &amp;amp; Push- Pull 14-TSSOP -40 to 125"/>
-<attribute name="MF" value="Texas Instruments"/>
-<attribute name="MP" value="LSF0204PWR"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MPN" value="LSF0204PWR"/>
 <attribute name="PACKAGE" value="TSSOP-14 Texas Instruments"/>
 <attribute name="PRICE" value="0.62 USD"/>
 </technology>
@@ -13156,8 +13178,8 @@ DIN A3, landscape with location and doc. field</description>
 <technology name="">
 <attribute name="AVAILABILITY" value="Good"/>
 <attribute name="DESCRIPTION" value="Optocoupler DC-IN 1-CH Transistor DC-OUT 4-Pin PDIP SMD T/R"/>
-<attribute name="MF" value="Vishay Semiconductor"/>
-<attribute name="MP" value="SFH615A-3X009T"/>
+<attribute name="MANUFACTURER" value="Vishay Semiconductor"/>
+<attribute name="MPN" value="SFH615A-3X009T"/>
 <attribute name="PACKAGE" value="SMD-4 Vishay"/>
 <attribute name="PRICE" value="0.48 USD"/>
 </technology>
@@ -13561,7 +13583,11 @@ Source: www.st.com, BAT60J.pdf</description>
 <connect gate="G$1" pin="E" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="TRANS NPN 100V 3A SOT223" constant="no"/>
+<attribute name="MANUFACTURER" value="Diodes Inc" constant="no"/>
+<attribute name="MPN" value="ZXTN25100DGTA" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13581,6 +13607,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <technology name="">
 <attribute name="DESCRIPTION" value="SCHOTTKY 60V 20A" constant="no"/>
 <attribute name="MANUFACTURER" value="STMicroelectronics" constant="no"/>
+<attribute name="MPN" value="STPS20M60D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -13602,7 +13629,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <technology name="">
 <attribute name="DESCRIPTION" value="DIODE GEN PURP 75V 300MA SOD323" constant="no"/>
 <attribute name="MANUFACTURER" value="SMC" constant="no"/>
-<attribute name="PART_NUMBER" value="1N4148WSTR" constant="no"/>
+<attribute name="MPN" value="1N4148WSTR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -13711,8 +13738,8 @@ Source: www.st.com, BAT60J.pdf</description>
 <technology name="">
 <attribute name="AVAILABILITY" value="Good"/>
 <attribute name="DESCRIPTION" value="Low Voltage, Precision Comparator with Push-Pull Output 8-VSSOP -40 to 125"/>
-<attribute name="MF" value="Texas Instruments"/>
-<attribute name="MP" value="LMV762MM/NOPB"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MPN" value="LMV762MM/NOPB"/>
 <attribute name="PACKAGE" value="MSOP-8 Texas Instruments"/>
 <attribute name="PRICE" value="1.26 USD"/>
 </technology>
@@ -16960,7 +16987,11 @@ Source: www.st.com, BAT60J.pdf</description>
 <connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="CONN HEADER 2POS RT ANG SMD TIN" constant="no"/>
+<attribute name="MANUFACTURER" value="Phoenix Contact" constant="no"/>
+<attribute name="MPN" value="43045-0209" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="43045-0206" package="43045-0206">
@@ -17093,7 +17124,11 @@ Source: www.st.com, BAT60J.pdf</description>
 <connect gate="G$1" pin="6" pad="P$6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="CONN HEADER 6POS RT ANG SMD TIN" constant="no"/>
+<attribute name="MANUFACTURER" value="Phoenix Contact" constant="no"/>
+<attribute name="MPN" value="43045-0609" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="43045-0606" package="43045-0606">
@@ -17322,7 +17357,11 @@ Source: www.st.com, BAT60J.pdf</description>
 <connect gate="G$1" pin="4" pad="P$4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="CONN HEADER 4POS RT ANG SMD TIN" constant="no"/>
+<attribute name="MANUFACTURER" value="Molex" constant="no"/>
+<attribute name="MPN" value="43045-0409" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="43045-0406" package="43045-0406">
@@ -17691,7 +17730,7 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <technology name="">
 <attribute name="DESCRIPTION" value="CONN HEADER 6 POS 2.54" constant="no"/>
 <attribute name="MANUFACTURER" value="Wurth" constant="no"/>
-<attribute name="PART_NUMBER" value="61300611121" constant="no"/>
+<attribute name="MPN" value="61300611121" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -17794,8 +17833,8 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <technology name="">
 <attribute name="AVAILABILITY" value="Good"/>
 <attribute name="DESCRIPTION" value="Fuse Chip Very Fast Acting 4A SMD Solder Pad 9.73 X 5.03 X 3.81mm T/R CSA/PSE/UL"/>
-<attribute name="MF" value="Littelfuse"/>
-<attribute name="MP" value="0154004.DR"/>
+<attribute name="MANUFACTURER" value="Littelfuse"/>
+<attribute name="MPN" value="0154004.DR"/>
 <attribute name="PACKAGE" value="None"/>
 <attribute name="PRICE" value="1.54 USD"/>
 </technology>
@@ -18034,7 +18073,11 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <connect gate="G$1" pin="6" pad="P$6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="CONN HEADER 6POS 1.25MM SMD GOLD" constant="no"/>
+<attribute name="MANUFACTURER" value="Hirose" constant="no"/>
+<attribute name="MPN" value="DF13-6P-1.25V(50)" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="H" package="DF13A-6P-1.25H">
@@ -20848,7 +20891,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device="" value="FRAME1"/>
-<part name="X2" library="power_connectors" deviceset="1751264" device=""/>
+<part name="X1" library="power_connectors" deviceset="1751264" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20857,10 +20900,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-83.82" y="-17.78"/>
-<instance part="X2" gate="-1" x="60.96" y="175.26"/>
-<instance part="X2" gate="-2" x="60.96" y="167.64"/>
-<instance part="X2" gate="-3" x="60.96" y="160.02"/>
-<instance part="X2" gate="-4" x="60.96" y="152.4"/>
+<instance part="X1" gate="-1" x="60.96" y="175.26"/>
+<instance part="X1" gate="-2" x="60.96" y="167.64"/>
+<instance part="X1" gate="-3" x="60.96" y="160.02"/>
+<instance part="X1" gate="-4" x="60.96" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -20869,28 +20912,28 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <wire x1="27.94" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
 <label x="27.94" y="175.26" size="1.778" layer="95"/>
-<pinref part="X2" gate="-1" pin="K"/>
+<pinref part="X1" gate="-1" pin="K"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <wire x1="27.94" y1="167.64" x2="58.42" y2="167.64" width="0.1524" layer="91"/>
 <label x="27.94" y="167.64" size="1.778" layer="95"/>
-<pinref part="X2" gate="-2" pin="K"/>
+<pinref part="X1" gate="-2" pin="K"/>
 </segment>
 </net>
 <net name="CHANNEL_A" class="0">
 <segment>
 <wire x1="27.94" y1="160.02" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
 <label x="27.94" y="160.02" size="1.778" layer="95"/>
-<pinref part="X2" gate="-3" pin="K"/>
+<pinref part="X1" gate="-3" pin="K"/>
 </segment>
 </net>
 <net name="CHANNEL_B" class="0">
 <segment>
 <wire x1="27.94" y1="152.4" x2="58.42" y2="152.4" width="0.1524" layer="91"/>
 <label x="27.94" y="152.4" size="1.778" layer="95"/>
-<pinref part="X2" gate="-4" pin="K"/>
+<pinref part="X1" gate="-4" pin="K"/>
 </segment>
 </net>
 </nets>
@@ -20987,7 +21030,7 @@ Use single ended</text>
 <instance part="GND3" gate="VR1" x="127" y="43.18"/>
 <instance part="GND_CPU2" gate="G$1" x="71.12" y="109.22"/>
 <instance part="GND_CPU3" gate="G$1" x="78.74" y="104.14"/>
-<instance part="5V2" gate="G$1" x="73.66" y="119.38"/>
+<instance part="5V2" gate="G$1" x="78.74" y="119.38"/>
 <instance part="36V_RAW6" gate="A" x="215.9" y="144.78" rot="R90"/>
 <instance part="5V4" gate="G$1" x="220.98" y="137.16" rot="R90"/>
 <instance part="GND_CPU8" gate="G$1" x="215.9" y="129.54" rot="R270"/>
@@ -21123,7 +21166,7 @@ Use single ended</text>
 <segment>
 <pinref part="U1" gate="A" pin="VDD1"/>
 <pinref part="5V2" gate="G$1" pin="5V_ISO"/>
-<wire x1="73.66" y1="119.38" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="119.38" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="5V4" gate="G$1" pin="5V_ISO"/>

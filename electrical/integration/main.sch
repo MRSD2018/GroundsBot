@@ -17580,69 +17580,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <rectangle x1="3.429" y1="-2.921" x2="4.191" y2="-1.905" layer="21"/>
 <rectangle x1="5.969" y1="-2.921" x2="6.731" y2="-1.905" layer="21"/>
 </package>
-</packages>
-<symbols>
-<symbol name="PINHD6">
-<wire x1="-6.35" y1="-7.62" x2="1.27" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-7.62" x2="1.27" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="10.16" x2="-6.35" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="10.16" x2="-6.35" y2="-7.62" width="0.4064" layer="94"/>
-<text x="-6.35" y="10.795" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="7.62" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="3" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="4" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="5" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="6" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="61300611121" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="PINHD6" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="1X06">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-<connect gate="A" pin="5" pad="5"/>
-<connect gate="A" pin="6" pad="6"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="CONN HEADER 6 POS 2.54" constant="no"/>
-<attribute name="MANUFACTURER" value="Wurth" constant="no"/>
-<attribute name="PART_NUMBER" value="61300611121" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="/90" package="1X06/90">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-<connect gate="A" pin="5" pad="5"/>
-<connect gate="A" pin="6" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="con-phoenix-350" urn="urn:adsk.eagle:library:174">
-<description>&lt;b&gt;Phoenix Connectors&lt;/b&gt; Grid 3.50 mm&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="1751264" urn="urn:adsk.eagle:footprint:9373/1" library_version="1">
+<package name="1751264">
 <description>&lt;b&gt;MKDS 1/ 4-3,5&lt;/b&gt; Printklemme&lt;p&gt;
 Nennstrom: 10 A&lt;br&gt;
 Bemessungsspannung: 160 V&lt;br&gt;
@@ -17707,21 +17645,22 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 </polygon>
 </package>
 </packages>
-<packages3d>
-<package3d name="1751264" urn="urn:adsk.eagle:package:9397/1" type="box" library_version="1">
-<description>MKDS 1/ 4-3,5 Printklemme
-Nennstrom: 10 A
-Bemessungsspannung: 160 V
-Raster: 3,5 mm
-Polzahl: 4
-Montageart: Löten
-Anschlussart: Schraubanschluss
-Anschlussrichtung vom Leiter zur Platine: 0°
-Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
-</package3d>
-</packages3d>
 <symbols>
-<symbol name="SCHRAUBKLEMME" urn="urn:adsk.eagle:symbol:9370/1" library_version="1">
+<symbol name="PINHD6">
+<wire x1="-6.35" y1="-7.62" x2="1.27" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="1.27" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="10.16" x2="-6.35" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="10.16" x2="-6.35" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-6.35" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="7.62" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="3" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="5" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="6" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="SCHRAUBKLEMME">
 <wire x1="0" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
@@ -17733,7 +17672,45 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="1751264" urn="urn:adsk.eagle:component:9416/1" prefix="X" library_version="1">
+<deviceset name="61300611121" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="PINHD6" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="1X06">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="CONN HEADER 6 POS 2.54" constant="no"/>
+<attribute name="MANUFACTURER" value="Wurth" constant="no"/>
+<attribute name="PART_NUMBER" value="61300611121" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="/90" package="1X06/90">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1751264" prefix="X">
 <description>&lt;b&gt;MKDS 1/ 4-3,5&lt;/b&gt; Printklemme&lt;p&gt;
 Nennstrom: 10 A&lt;br&gt;
 Bemessungsspannung: 160 V&lt;br&gt;
@@ -17757,15 +17734,11 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <connect gate="-3" pin="K" pad="3"/>
 <connect gate="-4" pin="K" pad="4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:9397/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="MF" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="CONN TERM BLOCK 4POS 3.5MM" constant="no"/>
+<attribute name="MANUFACTURER" value="Phoenix Contact" constant="no"/>
 <attribute name="MPN" value="1751264" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="10R0934" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -20875,9 +20848,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device="" value="FRAME1"/>
-<part name="X1" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751264" device="" package3d_urn="urn:adsk.eagle:package:9397/1" value="1984989">
-<attribute name="SILK" value="ENC"/>
-</part>
+<part name="X2" library="power_connectors" deviceset="1751264" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20886,12 +20857,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-83.82" y="-17.78"/>
-<instance part="X1" gate="-1" x="60.96" y="175.26">
-<attribute name="SILK" x="60.96" y="175.26" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="X1" gate="-2" x="60.96" y="167.64"/>
-<instance part="X1" gate="-3" x="60.96" y="160.02"/>
-<instance part="X1" gate="-4" x="60.96" y="152.4"/>
+<instance part="X2" gate="-1" x="60.96" y="175.26"/>
+<instance part="X2" gate="-2" x="60.96" y="167.64"/>
+<instance part="X2" gate="-3" x="60.96" y="160.02"/>
+<instance part="X2" gate="-4" x="60.96" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -20900,28 +20869,28 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <wire x1="27.94" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
 <label x="27.94" y="175.26" size="1.778" layer="95"/>
-<pinref part="X1" gate="-1" pin="K"/>
+<pinref part="X2" gate="-1" pin="K"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <wire x1="27.94" y1="167.64" x2="58.42" y2="167.64" width="0.1524" layer="91"/>
 <label x="27.94" y="167.64" size="1.778" layer="95"/>
-<pinref part="X1" gate="-2" pin="K"/>
+<pinref part="X2" gate="-2" pin="K"/>
 </segment>
 </net>
 <net name="CHANNEL_A" class="0">
 <segment>
 <wire x1="27.94" y1="160.02" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
 <label x="27.94" y="160.02" size="1.778" layer="95"/>
-<pinref part="X1" gate="-3" pin="K"/>
+<pinref part="X2" gate="-3" pin="K"/>
 </segment>
 </net>
 <net name="CHANNEL_B" class="0">
 <segment>
 <wire x1="27.94" y1="152.4" x2="58.42" y2="152.4" width="0.1524" layer="91"/>
 <label x="27.94" y="152.4" size="1.778" layer="95"/>
-<pinref part="X1" gate="-4" pin="K"/>
+<pinref part="X2" gate="-4" pin="K"/>
 </segment>
 </net>
 </nets>
@@ -21018,7 +20987,7 @@ Use single ended</text>
 <instance part="GND3" gate="VR1" x="127" y="43.18"/>
 <instance part="GND_CPU2" gate="G$1" x="71.12" y="109.22"/>
 <instance part="GND_CPU3" gate="G$1" x="78.74" y="104.14"/>
-<instance part="5V2" gate="G$1" x="78.74" y="119.38"/>
+<instance part="5V2" gate="G$1" x="73.66" y="119.38"/>
 <instance part="36V_RAW6" gate="A" x="215.9" y="144.78" rot="R90"/>
 <instance part="5V4" gate="G$1" x="220.98" y="137.16" rot="R90"/>
 <instance part="GND_CPU8" gate="G$1" x="215.9" y="129.54" rot="R270"/>
@@ -21154,7 +21123,7 @@ Use single ended</text>
 <segment>
 <pinref part="U1" gate="A" pin="VDD1"/>
 <pinref part="5V2" gate="G$1" pin="5V_ISO"/>
-<wire x1="78.74" y1="119.38" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="119.38" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="5V4" gate="G$1" pin="5V_ISO"/>

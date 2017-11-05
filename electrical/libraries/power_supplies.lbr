@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -826,7 +826,11 @@ So dual pins for top/bot</text>
 <connect gate="G$1" pin="TRIM" pad="TRIM"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="MODULE DC/DC 1/16 BRICK 12V 4A" constant="no"/>
+<attribute name="MANUFACTURER" value="Delta Electronics" constant="no"/>
+<attribute name="MPN" value="V36SE12004NRFA" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -852,7 +856,11 @@ So dual pins for top/bot</text>
 <connect gate="G$1" pin="VOUT3" pad="VOUT3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="CONV DC/DC 2A 6.5-28VIN 5V" constant="no"/>
+<attribute name="MANUFACTURER" value="Recom" constant="no"/>
+<attribute name="MPN" value="R-725.0P" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -901,8 +909,9 @@ So dual pins for top/bot</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER_PART_NUMBER" value="LM2936HVMAX5.0NOPB" constant="no"/>
-<attribute name="VENDOR" value="Texas Instruments" constant="no"/>
+<attribute name="DESCRIPTION" value="IC REG LINEAR 5V 50MA 8SOIC" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MPN" value="LM2936HVMAX5.0NOPB" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -962,8 +971,9 @@ So dual pins for top/bot</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER_PART_NUMBER" value="AMC1200SDUB" constant="no"/>
-<attribute name="VENDOR" value="Texas Instruments" constant="no"/>
+<attribute name="DESCRIPTION" value="IC OPAMP ISOLATION 100KHZ 8SOP" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MPN" value="AMC1200SDUB" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1036,7 +1046,11 @@ So dual pins for top/bot</text>
 <connect gate="A" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="2x FUSE CLIP CARTRIDGE 600V 20A PCB" constant="no"/>
+<attribute name="MANUFACTURER" value="LittelFuse" constant="no"/>
+<attribute name="MPN" value="01000020Z" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1141,7 +1155,7 @@ So dual pins for top/bot</text>
 <technology name="">
 <attribute name="DESCRIPTION" value="VARISTOR 12V 60A 0805 " constant="no"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" constant="no"/>
-<attribute name="PART_NUMBER" value="AVR-M2012C120MT6AB " constant="no"/>
+<attribute name="MPN" value="AVR-M2012C120MT6AB " constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1161,7 +1175,7 @@ So dual pins for top/bot</text>
 <technology name="">
 <attribute name="DESCRIPTION" value="VARISTOR 5V 40A 0805 " constant="no"/>
 <attribute name="MANUFACTURER" value="Avx" constant="no"/>
-<attribute name="PART_NUMBER" value="VC080503A100DP" constant="no"/>
+<attribute name="MPN" value="VC080503A100DP" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1181,7 +1195,7 @@ So dual pins for top/bot</text>
 <technology name="">
 <attribute name="DESCRIPTION" value="VARISTOR 47V 2KA DISC 20MM" constant="no"/>
 <attribute name="MANUFACTURER" value="Bourns" constant="no"/>
-<attribute name="PART_NUMBER" value="MOV-20D470K " constant="no"/>
+<attribute name="MPN" value="MOV-20D470K " constant="no"/>
 </technology>
 </technologies>
 </device>

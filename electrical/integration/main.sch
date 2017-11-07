@@ -12320,8 +12320,8 @@ from mower supply</text>
 <attribute name="NAME" x="71.12" y="127" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="POWER_TOP1" module="PWR" x="63.5" y="149.86"/>
-<moduleinst name="JETSON1" module="JETSON" x="152.4" y="114.3" offset="100"/>
-<moduleinst name="SENSOR_TOP1" module="SNS" x="218.44" y="76.2" offset="300"/>
+<moduleinst name="JETSON1" module="JETSON" x="152.4" y="114.3"/>
+<moduleinst name="SENSOR_TOP1" module="SNS" x="218.44" y="76.2"/>
 <moduleinst name="MOTOR_TOP1" module="MTR" x="137.16" y="50.8"/>
 <moduleinst name="RC_INPUT1" module="RC" x="152.4" y="139.7"/>
 <moduleinst name="RELAY_CONTROL_TOP1" module="RL" x="198.12" y="139.7"/>

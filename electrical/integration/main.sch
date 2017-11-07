@@ -1706,6 +1706,16 @@ Input:18-75V</text>
 <text x="-2.54" y="-12.7" size="1.778" layer="94" rot="R90">&gt;Name</text>
 <text x="-2.54" y="5.08" size="1.778" layer="94" rot="R90">&gt;Value</text>
 </symbol>
+<symbol name="FUSE_BOM">
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="40.64" y2="2.54" width="0.254" layer="94"/>
+<wire x1="40.64" y1="2.54" x2="40.64" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="40.64" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="5.08" size="1.27" layer="94">&gt;Name</text>
+<text x="-10.16" y="0" size="1.778" layer="94">BOM_ITEM</text>
+<text x="-7.62" y="-2.54" size="1.778" layer="94">&gt;MPN</text>
+<text x="-7.62" y="-5.08" size="1.778" layer="94">&gt;DESCRIPTION</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -2012,7 +2022,7 @@ Input:18-75V</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOV-20D470K" prefix="MOV">
+<deviceset name="MOV-B72220S0200K101" prefix="MOV">
 <gates>
 <gate name="G$1" symbol="MOV" x="0" y="2.54"/>
 </gates>
@@ -2024,9 +2034,25 @@ Input:18-75V</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DESCRIPTION" value="VARISTOR 47V 2KA DISC 20MM" constant="no"/>
-<attribute name="MANUFACTURER" value="Bourns" constant="no"/>
-<attribute name="MPN" value="MOV-20D470K " constant="no"/>
+<attribute name="DESCRIPTION" value="VARISTOR 33V 2KA DISC 20MM " constant="no"/>
+<attribute name="MANUFACTURER" value="EPCOS" constant="no"/>
+<attribute name="MPN" value="B72220S0200K101" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BOMFUSE_0477005.MXP" prefix="F">
+<gates>
+<gate name="G$1" symbol="FUSE_BOM" x="-7.62" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="FUSE CERM 5A 500VAC 400VDC 5X20 " constant="no"/>
+<attribute name="MANUFACTURER" value="Littelfuse" constant="no"/>
+<attribute name="MPN" value="0477005.MXP" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7087,7 +7113,7 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="0154004.DR" prefix="F">
+<deviceset name="0154003.DR" prefix="F">
 <description>154/154T/154L/154TL Series OMNI-BLOK® Fuse and Holder Assembly</description>
 <gates>
 <gate name="G$1" symbol="0154004.DR" x="0" y="0"/>
@@ -7103,7 +7129,7 @@ Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
 <attribute name="AVAILABILITY" value="Good"/>
 <attribute name="DESCRIPTION" value="Fuse Chip Very Fast Acting 4A SMD Solder Pad 9.73 X 5.03 X 3.81mm T/R CSA/PSE/UL"/>
 <attribute name="MANUFACTURER" value="Littelfuse"/>
-<attribute name="MPN" value="0154004.DR"/>
+<attribute name="MPN" value="0154003.DR"/>
 <attribute name="PACKAGE" value="None"/>
 <attribute name="PRICE" value="1.54 USD"/>
 </technology>
@@ -9421,8 +9447,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND1" library="power_supplies" deviceset="GND" device=""/>
 <part name="GND2" library="power_supplies" deviceset="GND" device=""/>
 <part name="GND7" library="power_supplies" deviceset="GND" device=""/>
-<part name="F1" library="fuses" deviceset="0154004.DR" device=""/>
-<part name="F2" library="fuses" deviceset="0154004.DR" device=""/>
+<part name="F1" library="fuses" deviceset="0154003.DR" device=""/>
+<part name="F2" library="fuses" deviceset="0154003.DR" device=""/>
 <part name="GND8" library="power_supplies" deviceset="GND" device=""/>
 <part name="MOV1" library="power_supplies" deviceset="AVR-M2012C120MT6AB" device=""/>
 <part name="MOV2" library="power_supplies" deviceset="VC080503A100DP" device=""/>
@@ -10795,8 +10821,9 @@ Need 50x50mm 1oz copper for 1.6W rating</text>
 </part>
 <part name="GND4" library="power_supplies" deviceset="GND" device=""/>
 <part name="36V1" library="power_supplies" deviceset="36V" device=""/>
-<part name="MOV1" library="power_supplies" deviceset="MOV-20D470K" device=""/>
+<part name="MOV1" library="power_supplies" deviceset="MOV-B72220S0200K101" device=""/>
 <part name="GND5" library="power_supplies" deviceset="GND" device=""/>
+<part name="F1" library="power_supplies" deviceset="BOMFUSE_0477005.MXP" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10865,10 +10892,11 @@ from mower supply</text>
 <instance part="36V1" gate="A" x="233.68" y="152.4" rot="R90"/>
 <instance part="MOV1" gate="G$1" x="167.64" y="119.38" smashed="yes">
 <attribute name="NAME" x="165.1" y="106.68" size="1.778" layer="94" rot="R90"/>
-<attribute name="VALUE" x="171.704" y="114.046" size="1.778" layer="94" rot="R90"/>
+<attribute name="VALUE" x="171.704" y="103.886" size="1.778" layer="94" rot="R90"/>
 <attribute name="DESCRIPTION" x="172.72" y="109.22" size="1.778" layer="96"/>
 </instance>
 <instance part="GND5" gate="VR1" x="167.64" y="104.14"/>
+<instance part="F1" gate="G$1" x="81.28" y="160.02"/>
 </instances>
 <busses>
 </busses>

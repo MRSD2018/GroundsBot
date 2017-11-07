@@ -1181,7 +1181,7 @@ So dual pins for top/bot</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOV-20D470K" prefix="MOV">
+<deviceset name="MOV-B72220S0200K101" prefix="MOV">
 <gates>
 <gate name="G$1" symbol="MOV" x="0" y="2.54"/>
 </gates>
@@ -1193,9 +1193,10 @@ So dual pins for top/bot</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DESCRIPTION" value="VARISTOR 47V 2KA DISC 20MM" constant="no"/>
-<attribute name="MANUFACTURER" value="Bourns" constant="no"/>
-<attribute name="MPN" value="MOV-20D470K " constant="no"/>
+<attribute name="DESCRIPTION" value="VARISTOR 33V 2KA DISC 20MM
+" constant="no"/>
+<attribute name="MANUFACTURER" value="EPCOS" constant="no"/>
+<attribute name="MPN" value="B72220S0200K101" constant="no"/>
 </technology>
 </technologies>
 </device>

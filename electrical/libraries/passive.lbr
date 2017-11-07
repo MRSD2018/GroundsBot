@@ -398,8 +398,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DESCRIPTION" value="RES SMD 10K OHM 1% 1/10W 0603
-" constant="no"/>
+<attribute name="DESCRIPTION" value="RES SMD 10K OHM 1% 1/10W 0603 " constant="no"/>
 <attribute name="MANUFACTURER" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-0710KL" constant="no"/>
 <attribute name="VALUE" value="10k"/>
@@ -445,11 +444,9 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DESCRIPTION" value="RES SMD 60.4 OHM 1% 1/10W 0603
-" constant="no"/>
+<attribute name="DESCRIPTION" value="RES SMD 60.4 OHM 1% 1/10W 0603 " constant="no"/>
 <attribute name="MANUFACTURER" value="Yageo" constant="no"/>
-<attribute name="MPN" value="RC0603FR-0760R4L
-" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0760R4L " constant="no"/>
 <attribute name="VALUE" value="60R"/>
 </technology>
 </technologies>
@@ -470,8 +467,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DESCRIPTION" value="RES SMD 147 OHM 1% 1/10W 0603
-" constant="no"/>
+<attribute name="DESCRIPTION" value="RES SMD 147 OHM 1% 1/10W 0603 " constant="no"/>
 <attribute name="MANUFACTURER" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07147RL" constant="no"/>
 <attribute name="VALUE" value="147R"/>
@@ -498,6 +494,30 @@
 <attribute name="MANUFACTURER" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07470RL" constant="no"/>
 <attribute name="VALUE" value=""/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="750K" prefix="R">
+<description>&lt;h3&gt;2kΩ resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-1/10W-5%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="RES SMD 750K OHM 1% 1/10W 0603
+" constant="no"/>
+<attribute name="MANUFACTURER" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07750KL" constant="no"/>
+<attribute name="VALUE" value="750k"/>
 </technology>
 </technologies>
 </device>

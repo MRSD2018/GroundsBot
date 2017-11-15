@@ -51,26 +51,67 @@ Test 1:
 Test 2:
 
 Test 2 has been designed to demonstrate base functionality of the perception subsystem. The team will present a perception algorithm capable of differentiating between grass (i.e. a mowable surface) and non-grass (i.e. a non-mowable surface.) This test will be performed outside of the fall validation experiment and a replay of the test will be displayed during the fall validation experiment.
-  Location: Offline, report generated for FVE
+  Location: Offline (golf course tbd), report generated for FVE
   
-  Equipment: Bumblebee Stereo camera, laptop
+  Equipment: camera, laptop, prototype classification app
 
-    Take 10 pictures each of: Fairway, Rough, Sidewalk, Parking Lot. Each picture is homogeneous (all grass, all pavement, etc...)
+  Procedure:
+      
+      Boot application
+      
+      Walk to golf course rough, at least 10 feet from fairway boundary
+      
+      Set app to train on rough
+      
+      Walk around rough for 10 minutes
+      
+      Disable training on app
+      
+      Walk to golf course fairway, at least 10 feet from rough boundary
+      
+      Set app to train on fairway
+      
+      Walk around fairway for 10 minutes
+      
+      Disable training on app
+      
+      Walk to paved surface
+      
+      Set app to train on paved surface
+      
+      Walk around paved surface for 10 minutes
+      
+      Set app to classification mode
+      
+      Walk around fairway while app logs classification, gathering at least 50 images
+      
+      Walk around rough while app logs classifications, gathering at least 50 images
+      
+      Walk in a zig-zag across the rough / fairway boundary while app logs classifications, gathering at least 50 images
+      
+      Walk in a zig-zag across the grass / paved surface boundary, gather at least 50 images
+      
 
-    Apply algorithm to each picture
+  Criteria:
+      
+      Algorithm classifies rough / fairway with 90% accuracy
 
-    Algorithm classifies each picture as a mowable or non-mowable surface with 90% accuracy
+      Algorithm classifies grass /paved area with 90% accuracy
 
 Test 3:
   Location: Field by Doherty Apartments
 
   Equipment: GroundsBot, GroundsBot RTK base station, laptop
   
-  GroundsBot directed to move in straight line
+  Procedure:
   
-  GroundBot team member engages emergency stop
+      GroundsBot directed to move in straight line
+  
+      GroundBot team member engages emergency stop
+ 
+  Criteria:
 
-  GroundsBot ceases to move within 2 seconds
+      GroundsBot ceases to move within 2 seconds
 
 
 Spring Validation Experiment

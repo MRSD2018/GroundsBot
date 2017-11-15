@@ -87,10 +87,7 @@ Test 2 has been designed to demonstrate base functionality of the perception sub
       
       Walk around rough while app logs classifications, gathering at least 50 images
       
-      Walk in a zig-zag across the rough / fairway boundary while app logs classifications, gathering at least 50 images
-      
-      Walk in a zig-zag across the grass / paved surface boundary, gather at least 50 images
-      
+      Walk around path while app logs classifications, gathering at least 50 images
 
   Criteria:
       

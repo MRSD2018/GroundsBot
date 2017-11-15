@@ -5,21 +5,48 @@ Fall Validation Experiment
 	The aim of the fall validation experiment is to test individual subsystems. As such many of the systems requirements set for GroundsBot will not be fully met. All tests to be performed have been designed to indicate significant progress towards reaching the system requirements. More specifically the team plans to test the base functionality of the mobility, localization, planning, and perception subsystems of GroundsBot. The details of the test are laid out below.
 
 Test 1:
+  Purpose: Test GroundsBot's ability to navigate repeatably using GPS and odometry
   Location: Field by Doherty Apartments
+  Equipment: GroundsBot, GroundsBot base station, laptop, GPS waypoints for test field, boundary creation app, 5 flags, GroundsBot remote control
+  Pre-test setup: 
 
-  Equipment: GroundsBot, GroundsBot base station, laptop
+      Create GPS waypoints using app (following a typical zigzag pattern a groundskeeper might make when mowing a lawn)
 
-      Power on GroundsBot 
+      Power on GroundsBot  
+      
+      Navigate GroundsBot to an arbitrary home position and orientation on test field using remote control
+      
+      Place flag by home position
 
       Establish connection between GroundsBot and laptop
 
-      Input GPS waypoints following a typical zigzag pattern a groundskeeper might make when mowing a lawn
+      Send GPS waypoints to GroundsBot
+      
+      GroundsBot navigates to each waypoint and waits for ten seconds
+      
+          Place flag by GroundsBot at each way point
+      
+      GroundsBot returns home
+      
+      Set GroundsBot orientation to original home orientation using remote control
 
-      Send waypoints to GroundsBot
+  Test:
+  
+      Power on Groundsbot
+      
+      Establish connection between GroundsBot and laptop
+      
+      Send GPS waypoints to GroundsBot
+      
+      GroundsBot navigates to each waypoint
+      
+      GroundsBot returns to home position
+    
+  Criteria:
+  
+      GroundsBot navigates to each waypoint entered within 2 feet, in the order they were entered
 
-      GroundsBot will navigate to each waypoint entered within 2 feet, in the order they were entered
-
-      Once the last waypoint is reached, GroundsBot will navigate back to starting position within 2 feet
+      Once the last waypoint is reached, GroundsBot navigates back to starting position within 2 feet
 
 Test 2:
 

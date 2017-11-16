@@ -44,10 +44,10 @@ Test 1:
     
   Criteria:
   
-      GroundsBot navigates to each waypoint entered within 2 feet, in the order they were entered
+      GroundsBot navigates to each waypoint entered within 2 feet (measured at either drive wheel), in the order they were entered
 
-      Once the last waypoint is reached, GroundsBot navigates back to starting position within 2 feet
-
+      Once the last waypoint is reached, GroundsBot navigates back to starting position within 2 feet (measured at either drive wheel)
+      
 Test 2:
 
 Test 2 has been designed to demonstrate base functionality of the perception subsystem. The team will present a perception algorithm capable of differentiating between grass (i.e. a mowable surface) and non-grass (i.e. a non-mowable surface.) This test will be performed outside of the fall validation experiment and a replay of the test will be displayed during the fall validation experiment.
